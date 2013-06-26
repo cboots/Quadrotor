@@ -4076,6 +4076,10 @@ diameter 5 mm, horizontal, grid 15.24 mm</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="115,1,-107.357,-27.7453,JP1,,,,,"/>
+<approved hash="115,1,-107.357,-51.8753,JP2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
