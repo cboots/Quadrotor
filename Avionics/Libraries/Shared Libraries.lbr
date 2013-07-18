@@ -69,6 +69,8 @@
 <layer number="105" name="tPlate" color="7" fill="1" visible="no" active="yes"/>
 <layer number="106" name="bPlate" color="7" fill="1" visible="no" active="yes"/>
 <layer number="107" name="Crop" color="7" fill="1" visible="no" active="yes"/>
+<layer number="108" name="tplace-old" color="10" fill="1" visible="yes" active="yes"/>
+<layer number="109" name="ref-old" color="11" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
@@ -5070,6 +5072,43 @@ MAX3223-MAX3243.pdf</description>
 <wire x1="3.75" y1="-5" x2="4.25" y2="-5.5" width="0.127" layer="21"/>
 <text x="-1.5" y="-3.25" size="1.27" layer="25">&gt;NAME</text>
 </package>
+<package name="PRQC16.00SR5010X000">
+<smd name="1" x="-1" y="0" dx="2.6" dy="0.5" layer="1" rot="R90"/>
+<smd name="2" x="0" y="0" dx="2.6" dy="0.5" layer="1" rot="R90"/>
+<smd name="3" x="1" y="0" dx="2.6" dy="0.5" layer="1" rot="R90"/>
+<wire x1="-1.25" y1="1" x2="1.25" y2="1" width="0.127" layer="21"/>
+<wire x1="1.25" y1="1" x2="1.25" y2="-1" width="0.127" layer="21"/>
+<wire x1="1.25" y1="-1" x2="-1.25" y2="-1" width="0.127" layer="21"/>
+<wire x1="-1.25" y1="-1" x2="-1.25" y2="1" width="0.127" layer="21"/>
+<text x="-1.25" y="1.5" size="1.27" layer="25">&gt;NAME</text>
+</package>
+<package name="16LPCC">
+<wire x1="-1.7" y1="-1.7" x2="-1.7" y2="-1.1" width="0.2032" layer="21"/>
+<wire x1="-1.7" y1="-1.7" x2="-1.1" y2="-1.7" width="0.2032" layer="21"/>
+<wire x1="1.1" y1="-1.7" x2="1.7" y2="-1.7" width="0.2032" layer="21"/>
+<wire x1="1.7" y1="-1.7" x2="1.7" y2="-1.1" width="0.2032" layer="21"/>
+<wire x1="1.7" y1="1.1" x2="1.7" y2="1.7" width="0.2032" layer="21"/>
+<wire x1="1.7" y1="1.7" x2="1.1" y2="1.7" width="0.2032" layer="21"/>
+<wire x1="-1.28" y1="1.635" x2="-1.635" y2="1.26" width="0.2032" layer="21"/>
+<smd name="4" x="-1.37" y="-0.75" dx="0.65" dy="0.28" layer="1"/>
+<smd name="3" x="-1.37" y="-0.25" dx="0.65" dy="0.28" layer="1"/>
+<smd name="2" x="-1.37" y="0.25" dx="0.65" dy="0.28" layer="1"/>
+<smd name="1" x="-1.37" y="0.75" dx="0.65" dy="0.28" layer="1"/>
+<smd name="5" x="-0.75" y="-1.37" dx="0.65" dy="0.28" layer="1" rot="R270"/>
+<smd name="15" x="-0.25" y="1.37" dx="0.65" dy="0.28" layer="1" rot="R90"/>
+<smd name="14" x="0.25" y="1.37" dx="0.65" dy="0.28" layer="1" rot="R90"/>
+<smd name="13" x="0.75" y="1.37" dx="0.65" dy="0.28" layer="1" rot="R90"/>
+<smd name="12" x="1.37" y="0.75" dx="0.65" dy="0.28" layer="1"/>
+<smd name="11" x="1.37" y="0.25" dx="0.65" dy="0.28" layer="1"/>
+<smd name="10" x="1.37" y="-0.25" dx="0.65" dy="0.28" layer="1"/>
+<smd name="9" x="1.37" y="-0.75" dx="0.65" dy="0.28" layer="1"/>
+<smd name="6" x="-0.25" y="-1.37" dx="0.65" dy="0.28" layer="1" rot="R90"/>
+<smd name="8" x="0.75" y="-1.37" dx="0.65" dy="0.28" layer="1" rot="R90"/>
+<smd name="16" x="-0.75" y="1.37" dx="0.65" dy="0.28" layer="1" rot="R90"/>
+<smd name="7" x="0.25" y="-1.37" dx="0.65" dy="0.28" layer="1" rot="R90"/>
+<text x="-1.27" y="1.905" size="0.6096" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-2.54" size="0.6096" layer="27">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="RESISTOR">
@@ -6217,6 +6256,30 @@ MAX3223-MAX3243.pdf</description>
 <wire x1="15.24" y1="-7.62" x2="15.24" y2="7.62" width="0.254" layer="94"/>
 <wire x1="15.24" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
 <text x="0" y="10.16" size="1.27" layer="94">&gt;NAME</text>
+</symbol>
+<symbol name="HMC5883L">
+<wire x1="10.16" y1="15.24" x2="10.16" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-15.24" x2="-10.16" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-15.24" x2="-10.16" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="15.24" x2="10.16" y2="15.24" width="0.254" layer="94"/>
+<text x="-10.16" y="15.24" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="SCL" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="VDD" x="15.24" y="12.7" length="middle" rot="R180"/>
+<pin name="NC@1" x="-15.24" y="12.7" length="middle"/>
+<pin name="S1" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="NC@2" x="-15.24" y="10.16" length="middle"/>
+<pin name="NC@3" x="-15.24" y="7.62" length="middle"/>
+<pin name="NC@4" x="-15.24" y="5.08" length="middle"/>
+<pin name="SETP" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="GND@1" x="-15.24" y="-7.62" length="middle"/>
+<pin name="C1" x="-15.24" y="-2.54" length="middle"/>
+<pin name="GND@2" x="-15.24" y="-10.16" length="middle"/>
+<pin name="SETC" x="15.24" y="-7.62" length="middle" rot="R180"/>
+<pin name="VDDIO" x="15.24" y="10.16" length="middle" rot="R180"/>
+<pin name="NC@5" x="-15.24" y="2.54" length="middle"/>
+<pin name="DRDY" x="15.24" y="-12.7" length="middle" rot="R180"/>
+<pin name="SDA" x="15.24" y="0" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -7750,6 +7813,54 @@ Various standard crystals. Proven footprints. Spark Fun Electronics SKU : COM-00
 <connect gate="G$1" pin="GND@2" pad="GND@2"/>
 <connect gate="G$1" pin="ID" pad="4"/>
 <connect gate="G$1" pin="VUSB" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PRQC16.00SR5010X000">
+<gates>
+<gate name="G$1" symbol="RESONATOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PRQC16.00SR5010X000">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="HMC5883L">
+<description>3 Axis Digital Compass IC</description>
+<gates>
+<gate name="G$1" symbol="HMC5883L" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SMD" package="16LPCC">
+<connects>
+<connect gate="G$1" pin="C1" pad="10"/>
+<connect gate="G$1" pin="DRDY" pad="15"/>
+<connect gate="G$1" pin="GND@1" pad="9"/>
+<connect gate="G$1" pin="GND@2" pad="11"/>
+<connect gate="G$1" pin="NC@1" pad="3"/>
+<connect gate="G$1" pin="NC@2" pad="5"/>
+<connect gate="G$1" pin="NC@3" pad="6"/>
+<connect gate="G$1" pin="NC@4" pad="7"/>
+<connect gate="G$1" pin="NC@5" pad="14"/>
+<connect gate="G$1" pin="S1" pad="4"/>
+<connect gate="G$1" pin="SCL" pad="1"/>
+<connect gate="G$1" pin="SDA" pad="16"/>
+<connect gate="G$1" pin="SETC" pad="12"/>
+<connect gate="G$1" pin="SETP" pad="8"/>
+<connect gate="G$1" pin="VDD" pad="2"/>
+<connect gate="G$1" pin="VDDIO" pad="13"/>
 </connects>
 <technologies>
 <technology name=""/>
