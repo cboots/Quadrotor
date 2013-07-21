@@ -630,6 +630,34 @@ Philips Semiconductors, SOT363.pdf</description>
 <rectangle x1="-0.88" y1="2" x2="-0.39" y2="3.1" layer="51"/>
 <rectangle x1="-2.15" y1="2" x2="-1.66" y2="3.1" layer="51"/>
 </package>
+<package name="1050270001">
+<smd name="GND@2" x="-5.225" y="-0.6" dx="1.2" dy="1.05" layer="1" rot="R270"/>
+<smd name="GND@3" x="5.225" y="-0.6" dx="1.2" dy="1.05" layer="1" rot="R270"/>
+<smd name="GND@1" x="-5.225" y="-5.05" dx="1.2" dy="1.05" layer="1" rot="R270"/>
+<smd name="GND@4" x="5.225" y="-5.05" dx="1.2" dy="1.05" layer="1" rot="R270"/>
+<smd name="P1" x="3.85" y="-6.66" dx="1" dy="0.5" layer="1" rot="R90"/>
+<smd name="P2" x="2.75" y="-6.66" dx="1" dy="0.5" layer="1" rot="R90"/>
+<smd name="P3" x="1.65" y="-6.66" dx="1" dy="0.5" layer="1" rot="R90"/>
+<smd name="P4" x="0.9" y="-6.66" dx="1" dy="0.5" layer="1" rot="R90"/>
+<smd name="G1" x="0.2" y="-6.66" dx="1" dy="0.5" layer="1" rot="R90"/>
+<smd name="P5" x="-0.55" y="-6.66" dx="1" dy="0.5" layer="1" rot="R90"/>
+<smd name="P6" x="-1.65" y="-6.66" dx="1" dy="0.5" layer="1" rot="R90"/>
+<smd name="P7" x="-2.75" y="-6.66" dx="1" dy="0.5" layer="1" rot="R90"/>
+<smd name="P8" x="-3.85" y="-6.66" dx="1" dy="0.5" layer="1" rot="R90"/>
+<wire x1="0" y1="0" x2="-5.6" y2="0" width="0.127" layer="21"/>
+<wire x1="-5.6" y1="0" x2="-5.6" y2="-6.1" width="0.127" layer="21"/>
+<wire x1="-5.6" y1="-6.1" x2="-4.9" y2="-6.1" width="0.127" layer="21"/>
+<wire x1="-4.9" y1="-6.1" x2="5.6" y2="-6.1" width="0.127" layer="21"/>
+<wire x1="5.6" y1="-6.1" x2="5.6" y2="0" width="0.127" layer="21"/>
+<wire x1="5.6" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
+<wire x1="-4.9" y1="-6.1" x2="-4.9" y2="-15.4" width="0.127" layer="21"/>
+<wire x1="-4.9" y1="-15.4" x2="6.2" y2="-15.4" width="0.127" layer="21"/>
+<wire x1="6.2" y1="-15.4" x2="6.2" y2="-7.1" width="0.127" layer="21"/>
+<wire x1="6.2" y1="-7.1" x2="6.2" y2="-6.2" width="0.127" layer="21"/>
+<wire x1="6.2" y1="-6.2" x2="5.6" y2="-6.2" width="0.127" layer="21"/>
+<wire x1="5.6" y1="-6.2" x2="5.6" y2="-6.1" width="0.127" layer="21"/>
+<text x="-5.1" y="0.8" size="1.27" layer="25">&gt;NAME</text>
+</package>
 </packages>
 </library>
 <library name="SparkFun-Electromechanical">
@@ -2394,6 +2422,9 @@ design rules under a new name.</description>
 <element name="R40" library="SparkFun-Resistors" package="0603-RES" value="0" x="-28.448" y="-215.646"/>
 <element name="U8" library="Shared Libraries" package="SOT363_PHILIPS" value="74AUP1G19GW" x="-28.321" y="-220.472"/>
 <element name="U9" library="Shared Libraries" package="SOIC8" value="S25FL127S" x="-34.544" y="-219.837"/>
+<element name="R42" library="Shared Libraries" package="0603-RES" value="2.2k" x="-37.338" y="-225.044"/>
+<element name="R43" library="Shared Libraries" package="0603-RES" value="2.2k" x="-37.338" y="-227.457"/>
+<element name="J2" library="Shared Libraries" package="1050270001" value="1050270001" x="56.515" y="78.232"/>
 </elements>
 <signals>
 <signal name="3.3V">
@@ -2430,6 +2461,12 @@ design rules under a new name.</description>
 <contactref element="U7" pad="2"/>
 <contactref element="U8" pad="5"/>
 <contactref element="U9" pad="8"/>
+<contactref element="R43" pad="2"/>
+<contactref element="R42" pad="2"/>
+<contactref element="J2" pad="P4"/>
+<wire x1="-36.488" y1="-225.044" x2="-36.449" y2="-217.237" width="0" layer="19" extent="1-1"/>
+<wire x1="-36.488" y1="-227.457" x2="-36.488" y2="-225.044" width="0" layer="19" extent="1-1"/>
+<wire x1="57.415" y1="71.572" x2="-36.449" y2="-217.237" width="0" layer="19" extent="1-1"/>
 <wire x1="-28.321" y1="-219.672" x2="-36.449" y2="-217.237" width="0" layer="19" extent="1-1"/>
 <wire x1="-29.298" y1="-210.82" x2="-28.321" y2="-219.672" width="0" layer="19" extent="1-1"/>
 <wire x1="-28.532" y1="-204.861" x2="-29.298" y2="-210.82" width="0" layer="19" extent="1-1"/>
@@ -2523,10 +2560,12 @@ design rules under a new name.</description>
 <contactref element="U7" pad="5"/>
 <contactref element="U8" pad="2"/>
 <contactref element="U9" pad="4"/>
+<contactref element="J2" pad="P6"/>
 <wire x1="-28.321" y1="-221.272" x2="-32.639" y2="-222.437" width="0" layer="19" extent="1-1"/>
 <wire x1="-27.598" y1="-210.82" x2="-28.321" y2="-221.272" width="0" layer="19" extent="1-1"/>
 <wire x1="-26.332" y1="-207.361" x2="-27.598" y2="-210.82" width="0" layer="19" extent="1-1"/>
 <wire x1="-28.532" y1="-206.111" x2="-26.332" y2="-207.361" width="0" layer="19" extent="1-1"/>
+<wire x1="54.865" y1="71.572" x2="-32.639" y2="-222.437" width="0" layer="19" extent="1-1"/>
 <wire x1="-27.598" y1="-179.705" x2="-28.532" y2="-206.111" width="0" layer="19" extent="1-1"/>
 <wire x1="-27.598" y1="-177.292" x2="-27.598" y2="-179.705" width="0" layer="19" extent="1-1"/>
 <wire x1="-26.5254" y1="-175.2226" x2="-27.598" y2="-177.292" width="0" layer="19" extent="1-1"/>
@@ -2905,6 +2944,8 @@ design rules under a new name.</description>
 <signal name="FC_MEM_CLK">
 <contactref element="U1" pad="28"/>
 <contactref element="U9" pad="6"/>
+<contactref element="J2" pad="P5"/>
+<wire x1="55.965" y1="71.572" x2="-33.909" y2="-217.237" width="0" layer="19" extent="1-1"/>
 <wire x1="52.625" y1="26.135" x2="-33.909" y2="-217.237" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="FC_MEM_FSS">
@@ -2915,11 +2956,15 @@ design rules under a new name.</description>
 <signal name="FC_MEM_MISO">
 <contactref element="U1" pad="30"/>
 <contactref element="U9" pad="2"/>
+<contactref element="J2" pad="P7"/>
 <wire x1="-35.179" y1="-222.437" x2="51.625" y2="26.135" width="0" layer="19" extent="1-1"/>
+<wire x1="53.765" y1="71.572" x2="-35.179" y2="-222.437" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="FC_MEM_MOSI">
 <contactref element="U1" pad="31"/>
 <contactref element="U9" pad="5"/>
+<contactref element="J2" pad="P3"/>
+<wire x1="58.165" y1="71.572" x2="-32.639" y2="-217.237" width="0" layer="19" extent="1-1"/>
 <wire x1="51.125" y1="26.135" x2="-32.639" y2="-217.237" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="FC_PA6">
@@ -3289,7 +3334,9 @@ design rules under a new name.</description>
 <contactref element="R41" pad="2"/>
 <contactref element="U1" pad="62"/>
 <contactref element="U7" pad="8"/>
+<contactref element="R42" pad="1"/>
 <wire x1="-26.332" y1="-203.611" x2="-27.598" y2="-213.233" width="0" layer="19" extent="1-1"/>
+<wire x1="-38.188" y1="-225.044" x2="-27.598" y2="-213.233" width="0" layer="19" extent="1-1"/>
 <wire x1="39.905" y1="18.915" x2="-26.332" y2="-203.611" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="FC_USB_STATUS">
@@ -3302,7 +3349,9 @@ design rules under a new name.</description>
 <contactref element="U1" pad="61"/>
 <contactref element="U7" pad="7"/>
 <contactref element="R40" pad="2"/>
+<contactref element="R43" pad="1"/>
 <wire x1="-26.332" y1="-204.861" x2="-27.598" y2="-215.646" width="0" layer="19" extent="1-1"/>
+<wire x1="-38.188" y1="-227.457" x2="-27.598" y2="-215.646" width="0" layer="19" extent="1-1"/>
 <wire x1="39.905" y1="19.415" x2="-26.332" y2="-204.861" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="FC_MEM_SEL">
@@ -3315,6 +3364,11 @@ design rules under a new name.</description>
 </signal>
 <signal name="SD_CS_L">
 <contactref element="U8" pad="4"/>
+<contactref element="J2" pad="P2"/>
+<wire x1="59.265" y1="71.572" x2="-27.671" y2="-219.672" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="FC_SD_PRESENT">
+<contactref element="J2" pad="G1"/>
 </signal>
 </signals>
 </board>
