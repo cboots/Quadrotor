@@ -9,11 +9,23 @@ Desktop="Desktop"
 AutoSaveProject=1
 UsedLibrary="C:/Users/Collin/Dropbox/Humanoids/XOS_Spring2013/mBed Shield/Libs/MBED_v2.1.lbr"
 UsedLibrary="C:/Users/Collin/Dropbox/Humanoids/XOS_Spring2013/mBed Shield/Libs/MyShieldLib.lbr"
+UsedLibrary="C:/Users/Collin/Documents/GitHub/QuadCV/Avionics/Libraries/Invesense.lbr"
 UsedLibrary="C:/Users/Collin/Documents/GitHub/QuadCV/Avionics/Libraries/LPC4300.lbr"
 UsedLibrary="C:/Users/Collin/Documents/GitHub/QuadCV/Avionics/Libraries/Shared Libraries.lbr"
+UsedLibrary="C:/Users/Collin/Documents/GitHub/QuadCV/Avionics/Libraries/SparkFun-Aesthetics.lbr"
+UsedLibrary="C:/Users/Collin/Documents/GitHub/QuadCV/Avionics/Libraries/SparkFun-Capacitors.lbr"
+UsedLibrary="C:/Users/Collin/Documents/GitHub/QuadCV/Avionics/Libraries/SparkFun-Connectors.lbr"
+UsedLibrary="C:/Users/Collin/Documents/GitHub/QuadCV/Avionics/Libraries/SparkFun-Electromechanical.lbr"
+UsedLibrary="C:/Users/Collin/Documents/GitHub/QuadCV/Avionics/Libraries/SparkFun-Passives.lbr"
+UsedLibrary="C:/Users/Collin/Documents/GitHub/QuadCV/Avionics/Libraries/SparkFun-Resistors.lbr"
 UsedLibrary="C:/Users/Collin/Documents/GitHub/QuadCV/Avionics/Libraries/SparkFun.lbr"
+UsedLibrary="C:/Users/Collin/Documents/GitHub/QuadCV/Avionics/Libraries/SparkFunv2.lbr"
 UsedLibrary="C:/Users/Collin/Documents/GitHub/QuadCV/Avionics/Libraries/atmel-avr32.lbr"
+UsedLibrary="C:/Users/Collin/Documents/GitHub/QuadCV/Avionics/Libraries/atmel.lbr"
+UsedLibrary="C:/Users/Collin/Documents/GitHub/QuadCV/Avionics/Libraries/con-molex.lbr"
 UsedLibrary="C:/Users/Collin/Documents/GitHub/QuadCV/Avionics/Libraries/nxp.lbr"
+UsedLibrary="C:/Users/Collin/Documents/GitHub/QuadCV/Avionics/Libraries/supply1.lbr"
+UsedLibrary="C:/Users/Collin/Documents/GitHub/QuadCV/Avionics/Libraries/testpad.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.2.0/lbr/19inch.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.2.0/lbr/40xx.lbr"
 UsedLibrary="C:/Program Files (x86)/EAGLE-6.2.0/lbr/41xx.lbr"
@@ -359,18 +371,6 @@ UsedLibrary="C:/Users/Collin/Dropbox/Humanoids/XOS_Spring2013/mBed Shield/Libs/S
 UsedLibrary="C:/Users/Collin/Dropbox/Humanoids/XOS_Spring2013/mBed Shield/Libs/SparkFun-Eagle-Libraries/SparkFun-Resistors.lbr"
 UsedLibrary="C:/Users/Collin/Dropbox/Humanoids/XOS_Spring2013/mBed Shield/Libs/SparkFun-Eagle-Libraries/SparkFun-RF.lbr"
 UsedLibrary="C:/Users/Collin/Dropbox/Humanoids/XOS_Spring2013/mBed Shield/Libs/SparkFun-Eagle-Libraries/SparkFun-Sensors.lbr"
-UsedLibrary="C:/Users/Collin/Documents/GitHub/QuadCV/Avionics/Libraries/atmel.lbr"
-UsedLibrary="C:/Users/Collin/Documents/GitHub/QuadCV/Avionics/Libraries/con-molex.lbr"
-UsedLibrary="C:/Users/Collin/Documents/GitHub/QuadCV/Avionics/Libraries/SparkFun-Aesthetics.lbr"
-UsedLibrary="C:/Users/Collin/Documents/GitHub/QuadCV/Avionics/Libraries/SparkFun-Capacitors.lbr"
-UsedLibrary="C:/Users/Collin/Documents/GitHub/QuadCV/Avionics/Libraries/SparkFun-Connectors.lbr"
-UsedLibrary="C:/Users/Collin/Documents/GitHub/QuadCV/Avionics/Libraries/SparkFun-Electromechanical.lbr"
-UsedLibrary="C:/Users/Collin/Documents/GitHub/QuadCV/Avionics/Libraries/SparkFun-Passives.lbr"
-UsedLibrary="C:/Users/Collin/Documents/GitHub/QuadCV/Avionics/Libraries/SparkFun-Resistors.lbr"
-UsedLibrary="C:/Users/Collin/Documents/GitHub/QuadCV/Avionics/Libraries/SparkFunv2.lbr"
-UsedLibrary="C:/Users/Collin/Documents/GitHub/QuadCV/Avionics/Libraries/supply1.lbr"
-UsedLibrary="C:/Users/Collin/Documents/GitHub/QuadCV/Avionics/Libraries/Invesense.lbr"
-UsedLibrary="C:/Users/Collin/Documents/GitHub/QuadCV/Avionics/Libraries/testpad.lbr"
 
 [Win_1]
 Type="Library Editor"
@@ -473,11 +473,11 @@ Layer=16
 
 [Win_4]
 Type="Schematic Editor"
-Loc="-8 -8 658 680"
+Loc="0 0 666 688"
 State=1
 Number=1
 File="QuadFCv1.sch"
-View="21.8848 -110.38 50.2432 -79.7366"
+View="-49.0069 -250.681 203.839 22.5384"
 WireWidths=" 0 0.3048 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0.4064 0.1524"
 PadDiameters=" 0.254 0.3048 0.4064 0.6096 0.8128 1.016 1.27 1.4224 1.6764 1.778 1.9304 2.1844 2.54 3.81 6.4516 0"
 PadDrills=" 0.5 0.6 0.7 0.9 1 1.1 1.2 1.3 1.4 1.5 1.6 2 2.2 2.8 3.2 0.8"
@@ -516,7 +516,7 @@ ArcDirection=0
 AddLevel=2
 PadsSameType=0
 Layer=91
-Views=" 1: -187.41 -35.7025 -30.1034 25.7952 2: -23.9292 -31.5088 104.482 51.0412 3: 21.8848 -110.38 50.2432 -79.7366 4: -117.243 6.2725 -65.6372 39.4475 6: -37.3487 -62.6291 184.546 80.0174 7: -97.2731 -57.9372 124.621 84.7092 8: -39.1393 -54.4238 89.2718 28.1262 9: -46.9872 -37.7957 81.424 44.7543 10: -55.954 -57.3211 72.4571 25.2289"
+Views=" 1: -187.41 -35.7025 -30.1034 25.7952 2: -56.7791 -106.516 165.115 36.1305 3: -49.0069 -250.681 203.839 22.5384 4: -117.243 6.2725 -65.6372 39.4475 6: -37.3487 -62.6291 184.546 80.0174 7: -97.2731 -57.9372 124.621 84.7092 8: -39.1393 -54.4238 89.2718 28.1262 9: -46.9872 -37.7957 81.424 44.7543 10: -55.954 -57.3211 72.4571 25.2289"
 Sheet=3
 
 [Desktop]
