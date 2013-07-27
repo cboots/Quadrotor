@@ -24,8 +24,8 @@
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -42,13 +42,13 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -69,10 +69,17 @@
 <layer number="105" name="tPlate" color="7" fill="1" visible="no" active="yes"/>
 <layer number="106" name="bPlate" color="7" fill="1" visible="no" active="yes"/>
 <layer number="107" name="Crop" color="7" fill="1" visible="no" active="yes"/>
+<layer number="108" name="fp8" color="7" fill="1" visible="no" active="yes"/>
+<layer number="109" name="fp9" color="7" fill="1" visible="no" active="yes"/>
+<layer number="110" name="fp0" color="7" fill="1" visible="no" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
+<layer number="124" name="bTestmark" color="7" fill="1" visible="no" active="yes"/>
 <layer number="125" name="_tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="yes"/>
+<layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="no" active="yes"/>
@@ -141,141 +148,6 @@
 <libraries>
 <library name="Shared Libraries">
 <packages>
-<package name="R2512">
-<wire x1="-2.362" y1="1.473" x2="2.387" y2="1.473" width="0.1524" layer="51"/>
-<wire x1="-2.362" y1="-1.473" x2="2.387" y2="-1.473" width="0.1524" layer="51"/>
-<smd name="1" x="-2.8" y="0" dx="1.8" dy="3.2" layer="1"/>
-<smd name="2" x="2.8" y="0" dx="1.8" dy="3.2" layer="1"/>
-<text x="-2.54" y="1.905" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2.54" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-3.2004" y1="-1.5494" x2="-2.3505" y2="1.5507" layer="51"/>
-<rectangle x1="2.3622" y1="-1.5494" x2="3.2121" y2="1.5507" layer="51"/>
-</package>
-<package name="5MMPLUG">
-<smd name="P$1" x="0" y="0" dx="4.445" dy="4.445" layer="1"/>
-<text x="-2.54" y="3.81" size="1.27" layer="21">&gt;NAME</text>
-<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="2.54" width="0.127" layer="21"/>
-<wire x1="-2.54" y1="2.54" x2="2.54" y2="2.54" width="0.127" layer="21"/>
-<wire x1="2.54" y1="2.54" x2="2.54" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="2.54" y1="-2.54" x2="-2.54" y2="-2.54" width="0.127" layer="21"/>
-</package>
-<package name="SOT23-6">
-<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt; 6 lead</description>
-<wire x1="1.422" y1="-0.781" x2="-1.423" y2="-0.781" width="0.1524" layer="51"/>
-<wire x1="-1.423" y1="-0.781" x2="-1.423" y2="0.781" width="0.1524" layer="21"/>
-<wire x1="-1.423" y1="0.781" x2="1.422" y2="0.781" width="0.1524" layer="51"/>
-<wire x1="1.422" y1="0.781" x2="1.422" y2="-0.781" width="0.1524" layer="21"/>
-<circle x="-1.15" y="-0.5" radius="0.1" width="0" layer="21"/>
-<smd name="1" x="-0.95" y="-1.15" dx="0.6" dy="0.9" layer="1"/>
-<smd name="2" x="0" y="-1.15" dx="0.6" dy="0.9" layer="1"/>
-<smd name="3" x="0.95" y="-1.15" dx="0.6" dy="0.9" layer="1"/>
-<smd name="4" x="0.95" y="1.15" dx="0.6" dy="0.9" layer="1"/>
-<smd name="5" x="0" y="1.15" dx="0.6" dy="0.9" layer="1"/>
-<smd name="6" x="-0.95" y="1.15" dx="0.6" dy="0.9" layer="1"/>
-<text x="-1.397" y="-2.672" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-1.397" y="1.702" size="1.016" layer="25" ratio="10">&gt;NAME</text>
-<rectangle x1="-1.2" y1="-1.4" x2="-0.7" y2="-0.8" layer="51"/>
-<rectangle x1="-0.25" y1="-1.4" x2="0.25" y2="-0.8" layer="51"/>
-<rectangle x1="0.7" y1="-1.4" x2="1.2" y2="-0.8" layer="51"/>
-<rectangle x1="0.7" y1="0.8" x2="1.2" y2="1.4" layer="51"/>
-<rectangle x1="-0.25" y1="0.8" x2="0.25" y2="1.4" layer="51"/>
-<rectangle x1="-1.2" y1="0.8" x2="-0.7" y2="1.4" layer="51"/>
-</package>
-<package name="0603-RES">
-<wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
-<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
-<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<text x="-0.889" y="0.762" size="0.4064" layer="25" font="vector">&gt;NAME</text>
-<text x="-1.016" y="-1.143" size="0.4064" layer="27" font="vector">&gt;VALUE</text>
-<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
-<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
-<rectangle x1="-0.2286" y1="-0.381" x2="0.2286" y2="0.381" layer="21"/>
-</package>
-<package name="10AWG_SOLDERPAD">
-<pad name="P1" x="0" y="0" drill="2.8" diameter="5.08"/>
-<text x="0" y="3.81" size="1.27" layer="21">&gt;NAME</text>
-</package>
-<package name="SOIC8">
-<description>&lt;b&gt;Small Outline IC&lt;/b&gt;</description>
-<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.4" width="0.2032" layer="51"/>
-<wire x1="2.4" y1="-1.4" x2="2.4" y2="-1.9" width="0.2032" layer="51"/>
-<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="-1.4" x2="-2.4" y2="1.9" width="0.2032" layer="51"/>
-<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.2032" layer="51"/>
-<wire x1="2.4" y1="-1.4" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
-<smd name="2" x="-0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="7" x="-0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="1" x="-1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="3" x="0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="4" x="1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="8" x="-1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="6" x="0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="5" x="1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<text x="-2.667" y="-1.905" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="3.937" y="-1.905" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
-<rectangle x1="-2.15" y1="-3.1" x2="-1.66" y2="-2" layer="51"/>
-<rectangle x1="-0.88" y1="-3.1" x2="-0.39" y2="-2" layer="51"/>
-<rectangle x1="0.39" y1="-3.1" x2="0.88" y2="-2" layer="51"/>
-<rectangle x1="1.66" y1="-3.1" x2="2.15" y2="-2" layer="51"/>
-<rectangle x1="1.66" y1="2" x2="2.15" y2="3.1" layer="51"/>
-<rectangle x1="0.39" y1="2" x2="0.88" y2="3.1" layer="51"/>
-<rectangle x1="-0.88" y1="2" x2="-0.39" y2="3.1" layer="51"/>
-<rectangle x1="-2.15" y1="2" x2="-1.66" y2="3.1" layer="51"/>
-</package>
-<package name="0.1-PITCH-3CONN">
-<pad name="2" x="0" y="0" drill="1" rot="R90"/>
-<pad name="3" x="2.54" y="0" drill="1" rot="R90"/>
-<pad name="1" x="-2.54" y="0" drill="1" rot="R90"/>
-<wire x1="-3.81" y1="1.27" x2="-3.81" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="-3.81" y1="-1.27" x2="3.81" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="3.81" y1="-1.27" x2="3.81" y2="1.27" width="0.127" layer="21"/>
-<wire x1="3.81" y1="1.27" x2="-3.81" y2="1.27" width="0.127" layer="21"/>
-<text x="-3.81" y="-3.81" size="1.27" layer="21">&gt;NAME</text>
-</package>
-<package name="DF13_6POS">
-<smd name="P1" x="-3.125" y="0" dx="1.8" dy="0.7" layer="1" rot="R90"/>
-<smd name="P2" x="-1.875" y="0" dx="1.8" dy="0.7" layer="1" rot="R90"/>
-<smd name="P3" x="-0.625" y="0" dx="1.8" dy="0.7" layer="1" rot="R90"/>
-<smd name="P4" x="0.625" y="0" dx="1.8" dy="0.7" layer="1" rot="R90"/>
-<smd name="P5" x="1.875" y="0" dx="1.8" dy="0.7" layer="1" rot="R90"/>
-<smd name="P6" x="3.125" y="0" dx="1.8" dy="0.7" layer="1" rot="R90"/>
-<smd name="PAD@1" x="-5.475" y="3.3" dx="2.2" dy="1.6" layer="1" rot="R90"/>
-<smd name="PAD@2" x="5.475" y="3.3" dx="2.2" dy="1.6" layer="1" rot="R90"/>
-<wire x1="-4.5" y1="6" x2="4.5" y2="6" width="0.127" layer="21"/>
-<wire x1="-5" y1="6" x2="-4.5" y2="6" width="0.127" layer="21"/>
-<wire x1="5" y1="6" x2="4.5" y2="6" width="0.127" layer="21"/>
-<wire x1="-5" y1="6" x2="-5" y2="1" width="0.127" layer="21"/>
-<wire x1="5" y1="6" x2="5" y2="1" width="0.127" layer="21"/>
-<wire x1="-5" y1="1" x2="5" y2="1" width="0.127" layer="21"/>
-<text x="4.5" y="-0.5" size="1.27" layer="21">&gt;NAME</text>
-<circle x="-4.5" y="0" radius="0.70710625" width="0.127" layer="21"/>
-</package>
-<package name="DF13_5POS">
-<smd name="P1" x="-2.5" y="0" dx="1.8" dy="0.7" layer="1" rot="R90"/>
-<smd name="P2" x="-1.25" y="0" dx="1.8" dy="0.7" layer="1" rot="R90"/>
-<smd name="P3" x="0" y="0" dx="1.8" dy="0.7" layer="1" rot="R90"/>
-<smd name="P4" x="1.25" y="0" dx="1.8" dy="0.7" layer="1" rot="R90"/>
-<smd name="P5" x="2.5" y="0" dx="1.8" dy="0.7" layer="1" rot="R90"/>
-<smd name="PAD@1" x="-4.85" y="3.3" dx="2.2" dy="1.6" layer="1" rot="R90"/>
-<smd name="PAD@2" x="4.85" y="3.3" dx="2.2" dy="1.6" layer="1" rot="R90"/>
-<wire x1="-3.875" y1="6" x2="3.875" y2="6" width="0.127" layer="21"/>
-<wire x1="3.875" y1="6" x2="4.375" y2="6" width="0.127" layer="21"/>
-<wire x1="4.375" y1="6" x2="3.875" y2="6" width="0.127" layer="21"/>
-<wire x1="-4.375" y1="6" x2="-3.875" y2="6" width="0.127" layer="21"/>
-<wire x1="4.375" y1="6" x2="3.875" y2="6" width="0.127" layer="21"/>
-<wire x1="-4.375" y1="6" x2="-4.375" y2="1" width="0.127" layer="21"/>
-<wire x1="4.375" y1="6" x2="4.375" y2="1" width="0.127" layer="21"/>
-<wire x1="-4.375" y1="1" x2="4.375" y2="1" width="0.127" layer="21"/>
-<text x="5.125" y="-0.5" size="1.27" layer="21">&gt;NAME</text>
-<circle x="-3.875" y="0" radius="0.70710625" width="0.127" layer="21"/>
-</package>
 <package name="SHOCK_HAZARD">
 <rectangle x1="0.314325" y1="0.136525" x2="6.181725" y2="0.142875" layer="21"/>
 <rectangle x1="0.282575" y1="0.142875" x2="6.213475" y2="0.149225" layer="21"/>
@@ -2522,22 +2394,57 @@ We've spent an enormous amount of time creating and checking these footprints an
 <package name="STAND-OFF">
 <description>&lt;b&gt;Stand Off&lt;/b&gt;&lt;p&gt;
 This is the mechanical footprint for a #4 phillips button head screw. Use the keepout ring to avoid running the screw head into surrounding components. SKU : PRT-00447</description>
+<circle x="0" y="0" radius="2.794" width="0.127" layer="39"/>
 <wire x1="0" y1="1.8542" x2="0" y2="-1.8542" width="0.2032" layer="41" curve="-180"/>
 <wire x1="0" y1="-1.8542" x2="0" y2="1.8542" width="0.2032" layer="41" curve="-180"/>
 <wire x1="0" y1="-1.8542" x2="0" y2="1.8542" width="0.2032" layer="42" curve="180"/>
 <wire x1="0" y1="-1.8542" x2="0" y2="1.8542" width="0.2032" layer="42" curve="-180"/>
-<circle x="0" y="0" radius="2.794" width="0.127" layer="39"/>
 <hole x="0" y="0" drill="3.302"/>
 </package>
 </packages>
 </library>
-<library name="SparkFun-Capacitors">
-<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
-In this library you'll find resistors, capacitors, inductors, test points, jumper pads, etc.&lt;br&gt;&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
-&lt;br&gt;&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; CC v3.0 Share-Alike You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<library name="PowerDistributionv1">
 <packages>
+<package name="5MMPLUG">
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="2.54" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="2.54" x2="2.54" y2="2.54" width="0.127" layer="21"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-2.54" x2="-2.54" y2="-2.54" width="0.127" layer="21"/>
+<smd name="P$1" x="0" y="0" dx="4.445" dy="4.445" layer="1"/>
+<text x="-2.54" y="3.81" size="1.27" layer="21">&gt;NAME</text>
+</package>
+<package name="10AWG_SOLDERPAD">
+<pad name="P1" x="0" y="0" drill="2.8" diameter="5.08"/>
+<text x="0" y="3.81" size="1.27" layer="21">&gt;NAME</text>
+</package>
+<package name="SOIC8">
+<description>&lt;b&gt;Small Outline IC&lt;/b&gt;</description>
+<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.4" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-1.4" x2="2.4" y2="-1.9" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="-1.4" x2="-2.4" y2="1.9" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-1.4" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
+<rectangle x1="-2.15" y1="-3.1" x2="-1.66" y2="-2" layer="51"/>
+<rectangle x1="-0.88" y1="-3.1" x2="-0.39" y2="-2" layer="51"/>
+<rectangle x1="0.39" y1="-3.1" x2="0.88" y2="-2" layer="51"/>
+<rectangle x1="1.66" y1="-3.1" x2="2.15" y2="-2" layer="51"/>
+<rectangle x1="1.66" y1="2" x2="2.15" y2="3.1" layer="51"/>
+<rectangle x1="0.39" y1="2" x2="0.88" y2="3.1" layer="51"/>
+<rectangle x1="-0.88" y1="2" x2="-0.39" y2="3.1" layer="51"/>
+<rectangle x1="-2.15" y1="2" x2="-1.66" y2="3.1" layer="51"/>
+<smd name="1" x="-1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="2" x="-0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="3" x="0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="4" x="1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="5" x="1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="6" x="0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="7" x="-0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="8" x="-1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<text x="-2.667" y="-1.905" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="3.937" y="-1.905" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+</package>
 <package name="0603-CAP">
 <wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
 <wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
@@ -2546,23 +2453,14 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
 <wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
 <wire x1="0" y1="0.0305" x2="0" y2="-0.0305" width="0.5588" layer="21"/>
+<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
+<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
 <smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
 <smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
 <text x="-0.889" y="0.762" size="0.4064" layer="25" font="vector">&gt;NAME</text>
 <text x="-1.016" y="-1.143" size="0.4064" layer="27" font="vector">&gt;VALUE</text>
-<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
-<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
 </package>
-</packages>
-</library>
-<library name="SparkFun-Passives">
-<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
-In this library you'll find resistors, capacitors, inductors, test points, jumper pads, etc.&lt;br&gt;&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
-&lt;br&gt;&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; CC v3.0 Share-Alike You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
 <package name="0603">
 <wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
 <wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
@@ -2570,27 +2468,99 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
 <wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
 <wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
+<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
+<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
 <smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
 <smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
 <text x="-0.889" y="0.762" size="0.4064" layer="25" font="vector">&gt;NAME</text>
 <text x="-1.016" y="-1.143" size="0.4064" layer="27" font="vector">&gt;VALUE</text>
+</package>
+<package name="SOT23-6">
+<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt; 6 lead</description>
+<circle x="-1.15" y="-0.5" radius="0.1" width="0" layer="21"/>
+<wire x1="1.422" y1="-0.781" x2="-1.423" y2="-0.781" width="0.1524" layer="51"/>
+<wire x1="-1.423" y1="-0.781" x2="-1.423" y2="0.781" width="0.1524" layer="21"/>
+<wire x1="-1.423" y1="0.781" x2="1.422" y2="0.781" width="0.1524" layer="51"/>
+<wire x1="1.422" y1="0.781" x2="1.422" y2="-0.781" width="0.1524" layer="21"/>
+<rectangle x1="-1.2" y1="-1.4" x2="-0.7" y2="-0.8" layer="51"/>
+<rectangle x1="-0.25" y1="-1.4" x2="0.25" y2="-0.8" layer="51"/>
+<rectangle x1="0.7" y1="-1.4" x2="1.2" y2="-0.8" layer="51"/>
+<rectangle x1="0.7" y1="0.8" x2="1.2" y2="1.4" layer="51"/>
+<rectangle x1="-0.25" y1="0.8" x2="0.25" y2="1.4" layer="51"/>
+<rectangle x1="-1.2" y1="0.8" x2="-0.7" y2="1.4" layer="51"/>
+<smd name="1" x="-0.95" y="-1.15" dx="0.6" dy="0.9" layer="1"/>
+<smd name="2" x="0" y="-1.15" dx="0.6" dy="0.9" layer="1"/>
+<smd name="3" x="0.95" y="-1.15" dx="0.6" dy="0.9" layer="1"/>
+<smd name="4" x="0.95" y="1.15" dx="0.6" dy="0.9" layer="1"/>
+<smd name="5" x="0" y="1.15" dx="0.6" dy="0.9" layer="1"/>
+<smd name="6" x="-0.95" y="1.15" dx="0.6" dy="0.9" layer="1"/>
+<text x="-1.397" y="-2.672" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-1.397" y="1.702" size="1.016" layer="25" ratio="10">&gt;NAME</text>
+</package>
+<package name="DF13_5POS">
+<circle x="-3.875" y="0" radius="0.70710625" width="0.127" layer="21"/>
+<wire x1="-3.875" y1="6" x2="3.875" y2="6" width="0.127" layer="21"/>
+<wire x1="3.875" y1="6" x2="4.375" y2="6" width="0.127" layer="21"/>
+<wire x1="4.375" y1="6" x2="3.875" y2="6" width="0.127" layer="21"/>
+<wire x1="-4.375" y1="6" x2="-3.875" y2="6" width="0.127" layer="21"/>
+<wire x1="4.375" y1="6" x2="3.875" y2="6" width="0.127" layer="21"/>
+<wire x1="-4.375" y1="6" x2="-4.375" y2="1" width="0.127" layer="21"/>
+<wire x1="4.375" y1="6" x2="4.375" y2="1" width="0.127" layer="21"/>
+<wire x1="-4.375" y1="1" x2="4.375" y2="1" width="0.127" layer="21"/>
+<smd name="P1" x="-2.5" y="0" dx="1.8" dy="0.7" layer="1" rot="R90"/>
+<smd name="P2" x="-1.25" y="0" dx="1.8" dy="0.7" layer="1" rot="R90"/>
+<smd name="P3" x="0" y="0" dx="1.8" dy="0.7" layer="1" rot="R90"/>
+<smd name="P4" x="1.25" y="0" dx="1.8" dy="0.7" layer="1" rot="R90"/>
+<smd name="P5" x="2.5" y="0" dx="1.8" dy="0.7" layer="1" rot="R90"/>
+<smd name="PAD@1" x="-4.85" y="3.3" dx="2.2" dy="1.6" layer="1" rot="R90"/>
+<smd name="PAD@2" x="4.85" y="3.3" dx="2.2" dy="1.6" layer="1" rot="R90"/>
+<text x="5.125" y="-0.5" size="1.27" layer="21">&gt;NAME</text>
+</package>
+<package name="DF13_6POS">
+<circle x="-4.5" y="0" radius="0.70710625" width="0.127" layer="21"/>
+<wire x1="-4.5" y1="6" x2="4.5" y2="6" width="0.127" layer="21"/>
+<wire x1="-5" y1="6" x2="-4.5" y2="6" width="0.127" layer="21"/>
+<wire x1="5" y1="6" x2="4.5" y2="6" width="0.127" layer="21"/>
+<wire x1="-5" y1="6" x2="-5" y2="1" width="0.127" layer="21"/>
+<wire x1="5" y1="6" x2="5" y2="1" width="0.127" layer="21"/>
+<wire x1="-5" y1="1" x2="5" y2="1" width="0.127" layer="21"/>
+<smd name="P1" x="-3.125" y="0" dx="1.8" dy="0.7" layer="1" rot="R90"/>
+<smd name="P2" x="-1.875" y="0" dx="1.8" dy="0.7" layer="1" rot="R90"/>
+<smd name="P3" x="-0.625" y="0" dx="1.8" dy="0.7" layer="1" rot="R90"/>
+<smd name="P4" x="0.625" y="0" dx="1.8" dy="0.7" layer="1" rot="R90"/>
+<smd name="P5" x="1.875" y="0" dx="1.8" dy="0.7" layer="1" rot="R90"/>
+<smd name="P6" x="3.125" y="0" dx="1.8" dy="0.7" layer="1" rot="R90"/>
+<smd name="PAD@1" x="-5.475" y="3.3" dx="2.2" dy="1.6" layer="1" rot="R90"/>
+<smd name="PAD@2" x="5.475" y="3.3" dx="2.2" dy="1.6" layer="1" rot="R90"/>
+<text x="4.5" y="-0.5" size="1.27" layer="21">&gt;NAME</text>
+</package>
+<package name="0603-RES">
+<wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
+<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
 <rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
 <rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
 <rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+<rectangle x1="-0.2286" y1="-0.381" x2="0.2286" y2="0.381" layer="21"/>
+<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
+<text x="-0.889" y="0.762" size="0.4064" layer="25" font="vector">&gt;NAME</text>
+<text x="-1.016" y="-1.143" size="0.4064" layer="27" font="vector">&gt;VALUE</text>
 </package>
-</packages>
-</library>
-<library name="diode">
-<description>&lt;b&gt;Diodes&lt;/b&gt;&lt;p&gt;
-Based on the following sources:
-&lt;ul&gt;
-&lt;li&gt;Motorola : www.onsemi.com
-&lt;li&gt;Fairchild : www.fairchildsemi.com
-&lt;li&gt;Philips : www.semiconductors.com
-&lt;li&gt;Vishay : www.vishay.de
-&lt;/ul&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
+<package name="R2512">
+<wire x1="-2.362" y1="1.473" x2="2.387" y2="1.473" width="0.1524" layer="51"/>
+<wire x1="-2.362" y1="-1.473" x2="2.387" y2="-1.473" width="0.1524" layer="51"/>
+<rectangle x1="-3.2004" y1="-1.5494" x2="-2.3505" y2="1.5507" layer="51"/>
+<rectangle x1="2.3622" y1="-1.5494" x2="3.2121" y2="1.5507" layer="51"/>
+<smd name="1" x="-2.8" y="0" dx="1.8" dy="3.2" layer="1"/>
+<smd name="2" x="2.8" y="0" dx="1.8" dy="3.2" layer="1"/>
+<text x="-2.54" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.54" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+</package>
 <package name="SMB">
 <description>&lt;B&gt;DIODE&lt;/B&gt;</description>
 <wire x1="-2.2606" y1="1.905" x2="2.2606" y2="1.905" width="0.1016" layer="21"/>
@@ -2600,13 +2570,23 @@ Based on the following sources:
 <wire x1="0.193" y1="1" x2="-0.83" y2="0" width="0.2032" layer="21"/>
 <wire x1="-0.83" y1="0" x2="0.193" y2="-1" width="0.2032" layer="21"/>
 <wire x1="0.193" y1="-1" x2="0.193" y2="1" width="0.2032" layer="21"/>
-<smd name="C" x="-2.2" y="0" dx="2.4" dy="2.4" layer="1"/>
-<smd name="A" x="2.2" y="0" dx="2.4" dy="2.4" layer="1"/>
-<text x="-2.159" y="2.159" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2.159" y="-3.429" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-2.794" y1="-1.0922" x2="-2.2606" y2="1.0922" layer="51"/>
 <rectangle x1="2.2606" y1="-1.0922" x2="2.794" y2="1.0922" layer="51"/>
 <rectangle x1="-1.35" y1="-1.9" x2="-0.8" y2="1.9" layer="51"/>
+<smd name="A" x="2.2" y="0" dx="2.4" dy="2.4" layer="1"/>
+<smd name="C" x="-2.2" y="0" dx="2.4" dy="2.4" layer="1"/>
+<text x="-2.159" y="2.159" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.159" y="-3.429" size="1.27" layer="27">&gt;VALUE</text>
+</package>
+<package name="0.1-PITCH-3CONN">
+<wire x1="-3.81" y1="1.27" x2="-3.81" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="-1.27" x2="3.81" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-1.27" x2="3.81" y2="1.27" width="0.127" layer="21"/>
+<wire x1="3.81" y1="1.27" x2="-3.81" y2="1.27" width="0.127" layer="21"/>
+<pad name="1" x="-2.54" y="0" drill="1" rot="R90"/>
+<pad name="2" x="0" y="0" drill="1" rot="R90"/>
+<pad name="3" x="2.54" y="0" drill="1" rot="R90"/>
+<text x="-3.81" y="-3.81" size="1.27" layer="21">&gt;NAME</text>
 </package>
 </packages>
 </library>
@@ -2796,103 +2776,103 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="R1" library="Shared Libraries" package="R2512" value="0.02 5W" x="13.97" y="11.049" smashed="yes" rot="R270">
+<element name="R1" library="PowerDistributionv1" package="R2512" value="0.02 5W" x="13.97" y="11.049" smashed="yes" rot="R270">
 <attribute name="NAME" x="13.335" y="15.24" size="1.016" layer="25"/>
 <attribute name="VALUE" x="10.795" y="13.589" size="1.27" layer="27" rot="R270" display="off"/>
 </element>
-<element name="R2" library="Shared Libraries" package="R2512" value="0.02 5W" x="35.56" y="10.922" smashed="yes" rot="R270">
+<element name="R2" library="PowerDistributionv1" package="R2512" value="0.02 5W" x="35.56" y="10.922" smashed="yes" rot="R270">
 <attribute name="NAME" x="34.671" y="14.986" size="1.016" layer="25"/>
 <attribute name="VALUE" x="32.385" y="13.462" size="1.27" layer="27" rot="R270" display="off"/>
 </element>
-<element name="R3" library="Shared Libraries" package="R2512" value="0.02 5W" x="31.115" y="38.608" smashed="yes" rot="R90">
+<element name="R3" library="PowerDistributionv1" package="R2512" value="0.02 5W" x="31.115" y="38.608" smashed="yes" rot="R90">
 <attribute name="NAME" x="29.21" y="36.068" size="1.016" layer="25" rot="R90"/>
 <attribute name="VALUE" x="34.29" y="36.068" size="1.27" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R4" library="Shared Libraries" package="R2512" value="0.02 5W" x="18.415" y="38.608" smashed="yes" rot="R90">
+<element name="R4" library="PowerDistributionv1" package="R2512" value="0.02 5W" x="18.415" y="38.608" smashed="yes" rot="R90">
 <attribute name="NAME" x="20.701" y="34.417" size="1.016" layer="25" rot="R180"/>
 <attribute name="VALUE" x="21.59" y="36.068" size="1.27" layer="27" rot="R90" display="off"/>
 </element>
-<element name="V1+" library="Shared Libraries" package="5MMPLUG" value="3.5MM-BULLET-PLUG5MM-PAD" x="17.78" y="3.81" smashed="yes">
+<element name="V1+" library="PowerDistributionv1" package="5MMPLUG" value="3.5MM-BULLET-PLUG5MM-PAD" x="17.78" y="3.81" smashed="yes">
 <attribute name="NAME" x="20.701" y="1.016" size="1.016" layer="21"/>
 </element>
-<element name="V2+" library="Shared Libraries" package="5MMPLUG" value="3.5MM-BULLET-PLUG5MM-PAD" x="31.75" y="3.81" smashed="yes">
+<element name="V2+" library="PowerDistributionv1" package="5MMPLUG" value="3.5MM-BULLET-PLUG5MM-PAD" x="31.75" y="3.81" smashed="yes">
 <attribute name="NAME" x="26.416" y="0.889" size="1.016" layer="21"/>
 </element>
-<element name="V3+" library="Shared Libraries" package="5MMPLUG" value="3.5MM-BULLET-PLUG5MM-PAD" x="31.75" y="45.72" smashed="yes">
+<element name="V3+" library="PowerDistributionv1" package="5MMPLUG" value="3.5MM-BULLET-PLUG5MM-PAD" x="31.75" y="45.72" smashed="yes">
 <attribute name="NAME" x="26.289" y="47.498" size="1.016" layer="21"/>
 </element>
-<element name="V4+" library="Shared Libraries" package="5MMPLUG" value="3.5MM-BULLET-PLUG5MM-PAD" x="17.78" y="45.72" smashed="yes">
+<element name="V4+" library="PowerDistributionv1" package="5MMPLUG" value="3.5MM-BULLET-PLUG5MM-PAD" x="17.78" y="45.72" smashed="yes">
 <attribute name="NAME" x="20.574" y="47.498" size="1.016" layer="21"/>
 </element>
-<element name="V1-" library="Shared Libraries" package="5MMPLUG" value="3.5MM-BULLET-PLUG5MM-PAD" x="10.16" y="3.81" smashed="yes">
+<element name="V1-" library="PowerDistributionv1" package="5MMPLUG" value="3.5MM-BULLET-PLUG5MM-PAD" x="10.16" y="3.81" smashed="yes">
 <attribute name="NAME" x="7.366" y="2.794" size="1.016" layer="21" rot="R90"/>
 </element>
-<element name="V2-" library="Shared Libraries" package="5MMPLUG" value="3.5MM-BULLET-PLUG5MM-PAD" x="39.37" y="3.81" smashed="yes">
+<element name="V2-" library="PowerDistributionv1" package="5MMPLUG" value="3.5MM-BULLET-PLUG5MM-PAD" x="39.37" y="3.81" smashed="yes">
 <attribute name="NAME" x="42.164" y="4.953" size="1.016" layer="21" rot="R270"/>
 </element>
-<element name="V3-" library="Shared Libraries" package="5MMPLUG" value="3.5MM-BULLET-PLUG5MM-PAD" x="39.37" y="45.72" smashed="yes">
+<element name="V3-" library="PowerDistributionv1" package="5MMPLUG" value="3.5MM-BULLET-PLUG5MM-PAD" x="39.37" y="45.72" smashed="yes">
 <attribute name="NAME" x="43.18" y="44.577" size="1.016" layer="21" rot="R90"/>
 </element>
-<element name="V4-" library="Shared Libraries" package="5MMPLUG" value="3.5MM-BULLET-PLUG5MM-PAD" x="10.16" y="45.72" smashed="yes">
+<element name="V4-" library="PowerDistributionv1" package="5MMPLUG" value="3.5MM-BULLET-PLUG5MM-PAD" x="10.16" y="45.72" smashed="yes">
 <attribute name="NAME" x="7.366" y="44.577" size="1.016" layer="21" rot="R90"/>
 </element>
-<element name="R5" library="Shared Libraries" package="R2512" value="0.02 5W" x="18.415" y="11.049" smashed="yes" rot="R270">
+<element name="R5" library="PowerDistributionv1" package="R2512" value="0.02 5W" x="18.415" y="11.049" smashed="yes" rot="R270">
 <attribute name="NAME" x="17.653" y="15.24" size="1.016" layer="25"/>
 <attribute name="VALUE" x="15.24" y="13.589" size="1.27" layer="27" rot="R270" display="off"/>
 </element>
-<element name="R6" library="Shared Libraries" package="R2512" value="0.02 5W" x="31.115" y="10.922" smashed="yes" rot="R270">
+<element name="R6" library="PowerDistributionv1" package="R2512" value="0.02 5W" x="31.115" y="10.922" smashed="yes" rot="R270">
 <attribute name="NAME" x="30.099" y="14.986" size="1.016" layer="25"/>
 <attribute name="VALUE" x="27.94" y="13.462" size="1.27" layer="27" rot="R270" display="off"/>
 </element>
-<element name="R7" library="Shared Libraries" package="R2512" value="0.02 5W" x="35.56" y="38.608" smashed="yes" rot="R90">
+<element name="R7" library="PowerDistributionv1" package="R2512" value="0.02 5W" x="35.56" y="38.608" smashed="yes" rot="R90">
 <attribute name="NAME" x="38.1" y="38.989" size="1.016" layer="25" rot="R270"/>
 <attribute name="VALUE" x="38.735" y="36.068" size="1.27" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R8" library="Shared Libraries" package="R2512" value="0.02 5W" x="13.97" y="38.608" smashed="yes" rot="R90">
+<element name="R8" library="PowerDistributionv1" package="R2512" value="0.02 5W" x="13.97" y="38.608" smashed="yes" rot="R90">
 <attribute name="NAME" x="11.938" y="35.306" size="1.016" layer="25" rot="R90"/>
 <attribute name="VALUE" x="17.145" y="36.068" size="1.27" layer="27" rot="R90" display="off"/>
 </element>
-<element name="U1" library="Shared Libraries" package="SOT23-6" value="LMP8645" x="22.86" y="8.89" smashed="yes" rot="R180">
+<element name="U1" library="PowerDistributionv1" package="SOT23-6" value="LMP8645" x="22.86" y="8.89" smashed="yes" rot="R180">
 <attribute name="VALUE" x="24.257" y="11.562" size="1.016" layer="27" ratio="10" rot="R180" display="off"/>
 <attribute name="NAME" x="20.32" y="10.846" size="1.016" layer="25" ratio="10"/>
 </element>
-<element name="R9" library="Shared Libraries" package="0603-RES" value="100K" x="22.86" y="5.08" smashed="yes" rot="R90">
+<element name="R9" library="PowerDistributionv1" package="0603-RES" value="100K" x="22.86" y="5.08" smashed="yes" rot="R90">
 <attribute name="NAME" x="21.844" y="4.445" size="1.016" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="24.003" y="4.064" size="0.4064" layer="27" font="vector" rot="R90" display="off"/>
 </element>
-<element name="U2" library="Shared Libraries" package="SOT23-6" value="LMP8645" x="26.924" y="8.89" smashed="yes" rot="R180">
+<element name="U2" library="PowerDistributionv1" package="SOT23-6" value="LMP8645" x="26.924" y="8.89" smashed="yes" rot="R180">
 <attribute name="VALUE" x="28.321" y="11.562" size="1.016" layer="27" ratio="10" rot="R180" display="off"/>
 <attribute name="NAME" x="26.924" y="10.973" size="1.016" layer="25" ratio="10"/>
 </element>
-<element name="R10" library="Shared Libraries" package="0603-RES" value="100K" x="26.924" y="5.08" smashed="yes" rot="R90">
+<element name="R10" library="PowerDistributionv1" package="0603-RES" value="100K" x="26.924" y="5.08" smashed="yes" rot="R90">
 <attribute name="NAME" x="25.908" y="3.937" size="1.016" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="28.067" y="4.064" size="0.4064" layer="27" font="vector" rot="R90" display="off"/>
 </element>
-<element name="U3" library="Shared Libraries" package="SOT23-6" value="LMP8645" x="26.67" y="40.64" smashed="yes">
+<element name="U3" library="PowerDistributionv1" package="SOT23-6" value="LMP8645" x="26.67" y="40.64" smashed="yes">
 <attribute name="VALUE" x="25.273" y="37.968" size="1.016" layer="27" ratio="10" display="off"/>
 <attribute name="NAME" x="25.781" y="37.643" size="1.016" layer="25" ratio="10"/>
 </element>
-<element name="R11" library="Shared Libraries" package="0603-RES" value="100K" x="26.67" y="44.45" smashed="yes" rot="R270">
+<element name="R11" library="PowerDistributionv1" package="0603-RES" value="100K" x="26.67" y="44.45" smashed="yes" rot="R270">
 <attribute name="NAME" x="28.702" y="43.053" size="1.016" layer="25" font="vector" rot="R90"/>
 <attribute name="VALUE" x="25.527" y="45.466" size="0.4064" layer="27" font="vector" rot="R270" display="off"/>
 </element>
-<element name="U4" library="Shared Libraries" package="SOT23-6" value="LMP8645" x="22.86" y="40.64" smashed="yes">
+<element name="U4" library="PowerDistributionv1" package="SOT23-6" value="LMP8645" x="22.86" y="40.64" smashed="yes">
 <attribute name="VALUE" x="21.463" y="37.968" size="1.016" layer="27" ratio="10" display="off"/>
 <attribute name="NAME" x="20.193" y="37.77" size="1.016" layer="25" ratio="10"/>
 </element>
-<element name="R12" library="Shared Libraries" package="0603-RES" value="100K" x="22.86" y="44.45" smashed="yes" rot="R270">
+<element name="R12" library="PowerDistributionv1" package="0603-RES" value="100K" x="22.86" y="44.45" smashed="yes" rot="R270">
 <attribute name="NAME" x="23.876" y="45.974" size="1.016" layer="25" font="vector" rot="R270"/>
 <attribute name="VALUE" x="21.717" y="45.466" size="0.4064" layer="27" font="vector" rot="R270" display="off"/>
 </element>
-<element name="U5" library="Shared Libraries" package="SOT23-6" value="LMP8645" x="12.192" y="26.67" smashed="yes" rot="R270">
+<element name="U5" library="PowerDistributionv1" package="SOT23-6" value="LMP8645" x="12.192" y="26.67" smashed="yes" rot="R270">
 <attribute name="VALUE" x="9.52" y="28.067" size="1.016" layer="27" ratio="10" rot="R270" display="off"/>
 <attribute name="NAME" x="11.176" y="28.499" size="1.016" layer="25" ratio="10"/>
 </element>
-<element name="R13" library="Shared Libraries" package="0603-RES" value="124K" x="15.621" y="27.432" smashed="yes" rot="R270">
+<element name="R13" library="PowerDistributionv1" package="0603-RES" value="124K" x="15.621" y="27.432" smashed="yes" rot="R270">
 <attribute name="NAME" x="16.51" y="28.067" size="1.016" layer="25" font="vector" rot="R270"/>
 <attribute name="VALUE" x="14.478" y="28.448" size="0.4064" layer="27" font="vector" rot="R270" display="off"/>
 </element>
-<element name="R14" library="Shared Libraries" package="0603-RES" value="0.1" x="12.192" y="23.749" smashed="yes">
+<element name="R14" library="PowerDistributionv1" package="0603-RES" value="0.1" x="12.192" y="23.749" smashed="yes">
 <attribute name="NAME" x="12.573" y="21.844" size="1.016" layer="25" font="vector"/>
 <attribute name="VALUE" x="11.176" y="22.606" size="0.4064" layer="27" font="vector" display="off"/>
 </element>
@@ -2900,92 +2880,92 @@ design rules under a new name.</description>
 <element name="U$2" library="SparkFun-Electromechanical" package="STAND-OFF" value="" x="45.72" y="3.556"/>
 <element name="U$3" library="SparkFun-Electromechanical" package="STAND-OFF" value="" x="45.72" y="45.466"/>
 <element name="U$4" library="SparkFun-Electromechanical" package="STAND-OFF" value="" x="3.81" y="45.466"/>
-<element name="BATT+" library="Shared Libraries" package="10AWG_SOLDERPAD" value="10AWG_PAD" x="34.036" y="30.607" smashed="yes">
+<element name="BATT+" library="PowerDistributionv1" package="10AWG_SOLDERPAD" value="10AWG_PAD" x="34.036" y="30.607" smashed="yes">
 <attribute name="NAME" x="26.543" y="32.131" size="1.27" layer="21"/>
 </element>
-<element name="GND" library="Shared Libraries" package="10AWG_SOLDERPAD" value="10AWG_PAD" x="41.275" y="17.399" smashed="yes">
+<element name="GND" library="PowerDistributionv1" package="10AWG_SOLDERPAD" value="10AWG_PAD" x="41.275" y="17.399" smashed="yes">
 <attribute name="NAME" x="32.004" y="16.764" size="1.27" layer="21"/>
 </element>
-<element name="U6" library="Shared Libraries" package="SOIC8" value="ADP2302" x="9.906" y="26.543" smashed="yes" rot="MR180">
+<element name="U6" library="PowerDistributionv1" package="SOIC8" value="ADP2302" x="9.906" y="26.543" smashed="yes" rot="MR180">
 <attribute name="NAME" x="7.493" y="31.623" size="1.016" layer="26" rot="MR270"/>
 <attribute name="VALUE" x="13.843" y="28.448" size="1.27" layer="28" rot="MR270" display="off"/>
 </element>
-<element name="R15" library="Shared Libraries" package="0603-RES" value="100k" x="14.097" y="30.48" smashed="yes" rot="MR180">
+<element name="R15" library="PowerDistributionv1" package="0603-RES" value="100k" x="14.097" y="30.48" smashed="yes" rot="MR180">
 <attribute name="NAME" x="19.685" y="30.099" size="1.016" layer="26" font="vector" rot="MR0"/>
 <attribute name="VALUE" x="13.081" y="31.623" size="0.4064" layer="28" font="vector" rot="MR180" display="off"/>
 </element>
-<element name="R16" library="Shared Libraries" package="0603-RES" value="56k" x="11.557" y="32.893" smashed="yes" rot="MR270">
+<element name="R16" library="PowerDistributionv1" package="0603-RES" value="56k" x="11.557" y="32.893" smashed="yes" rot="MR270">
 <attribute name="NAME" x="12.827" y="34.671" size="1.016" layer="26" font="vector" rot="MR0"/>
 <attribute name="VALUE" x="12.7" y="33.909" size="0.4064" layer="28" font="vector" rot="MR270" display="off"/>
 </element>
-<element name="R17" library="Shared Libraries" package="0603-RES" value="10.2k" x="14.097" y="32.512" smashed="yes" rot="MR180">
+<element name="R17" library="PowerDistributionv1" package="0603-RES" value="10.2k" x="14.097" y="32.512" smashed="yes" rot="MR180">
 <attribute name="NAME" x="13.716" y="34.925" size="1.016" layer="26" font="vector" rot="MR180"/>
 <attribute name="VALUE" x="13.081" y="33.655" size="0.4064" layer="28" font="vector" rot="MR180" display="off"/>
 </element>
-<element name="R18" library="Shared Libraries" package="0603-RES" value="52.3k" x="13.843" y="24.892" smashed="yes" rot="MR270">
+<element name="R18" library="PowerDistributionv1" package="0603-RES" value="52.3k" x="13.843" y="24.892" smashed="yes" rot="MR270">
 <attribute name="NAME" x="15.113" y="23.495" size="1.016" layer="26" font="vector" rot="MR90"/>
 <attribute name="VALUE" x="14.986" y="25.908" size="0.4064" layer="28" font="vector" rot="MR270" display="off"/>
 </element>
-<element name="R19" library="Shared Libraries" package="0603-RES" value="10k" x="13.843" y="27.94" smashed="yes" rot="MR270">
+<element name="R19" library="PowerDistributionv1" package="0603-RES" value="10k" x="13.843" y="27.94" smashed="yes" rot="MR270">
 <attribute name="NAME" x="15.113" y="26.67" size="1.016" layer="26" font="vector" rot="MR90"/>
 <attribute name="VALUE" x="14.986" y="28.956" size="0.4064" layer="28" font="vector" rot="MR270" display="off"/>
 </element>
-<element name="C1" library="SparkFun-Capacitors" package="0603-CAP" value="10uF" x="9.525" y="32.893" smashed="yes" rot="MR90">
+<element name="C1" library="PowerDistributionv1" package="0603-CAP" value="10uF" x="9.525" y="32.893" smashed="yes" rot="MR90">
 <attribute name="NAME" x="7.874" y="33.401" size="1.016" layer="26" font="vector" rot="MR90"/>
 <attribute name="VALUE" x="8.382" y="31.877" size="0.4064" layer="28" font="vector" rot="MR90" display="off"/>
 </element>
-<element name="C2" library="SparkFun-Capacitors" package="0603-CAP" value="22uF" x="4.064" y="22.987" smashed="yes" rot="MR270">
+<element name="C2" library="PowerDistributionv1" package="0603-CAP" value="22uF" x="4.064" y="22.987" smashed="yes" rot="MR270">
 <attribute name="NAME" x="4.572" y="21.336" size="1.016" layer="26" font="vector" rot="MR270"/>
 <attribute name="VALUE" x="5.207" y="24.003" size="0.4064" layer="28" font="vector" rot="MR270" display="off"/>
 </element>
-<element name="C3" library="SparkFun-Capacitors" package="0603-CAP" value="22uF" x="4.064" y="26.67" smashed="yes" rot="MR90">
+<element name="C3" library="PowerDistributionv1" package="0603-CAP" value="22uF" x="4.064" y="26.67" smashed="yes" rot="MR90">
 <attribute name="NAME" x="3.683" y="28.321" size="1.016" layer="26" font="vector" rot="MR90"/>
 <attribute name="VALUE" x="2.921" y="25.654" size="0.4064" layer="28" font="vector" rot="MR90" display="off"/>
 </element>
-<element name="C4" library="SparkFun-Capacitors" package="0603-CAP" value="0.1uF" x="5.842" y="27.686" smashed="yes" rot="MR270">
+<element name="C4" library="PowerDistributionv1" package="0603-CAP" value="0.1uF" x="5.842" y="27.686" smashed="yes" rot="MR270">
 <attribute name="NAME" x="5.969" y="31.242" size="1.016" layer="26" font="vector" rot="MR270"/>
 <attribute name="VALUE" x="6.985" y="28.702" size="0.4064" layer="28" font="vector" rot="MR270" display="off"/>
 </element>
-<element name="L1" library="SparkFun-Passives" package="0603" value="10uH" x="5.842" y="24.638" smashed="yes" rot="MR270">
+<element name="L1" library="PowerDistributionv1" package="0603" value="10uH" x="5.842" y="24.638" smashed="yes" rot="MR270">
 <attribute name="NAME" x="6.477" y="23.114" size="1.016" layer="26" font="vector" rot="MR270"/>
 <attribute name="VALUE" x="6.985" y="25.654" size="0.4064" layer="28" font="vector" rot="MR270" display="off"/>
 </element>
-<element name="D1" library="diode" package="SMB" value="SSB43L" x="11.557" y="19.05" smashed="yes" rot="MR180">
+<element name="D1" library="PowerDistributionv1" package="SMB" value="SSB43L" x="11.557" y="19.05" smashed="yes" rot="MR180">
 <attribute name="NAME" x="17.272" y="18.542" size="1.016" layer="26" rot="MR0"/>
 <attribute name="VALUE" x="9.398" y="22.479" size="1.27" layer="28" rot="MR180" display="off"/>
 </element>
-<element name="U7" library="Shared Libraries" package="0.1-PITCH-3CONN" value="SERVOPLUGTHROUGHHOLE_0.1PITCH" x="3.81" y="12.7" smashed="yes" rot="R270">
+<element name="U7" library="PowerDistributionv1" package="0.1-PITCH-3CONN" value="SERVOPLUGTHROUGHHOLE_0.1PITCH" x="3.81" y="12.7" smashed="yes" rot="R270">
 <attribute name="NAME" x="1.27" y="13.589" size="1.016" layer="21" rot="R270"/>
 </element>
-<element name="U8" library="Shared Libraries" package="0.1-PITCH-3CONN" value="SERVOPLUGTHROUGHHOLE_0.1PITCH" x="45.72" y="12.7" smashed="yes" rot="R90">
+<element name="U8" library="PowerDistributionv1" package="0.1-PITCH-3CONN" value="SERVOPLUGTHROUGHHOLE_0.1PITCH" x="45.72" y="12.7" smashed="yes" rot="R90">
 <attribute name="NAME" x="47.371" y="13.335" size="1.016" layer="21" rot="R270"/>
 </element>
-<element name="U9" library="Shared Libraries" package="0.1-PITCH-3CONN" value="SERVOPLUGTHROUGHHOLE_0.1PITCH" x="45.72" y="36.449" smashed="yes" rot="R90">
+<element name="U9" library="PowerDistributionv1" package="0.1-PITCH-3CONN" value="SERVOPLUGTHROUGHHOLE_0.1PITCH" x="45.72" y="36.449" smashed="yes" rot="R90">
 <attribute name="NAME" x="45.466" y="40.64" size="1.016" layer="21"/>
 </element>
-<element name="U10" library="Shared Libraries" package="0.1-PITCH-3CONN" value="SERVOPLUGTHROUGHHOLE_0.1PITCH" x="3.81" y="36.449" smashed="yes" rot="R270">
+<element name="U10" library="PowerDistributionv1" package="0.1-PITCH-3CONN" value="SERVOPLUGTHROUGHHOLE_0.1PITCH" x="3.81" y="36.449" smashed="yes" rot="R270">
 <attribute name="NAME" x="2.413" y="40.513" size="1.016" layer="21"/>
 </element>
-<element name="R20" library="Shared Libraries" package="0603-RES" value="0" x="6.477" y="13.589" smashed="yes" rot="R270">
+<element name="R20" library="PowerDistributionv1" package="0603-RES" value="0" x="6.477" y="13.589" smashed="yes" rot="R270">
 <attribute name="NAME" x="7.62" y="15.113" size="1.016" layer="25" font="vector" rot="R270"/>
 <attribute name="VALUE" x="5.334" y="14.605" size="0.4064" layer="27" font="vector" rot="R270" display="off"/>
 </element>
-<element name="R21" library="Shared Libraries" package="0603-RES" value="0" x="42.926" y="11.811" smashed="yes" rot="MR90">
+<element name="R21" library="PowerDistributionv1" package="0603-RES" value="0" x="42.926" y="11.811" smashed="yes" rot="MR90">
 <attribute name="NAME" x="43.561" y="10.668" size="1.016" layer="26" font="vector" rot="MR90"/>
 <attribute name="VALUE" x="41.783" y="10.795" size="0.4064" layer="28" font="vector" rot="MR90" display="off"/>
 </element>
-<element name="R22" library="Shared Libraries" package="0603-RES" value="0" x="42.926" y="35.687" smashed="yes" rot="MR90">
+<element name="R22" library="PowerDistributionv1" package="0603-RES" value="0" x="42.926" y="35.687" smashed="yes" rot="MR90">
 <attribute name="NAME" x="44.323" y="33.02" size="1.016" layer="26" font="vector" rot="MR0"/>
 <attribute name="VALUE" x="41.783" y="34.671" size="0.4064" layer="28" font="vector" rot="MR90" display="off"/>
 </element>
-<element name="R23" library="Shared Libraries" package="0603-RES" value="0" x="6.604" y="35.56" smashed="yes" rot="R90">
+<element name="R23" library="PowerDistributionv1" package="0603-RES" value="0" x="6.604" y="35.56" smashed="yes" rot="R90">
 <attribute name="NAME" x="6.223" y="32.766" size="1.016" layer="25" font="vector"/>
 <attribute name="VALUE" x="7.747" y="34.544" size="0.4064" layer="27" font="vector" rot="R90" display="off"/>
 </element>
-<element name="JP1" library="Shared Libraries" package="DF13_6POS" value="" x="7.112" y="24.511" smashed="yes" rot="R90">
+<element name="JP1" library="PowerDistributionv1" package="DF13_6POS" value="" x="7.112" y="24.511" smashed="yes" rot="R90">
 <attribute name="NAME" x="5.643" y="29.853" size="1.016" layer="21"/>
 </element>
-<element name="JP2" library="Shared Libraries" package="DF13_5POS" value="" x="42.545" y="24.511" smashed="yes" rot="R270">
+<element name="JP2" library="PowerDistributionv1" package="DF13_5POS" value="" x="42.545" y="24.511" smashed="yes" rot="R270">
 <attribute name="NAME" x="41.193" y="29.472" size="1.016" layer="21"/>
 </element>
 <element name="U$5" library="Shared Libraries" package="SHOCK_HAZARD" value="" x="30.861" y="19.177"/>
