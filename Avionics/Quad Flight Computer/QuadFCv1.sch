@@ -7832,7 +7832,7 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <part name="SUPPLY12" library="QuadFCv1" deviceset="5V" device=""/>
 <part name="SUPPLY13" library="QuadFCv1" deviceset="5V" device=""/>
 <part name="SUPPLY14" library="QuadFCv1" deviceset="5V" device=""/>
-<part name="F1" library="QuadFCv1" deviceset="PTC" device="0603" value="500mA"/>
+<part name="F1" library="QuadFCv1" deviceset="PTC" device="SMD" value="500mA"/>
 <part name="Y3" library="QuadFCv1" deviceset="PRQC16.00SR5010X000" device=""/>
 <part name="R36" library="QuadFCv1" deviceset="RESISTOR" device="0402-RES" value="1k"/>
 <part name="C18" library="QuadFCv1" deviceset="CAP" device="0402-CAP" value="0.1uF"/>
