@@ -2019,7 +2019,7 @@ diameter 9 mm, horizontal, grid 15.24 mm</description>
 <text x="3.175" y="0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="3.175" y="-1.27" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="0.1-PITCH-3CONN">
+<package name="0.1-PITCH-3CONN_RANGLE">
 <wire x1="-3.81" y1="1.27" x2="-3.81" y2="-1.27" width="0.127" layer="21"/>
 <wire x1="-3.81" y1="-1.27" x2="3.81" y2="-1.27" width="0.127" layer="21"/>
 <wire x1="3.81" y1="-1.27" x2="3.81" y2="1.27" width="0.127" layer="21"/>
@@ -3239,7 +3239,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <gate name="G$1" symbol="3-WIRECONN" x="0" y="0"/>
 </gates>
 <devices>
-<device name="THROUGHHOLE_0.1PITCH" package="0.1-PITCH-3CONN">
+<device name="THROUGHHOLE_0.1PITCH" package="0.1-PITCH-3CONN_RANGLE">
 <connects>
 <connect gate="G$1" pin="+" pad="2"/>
 <connect gate="G$1" pin="-" pad="1"/>
