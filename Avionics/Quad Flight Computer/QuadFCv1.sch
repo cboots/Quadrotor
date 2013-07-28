@@ -2423,24 +2423,24 @@ Keying posts into board</description>
 <hole x="1.27" y="0" drill="1.8"/>
 </package>
 <package name="DF13_4POS">
-<circle x="-2.605" y="-2.54" radius="0.70710625" width="0.127" layer="21"/>
-<wire x1="-2.605" y1="3.46" x2="3.875" y2="3.46" width="0.127" layer="21"/>
-<wire x1="3.875" y1="3.46" x2="4.375" y2="3.46" width="0.127" layer="21"/>
-<wire x1="4.375" y1="3.46" x2="3.875" y2="3.46" width="0.127" layer="21"/>
-<wire x1="3.875" y1="3.46" x2="4.375" y2="3.46" width="0.127" layer="21"/>
-<wire x1="4.375" y1="3.46" x2="3.875" y2="3.46" width="0.127" layer="21"/>
-<wire x1="-3.105" y1="3.46" x2="-2.605" y2="3.46" width="0.127" layer="21"/>
-<wire x1="4.375" y1="3.46" x2="3.875" y2="3.46" width="0.127" layer="21"/>
-<wire x1="-3.105" y1="3.46" x2="-3.105" y2="-1.54" width="0.127" layer="21"/>
-<wire x1="4.375" y1="3.46" x2="4.375" y2="-1.54" width="0.127" layer="21"/>
-<wire x1="-3.105" y1="-1.54" x2="4.375" y2="-1.54" width="0.127" layer="21"/>
-<smd name="P1" x="-1.23" y="-2.54" dx="1.8" dy="0.7" layer="1" rot="R90"/>
-<smd name="P2" x="0.02" y="-2.54" dx="1.8" dy="0.7" layer="1" rot="R90"/>
-<smd name="P3" x="1.27" y="-2.54" dx="1.8" dy="0.7" layer="1" rot="R90"/>
-<smd name="P4" x="2.52" y="-2.54" dx="1.8" dy="0.7" layer="1" rot="R90"/>
-<smd name="PAD@1" x="-3.58" y="0.76" dx="2.2" dy="1.6" layer="1" rot="R90"/>
-<smd name="PAD@2" x="4.85" y="0.76" dx="2.2" dy="1.6" layer="1" rot="R90"/>
-<text x="3.855" y="-3.04" size="1.27" layer="21">&gt;NAME</text>
+<circle x="-3.24" y="0" radius="0.70710625" width="0.127" layer="21"/>
+<wire x1="-3.24" y1="6" x2="3.24" y2="6" width="0.127" layer="21"/>
+<wire x1="3.24" y1="6" x2="3.74" y2="6" width="0.127" layer="21"/>
+<wire x1="3.74" y1="6" x2="3.24" y2="6" width="0.127" layer="21"/>
+<wire x1="3.24" y1="6" x2="3.74" y2="6" width="0.127" layer="21"/>
+<wire x1="3.74" y1="6" x2="3.24" y2="6" width="0.127" layer="21"/>
+<wire x1="-3.74" y1="6" x2="-3.24" y2="6" width="0.127" layer="21"/>
+<wire x1="3.74" y1="6" x2="3.24" y2="6" width="0.127" layer="21"/>
+<wire x1="-3.74" y1="6" x2="-3.74" y2="1" width="0.127" layer="21"/>
+<wire x1="3.74" y1="6" x2="3.74" y2="1" width="0.127" layer="21"/>
+<wire x1="-3.74" y1="1" x2="3.74" y2="1" width="0.127" layer="21"/>
+<smd name="P1" x="-1.865" y="0" dx="1.8" dy="0.7" layer="1" rot="R90"/>
+<smd name="P2" x="-0.615" y="0" dx="1.8" dy="0.7" layer="1" rot="R90"/>
+<smd name="P3" x="0.635" y="0" dx="1.8" dy="0.7" layer="1" rot="R90"/>
+<smd name="P4" x="1.885" y="0" dx="1.8" dy="0.7" layer="1" rot="R90"/>
+<smd name="PAD@1" x="-4.215" y="3.3" dx="2.2" dy="1.6" layer="1" rot="R90"/>
+<smd name="PAD@2" x="4.215" y="3.3" dx="2.2" dy="1.6" layer="1" rot="R90"/>
+<text x="3.22" y="-0.5" size="1.27" layer="21">&gt;NAME</text>
 </package>
 <package name="1X04-1.27MM">
 <wire x1="-0.381" y1="-0.889" x2="0.381" y2="-0.889" width="0.127" layer="21"/>
