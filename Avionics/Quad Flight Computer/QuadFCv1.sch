@@ -2030,7 +2030,7 @@ chip</description>
 <text x="-0.1" y="-0.6" size="0.254" layer="51">Z</text>
 <text x="-1.9834" y="-2.1048" size="0.0366" layer="200" font="vector">C:/Documents and Settings/jbartlett/Desktop/mpu-6050.bmp</text>
 </package>
-<package name="SPARKFUN_LED-0603">
+<package name="LED-0603">
 <wire x1="0.46" y1="0.17" x2="0" y2="0.17" width="0.2032" layer="21"/>
 <wire x1="-0.46" y1="0.17" x2="0" y2="0.17" width="0.2032" layer="21"/>
 <wire x1="0" y1="0.17" x2="0.31" y2="-0.14" width="0.2032" layer="21"/>
@@ -2422,7 +2422,7 @@ Keying posts into board</description>
 <hole x="-1.27" y="0" drill="1.8"/>
 <hole x="1.27" y="0" drill="1.8"/>
 </package>
-<package name="DF13_4POS">
+<package name="DF13A-4P-1.25H">
 <circle x="-3.24" y="0" radius="0.70710625" width="0.127" layer="21"/>
 <wire x1="-3.24" y1="6" x2="3.24" y2="6" width="0.127" layer="21"/>
 <wire x1="3.24" y1="6" x2="3.74" y2="6" width="0.127" layer="21"/>
@@ -2855,7 +2855,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pad name="P$8" x="3.81" y="-1.27" drill="0.7" diameter="0.9652"/>
 <text x="0.762" y="1.143" size="1.27" layer="25">&gt;NAME</text>
 </package>
-<package name="DF13_5POS">
+<package name="DF13A-5P-1.25H">
 <circle x="-3.875" y="0" radius="0.70710625" width="0.127" layer="21"/>
 <wire x1="-3.875" y1="6" x2="3.875" y2="6" width="0.127" layer="21"/>
 <wire x1="3.875" y1="6" x2="4.375" y2="6" width="0.127" layer="21"/>
@@ -6193,7 +6193,7 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <technology name=""/>
 </technologies>
 </device>
-<device name="0603" package="SPARKFUN_LED-0603">
+<device name="0603" package="LED-0603">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
@@ -6470,7 +6470,7 @@ Standard 4-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <technology name=""/>
 </technologies>
 </device>
-<device name="DF13" package="DF13_4POS">
+<device name="DF13" package="DF13A-4P-1.25H">
 <connects>
 <connect gate="G$1" pin="1" pad="P1"/>
 <connect gate="G$1" pin="2" pad="P2"/>
@@ -6687,7 +6687,7 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <technology name=""/>
 </technologies>
 </device>
-<device name="DF13" package="DF13_5POS">
+<device name="DF13" package="DF13A-5P-1.25H">
 <connects>
 <connect gate="G$1" pin="1" pad="P1"/>
 <connect gate="G$1" pin="2" pad="P2"/>
