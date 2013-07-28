@@ -1018,7 +1018,7 @@ Yageo CFR series &lt;a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pd
 <text x="-11.43" y="5.08" size="1.27" layer="21">&gt;NAME</text>
 <text x="-8.89" y="0" size="1.27" layer="21">&gt;VALUE</text>
 </package>
-<package name="DF13_5POS">
+<package name="DF13A-5P-1.25H">
 <circle x="-3.875" y="0" radius="0.70710625" width="0.127" layer="21"/>
 <wire x1="-3.875" y1="6" x2="3.875" y2="6" width="0.127" layer="21"/>
 <wire x1="3.875" y1="6" x2="4.375" y2="6" width="0.127" layer="21"/>
@@ -1037,7 +1037,7 @@ Yageo CFR series &lt;a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pd
 <smd name="PAD@2" x="4.85" y="3.3" dx="2.2" dy="1.6" layer="1" rot="R90"/>
 <text x="5.125" y="-0.5" size="1.27" layer="21">&gt;NAME</text>
 </package>
-<package name="DF13_6POS">
+<package name="DF13A-6P-1.25H">
 <circle x="-4.5" y="0" radius="0.70710625" width="0.127" layer="21"/>
 <wire x1="-4.5" y1="6" x2="4.5" y2="6" width="0.127" layer="21"/>
 <wire x1="-5" y1="6" x2="-4.5" y2="6" width="0.127" layer="21"/>
@@ -2261,7 +2261,7 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <technology name=""/>
 </technologies>
 </device>
-<device name="DF13" package="DF13_5POS">
+<device name="DF13" package="DF13A-5P-1.25H">
 <connects>
 <connect gate="G$1" pin="1" pad="P1"/>
 <connect gate="G$1" pin="2" pad="P2"/>
@@ -2389,7 +2389,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <technology name=""/>
 </technologies>
 </device>
-<device name="DF13" package="DF13_6POS">
+<device name="DF13" package="DF13A-6P-1.25H">
 <connects>
 <connect gate="G$1" pin="1" pad="P1"/>
 <connect gate="G$1" pin="2" pad="P2"/>

@@ -649,7 +649,7 @@ chip</description>
 <text x="-1.397" y="-2.672" size="1.016" layer="27" ratio="10">&gt;VALUE</text>
 <text x="-1.397" y="1.702" size="1.016" layer="25" ratio="10">&gt;NAME</text>
 </package>
-<package name="DF13_5POS">
+<package name="DF13A-5P-1.25H">
 <circle x="-3.875" y="0" radius="0.70710625" width="0.127" layer="21"/>
 <wire x1="-3.875" y1="6" x2="3.875" y2="6" width="0.127" layer="21"/>
 <wire x1="3.875" y1="6" x2="4.375" y2="6" width="0.127" layer="21"/>
@@ -886,7 +886,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <text x="-3.27" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
 <text x="1.54" y="1.27" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
-<package name="DF13_6POS">
+<package name="DF13A-6P-1.25H">
 <circle x="-4.5" y="0" radius="0.70710625" width="0.127" layer="21"/>
 <wire x1="-4.5" y1="6" x2="4.5" y2="6" width="0.127" layer="21"/>
 <wire x1="-5" y1="6" x2="-4.5" y2="6" width="0.127" layer="21"/>
@@ -2588,7 +2588,7 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <technology name=""/>
 </technologies>
 </device>
-<device name="DF13" package="DF13_5POS">
+<device name="DF13" package="DF13A-5P-1.25H">
 <connects>
 <connect gate="G$1" pin="1" pad="P1"/>
 <connect gate="G$1" pin="2" pad="P2"/>
@@ -2716,7 +2716,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <technology name=""/>
 </technologies>
 </device>
-<device name="DF13" package="DF13_6POS">
+<device name="DF13" package="DF13A-6P-1.25H">
 <connects>
 <connect gate="G$1" pin="1" pad="P1"/>
 <connect gate="G$1" pin="2" pad="P2"/>
