@@ -2233,7 +2233,7 @@ chip</description>
 <package name="SNAP-MALE">
 <smd name="2" x="0" y="0" dx="7.62" dy="7.62" layer="1" roundness="100"/>
 </package>
-<package name="2X3_SMT_0.5">
+<package name="2X3_SMT-0.05">
 <wire x1="-2.032" y1="1.524" x2="-2.032" y2="-1.524" width="0.127" layer="21"/>
 <wire x1="-2.032" y1="-1.524" x2="2.032" y2="-1.524" width="0.127" layer="21"/>
 <wire x1="2.032" y1="-1.524" x2="2.032" y2="1.524" width="0.127" layer="21"/>
@@ -3421,13 +3421,13 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <text x="-2" y="-3.5" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
 <package name="PRQC16.00SR5010X000">
-<wire x1="-1.25" y1="1" x2="1.25" y2="1" width="0.127" layer="21"/>
-<wire x1="1.25" y1="1" x2="1.25" y2="-1" width="0.127" layer="21"/>
-<wire x1="1.25" y1="-1" x2="-1.25" y2="-1" width="0.127" layer="21"/>
-<wire x1="-1.25" y1="-1" x2="-1.25" y2="1" width="0.127" layer="21"/>
-<smd name="1" x="-1" y="0" dx="2.6" dy="0.5" layer="1" rot="R90"/>
-<smd name="2" x="0" y="0" dx="2.6" dy="0.5" layer="1" rot="R90"/>
-<smd name="3" x="1" y="0" dx="2.6" dy="0.5" layer="1" rot="R90"/>
+<wire x1="-1.75" y1="0.65" x2="1.75" y2="0.65" width="0.127" layer="21"/>
+<wire x1="1.75" y1="0.65" x2="1.75" y2="-0.65" width="0.127" layer="21"/>
+<wire x1="1.75" y1="-0.65" x2="-1.75" y2="-0.65" width="0.127" layer="21"/>
+<wire x1="-1.75" y1="-0.65" x2="-1.75" y2="0.65" width="0.127" layer="21"/>
+<smd name="1" x="-1.2" y="0" dx="2.5" dy="0.5" layer="1" rot="R90"/>
+<smd name="2" x="0" y="0" dx="2.5" dy="0.5" layer="1" rot="R90"/>
+<smd name="3" x="1.2" y="0" dx="2.5" dy="0.5" layer="1" rot="R90"/>
 <text x="-1.25" y="1.5" size="1.27" layer="25">&gt;NAME</text>
 </package>
 <package name="SPARKFUN_0603">
@@ -6411,7 +6411,7 @@ Pogo pins- HW-11044</description>
 </technology>
 </technologies>
 </device>
-<device name="SMD_0.05" package="2X3_SMT_0.5">
+<device name="SMD_0.05" package="2X3_SMT-0.05">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>

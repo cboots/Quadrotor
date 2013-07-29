@@ -105,7 +105,6 @@
 <layer number="219" name="219bmp" color="20" fill="1" visible="no" active="no"/>
 <layer number="220" name="220bmp" color="21" fill="1" visible="no" active="no"/>
 <layer number="221" name="221bmp" color="22" fill="1" visible="no" active="no"/>
-<layer number="222" name="222bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
@@ -1621,7 +1620,7 @@ reflow soldering</description>
 <text x="1.1938" y="1.8288" size="1.27" layer="25">&gt;NAME</text>
 <text x="-1.27" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
 </package>
-<package name="2X3_SMT_0.5">
+<package name="2X3_SMT-0.05">
 <wire x1="-2.032" y1="1.524" x2="-2.032" y2="-1.524" width="0.127" layer="21"/>
 <wire x1="-2.032" y1="-1.524" x2="2.032" y2="-1.524" width="0.127" layer="21"/>
 <wire x1="2.032" y1="-1.524" x2="2.032" y2="1.524" width="0.127" layer="21"/>
@@ -1799,13 +1798,13 @@ reflow soldering</description>
 <text x="-2" y="-3.5" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
 <package name="PRQC16.00SR5010X000">
-<wire x1="-1.25" y1="1" x2="1.25" y2="1" width="0.127" layer="21"/>
-<wire x1="1.25" y1="1" x2="1.25" y2="-1" width="0.127" layer="21"/>
-<wire x1="1.25" y1="-1" x2="-1.25" y2="-1" width="0.127" layer="21"/>
-<wire x1="-1.25" y1="-1" x2="-1.25" y2="1" width="0.127" layer="21"/>
-<smd name="1" x="-1" y="0" dx="2.6" dy="0.5" layer="1" rot="R90"/>
-<smd name="2" x="0" y="0" dx="2.6" dy="0.5" layer="1" rot="R90"/>
-<smd name="3" x="1" y="0" dx="2.6" dy="0.5" layer="1" rot="R90"/>
+<wire x1="-1.75" y1="0.65" x2="1.75" y2="0.65" width="0.127" layer="21"/>
+<wire x1="1.75" y1="0.65" x2="1.75" y2="-0.65" width="0.127" layer="21"/>
+<wire x1="1.75" y1="-0.65" x2="-1.75" y2="-0.65" width="0.127" layer="21"/>
+<wire x1="-1.75" y1="-0.65" x2="-1.75" y2="0.65" width="0.127" layer="21"/>
+<smd name="1" x="-1.2" y="0" dx="2.5" dy="0.5" layer="1" rot="R90"/>
+<smd name="2" x="0" y="0" dx="2.5" dy="0.5" layer="1" rot="R90"/>
+<smd name="3" x="1.2" y="0" dx="2.5" dy="0.5" layer="1" rot="R90"/>
 <text x="-1.25" y="1.5" size="1.27" layer="25">&gt;NAME</text>
 </package>
 <package name="PTC-1206">
@@ -2409,14 +2408,14 @@ design rules under a new name.</description>
 <element name="R5" library="QuadFCv1" package="0402-RES" value="22-DNP" x="40.513" y="9.398" rot="MR270"/>
 <element name="R3" library="QuadFCv1" package="0402-RES" value="22-DNP" x="38.989" y="9.398" rot="MR270"/>
 <element name="R6" library="QuadFCv1" package="0402-RES" value="0" x="34.417" y="9.398" rot="MR270"/>
-<element name="SPI_PPM" library="QuadFCv1" package="2X3_SMT_0.5" value="SPI_PPM" x="36.322" y="27.051" rot="R180"/>
+<element name="SPI_PPM" library="QuadFCv1" package="2X3_SMT-0.05" value="SPI_PPM" x="36.322" y="27.051" rot="R180"/>
 <element name="R31" library="QuadFCv1" package="0402-RES" value="1K" x="36.83" y="39.116" rot="R270"/>
 <element name="C17" library="QuadFCv1" package="0402-CAP" value=".1uF" x="31.877" y="38.862"/>
 <element name="U3" library="QuadFCv1" package="QFN32" value="ATMEGA32U2-MU" x="33.147" y="34.29"/>
 <element name="R29" library="QuadFCv1" package="0402-RES" value="10K" x="35.433" y="39.116" rot="R90"/>
 <element name="R28" library="QuadFCv1" package="0402-RES" value="1M" x="25.527" y="36.449" rot="R90"/>
-<element name="R30" library="QuadFCv1" package="0402-RES" value="27" x="28.829" y="38.862"/>
-<element name="C15" library="QuadFCv1" package="0402-CAP" value=".1uF" x="28.067" y="34.163" rot="R180"/>
+<element name="R30" library="QuadFCv1" package="0402-RES" value="27" x="28.829" y="39.37"/>
+<element name="C15" library="QuadFCv1" package="0402-CAP" value=".1uF" x="28.194" y="33.909" rot="R180"/>
 <element name="C16" library="QuadFCv1" package="0402-CAP" value="1uF" x="34.036" y="39.116" rot="R90"/>
 <element name="LED1" library="QuadFCv1" package="LED-0603" value="RED" x="32.004" y="29.718"/>
 <element name="LED2" library="QuadFCv1" package="LED-0603" value="ORANGE" x="30.734" y="29.718"/>
@@ -2431,13 +2430,13 @@ design rules under a new name.</description>
 <element name="PPM" library="QuadFCv1" package="TP10SQ" value="TESTPAD_TPSQTP10SQ" x="36.83" y="37.084" rot="R90">
 <attribute name="TP_SIGNAL_NAME" value="" x="69.088" y="-5.334" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R32" library="QuadFCv1" package="0402-RES" value="1k" x="28.067" y="29.972"/>
-<element name="R37" library="QuadFCv1" package="0402-RES" value="1k" x="28.067" y="31.369"/>
+<element name="R32" library="QuadFCv1" package="0402-RES" value="1k" x="28.194" y="29.591"/>
+<element name="R37" library="QuadFCv1" package="0402-RES" value="1k" x="28.194" y="31.115"/>
 <element name="R35" library="QuadFCv1" package="0402-RES" value="1k" x="38.354" y="39.116" rot="R270"/>
 <element name="LED3" library="QuadFCv1" package="LED-0603" value="GREEN" x="37.592" y="35.56" rot="R90"/>
 <element name="F1" library="QuadFCv1" package="PTC-1206" value="500mA" x="26.289" y="8.509"/>
 <element name="Y3" library="QuadFCv1" package="PRQC16.00SR5010X000" value="PRQC16.00SR5010X000" x="28.194" y="36.576" rot="R90"/>
-<element name="R36" library="QuadFCv1" package="0402-RES" value="1k" x="28.067" y="32.766"/>
+<element name="R36" library="QuadFCv1" package="0402-RES" value="1k" x="28.194" y="32.512"/>
 <element name="C18" library="QuadFCv1" package="0402-CAP" value="0.1uF" x="18.923" y="23.495" rot="R90"/>
 <element name="U6" library="QuadFCv1" package="16LPCC" value="HMC5883LSMD" x="9.652" y="23.749" rot="R270"/>
 <element name="C22" library="QuadFCv1" package="0402-CAP" value="0.22uF" x="9.525" y="19.304"/>
@@ -2655,9 +2654,9 @@ design rules under a new name.</description>
 <wire x1="30.607" y1="34.94" x2="30.847" y2="35.04" width="0" layer="19" extent="1-16"/>
 <wire x1="29.21" y1="34.94" x2="30.607" y2="34.94" width="0" layer="19" extent="16-16"/>
 <wire x1="28.194" y1="36.576" x2="29.21" y2="34.94" width="0" layer="19" extent="1-16"/>
-<wire x1="27.417" y1="34.163" x2="29.21" y2="34.94" width="0" layer="19" extent="1-16"/>
-<wire x1="25.385" y1="34.163" x2="27.417" y2="34.163" width="0" layer="19" extent="1-16"/>
-<wire x1="27.218" y1="31.596" x2="27.417" y2="34.163" width="0" layer="19" extent="1-16"/>
+<wire x1="27.544" y1="33.909" x2="29.21" y2="34.94" width="0" layer="19" extent="1-16"/>
+<wire x1="25.385" y1="34.163" x2="27.544" y2="33.909" width="0" layer="19" extent="1-16"/>
+<wire x1="27.218" y1="31.596" x2="27.544" y2="33.909" width="0" layer="19" extent="1-16"/>
 <wire x1="33.218" y1="31.596" x2="33.147" y2="34.29" width="0" layer="19" extent="1-16"/>
 <wire x1="35.052" y1="28.9941" x2="33.218" y2="31.596" width="0" layer="19" extent="1-16"/>
 <wire x1="37.438" y1="26.876" x2="35.052" y2="28.9941" width="0" layer="19" extent="1-16"/>
@@ -2743,9 +2742,9 @@ design rules under a new name.</description>
 <wire x1="31.227" y1="38.862" x2="35.433" y2="39.766" width="0" layer="19" extent="1-1"/>
 <wire x1="31.397" y1="36.59" x2="31.227" y2="38.862" width="0" layer="19" extent="1-1"/>
 <wire x1="30.847" y1="34.54" x2="31.397" y2="36.59" width="0" layer="19" extent="1-1"/>
-<wire x1="28.717" y1="34.163" x2="30.847" y2="34.54" width="0" layer="19" extent="1-1"/>
+<wire x1="28.844" y1="33.909" x2="30.847" y2="34.54" width="0" layer="19" extent="1-1"/>
 <wire x1="26.884" y1="43.688" x2="31.227" y2="38.862" width="0" layer="19" extent="1-16"/>
-<wire x1="30.734" y1="26.147" x2="28.717" y2="34.163" width="0" layer="19" extent="1-1"/>
+<wire x1="30.734" y1="26.147" x2="28.844" y2="33.909" width="0" layer="19" extent="1-1"/>
 <wire x1="32.004" y1="26.147" x2="30.734" y2="26.147" width="0" layer="19" extent="1-1"/>
 <wire x1="37.592" y1="28.9941" x2="32.004" y2="26.147" width="0" layer="19" extent="1-1"/>
 <wire x1="18.811" y1="41.402" x2="26.884" y2="43.688" width="0" layer="19" extent="16-16"/>
@@ -3292,15 +3291,15 @@ design rules under a new name.</description>
 <contactref element="U3" pad="2"/>
 <contactref element="R28" pad="1"/>
 <contactref element="Y3" pad="1"/>
-<wire x1="28.194" y1="35.576" x2="30.847" y2="35.54" width="0" layer="19" extent="1-1"/>
-<wire x1="25.527" y1="35.799" x2="28.194" y2="35.576" width="0" layer="19" extent="1-1"/>
+<wire x1="28.194" y1="35.376" x2="30.847" y2="35.54" width="0" layer="19" extent="1-1"/>
+<wire x1="25.527" y1="35.799" x2="28.194" y2="35.376" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="XT1">
 <contactref element="R28" pad="2"/>
 <contactref element="R30" pad="1"/>
 <contactref element="Y3" pad="3"/>
-<wire x1="28.194" y1="37.576" x2="28.179" y2="38.862" width="0" layer="19" extent="1-1"/>
-<wire x1="25.527" y1="37.099" x2="28.194" y2="37.576" width="0" layer="19" extent="1-1"/>
+<wire x1="28.194" y1="37.776" x2="28.179" y2="39.37" width="0" layer="19" extent="1-1"/>
+<wire x1="25.527" y1="37.099" x2="28.194" y2="37.776" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RXLED">
 <contactref element="U3" pad="10"/>
@@ -3315,7 +3314,7 @@ design rules under a new name.</description>
 <signal name="XT1R">
 <contactref element="U3" pad="1"/>
 <contactref element="R30" pad="2"/>
-<wire x1="29.479" y1="38.862" x2="30.847" y2="36.04" width="0" layer="19" extent="1-1"/>
+<wire x1="29.479" y1="39.37" x2="30.847" y2="36.04" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$30">
 <contactref element="LED1" pad="A"/>
@@ -3330,12 +3329,12 @@ design rules under a new name.</description>
 <signal name="PPM_PD1">
 <contactref element="U3" pad="7"/>
 <contactref element="R32" pad="2"/>
-<wire x1="28.717" y1="29.972" x2="30.847" y2="33.04" width="0" layer="19" extent="1-1"/>
+<wire x1="28.844" y1="29.591" x2="30.847" y2="33.04" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PPM_PD0">
 <contactref element="U3" pad="6"/>
 <contactref element="R37" pad="2"/>
-<wire x1="28.717" y1="31.369" x2="30.847" y2="33.54" width="0" layer="19" extent="1-1"/>
+<wire x1="28.844" y1="31.115" x2="30.847" y2="33.54" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PPM_TX">
 <contactref element="U3" pad="9"/>
@@ -3371,7 +3370,7 @@ design rules under a new name.</description>
 <signal name="PPM_USB_STATUS">
 <contactref element="U3" pad="5"/>
 <contactref element="R36" pad="2"/>
-<wire x1="28.717" y1="32.766" x2="30.847" y2="34.04" width="0" layer="19" extent="1-1"/>
+<wire x1="28.844" y1="32.512" x2="30.847" y2="34.04" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="FC_PPM_STATUS1">
 <contactref element="R32" pad="1"/>
