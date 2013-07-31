@@ -7728,8 +7728,8 @@ This is the mechanical footprint for a #4 phillips button head screw. Use the ke
 <variantdefs>
 </variantdefs>
 <classes>
-<class number="0" name="default" width="0" drill="0">
-<clearance class="0" value="0.355"/>
+<class number="0" name="default" width="0.1524" drill="0">
+<clearance class="0" value="0.1524"/>
 </class>
 </classes>
 <parts>
@@ -10783,7 +10783,6 @@ All major connectors and edge pieces go here</description>
 </sheet>
 </sheets>
 <errors>
-<approved hash="115,3,54.0173,-92.9047,JP3,,,,,"/>
 <approved hash="115,3,-67.9027,-43.3747,I2C,,,,,"/>
 <approved hash="115,3,-67.9027,-89.0947,GPS,,,,,"/>
 </errors>
