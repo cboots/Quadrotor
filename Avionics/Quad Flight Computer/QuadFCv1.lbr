@@ -4972,16 +4972,16 @@ Source: http://www.molex.com/pdm_docs/sd/877580616_sd.pdf</description>
 <hole x="27.94" y="0" drill="1.4732"/>
 </package>
 <package name="1X10_SMT-0.05">
-<smd name="P$1" x="0" y="1.27" dx="1.7018" dy="0.7112" layer="1" rot="R90"/>
-<smd name="P$2" x="1.27" y="-1.27" dx="1.7018" dy="0.7112" layer="1" rot="R90"/>
-<smd name="P$3" x="2.54" y="1.27" dx="1.7018" dy="0.7112" layer="1" rot="R90"/>
-<smd name="P$4" x="3.81" y="-1.27" dx="1.7018" dy="0.7112" layer="1" rot="R90"/>
-<smd name="P$5" x="5.08" y="1.27" dx="1.7018" dy="0.7112" layer="1" rot="R90"/>
-<smd name="P$6" x="6.35" y="-1.27" dx="1.7018" dy="0.7112" layer="1" rot="R90"/>
-<smd name="P$7" x="7.62" y="1.27" dx="1.7018" dy="0.7112" layer="1" rot="R90"/>
-<smd name="P$8" x="8.89" y="-1.27" dx="1.7018" dy="0.7112" layer="1" rot="R90"/>
-<smd name="P$9" x="10.16" y="1.27" dx="1.7018" dy="0.7112" layer="1" rot="R90"/>
-<smd name="P$10" x="11.43" y="-1.27" dx="1.7018" dy="0.7112" layer="1" rot="R90"/>
+<smd name="1" x="0" y="1.27" dx="1.7018" dy="0.7112" layer="1" rot="R90"/>
+<smd name="2" x="1.27" y="-1.27" dx="1.7018" dy="0.7112" layer="1" rot="R90"/>
+<smd name="3" x="2.54" y="1.27" dx="1.7018" dy="0.7112" layer="1" rot="R90"/>
+<smd name="4" x="3.81" y="-1.27" dx="1.7018" dy="0.7112" layer="1" rot="R90"/>
+<smd name="5" x="5.08" y="1.27" dx="1.7018" dy="0.7112" layer="1" rot="R90"/>
+<smd name="6" x="6.35" y="-1.27" dx="1.7018" dy="0.7112" layer="1" rot="R90"/>
+<smd name="7" x="7.62" y="1.27" dx="1.7018" dy="0.7112" layer="1" rot="R90"/>
+<smd name="8" x="8.89" y="-1.27" dx="1.7018" dy="0.7112" layer="1" rot="R90"/>
+<smd name="9" x="10.16" y="1.27" dx="1.7018" dy="0.7112" layer="1" rot="R90"/>
+<smd name="10" x="11.43" y="-1.27" dx="1.7018" dy="0.7112" layer="1" rot="R90"/>
 <wire x1="-1.016" y1="1.143" x2="-1.016" y2="-1.143" width="0.127" layer="21"/>
 <wire x1="-1.016" y1="-1.143" x2="12.446" y2="-1.143" width="0.127" layer="21"/>
 <wire x1="12.446" y1="-1.143" x2="12.446" y2="1.143" width="0.127" layer="21"/>
@@ -4993,16 +4993,16 @@ Source: http://www.molex.com/pdm_docs/sd/877580616_sd.pdf</description>
 <text x="-0.381" y="2.413" size="1.27" layer="21">&gt;NAME</text>
 </package>
 <package name="1X12_SMT-0.05">
-<smd name="P$1" x="0" y="1.27" dx="1.7018" dy="0.7112" layer="1" rot="R90"/>
-<smd name="P$2" x="1.27" y="-1.27" dx="1.7018" dy="0.7112" layer="1" rot="R90"/>
-<smd name="P$3" x="2.54" y="1.27" dx="1.7018" dy="0.7112" layer="1" rot="R90"/>
-<smd name="P$4" x="3.81" y="-1.27" dx="1.7018" dy="0.7112" layer="1" rot="R90"/>
-<smd name="P$5" x="5.08" y="1.27" dx="1.7018" dy="0.7112" layer="1" rot="R90"/>
-<smd name="P$6" x="6.35" y="-1.27" dx="1.7018" dy="0.7112" layer="1" rot="R90"/>
-<smd name="P$7" x="7.62" y="1.27" dx="1.7018" dy="0.7112" layer="1" rot="R90"/>
-<smd name="P$8" x="8.89" y="-1.27" dx="1.7018" dy="0.7112" layer="1" rot="R90"/>
-<smd name="P$9" x="10.16" y="1.27" dx="1.7018" dy="0.7112" layer="1" rot="R90"/>
-<smd name="P$10" x="11.43" y="-1.27" dx="1.7018" dy="0.7112" layer="1" rot="R90"/>
+<smd name="1" x="0" y="1.27" dx="1.7018" dy="0.7112" layer="1" rot="R90"/>
+<smd name="2" x="1.27" y="-1.27" dx="1.7018" dy="0.7112" layer="1" rot="R90"/>
+<smd name="3" x="2.54" y="1.27" dx="1.7018" dy="0.7112" layer="1" rot="R90"/>
+<smd name="4" x="3.81" y="-1.27" dx="1.7018" dy="0.7112" layer="1" rot="R90"/>
+<smd name="5" x="5.08" y="1.27" dx="1.7018" dy="0.7112" layer="1" rot="R90"/>
+<smd name="6" x="6.35" y="-1.27" dx="1.7018" dy="0.7112" layer="1" rot="R90"/>
+<smd name="7" x="7.62" y="1.27" dx="1.7018" dy="0.7112" layer="1" rot="R90"/>
+<smd name="8" x="8.89" y="-1.27" dx="1.7018" dy="0.7112" layer="1" rot="R90"/>
+<smd name="9" x="10.16" y="1.27" dx="1.7018" dy="0.7112" layer="1" rot="R90"/>
+<smd name="10" x="11.43" y="-1.27" dx="1.7018" dy="0.7112" layer="1" rot="R90"/>
 <wire x1="-1.016" y1="1.143" x2="-1.016" y2="-1.143" width="0.127" layer="21"/>
 <wire x1="-1.016" y1="-1.143" x2="14.986" y2="-1.143" width="0.127" layer="21"/>
 <wire x1="14.986" y1="-1.143" x2="14.986" y2="1.143" width="0.127" layer="21"/>
@@ -5012,8 +5012,8 @@ Source: http://www.molex.com/pdm_docs/sd/877580616_sd.pdf</description>
 <wire x1="0.381" y1="-1.905" x2="0.508" y2="-1.905" width="0.127" layer="21"/>
 <wire x1="0.508" y1="-1.905" x2="-0.127" y2="-1.27" width="0.127" layer="21"/>
 <text x="-0.381" y="2.413" size="1.27" layer="21">&gt;NAME</text>
-<smd name="P$11" x="12.7" y="1.27" dx="1.7018" dy="0.7112" layer="1" rot="R90"/>
-<smd name="P$12" x="13.97" y="-1.27" dx="1.7018" dy="0.7112" layer="1" rot="R90"/>
+<smd name="11" x="12.7" y="1.27" dx="1.7018" dy="0.7112" layer="1" rot="R90"/>
+<smd name="12" x="13.97" y="-1.27" dx="1.7018" dy="0.7112" layer="1" rot="R90"/>
 </package>
 </packages>
 <symbols>
@@ -7816,16 +7816,16 @@ Standard 10-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 </device>
 <device name="1X10-SMT-0.05" package="1X10_SMT-0.05">
 <connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="10" pad="P$10"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-<connect gate="G$1" pin="3" pad="P$3"/>
-<connect gate="G$1" pin="4" pad="P$4"/>
-<connect gate="G$1" pin="5" pad="P$5"/>
-<connect gate="G$1" pin="6" pad="P$6"/>
-<connect gate="G$1" pin="7" pad="P$7"/>
-<connect gate="G$1" pin="8" pad="P$8"/>
-<connect gate="G$1" pin="9" pad="P$9"/>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -8677,18 +8677,18 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 </device>
 <device name="" package="1X12_SMT-0.05">
 <connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="10" pad="P$10"/>
-<connect gate="G$1" pin="11" pad="P$11"/>
-<connect gate="G$1" pin="12" pad="P$12"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-<connect gate="G$1" pin="3" pad="P$3"/>
-<connect gate="G$1" pin="4" pad="P$4"/>
-<connect gate="G$1" pin="5" pad="P$5"/>
-<connect gate="G$1" pin="6" pad="P$6"/>
-<connect gate="G$1" pin="7" pad="P$7"/>
-<connect gate="G$1" pin="8" pad="P$8"/>
-<connect gate="G$1" pin="9" pad="P$9"/>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="11" pad="11"/>
+<connect gate="G$1" pin="12" pad="12"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
 </connects>
 <technologies>
 <technology name=""/>
