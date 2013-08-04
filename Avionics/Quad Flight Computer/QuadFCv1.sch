@@ -8531,10 +8531,6 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <part name="R30" library="QuadFCv1" deviceset="RESISTOR" device="0402-RES" value="27"/>
 <part name="C15" library="QuadFCv1" deviceset="CAP" device="0402-CAP" value=".1uF"/>
 <part name="C16" library="QuadFCv1" deviceset="CAP" device="0402-CAP" value="1uF"/>
-<part name="LED1" library="QuadFCv1" deviceset="LED" device="0603" value="RED"/>
-<part name="LED2" library="QuadFCv1" deviceset="LED" device="0603" value="ORANGE"/>
-<part name="R33" library="QuadFCv1" deviceset="RESISTOR" device="0402-RES" value="1k"/>
-<part name="R34" library="QuadFCv1" deviceset="RESISTOR" device="0402-RES" value="1k"/>
 <part name="X1" library="QuadFCv1" deviceset="87758-0216" device="" value="HWB"/>
 <part name="PPM" library="QuadFCv1" deviceset="TESTPAD_TPSQ" device="TP10SQ"/>
 <part name="R32" library="QuadFCv1" deviceset="RESISTOR" device="0402-RES" value="1k"/>
@@ -9340,13 +9336,6 @@ Main flight processor with required circuitry and labeled IO</description>
 <label x="-12.7" y="-2.54" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="FC_IMU_INT" class="0">
-<segment>
-<pinref part="U1" gate="PORTF" pin="PF7/I2C2SDA/M1FAULT0/T3CCP1"/>
-<wire x1="-12.7" y1="-5.08" x2="17.78" y2="-5.08" width="0.1524" layer="91"/>
-<label x="-12.7" y="-5.08" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="FC_SENSE_SCL" class="0">
 <segment>
 <pinref part="U1" gate="PORTG" pin="PG0/I2C3SCL/M1FAULT1/PHA1/T4CCP0"/>
@@ -9545,6 +9534,13 @@ Main flight processor with required circuitry and labeled IO</description>
 </segment>
 </net>
 <net name="FC_PPM_IN" class="0">
+<segment>
+<pinref part="U1" gate="PORTF" pin="PF7/I2C2SDA/M1FAULT0/T3CCP1"/>
+<wire x1="-12.7" y1="-5.08" x2="17.78" y2="-5.08" width="0.1524" layer="91"/>
+<label x="-12.7" y="-5.08" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="FC_IMU_INT" class="0">
 <segment>
 <pinref part="U1" gate="PORTC" pin="PC7/C0-/U3TX/USB0PFLT/WT1CCP1"/>
 <wire x1="-167.64" y1="-63.5" x2="-147.32" y2="-63.5" width="0.1524" layer="91"/>
@@ -10569,10 +10565,6 @@ All major connectors and edge pieces go here</description>
 <attribute name="NAME" x="-36.576" y="-19.939" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-36.576" y="-25.019" size="1.778" layer="96"/>
 </instance>
-<instance part="LED1" gate="G$1" x="73.66" y="-43.18" rot="R270"/>
-<instance part="LED2" gate="G$1" x="73.66" y="-53.34" rot="R270"/>
-<instance part="R33" gate="G$1" x="81.28" y="-43.18" rot="R180"/>
-<instance part="R34" gate="G$1" x="81.28" y="-53.34" rot="R180"/>
 <instance part="X1" gate="-1" x="111.76" y="25.4"/>
 <instance part="X1" gate="-2" x="111.76" y="20.32"/>
 <instance part="PPM" gate="G$1" x="-5.08" y="-45.72" rot="R270"/>
@@ -10702,11 +10694,6 @@ All major connectors and edge pieces go here</description>
 <label x="58.42" y="-15.24" size="1.778" layer="95"/>
 <pinref part="U3" gate="G$1" pin="(INT5/AIN3)PD4"/>
 </segment>
-<segment>
-<wire x1="68.58" y1="-53.34" x2="58.42" y2="-53.34" width="0.1524" layer="91"/>
-<label x="58.42" y="-53.34" size="1.778" layer="95"/>
-<pinref part="LED2" gate="G$1" pin="C"/>
-</segment>
 </net>
 <net name="TXLED" class="0">
 <segment>
@@ -10714,29 +10701,12 @@ All major connectors and edge pieces go here</description>
 <label x="58.42" y="-12.7" size="1.778" layer="95"/>
 <pinref part="U3" gate="G$1" pin="(XCK/AIN4/PCINT12)PD5"/>
 </segment>
-<segment>
-<wire x1="68.58" y1="-43.18" x2="58.42" y2="-43.18" width="0.1524" layer="91"/>
-<label x="58.42" y="-43.18" size="1.778" layer="95"/>
-<pinref part="LED1" gate="G$1" pin="C"/>
-</segment>
 </net>
 <net name="XT1R" class="0">
 <segment>
 <wire x1="0" y1="12.7" x2="0" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="XTAL1"/>
 <pinref part="R30" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="N$30" class="0">
-<segment>
-<pinref part="LED1" gate="G$1" pin="A"/>
-<pinref part="R33" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="N$31" class="0">
-<segment>
-<pinref part="LED2" gate="G$1" pin="A"/>
-<pinref part="R34" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="PPM_PD1" class="0">
@@ -10898,17 +10868,11 @@ All major connectors and edge pieces go here</description>
 <wire x1="127" y1="2.54" x2="127" y2="0" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="86.36" y1="-43.18" x2="93.98" y2="-43.18" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="-53.34" x2="93.98" y2="-43.18" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="-53.34" x2="93.98" y2="-53.34" width="0.1524" layer="91"/>
-<pinref part="R33" gate="G$1" pin="1"/>
-<pinref part="R34" gate="G$1" pin="1"/>
 <pinref part="R35" gate="G$1" pin="1"/>
 <wire x1="86.36" y1="-63.5" x2="93.98" y2="-63.5" width="0.1524" layer="91"/>
 <wire x1="93.98" y1="-63.5" x2="93.98" y2="-53.34" width="0.1524" layer="91"/>
-<junction x="93.98" y="-53.34"/>
 <pinref part="SUPPLY12" gate="G$1" pin="5V"/>
-<junction x="93.98" y="-43.18"/>
 </segment>
 <segment>
 <wire x1="0" y1="0" x2="-5.08" y2="0" width="0.1524" layer="91"/>
@@ -11572,20 +11536,6 @@ All major connectors and edge pieces go here</description>
 <pinref part="JP1" gate="G$1" pin="7"/>
 <wire x1="-35.56" y1="-15.24" x2="-22.86" y2="-15.24" width="0.1524" layer="91"/>
 <label x="-30.48" y="-15.24" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="PPM_RX" class="0">
-<segment>
-<pinref part="JP1" gate="G$1" pin="8"/>
-<wire x1="-22.86" y1="-12.7" x2="-35.56" y2="-12.7" width="0.1524" layer="91"/>
-<label x="-30.48" y="-12.7" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="PPM_TX" class="0">
-<segment>
-<pinref part="JP1" gate="G$1" pin="9"/>
-<wire x1="-35.56" y1="-10.16" x2="-22.86" y2="-10.16" width="0.1524" layer="91"/>
-<label x="-30.48" y="-10.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FC_IMU_SCLK" class="0">
