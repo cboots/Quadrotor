@@ -11590,9 +11590,9 @@ All major connectors and edge pieces go here</description>
 </net>
 <net name="FC_IMU_SCLK" class="0">
 <segment>
-<pinref part="JP2" gate="G$1" pin="1"/>
-<wire x1="-35.56" y1="7.62" x2="-22.86" y2="7.62" width="0.1524" layer="91"/>
-<label x="-27.94" y="7.62" size="1.778" layer="95"/>
+<pinref part="JP2" gate="G$1" pin="3"/>
+<wire x1="-35.56" y1="12.7" x2="-22.86" y2="12.7" width="0.1524" layer="91"/>
+<label x="-27.94" y="12.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FC_IMU_MISO" class="0">
@@ -11600,13 +11600,6 @@ All major connectors and edge pieces go here</description>
 <pinref part="JP2" gate="G$1" pin="2"/>
 <wire x1="-22.86" y1="10.16" x2="-35.56" y2="10.16" width="0.1524" layer="91"/>
 <label x="-27.94" y="10.16" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="FC_IMU_MOSI" class="0">
-<segment>
-<pinref part="JP2" gate="G$1" pin="3"/>
-<wire x1="-35.56" y1="12.7" x2="-22.86" y2="12.7" width="0.1524" layer="91"/>
-<label x="-27.94" y="12.7" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FC_SENSE_SCL" class="0">
@@ -11625,16 +11618,16 @@ All major connectors and edge pieces go here</description>
 </net>
 <net name="FC_PF1" class="0">
 <segment>
-<pinref part="JP2" gate="G$1" pin="5"/>
-<wire x1="-35.56" y1="17.78" x2="-22.86" y2="17.78" width="0.1524" layer="91"/>
-<label x="-27.94" y="17.78" size="1.778" layer="95"/>
+<wire x1="-35.56" y1="20.32" x2="-22.86" y2="20.32" width="0.1524" layer="91"/>
+<label x="-27.94" y="20.32" size="1.778" layer="95"/>
+<pinref part="JP2" gate="G$1" pin="6"/>
 </segment>
 </net>
 <net name="FC_PF0" class="0">
 <segment>
-<pinref part="JP2" gate="G$1" pin="4"/>
-<wire x1="-22.86" y1="15.24" x2="-35.56" y2="15.24" width="0.1524" layer="91"/>
-<label x="-27.94" y="15.24" size="1.778" layer="95"/>
+<wire x1="-22.86" y1="17.78" x2="-35.56" y2="17.78" width="0.1524" layer="91"/>
+<label x="-27.94" y="17.78" size="1.778" layer="95"/>
+<pinref part="JP2" gate="G$1" pin="5"/>
 </segment>
 </net>
 <net name="FC_PB3" class="0">
@@ -11751,16 +11744,16 @@ All major connectors and edge pieces go here</description>
 </net>
 <net name="FC_PF2" class="0">
 <segment>
-<pinref part="JP2" gate="G$1" pin="6"/>
-<wire x1="-22.86" y1="20.32" x2="-35.56" y2="20.32" width="0.1524" layer="91"/>
-<label x="-27.94" y="20.32" size="1.778" layer="95"/>
+<wire x1="-22.86" y1="22.86" x2="-35.56" y2="22.86" width="0.1524" layer="91"/>
+<label x="-27.94" y="22.86" size="1.778" layer="95"/>
+<pinref part="JP2" gate="G$1" pin="7"/>
 </segment>
 </net>
 <net name="FC_PF3" class="0">
 <segment>
-<pinref part="JP2" gate="G$1" pin="7"/>
-<wire x1="-35.56" y1="22.86" x2="-22.86" y2="22.86" width="0.1524" layer="91"/>
-<label x="-27.94" y="22.86" size="1.778" layer="95"/>
+<wire x1="-35.56" y1="25.4" x2="-22.86" y2="25.4" width="0.1524" layer="91"/>
+<label x="-27.94" y="25.4" size="1.778" layer="95"/>
+<pinref part="JP2" gate="G$1" pin="8"/>
 </segment>
 </net>
 <net name="FC_PG5" class="0">
@@ -11848,9 +11841,9 @@ All major connectors and edge pieces go here</description>
 </net>
 <net name="FC_PF4" class="0">
 <segment>
-<pinref part="JP2" gate="G$1" pin="8"/>
-<wire x1="-35.56" y1="25.4" x2="-22.86" y2="25.4" width="0.1524" layer="91"/>
-<label x="-27.94" y="25.4" size="1.778" layer="95"/>
+<pinref part="JP2" gate="G$1" pin="4"/>
+<wire x1="-22.86" y1="15.24" x2="-35.56" y2="15.24" width="0.1524" layer="91"/>
+<label x="-27.94" y="15.24" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FC_PD4" class="0">
@@ -11858,6 +11851,13 @@ All major connectors and edge pieces go here</description>
 <wire x1="38.1" y1="-10.16" x2="50.8" y2="-10.16" width="0.1524" layer="91"/>
 <label x="43.18" y="-10.16" size="1.778" layer="95"/>
 <pinref part="JP3" gate="G$1" pin="12"/>
+</segment>
+</net>
+<net name="FC_IMU_MOSI" class="0">
+<segment>
+<pinref part="JP2" gate="G$1" pin="1"/>
+<wire x1="-35.56" y1="7.62" x2="-22.86" y2="7.62" width="0.1524" layer="91"/>
+<label x="-27.94" y="7.62" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
