@@ -8531,7 +8531,7 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <part name="R30" library="QuadFCv1" deviceset="RESISTOR" device="0402-RES" value="27"/>
 <part name="C15" library="QuadFCv1" deviceset="CAP" device="0402-CAP" value=".1uF"/>
 <part name="C16" library="QuadFCv1" deviceset="CAP" device="0402-CAP" value="1uF"/>
-<part name="X1" library="QuadFCv1" deviceset="87758-0216" device="" value="HWB"/>
+<part name="HWB" library="QuadFCv1" deviceset="87758-0216" device="" value="HWB"/>
 <part name="PPM" library="QuadFCv1" deviceset="TESTPAD_TPSQ" device="TP10SQ"/>
 <part name="R32" library="QuadFCv1" deviceset="RESISTOR" device="0402-RES" value="1k"/>
 <part name="R37" library="QuadFCv1" deviceset="RESISTOR" device="0402-RES" value="1k"/>
@@ -10565,8 +10565,8 @@ All major connectors and edge pieces go here</description>
 <attribute name="NAME" x="-36.576" y="-19.939" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-36.576" y="-25.019" size="1.778" layer="96"/>
 </instance>
-<instance part="X1" gate="-1" x="111.76" y="25.4"/>
-<instance part="X1" gate="-2" x="111.76" y="20.32"/>
+<instance part="HWB" gate="-1" x="111.76" y="25.4"/>
+<instance part="HWB" gate="-2" x="111.76" y="20.32"/>
 <instance part="PPM" gate="G$1" x="-5.08" y="-45.72" rot="R270"/>
 <instance part="R32" gate="G$1" x="81.28" y="-17.78" rot="R180"/>
 <instance part="R37" gate="G$1" x="86.36" y="-25.4" rot="R180"/>
@@ -10628,7 +10628,7 @@ All major connectors and edge pieces go here</description>
 <segment>
 <wire x1="109.22" y1="20.32" x2="106.68" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="20.32" x2="106.68" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-2" pin="S"/>
+<pinref part="HWB" gate="-2" pin="S"/>
 <pinref part="GND28" gate="G$1" pin="GND"/>
 </segment>
 <segment>
@@ -10762,7 +10762,7 @@ All major connectors and edge pieces go here</description>
 <segment>
 <wire x1="109.22" y1="25.4" x2="96.52" y2="25.4" width="0.1524" layer="91"/>
 <label x="96.52" y="25.4" size="1.778" layer="95"/>
-<pinref part="X1" gate="-1" pin="S"/>
+<pinref part="HWB" gate="-1" pin="S"/>
 </segment>
 <segment>
 <wire x1="55.88" y1="-7.62" x2="71.12" y2="-7.62" width="0.1524" layer="91"/>

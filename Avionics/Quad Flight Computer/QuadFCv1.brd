@@ -6,10 +6,10 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mil" unit="mm" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="5" unitdist="mil" unit="mm" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="2" name="VCC" color="1" fill="3" visible="yes" active="yes"/>
+<layer number="2" name="VCC" color="1" fill="3" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="GND" color="4" fill="6" visible="no" active="yes"/>
@@ -117,9 +117,43 @@
 <wire x1="49.9618" y1="0" x2="49.9618" y2="49.9618" width="0" layer="20"/>
 <wire x1="49.9618" y1="49.9618" x2="0" y2="49.9618" width="0" layer="20"/>
 <wire x1="0" y1="49.9618" x2="0" y2="0" width="0" layer="20"/>
-<wire x1="40.767" y1="9.525" x2="31.877" y2="9.525" width="0.8128" layer="21"/>
-<wire x1="31.877" y1="9.525" x2="33.147" y2="10.795" width="0.8128" layer="21"/>
-<text x="35.8648" y="6.604" size="1.778" layer="21">Front</text>
+<text x="1.9304" y="10.9728" size="1.016" layer="21" rot="SR270">VBAT</text>
+<text x="27.7876" y="24.6888" size="0.8128" layer="25">U5</text>
+<wire x1="40.005" y1="19.05" x2="32.385" y2="19.05" width="0.6096" layer="51"/>
+<wire x1="32.385" y1="19.05" x2="33.655" y2="20.32" width="0.6096" layer="51"/>
+<wire x1="32.385" y1="19.05" x2="33.655" y2="17.78" width="0.6096" layer="51"/>
+<wire x1="40.005" y1="19.05" x2="40.005" y2="12.065" width="0.6096" layer="51"/>
+<wire x1="40.005" y1="12.065" x2="38.735" y2="13.335" width="0.6096" layer="51"/>
+<wire x1="40.005" y1="12.065" x2="41.275" y2="13.335" width="0.6096" layer="51"/>
+<text x="34.29" y="19.685" size="1.016" layer="51">+X</text>
+<text x="40.64" y="13.97" size="1.016" layer="51">+Y</text>
+<text x="33.655" y="9.017" size="1.016" layer="51">QuadM4</text>
+<text x="39.878" y="7.112" size="1.016" layer="51">Rev 1</text>
+<text x="28.956" y="7.112" size="1.016" layer="51">Flight Computer</text>
+<text x="17.272" y="27.178" size="1.016" layer="52" rot="MR0">Collin Boots</text>
+<text x="0.635" y="22.987" size="1.016" layer="51">1</text>
+<text x="0.635" y="25.527" size="1.016" layer="51">2</text>
+<text x="0.635" y="28.067" size="1.016" layer="51">3</text>
+<text x="0.635" y="30.607" size="1.016" layer="51">4</text>
+<text x="0.635" y="33.147" size="1.016" layer="51">5</text>
+<text x="0.635" y="35.687" size="1.016" layer="51">6</text>
+<text x="0.635" y="38.227" size="1.016" layer="51">7</text>
+<text x="0.635" y="40.894" size="1.016" layer="51">8</text>
+<text x="0.762" y="20.574" size="1.016" layer="51">-</text>
+<text x="0.635" y="17.907" size="1.016" layer="51">+</text>
+<text x="48.641" y="22.987" size="1.016" layer="51">1</text>
+<text x="48.641" y="25.527" size="1.016" layer="51">2</text>
+<text x="48.641" y="28.067" size="1.016" layer="51">3</text>
+<text x="48.641" y="30.607" size="1.016" layer="51">4</text>
+<text x="48.641" y="33.147" size="1.016" layer="51">5</text>
+<text x="48.641" y="35.687" size="1.016" layer="51">6</text>
+<text x="48.641" y="38.227" size="1.016" layer="51">7</text>
+<text x="48.641" y="40.894" size="1.016" layer="51">8</text>
+<text x="48.768" y="20.574" size="1.016" layer="51">-</text>
+<text x="48.641" y="17.907" size="1.016" layer="51">+</text>
+<text x="48.641" y="9.652" size="1.016" layer="52" rot="MR90">RESET</text>
+<text x="7.62" y="8.89" size="1.27" layer="16" font="vector" ratio="13" rot="MR0">QM4-FC</text>
+<text x="7.62" y="6.858" size="1.27" layer="16" font="vector" ratio="13" rot="MR0">REV 1</text>
 </plain>
 <libraries>
 <library name="QuadFCv1">
@@ -2422,139 +2456,472 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="L1" library="QuadFCv1" package="0603" value="10uH" x="18.923" y="21.717" rot="MR0"/>
-<element name="C14" library="QuadFCv1" package="0402-CAP" value="1uF" x="18.669" y="23.1648" rot="MR180"/>
-<element name="STANDOFF1" library="QuadFCv1" package="STAND-OFF" value="STAND-OFF" x="3.81" y="3.556"/>
-<element name="STANDOFF2" library="QuadFCv1" package="STAND-OFF" value="STAND-OFF" x="3.81" y="45.466"/>
-<element name="STANDOFF3" library="QuadFCv1" package="STAND-OFF" value="STAND-OFF" x="45.72" y="3.556"/>
-<element name="STANDOFF4" library="QuadFCv1" package="STAND-OFF" value="STAND-OFF" x="45.72" y="45.466"/>
-<element name="R18" library="QuadFCv1" package="0402-RES" value="220" x="43.307" y="26.924"/>
-<element name="R19" library="QuadFCv1" package="0402-RES" value="220" x="43.307" y="28.702"/>
-<element name="R20" library="QuadFCv1" package="0402-RES" value="220" x="43.307" y="30.48"/>
-<element name="R21" library="QuadFCv1" package="0402-RES" value="220" x="43.434" y="32.512"/>
-<element name="R22" library="QuadFCv1" package="0402-RES" value="220" x="43.434" y="34.29"/>
-<element name="R23" library="QuadFCv1" package="0402-RES" value="220" x="43.434" y="36.195"/>
-<element name="R24" library="QuadFCv1" package="0402-RES" value="220" x="43.434" y="38.1"/>
-<element name="R25" library="QuadFCv1" package="0402-RES" value="220" x="43.434" y="40.005"/>
-<element name="R10" library="QuadFCv1" package="0402-RES" value="220" x="6.35" y="27.178" rot="MR0"/>
-<element name="R11" library="QuadFCv1" package="0402-RES" value="220" x="6.35" y="28.829" rot="MR0"/>
-<element name="R12" library="QuadFCv1" package="0402-RES" value="220" x="6.35" y="30.48" rot="MR0"/>
-<element name="R13" library="QuadFCv1" package="0402-RES" value="220" x="6.35" y="32.258" rot="MR0"/>
-<element name="R14" library="QuadFCv1" package="0402-RES" value="220" x="6.35" y="34.036" rot="MR0"/>
-<element name="R15" library="QuadFCv1" package="0402-RES" value="220" x="6.35" y="35.814" rot="MR0"/>
-<element name="R16" library="QuadFCv1" package="0402-RES" value="220" x="6.35" y="37.592" rot="MR0"/>
-<element name="R17" library="QuadFCv1" package="0402-RES" value="220" x="6.35" y="39.37" rot="MR0"/>
-<element name="U2" library="QuadFCv1" package="TSSOP24" value="74LVC4245APW" x="13.208" y="34.798" rot="MR90"/>
-<element name="R27" library="QuadFCv1" package="0402-RES" value="10K" x="10.795" y="29.845" rot="MR0"/>
-<element name="R26" library="QuadFCv1" package="0402-RES" value="49.9K" x="14.986" y="29.7815" rot="MR0"/>
-<element name="U1" library="QuadFCv1" package="LQFP100" value="TM4C123GH6PZ" x="29.718" y="23.876" rot="MR180"/>
-<element name="C12" library="QuadFCv1" package="0402-CAP" value="1.8uF" x="29.718" y="33.782" rot="MR90"/>
-<element name="C13" library="QuadFCv1" package="0402-CAP" value="1uF" x="19.812" y="19.812" rot="MR90"/>
-<element name="C10" library="QuadFCv1" package="0402-CAP" value="0.1uF" x="20.447" y="28.575" rot="MR90"/>
-<element name="C8" library="QuadFCv1" package="0402-CAP" value="0.1uF" x="26.0096" y="34.163" rot="MR0"/>
-<element name="C6" library="QuadFCv1" package="0402-CAP" value="0.1uF" x="33.3756" y="33.8328" rot="MR180"/>
-<element name="C5" library="QuadFCv1" package="0402-CAP" value="0.1uF" x="40.4622" y="27.2542" rot="MR180"/>
-<element name="C3" library="QuadFCv1" package="0402-CAP" value="0.1uF" x="41.529" y="20.0025" rot="MR270"/>
-<element name="C2" library="QuadFCv1" package="0402-CAP" value="0.1uF" x="33.528" y="13.5255" rot="MR0"/>
-<element name="C1" library="QuadFCv1" package="0402-CAP" value="0.1uF" x="26.924" y="14.605" rot="MR0"/>
-<element name="C7" library="QuadFCv1" package="0402-CAP" value="18pF" x="39.751" y="31.242" rot="MR270"/>
-<element name="C11" library="QuadFCv1" package="0402-CAP" value="18pF" x="39.751" y="28.956" rot="MR90"/>
-<element name="C4" library="QuadFCv1" package="0402-CAP" value="0.1uF" x="45.085" y="12.065" rot="MR270"/>
-<element name="R1" library="QuadFCv1" package="0402-RES" value="10K" x="43.561" y="12.065" rot="MR270"/>
-<element name="R2" library="QuadFCv1" package="0402-RES" value="10K" x="38.2778" y="33.274" rot="MR180"/>
-<element name="PWMIN" library="QuadFCv1" package="1X10" value="M10&quot;" x="46.99" y="18.415" rot="R90"/>
-<element name="PWMOUT" library="QuadFCv1" package="1X10" value="M10&quot;" x="2.54" y="18.415" rot="MR90"/>
-<element name="Y2" library="QuadFCv1" package="AWSCR-CW" value="AWSCR-20.00CW-T" x="40.386" y="22.733" rot="MR270"/>
-<element name="Y1" library="QuadFCv1" package="ECS-.327-12.5-34B" value="32.768KHZ" x="41.529" y="29.845" rot="MR270"/>
-<element name="C9" library="QuadFCv1" package="0402-CAP" value="1.8uF" x="30.5435" y="14.1605" rot="MR270"/>
-<element name="R7" library="QuadFCv1" package="0402-RES" value="22" x="38.481" y="9.398" rot="MR270"/>
-<element name="R4" library="QuadFCv1" package="0402-RES" value="22" x="37.084" y="9.144" rot="MR270"/>
-<element name="R6" library="QuadFCv1" package="0402-RES" value="0" x="35.56" y="9.144" rot="MR270"/>
-<element name="SPI_PPM" library="QuadFCv1" package="2X3_SMT-0.05" value="SPI_PPM" x="36.068" y="27.559"/>
-<element name="R31" library="QuadFCv1" package="0402-RES" value="1K" x="36.83" y="39.116" rot="R270"/>
-<element name="C17" library="QuadFCv1" package="0402-CAP" value=".1uF" x="31.877" y="38.862"/>
-<element name="U3" library="QuadFCv1" package="QFN32" value="ATMEGA32U2-MU" x="33.147" y="34.29"/>
-<element name="R29" library="QuadFCv1" package="0402-RES" value="10K" x="35.433" y="39.116" rot="R90"/>
-<element name="R28" library="QuadFCv1" package="0402-RES" value="1M" x="25.527" y="36.449" rot="R90"/>
-<element name="R30" library="QuadFCv1" package="0402-RES" value="27" x="28.829" y="39.37"/>
-<element name="C15" library="QuadFCv1" package="0402-CAP" value=".1uF" x="27.5082" y="33.5026" rot="R90"/>
-<element name="C16" library="QuadFCv1" package="0402-CAP" value="1uF" x="34.036" y="39.116" rot="R90"/>
-<element name="X1" library="QuadFCv1" package="87758-0216" value="HWB" x="43.815" y="22.733" rot="R180">
+<element name="L1" library="QuadFCv1" package="0603" value="10uH" x="18.923" y="21.717" smashed="yes" rot="MR0">
+<attribute name="NAME" x="17.9832" y="20.6248" size="0.4064" layer="26" font="vector" rot="MR0"/>
+<attribute name="VALUE" x="19.939" y="20.574" size="0.4064" layer="28" font="vector" rot="MR0"/>
+</element>
+<element name="C14" library="QuadFCv1" package="0402-CAP" value="1uF" x="18.669" y="23.1648" smashed="yes" rot="MR180">
+<attribute name="NAME" x="19.2278" y="23.8887" size="0.4064" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="17.5895" y="24.3078" size="0.4064" layer="28" rot="MR180"/>
+</element>
+<element name="STANDOFF1" library="QuadFCv1" package="STAND-OFF" value="STAND-OFF" x="3.81" y="3.556" smashed="yes"/>
+<element name="STANDOFF2" library="QuadFCv1" package="STAND-OFF" value="STAND-OFF" x="3.81" y="45.466" smashed="yes"/>
+<element name="STANDOFF3" library="QuadFCv1" package="STAND-OFF" value="STAND-OFF" x="45.72" y="3.556" smashed="yes"/>
+<element name="STANDOFF4" library="QuadFCv1" package="STAND-OFF" value="STAND-OFF" x="45.72" y="45.466" smashed="yes"/>
+<element name="R18" library="QuadFCv1" package="0402-RES" value="220" x="43.307" y="26.924" smashed="yes">
+<attribute name="NAME" x="42.418" y="27.6225" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="42.2275" y="25.781" size="0.4064" layer="27"/>
+</element>
+<element name="R19" library="QuadFCv1" package="0402-RES" value="220" x="43.307" y="28.702" smashed="yes">
+<attribute name="NAME" x="42.418" y="29.4005" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="42.2275" y="27.559" size="0.4064" layer="27"/>
+</element>
+<element name="R20" library="QuadFCv1" package="0402-RES" value="220" x="43.307" y="30.48" smashed="yes">
+<attribute name="NAME" x="43.7134" y="31.2039" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="42.2275" y="29.337" size="0.4064" layer="27"/>
+</element>
+<element name="R21" library="QuadFCv1" package="0402-RES" value="220" x="43.434" y="32.512" smashed="yes">
+<attribute name="NAME" x="42.545" y="33.2105" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="42.3545" y="31.369" size="0.4064" layer="27"/>
+</element>
+<element name="R22" library="QuadFCv1" package="0402-RES" value="220" x="43.434" y="34.29" smashed="yes">
+<attribute name="NAME" x="42.545" y="34.9885" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="42.3545" y="33.147" size="0.4064" layer="27"/>
+</element>
+<element name="R23" library="QuadFCv1" package="0402-RES" value="220" x="43.434" y="36.195" smashed="yes">
+<attribute name="NAME" x="42.545" y="36.8935" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="42.3545" y="35.052" size="0.4064" layer="27"/>
+</element>
+<element name="R24" library="QuadFCv1" package="0402-RES" value="220" x="43.434" y="38.1" smashed="yes">
+<attribute name="NAME" x="42.545" y="38.7985" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="42.3545" y="36.957" size="0.4064" layer="27"/>
+</element>
+<element name="R25" library="QuadFCv1" package="0402-RES" value="220" x="43.434" y="40.005" smashed="yes">
+<attribute name="NAME" x="42.545" y="40.7035" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="42.3545" y="38.862" size="0.4064" layer="27"/>
+</element>
+<element name="R10" library="QuadFCv1" package="0402-RES" value="220" x="6.35" y="27.178" smashed="yes" rot="MR0">
+<attribute name="NAME" x="8.6868" y="27.1399" size="0.4064" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="7.4295" y="26.035" size="0.4064" layer="28" rot="MR0"/>
+</element>
+<element name="R11" library="QuadFCv1" package="0402-RES" value="220" x="6.35" y="28.829" smashed="yes" rot="MR0">
+<attribute name="NAME" x="8.5598" y="28.8163" size="0.4064" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="7.4295" y="27.686" size="0.4064" layer="28" rot="MR0"/>
+</element>
+<element name="R12" library="QuadFCv1" package="0402-RES" value="220" x="6.35" y="30.48" smashed="yes" rot="MR0">
+<attribute name="NAME" x="8.6106" y="30.4673" size="0.4064" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="7.4295" y="29.337" size="0.4064" layer="28" rot="MR0"/>
+</element>
+<element name="R13" library="QuadFCv1" package="0402-RES" value="220" x="6.35" y="32.258" smashed="yes" rot="MR0">
+<attribute name="NAME" x="8.5852" y="32.1183" size="0.4064" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="7.4295" y="31.115" size="0.4064" layer="28" rot="MR0"/>
+</element>
+<element name="R14" library="QuadFCv1" package="0402-RES" value="220" x="6.35" y="34.036" smashed="yes" rot="MR0">
+<attribute name="NAME" x="8.763" y="34.0233" size="0.4064" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="7.4295" y="32.893" size="0.4064" layer="28" rot="MR0"/>
+</element>
+<element name="R15" library="QuadFCv1" package="0402-RES" value="220" x="6.35" y="35.814" smashed="yes" rot="MR0">
+<attribute name="NAME" x="8.6106" y="35.7251" size="0.4064" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="7.4295" y="34.671" size="0.4064" layer="28" rot="MR0"/>
+</element>
+<element name="R16" library="QuadFCv1" package="0402-RES" value="220" x="6.35" y="37.592" smashed="yes" rot="MR0">
+<attribute name="NAME" x="8.5852" y="37.4523" size="0.4064" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="7.4295" y="36.449" size="0.4064" layer="28" rot="MR0"/>
+</element>
+<element name="R17" library="QuadFCv1" package="0402-RES" value="220" x="6.35" y="39.37" smashed="yes" rot="MR0">
+<attribute name="NAME" x="7.239" y="40.0685" size="0.4064" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="7.4295" y="38.227" size="0.4064" layer="28" rot="MR0"/>
+</element>
+<element name="U2" library="QuadFCv1" package="TSSOP24" value="74LVC4245APW" x="13.208" y="34.798" smashed="yes" rot="MR90">
+<attribute name="NAME" x="16.9972" y="35.687" size="1.016" layer="26" ratio="10" rot="MR90"/>
+<attribute name="VALUE" x="11.1252" y="39.9842" size="1.016" layer="28" ratio="10" rot="MR180"/>
+</element>
+<element name="R27" library="QuadFCv1" package="0402-RES" value="10K" x="10.795" y="29.845" smashed="yes" rot="MR0">
+<attribute name="NAME" x="11.2522" y="28.6639" size="0.4064" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="11.8745" y="28.702" size="0.4064" layer="28" rot="MR0"/>
+</element>
+<element name="R26" library="QuadFCv1" package="0402-RES" value="49.9K" x="14.986" y="29.7815" smashed="yes" rot="MR0">
+<attribute name="NAME" x="15.494" y="28.702" size="0.4064" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="16.0655" y="28.6385" size="0.4064" layer="28" rot="MR0"/>
+</element>
+<element name="U1" library="QuadFCv1" package="LQFP100" value="TM4C123GH6PZ" x="29.718" y="23.876" smashed="yes" rot="MR180">
+<attribute name="NAME" x="24.1328" y="14.0556" size="1.016" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="24.583" y="24.971" size="1.27" layer="28" rot="MR180"/>
+</element>
+<element name="C12" library="QuadFCv1" package="0402-CAP" value="1.8uF" x="29.718" y="33.782" smashed="yes" rot="MR90">
+<attribute name="NAME" x="30.4165" y="33.3248" size="0.8128" layer="26" rot="MR90"/>
+<attribute name="VALUE" x="28.575" y="32.7025" size="0.4064" layer="28" rot="MR90"/>
+</element>
+<element name="C13" library="QuadFCv1" package="0402-CAP" value="1uF" x="19.812" y="19.812" smashed="yes" rot="MR90">
+<attribute name="NAME" x="19.2151" y="19.7866" size="0.4064" layer="26" rot="MR270"/>
+<attribute name="VALUE" x="18.669" y="18.7325" size="0.4064" layer="28" rot="MR90"/>
+</element>
+<element name="C10" library="QuadFCv1" package="0402-CAP" value="0.1uF" x="20.447" y="28.575" smashed="yes" rot="MR90">
+<attribute name="NAME" x="19.3929" y="28.5496" size="0.4064" layer="26" rot="MR90"/>
+<attribute name="VALUE" x="19.304" y="27.4955" size="0.4064" layer="28" rot="MR90"/>
+</element>
+<element name="C8" library="QuadFCv1" package="0402-CAP" value="0.1uF" x="26.0096" y="34.163" smashed="yes" rot="MR0">
+<attribute name="NAME" x="26.3906" y="34.8107" size="0.8128" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="27.0891" y="33.02" size="0.4064" layer="28" rot="MR0"/>
+</element>
+<element name="C6" library="QuadFCv1" package="0402-CAP" value="0.1uF" x="33.3756" y="33.8328" smashed="yes" rot="MR180">
+<attribute name="NAME" x="33.7312" y="34.5059" size="0.8128" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="32.2961" y="34.9758" size="0.4064" layer="28" rot="MR180"/>
+</element>
+<element name="C5" library="QuadFCv1" package="0402-CAP" value="0.1uF" x="40.4622" y="27.2542" smashed="yes" rot="MR180">
+<attribute name="NAME" x="39.878" y="26.4541" size="0.4064" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="39.3827" y="28.3972" size="0.4064" layer="28" rot="MR180"/>
+</element>
+<element name="C3" library="QuadFCv1" package="0402-CAP" value="0.1uF" x="41.529" y="20.0025" smashed="yes" rot="MR270">
+<attribute name="NAME" x="42.2021" y="19.7739" size="0.4064" layer="26" rot="MR90"/>
+<attribute name="VALUE" x="42.672" y="21.082" size="0.4064" layer="28" rot="MR270"/>
+</element>
+<element name="C2" library="QuadFCv1" package="0402-CAP" value="0.1uF" x="33.528" y="13.5255" smashed="yes" rot="MR0">
+<attribute name="NAME" x="34.2646" y="11.9634" size="0.8128" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="34.6075" y="12.3825" size="0.4064" layer="28" rot="MR0"/>
+</element>
+<element name="C1" library="QuadFCv1" package="0402-CAP" value="0.1uF" x="26.924" y="14.605" smashed="yes" rot="MR0">
+<attribute name="NAME" x="27.6352" y="13.1445" size="0.8128" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="28.0035" y="13.462" size="0.4064" layer="28" rot="MR0"/>
+</element>
+<element name="C7" library="QuadFCv1" package="0402-CAP" value="18pF" x="39.751" y="31.242" smashed="yes" rot="MR270">
+<attribute name="NAME" x="39.0271" y="32.0294" size="0.4064" layer="26" rot="MR270"/>
+<attribute name="VALUE" x="40.894" y="32.3215" size="0.4064" layer="28" rot="MR270"/>
+</element>
+<element name="C11" library="QuadFCv1" package="0402-CAP" value="18pF" x="39.751" y="28.956" smashed="yes" rot="MR90">
+<attribute name="NAME" x="39.1541" y="29.4386" size="0.4064" layer="26" rot="MR270"/>
+<attribute name="VALUE" x="38.608" y="27.8765" size="0.4064" layer="28" rot="MR90"/>
+</element>
+<element name="C4" library="QuadFCv1" package="0402-CAP" value="0.1uF" x="45.085" y="12.065" smashed="yes" rot="MR270">
+<attribute name="NAME" x="45.7327" y="12.0396" size="0.8128" layer="26" rot="MR90"/>
+<attribute name="VALUE" x="46.228" y="13.1445" size="0.4064" layer="28" rot="MR270"/>
+</element>
+<element name="R1" library="QuadFCv1" package="0402-RES" value="10K" x="43.561" y="12.065" smashed="yes" rot="MR270">
+<attribute name="NAME" x="42.8117" y="12.065" size="0.8128" layer="26" rot="MR270"/>
+<attribute name="VALUE" x="44.704" y="13.1445" size="0.4064" layer="28" rot="MR270"/>
+</element>
+<element name="R2" library="QuadFCv1" package="0402-RES" value="10K" x="38.2778" y="33.274" smashed="yes" rot="MR180">
+<attribute name="NAME" x="37.9222" y="33.9725" size="0.8128" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="37.1983" y="34.417" size="0.4064" layer="28" rot="MR180"/>
+</element>
+<element name="PWMIN" library="QuadFCv1" package="1X10" value="M10&quot;" x="46.99" y="18.415" smashed="yes" rot="R90">
+<attribute name="NAME" x="45.2374" y="41.9354" size="1.27" layer="26" ratio="10" rot="MR270"/>
+<attribute name="VALUE" x="50.165" y="17.145" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="PWMOUT" library="QuadFCv1" package="1X10" value="M10&quot;" x="2.54" y="18.415" smashed="yes" rot="MR90">
+<attribute name="NAME" x="4.6736" y="19.304" size="1.016" layer="26" ratio="10" rot="MR90"/>
+<attribute name="VALUE" x="-0.635" y="17.145" size="1.27" layer="28" rot="MR90"/>
+</element>
+<element name="Y2" library="QuadFCv1" package="AWSCR-CW" value="AWSCR-20.00CW-T" x="40.386" y="22.733" smashed="yes" rot="MR270">
+<attribute name="NAME" x="41.4782" y="24.269" size="1.016" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="43.196" y="24.003" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="Y1" library="QuadFCv1" package="ECS-.327-12.5-34B" value="32.768KHZ" x="41.529" y="29.845" smashed="yes" rot="MR270">
+<attribute name="NAME" x="42.8274" y="28.6006" size="1.016" layer="26" rot="MR90"/>
+<attribute name="VALUE" x="42.029" y="27.645" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="C9" library="QuadFCv1" package="0402-CAP" value="1.8uF" x="30.5435" y="14.1605" smashed="yes" rot="MR270">
+<attribute name="NAME" x="29.8704" y="14.4907" size="0.8128" layer="26" rot="MR270"/>
+<attribute name="VALUE" x="31.6865" y="15.24" size="0.4064" layer="28" rot="MR270"/>
+</element>
+<element name="R7" library="QuadFCv1" package="0402-RES" value="22" x="38.481" y="9.398" smashed="yes" rot="MR270">
+<attribute name="NAME" x="38.4683" y="7.9502" size="0.8128" layer="26" rot="MR270"/>
+<attribute name="VALUE" x="39.624" y="10.4775" size="0.4064" layer="28" rot="MR270"/>
+</element>
+<element name="R4" library="QuadFCv1" package="0402-RES" value="22" x="37.084" y="9.144" smashed="yes" rot="MR270">
+<attribute name="NAME" x="37.1221" y="7.874" size="0.8128" layer="26" rot="MR270"/>
+<attribute name="VALUE" x="38.227" y="10.2235" size="0.4064" layer="28" rot="MR270"/>
+</element>
+<element name="R6" library="QuadFCv1" package="0402-RES" value="0" x="35.56" y="9.144" smashed="yes" rot="MR270">
+<attribute name="NAME" x="34.6456" y="8.0391" size="0.8128" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="36.703" y="10.2235" size="0.4064" layer="28" rot="MR270"/>
+</element>
+<element name="SPI_PPM" library="QuadFCv1" package="2X3_SMT-0.05" value="SPI_PPM" x="36.068" y="27.559" smashed="yes">
+<attribute name="NAME" x="39.4462" y="29.8196" size="0.8128" layer="25" rot="R270"/>
+</element>
+<element name="R31" library="QuadFCv1" package="0402-RES" value="1K" x="36.83" y="39.116" smashed="yes" rot="R270">
+<attribute name="NAME" x="36.3347" y="38.608" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="35.687" y="40.1955" size="0.4064" layer="27" rot="R270"/>
+</element>
+<element name="C17" library="QuadFCv1" package="0402-CAP" value=".1uF" x="31.877" y="38.862" smashed="yes">
+<attribute name="NAME" x="31.0388" y="39.4335" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="30.7975" y="37.719" size="0.4064" layer="27"/>
+</element>
+<element name="U3" library="QuadFCv1" package="QFN32" value="ATMEGA32U2-MU" x="33.147" y="34.29" smashed="yes">
+<attribute name="VALUE" x="29.097" y="29.94" size="1.27" layer="27"/>
+<attribute name="NAME" x="29.5756" y="37.0066" size="0.8128" layer="25"/>
+</element>
+<element name="R29" library="QuadFCv1" package="0402-RES" value="10K" x="35.433" y="39.116" smashed="yes" rot="R90">
+<attribute name="NAME" x="34.9377" y="38.608" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="36.576" y="38.0365" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="R28" library="QuadFCv1" package="0402-RES" value="1M" x="25.527" y="36.449" smashed="yes" rot="R90">
+<attribute name="NAME" x="24.9809" y="35.9156" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="26.67" y="35.3695" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="R30" library="QuadFCv1" package="0402-RES" value="27" x="28.829" y="39.37" smashed="yes">
+<attribute name="NAME" x="27.7622" y="40.0939" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="27.7495" y="38.227" size="0.4064" layer="27"/>
+</element>
+<element name="C15" library="QuadFCv1" package="0402-CAP" value=".1uF" x="27.5082" y="33.5026" smashed="yes" rot="R90">
+<attribute name="NAME" x="26.7589" y="33.4772" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="28.6512" y="32.4231" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="C16" library="QuadFCv1" package="0402-CAP" value="1uF" x="34.036" y="39.116" smashed="yes" rot="R90">
+<attribute name="NAME" x="33.5153" y="38.5826" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="35.179" y="38.0365" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="HWB" library="QuadFCv1" package="87758-0216" value="HWB" x="43.815" y="22.733" smashed="yes" rot="R180">
 <attribute name="OC_NEWARK" value="94M1513" x="97.663" y="54.229" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="87758-0216" x="97.663" y="54.229" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MF" value="" x="97.663" y="54.229" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="97.663" y="54.229" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="41.1226" y="24.9786" size="1.27" layer="25" rot="R270"/>
+<attribute name="VALUE" x="44.435" y="20.193" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="PPM" library="QuadFCv1" package="TP10SQ" value="TESTPAD_TPSQTP10SQ" x="36.83" y="37.084" rot="R90">
-<attribute name="TP_SIGNAL_NAME" value="" x="69.088" y="-5.334" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="PPM" library="QuadFCv1" package="TP10SQ" value="TESTPAD_TPSQTP10SQ" x="36.83" y="37.084" smashed="yes" rot="R90">
+<attribute name="TP_SIGNAL_NAME" value="" x="38.735" y="37.084" size="1" layer="37" rot="R90"/>
+<attribute name="NAME" x="37.4475" y="36.7957" size="0.8128" layer="25"/>
+<attribute name="VALUE" x="37.465" y="36.576" size="0.0254" layer="27" rot="R90"/>
 </element>
-<element name="R32" library="QuadFCv1" package="0402-RES" value="1k" x="29.845" y="31.1912" rot="R90"/>
-<element name="R37" library="QuadFCv1" package="0402-RES" value="1k" x="28.7274" y="31.5976" rot="R90"/>
-<element name="R35" library="QuadFCv1" package="0402-RES" value="1k" x="38.354" y="39.116" rot="R270"/>
-<element name="LED3" library="QuadFCv1" package="LED-0603" value="GREEN" x="37.592" y="35.56" rot="R90"/>
-<element name="F1" library="QuadFCv1" package="PTC-1206" value="500mA" x="26.289" y="8.509"/>
-<element name="Y3" library="QuadFCv1" package="PRQC16.00SR5010X000" value="PRQC16.00SR5010X000" x="28.194" y="36.6522" rot="R90"/>
-<element name="C18" library="QuadFCv1" package="0402-CAP" value="0.1uF" x="21.2852" y="25.2984" rot="R270"/>
-<element name="U6" library="QuadFCv1" package="16LPCC" value="HMC5883LSMD" x="9.652" y="23.749" rot="R270"/>
-<element name="C22" library="QuadFCv1" package="0402-CAP" value="0.22uF" x="9.525" y="19.304"/>
-<element name="C21" library="QuadFCv1" package="0402-CAP" value="4.7uF" x="9.652" y="20.701" rot="R180"/>
-<element name="U5" library="QuadFCv1" package="QFN-24-4MM2" value="INVESENSE_MPU-6000" x="24.873" y="25" rot="R180"/>
-<element name="C19" library="QuadFCv1" package="0402-CAP" value="0.1uF" x="24.8158" y="29.2862" rot="R90"/>
-<element name="C20" library="QuadFCv1" package="0402-CAP" value="2.2nF" x="24.7396" y="21.3995"/>
-<element name="R38" library="QuadFCv1" package="0402-RES" value="DNP" x="14.478" y="25.146"/>
-<element name="R39" library="QuadFCv1" package="0402-RES" value="DNP" x="14.478" y="23.749"/>
-<element name="U7" library="QuadFCv1" package="MS5611-01BA" value="MS5611-01BA" x="25.908" y="14.224" rot="R90">
+<element name="R32" library="QuadFCv1" package="0402-RES" value="1k" x="29.845" y="31.1912" smashed="yes" rot="R90">
+<attribute name="NAME" x="30.8229" y="30.5816" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="30.988" y="30.1117" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="R37" library="QuadFCv1" package="0402-RES" value="1k" x="28.7274" y="31.5976" smashed="yes" rot="R90">
+<attribute name="NAME" x="28.1559" y="31.1658" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="29.8704" y="30.5181" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="R35" library="QuadFCv1" package="0402-RES" value="1k" x="38.354" y="39.116" smashed="yes" rot="R270">
+<attribute name="NAME" x="37.8079" y="38.6334" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="37.211" y="40.1955" size="0.4064" layer="27" rot="R270"/>
+</element>
+<element name="LED3" library="QuadFCv1" package="LED-0603" value="GREEN" x="37.592" y="35.56" smashed="yes" rot="R90">
+<attribute name="NAME" x="38.481" y="34.8615" size="0.4064" layer="25" rot="R180"/>
+<attribute name="VALUE" x="38.608" y="36.6395" size="0.4064" layer="27" rot="R180"/>
+</element>
+<element name="F1" library="QuadFCv1" package="PTC-1206" value="500mA" x="26.289" y="8.509" smashed="yes">
+<attribute name="NAME" x="25.6794" y="6.8326" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="24.765" y="6.858" size="0.4064" layer="27"/>
+</element>
+<element name="Y3" library="QuadFCv1" package="PRQC16.00SR5010X000" value="PRQC16.00SR5010X000" x="28.194" y="36.6522" smashed="yes" rot="R90">
+<attribute name="NAME" x="26.8972" y="36.0118" size="0.8128" layer="25" rot="R90"/>
+</element>
+<element name="C18" library="QuadFCv1" package="0402-CAP" value="0.1uF" x="21.2852" y="25.2984" smashed="yes" rot="R270">
+<attribute name="NAME" x="20.2057" y="25.781" size="0.4064" layer="25" rot="R270"/>
+<attribute name="VALUE" x="20.1422" y="26.3779" size="0.4064" layer="27" rot="R270"/>
+</element>
+<element name="U6" library="QuadFCv1" package="16LPCC" value="HMC5883LSMD" x="9.652" y="23.749" smashed="yes" rot="R270">
+<attribute name="NAME" x="7.62" y="25.8572" size="0.8128" layer="25"/>
+<attribute name="VALUE" x="7.112" y="25.654" size="0.6096" layer="27" rot="R270"/>
+</element>
+<element name="C22" library="QuadFCv1" package="0402-CAP" value="0.22uF" x="9.525" y="19.304" smashed="yes">
+<attribute name="NAME" x="8.9408" y="18.2499" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="8.4455" y="18.161" size="0.4064" layer="27"/>
+</element>
+<element name="C21" library="QuadFCv1" package="0402-CAP" value="4.7uF" x="9.652" y="20.701" smashed="yes" rot="R180">
+<attribute name="NAME" x="10.795" y="20.5105" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="10.7315" y="21.844" size="0.4064" layer="27" rot="R180"/>
+</element>
+<element name="U5" library="QuadFCv1" package="QFN-24-4MM2" value="INVESENSE_MPU-6000" x="24.873" y="25" smashed="yes" rot="R180"/>
+<element name="C19" library="QuadFCv1" package="0402-CAP" value="0.1uF" x="24.8158" y="29.2862" smashed="yes" rot="R90">
+<attribute name="NAME" x="25.7937" y="28.7782" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="25.9588" y="28.2067" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="C20" library="QuadFCv1" package="0402-CAP" value="2.2nF" x="24.7396" y="21.3995" smashed="yes">
+<attribute name="NAME" x="24.3078" y="20.3708" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="23.6601" y="20.2565" size="0.4064" layer="27"/>
+</element>
+<element name="R38" library="QuadFCv1" package="0402-RES" value="DNP" x="14.478" y="25.146" smashed="yes">
+<attribute name="NAME" x="12.3698" y="25.0317" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="13.3985" y="24.003" size="0.4064" layer="27"/>
+</element>
+<element name="R39" library="QuadFCv1" package="0402-RES" value="DNP" x="14.478" y="23.749" smashed="yes">
+<attribute name="NAME" x="12.3952" y="23.9903" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="13.3985" y="22.606" size="0.4064" layer="27"/>
+</element>
+<element name="U7" library="QuadFCv1" package="MS5611-01BA" value="MS5611-01BA" x="25.908" y="14.224" smashed="yes" rot="R90">
 <attribute name="MFGPN" value="MS5611-01BA" x="18.288" y="9.779" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DATASHEET" value="http://www.meas-spec.com/downloads/MS5611-01BA01.pdf" x="18.288" y="9.779" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="LINK" value="http://www.meas-spec.com/product/t_product.aspx?id=8503#" x="18.288" y="9.779" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="28.3022" y="16.2588" size="0.8128" layer="25"/>
+<attribute name="VALUE" x="29.408" y="12.224" size="0.4064" layer="27" rot="R90"/>
 </element>
-<element name="C23" library="QuadFCv1" package="0402-CAP" value="0.1uF" x="25.908" y="11.684"/>
-<element name="R41" library="QuadFCv1" package="0402-RES" value="0" x="14.478" y="26.543"/>
-<element name="R40" library="QuadFCv1" package="0402-RES" value="0" x="14.478" y="22.352"/>
-<element name="U8" library="QuadFCv1" package="SOT363_PHILIPS" value="74AUP1G19GW" x="8.128" y="16.891" rot="MR270"/>
-<element name="U9" library="QuadFCv1" package="SOIC8" value="S25FL127S" x="13.97" y="18.415" rot="MR180"/>
-<element name="R42" library="QuadFCv1" package="0402-RES" value="2.2k" x="24.003" y="17.526" rot="R90"/>
-<element name="R43" library="QuadFCv1" package="0402-RES" value="2.2k" x="25.273" y="17.526" rot="R90"/>
-<element name="J2" library="QuadFCv1" package="1050270001" value="1050270001" x="13.97" y="13.208" rot="MR0"/>
-<element name="FC_JTAG" library="QuadFCv1" package="2X4_SMT-0.05" value="M04X2SMT-0.05" x="32.893" y="14.478"/>
-<element name="ISENSE" library="QuadFCv1" package="DF13A-5P-1.25H" value="" x="25.781" y="5.334" rot="MR180"/>
-<element name="VBATTSENSE" library="QuadFCv1" package="1X01" value="M01PTH" x="2.54" y="12.954" rot="R90"/>
-<element name="R44" library="QuadFCv1" package="0402-RES" value="120K" x="5.08" y="13.589" rot="MR270"/>
-<element name="R45" library="QuadFCv1" package="0402-RES" value="20K" x="6.604" y="13.589" rot="MR90"/>
-<element name="R46" library="QuadFCv1" package="0402-RES" value="10k" x="5.08" y="16.383" rot="MR90"/>
-<element name="R47" library="QuadFCv1" package="0402-RES" value="10k" x="28.702" y="8.382" rot="MR90"/>
-<element name="R48" library="QuadFCv1" package="0402-RES" value="10k" x="27.305" y="8.382" rot="MR90"/>
-<element name="R49" library="QuadFCv1" package="0402-RES" value="10k" x="25.908" y="8.382" rot="MR90"/>
-<element name="R50" library="QuadFCv1" package="0402-RES" value="10k" x="24.6634" y="8.382" rot="MR90"/>
-<element name="R51" library="QuadFCv1" package="0402-RES" value="10k" x="23.4188" y="7.9502" rot="MR90"/>
-<element name="I2C" library="QuadFCv1" package="DF13A-4P-1.25H" value="" x="36.449" y="43.688" rot="MR0"/>
-<element name="GPS" library="QuadFCv1" package="DF13A-4P-1.25H" value="" x="25.4" y="43.688" rot="MR0"/>
-<element name="R52" library="QuadFCv1" package="0402-RES" value="0" x="28.829" y="39.37" rot="MR180"/>
-<element name="R53" library="QuadFCv1" package="0402-RES" value="DNP" x="28.829" y="41.5544" rot="MR180"/>
-<element name="R54" library="QuadFCv1" package="0603-RES" value="0" x="42.418" y="19.2405" rot="R180"/>
-<element name="R55" library="QuadFCv1" package="0603-RES" value="0" x="4.064" y="15.748"/>
-<element name="Q1" library="QuadFCv1" package="SOT23" value="DMP2035U" x="20.193" y="10.16" rot="R180"/>
-<element name="Q2" library="QuadFCv1" package="SOT23" value="DMP2035U" x="13.97" y="13.335" rot="R90"/>
-<element name="Q3" library="QuadFCv1" package="SOT23" value="DMP2035U" x="9.525" y="12.065"/>
-<element name="U10" library="QuadFCv1" package="SOT23-6" value="LTC4412" x="14.605" y="8.89" rot="R270"/>
-<element name="R56" library="QuadFCv1" package="0402-RES" value="470K" x="19.939" y="13.335" rot="R180"/>
-<element name="C24" library="QuadFCv1" package="0402-CAP" value="1uF" x="17.399" y="11.938" rot="R90"/>
-<element name="U11" library="QuadFCv1" package="SOT89" value="AP7215-33YG-13" x="18.415" y="17.018"/>
-<element name="C25" library="QuadFCv1" package="0402-CAP" value="1u" x="14.7828" y="16.764" rot="R90"/>
-<element name="C26" library="QuadFCv1" package="0402-CAP" value="1u" x="22.098" y="15.875" rot="R90"/>
-<element name="RADIO1" library="QuadFCv1" package="DF13A-5P-1.25H" value="" x="13.462" y="43.688" rot="MR0"/>
-<element name="U12" library="QuadFCv1" package="USB-AB-MICRO-SMD" value="" x="37.211" y="2.032" rot="MR90"/>
-<element name="SW1" library="QuadFCv1" package="PTS635VL31" value="PTS635VL31-VERT" x="47.625" y="9.525" rot="R90"/>
-<element name="BZR" library="QuadFCv1" package="CMT-1203-SMT" value="CMT-1203-SMT" x="12.446" y="34.671" rot="R90"/>
-<element name="U4" library="QuadFCv1" package="SOT23-5" value="MCP6L91T-E/OT" x="22.225" y="37.719"/>
-<element name="R57" library="QuadFCv1" package="0402-RES" value="0" x="21.336" y="33.782" rot="R270"/>
-<element name="R58" library="QuadFCv1" package="0402-RES" value="10K" x="24.13" y="40.894"/>
-<element name="R59" library="QuadFCv1" package="0402-RES" value="10K" x="20.955" y="40.894"/>
-<element name="JP1" library="QuadFCv1" package="1X10_SMT-0.05" value="M101X10-SMT-0.05" x="8.89" y="45.72"/>
-<element name="JP2" library="QuadFCv1" package="1X12_SMT-0.05" value="M12" x="26.67" y="45.72"/>
-<element name="JP3" library="QuadFCv1" package="1X12_SMT-0.05" value="M12" x="8.89" y="3.81"/>
-<element name="JP4" library="QuadFCv1" package="1X12_SMT-0.05" value="M12" x="26.67" y="3.81"/>
-<element name="R60" library="QuadFCv1" package="0402-RES" value="100k" x="9.525" y="8.89"/>
+<element name="C23" library="QuadFCv1" package="0402-CAP" value="0.1uF" x="25.908" y="11.684" smashed="yes">
+<attribute name="NAME" x="23.5458" y="11.4173" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="24.8285" y="10.541" size="0.4064" layer="27"/>
+</element>
+<element name="R41" library="QuadFCv1" package="0402-RES" value="0" x="14.478" y="26.543" smashed="yes">
+<attribute name="NAME" x="12.3444" y="26.5557" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="13.3985" y="25.4" size="0.4064" layer="27"/>
+</element>
+<element name="R40" library="QuadFCv1" package="0402-RES" value="0" x="14.478" y="22.352" smashed="yes">
+<attribute name="NAME" x="12.3444" y="22.1869" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="13.3985" y="21.209" size="0.4064" layer="27"/>
+</element>
+<element name="U8" library="QuadFCv1" package="SOT363_PHILIPS" value="74AUP1G19GW" x="8.128" y="16.891" smashed="yes" rot="MR270">
+<attribute name="NAME" x="9.0248" y="18.2394" size="1.016" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="10.828" y="17.991" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="U9" library="QuadFCv1" package="SOIC8" value="S25FL127S" x="13.97" y="18.415" smashed="yes" rot="MR180">
+<attribute name="NAME" x="11.2268" y="19.7104" size="1.016" layer="26" rot="MR270"/>
+<attribute name="VALUE" x="17.907" y="20.32" size="1.27" layer="28" rot="MR270"/>
+</element>
+<element name="R42" library="QuadFCv1" package="0402-RES" value="2.2k" x="24.003" y="17.526" smashed="yes" rot="R90">
+<attribute name="NAME" x="23.4569" y="17.0434" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="25.146" y="16.4465" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="R43" library="QuadFCv1" package="0402-RES" value="2.2k" x="25.273" y="17.526" smashed="yes" rot="R90">
+<attribute name="NAME" x="26.2001" y="17.018" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="26.416" y="16.4465" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="J2" library="QuadFCv1" package="1050270001" value="1050270001" x="13.97" y="13.208" smashed="yes" rot="MR0">
+<attribute name="NAME" x="19.5272" y="13.627" size="1.016" layer="26" rot="MR0"/>
+</element>
+<element name="FC_JTAG" library="QuadFCv1" package="2X4_SMT-0.05" value="M04X2SMT-0.05" x="32.893" y="14.478" smashed="yes">
+<attribute name="NAME" x="29.9974" y="10.8712" size="0.8128" layer="25" rot="R90"/>
+</element>
+<element name="ISENSE" library="QuadFCv1" package="DF13A-5P-1.25H" value="" x="25.781" y="5.334" smashed="yes" rot="MR180">
+<attribute name="NAME" x="22.18" y="0.1858" size="1.27" layer="21"/>
+</element>
+<element name="VBATTSENSE" library="QuadFCv1" package="1X01" value="M01PTH" x="2.54" y="12.954" smashed="yes" rot="R90">
+<attribute name="VALUE" x="5.715" y="11.684" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="R44" library="QuadFCv1" package="0402-RES" value="120K" x="5.08" y="13.589" smashed="yes" rot="MR270">
+<attribute name="NAME" x="4.3815" y="14.478" size="0.4064" layer="26" rot="MR270"/>
+<attribute name="VALUE" x="6.223" y="14.6685" size="0.4064" layer="28" rot="MR270"/>
+</element>
+<element name="R45" library="QuadFCv1" package="0402-RES" value="20K" x="6.604" y="13.589" smashed="yes" rot="MR90">
+<attribute name="NAME" x="7.3279" y="13.1064" size="0.4064" layer="26" rot="MR90"/>
+<attribute name="VALUE" x="5.461" y="12.5095" size="0.4064" layer="28" rot="MR90"/>
+</element>
+<element name="R46" library="QuadFCv1" package="0402-RES" value="10k" x="5.08" y="16.383" smashed="yes" rot="MR90">
+<attribute name="NAME" x="3.9751" y="15.7734" size="0.4064" layer="26" rot="MR90"/>
+<attribute name="VALUE" x="3.937" y="15.3035" size="0.4064" layer="28" rot="MR90"/>
+</element>
+<element name="R47" library="QuadFCv1" package="0402-RES" value="10k" x="28.702" y="8.382" smashed="yes" rot="MR90">
+<attribute name="NAME" x="29.1338" y="9.5377" size="0.4064" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="27.559" y="7.3025" size="0.4064" layer="28" rot="MR90"/>
+</element>
+<element name="R48" library="QuadFCv1" package="0402-RES" value="10k" x="27.305" y="8.382" smashed="yes" rot="MR90">
+<attribute name="NAME" x="27.8384" y="6.7437" size="0.4064" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="26.162" y="7.3025" size="0.4064" layer="28" rot="MR90"/>
+</element>
+<element name="R49" library="QuadFCv1" package="0402-RES" value="10k" x="25.908" y="8.382" smashed="yes" rot="MR90">
+<attribute name="NAME" x="26.416" y="9.5123" size="0.4064" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="24.765" y="7.3025" size="0.4064" layer="28" rot="MR90"/>
+</element>
+<element name="R50" library="QuadFCv1" package="0402-RES" value="10k" x="24.6634" y="8.382" smashed="yes" rot="MR90">
+<attribute name="NAME" x="25.1714" y="6.7437" size="0.4064" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="23.5204" y="7.3025" size="0.4064" layer="28" rot="MR90"/>
+</element>
+<element name="R51" library="QuadFCv1" package="0402-RES" value="10k" x="23.4188" y="7.9502" smashed="yes" rot="MR90">
+<attribute name="NAME" x="22.3139" y="7.4168" size="0.4064" layer="26" rot="MR90"/>
+<attribute name="VALUE" x="22.2758" y="6.8707" size="0.4064" layer="28" rot="MR90"/>
+</element>
+<element name="I2C" library="QuadFCv1" package="DF13A-4P-1.25H" value="" x="36.449" y="43.688" smashed="yes" rot="MR0">
+<attribute name="NAME" x="37.8772" y="41.2322" size="1.016" layer="22" rot="MR0"/>
+</element>
+<element name="GPS" library="QuadFCv1" package="DF13A-4P-1.25H" value="" x="25.4" y="43.688" smashed="yes" rot="MR0">
+<attribute name="NAME" x="25.0248" y="40.9528" size="1.016" layer="22" rot="MR0"/>
+</element>
+<element name="R52" library="QuadFCv1" package="0402-RES" value="0" x="28.829" y="39.37" smashed="yes" rot="MR180">
+<attribute name="NAME" x="28.2956" y="38.5191" size="0.4064" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="27.7495" y="40.513" size="0.4064" layer="28" rot="MR180"/>
+</element>
+<element name="R53" library="QuadFCv1" package="0402-RES" value="DNP" x="28.829" y="41.5544" smashed="yes" rot="MR180">
+<attribute name="NAME" x="27.6098" y="40.8559" size="0.4064" layer="26" rot="MR180"/>
+<attribute name="VALUE" x="27.7495" y="42.6974" size="0.4064" layer="28" rot="MR180"/>
+</element>
+<element name="R54" library="QuadFCv1" package="0603-RES" value="0" x="42.418" y="19.2405" smashed="yes" rot="R180">
+<attribute name="NAME" x="43.307" y="18.4785" size="0.4064" layer="25" font="vector" rot="R180"/>
+<attribute name="VALUE" x="43.434" y="20.3835" size="0.4064" layer="27" font="vector" rot="R180"/>
+</element>
+<element name="R55" library="QuadFCv1" package="0603-RES" value="0" x="4.064" y="15.748" smashed="yes">
+<attribute name="NAME" x="4.2418" y="14.5288" size="0.4064" layer="25" font="vector"/>
+<attribute name="VALUE" x="3.048" y="14.605" size="0.4064" layer="27" font="vector"/>
+</element>
+<element name="Q1" library="QuadFCv1" package="SOT23" value="DMP2035U" x="20.193" y="10.16" smashed="yes" rot="R180">
+<attribute name="NAME" x="19.7104" y="9.0932" size="0.8128" layer="25" rot="R180"/>
+<attribute name="VALUE" x="22.098" y="13.335" size="1.27" layer="27" rot="R180"/>
+</element>
+<element name="Q2" library="QuadFCv1" package="SOT23" value="DMP2035U" x="13.97" y="13.335" smashed="yes" rot="R90">
+<attribute name="NAME" x="12.7254" y="14.4018" size="0.8128" layer="25" rot="R90"/>
+<attribute name="VALUE" x="17.145" y="11.43" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="Q3" library="QuadFCv1" package="SOT23" value="DMP2035U" x="9.525" y="12.065" smashed="yes">
+<attribute name="NAME" x="6.3246" y="11.811" size="0.8128" layer="25"/>
+<attribute name="VALUE" x="7.62" y="8.89" size="1.27" layer="27"/>
+</element>
+<element name="U10" library="QuadFCv1" package="SOT23-6" value="LTC4412" x="14.605" y="8.89" smashed="yes" rot="R270">
+<attribute name="VALUE" x="11.933" y="10.287" size="1.016" layer="27" ratio="10" rot="R270"/>
+<attribute name="NAME" x="15.875" y="6.9594" size="0.8128" layer="25" ratio="10" rot="R180"/>
+</element>
+<element name="R56" library="QuadFCv1" package="0402-RES" value="470K" x="19.939" y="13.335" smashed="yes" rot="R180">
+<attribute name="NAME" x="20.828" y="12.6365" size="0.4064" layer="25" rot="R180"/>
+<attribute name="VALUE" x="21.0185" y="14.478" size="0.4064" layer="27" rot="R180"/>
+</element>
+<element name="C24" library="QuadFCv1" package="0402-CAP" value="1uF" x="17.399" y="11.938" smashed="yes" rot="R90">
+<attribute name="NAME" x="16.9037" y="11.4554" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="18.542" y="10.8585" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="U11" library="QuadFCv1" package="SOT89" value="AP7215-33YG-13" x="18.415" y="17.018" smashed="yes">
+<attribute name="NAME" x="19.812" y="18.4404" size="0.8128" layer="25"/>
+<attribute name="VALUE" x="16.0099" y="12.6731" size="1.27" layer="27"/>
+</element>
+<element name="C25" library="QuadFCv1" package="0402-CAP" value="1u" x="14.7828" y="16.764" smashed="yes" rot="R90">
+<attribute name="NAME" x="14.2621" y="16.3322" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="15.9258" y="15.6845" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="C26" library="QuadFCv1" package="0402-CAP" value="1u" x="22.098" y="15.875" smashed="yes" rot="R90">
+<attribute name="NAME" x="22.2377" y="13.716" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="23.241" y="14.7955" size="0.4064" layer="27" rot="R90"/>
+</element>
+<element name="RADIO1" library="QuadFCv1" package="DF13A-5P-1.25H" value="" x="13.462" y="43.688" smashed="yes" rot="MR0">
+<attribute name="NAME" x="18.5732" y="40.3686" size="1.016" layer="22" rot="MR0"/>
+</element>
+<element name="U12" library="QuadFCv1" package="USB-AB-MICRO-SMD" value="" x="37.211" y="2.032" smashed="yes" rot="MR90">
+<attribute name="NAME" x="41.0972" y="5.4102" size="1.016" layer="26" rot="MR0"/>
+<attribute name="VALUE" x="42.672" y="0.762" size="0.4064" layer="28" rot="MR90"/>
+</element>
+<element name="SW1" library="QuadFCv1" package="PTS635VL31" value="PTS635VL31-VERT" x="47.625" y="9.525" smashed="yes" rot="R90">
+<attribute name="NAME" x="43.7388" y="12.573" size="0.8128" layer="25" rot="R90"/>
+</element>
+<element name="BZR" library="QuadFCv1" package="CMT-1203-SMT" value="CMT-1203-SMT" x="12.446" y="34.671" smashed="yes" rot="R90">
+<attribute name="NAME" x="6.541" y="41.012" size="0.8128" layer="25"/>
+</element>
+<element name="U4" library="QuadFCv1" package="SOT23-5" value="MCP6L91T-E/OT" x="22.225" y="37.719" smashed="yes">
+<attribute name="NAME" x="23.9268" y="37.8206" size="0.8128" layer="25"/>
+<attribute name="VALUE" x="21.2725" y="37.5285" size="0.4064" layer="27"/>
+</element>
+<element name="R57" library="QuadFCv1" package="0402-RES" value="0" x="21.336" y="33.782" smashed="yes" rot="R270">
+<attribute name="NAME" x="20.7391" y="33.2994" size="0.4064" layer="25" rot="R90"/>
+<attribute name="VALUE" x="20.193" y="34.8615" size="0.4064" layer="27" rot="R270"/>
+</element>
+<element name="R58" library="QuadFCv1" package="0402-RES" value="10K" x="24.13" y="40.894" smashed="yes">
+<attribute name="NAME" x="23.6728" y="41.6433" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="23.0505" y="39.751" size="0.4064" layer="27"/>
+</element>
+<element name="R59" library="QuadFCv1" package="0402-RES" value="10K" x="20.955" y="40.894" smashed="yes">
+<attribute name="NAME" x="20.8026" y="41.5925" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="19.8755" y="39.751" size="0.4064" layer="27"/>
+</element>
+<element name="JP1" library="QuadFCv1" package="1X10_SMT-0.05" value="M101X10-SMT-0.05" x="8.89" y="45.72" smashed="yes">
+<attribute name="NAME" x="9.4742" y="48.0568" size="0.8128" layer="21"/>
+</element>
+<element name="JP2" library="QuadFCv1" package="1X12_SMT-0.05" value="M12" x="26.67" y="45.72" smashed="yes">
+<attribute name="NAME" x="26.8986" y="47.9806" size="0.8128" layer="21"/>
+</element>
+<element name="JP3" library="QuadFCv1" package="1X12_SMT-0.05" value="M12" x="8.89" y="3.81" smashed="yes">
+<attribute name="NAME" x="10.3632" y="0.7874" size="0.8128" layer="21"/>
+</element>
+<element name="JP4" library="QuadFCv1" package="1X12_SMT-0.05" value="M12" x="26.67" y="3.81" smashed="yes">
+<attribute name="NAME" x="38.3032" y="0.6604" size="0.8128" layer="21"/>
+</element>
+<element name="R60" library="QuadFCv1" package="0402-RES" value="100k" x="9.525" y="8.89" smashed="yes">
+<attribute name="NAME" x="9.017" y="9.5885" size="0.4064" layer="25"/>
+<attribute name="VALUE" x="8.4455" y="7.747" size="0.4064" layer="27"/>
+</element>
 </elements>
 <signals>
 <signal name="3.3V">
@@ -2773,7 +3140,7 @@ design rules under a new name.</description>
 <contactref element="C16" pad="2"/>
 <contactref element="C17" pad="2"/>
 <contactref element="SPI_PPM" pad="6"/>
-<contactref element="X1" pad="2"/>
+<contactref element="HWB" pad="2"/>
 <contactref element="U5" pad="18"/>
 <contactref element="U5" pad="11"/>
 <contactref element="U5" pad="1"/>
@@ -2902,6 +3269,14 @@ design rules under a new name.</description>
 <wire x1="9.144" y1="23.1648" x2="8.9154" y2="22.9362" width="0.1524" layer="1"/>
 <wire x1="8.9154" y1="22.9362" x2="8.9154" y2="22.3924" width="0.1524" layer="1"/>
 <wire x1="8.9154" y1="22.3924" x2="8.902" y2="22.379" width="0.1524" layer="1"/>
+<via x="6.0452" y="11.3792" extent="1-16" drill="0.4064"/>
+<via x="17.4498" y="38.3794" extent="1-16" drill="0.4064"/>
+<via x="9.779" y="42.7482" extent="1-16" drill="0.4064"/>
+<via x="8.8646" y="44.5008" extent="1-16" drill="0.4064"/>
+<via x="22.4028" y="43.7134" extent="1-16" drill="0.4064"/>
+<via x="35.1282" y="41.91" extent="1-16" drill="0.4064"/>
+<via x="33.9852" y="10.541" extent="1-16" drill="0.4064"/>
+<via x="35.6108" y="6.731" extent="1-16" drill="0.4064"/>
 </signal>
 <signal name="5V">
 <contactref element="U2" pad="1"/>
@@ -4444,7 +4819,7 @@ design rules under a new name.</description>
 <wire x1="38.342" y1="38.454" x2="38.354" y2="38.466" width="0.2032" layer="1"/>
 </signal>
 <signal name="PPM_HWB">
-<contactref element="X1" pad="1"/>
+<contactref element="HWB" pad="1"/>
 <contactref element="U3" pad="13"/>
 <wire x1="34.036" y1="26.67" x2="34.036" y2="22.987" width="0.2032" layer="1"/>
 <wire x1="34.036" y1="22.987" x2="37.592" y2="19.431" width="0.2032" layer="1"/>
