@@ -10688,20 +10688,6 @@ All major connectors and edge pieces go here</description>
 <pinref part="Y3" gate="G$1" pin="3"/>
 </segment>
 </net>
-<net name="RXLED" class="0">
-<segment>
-<wire x1="71.12" y1="-15.24" x2="55.88" y2="-15.24" width="0.1524" layer="91"/>
-<label x="58.42" y="-15.24" size="1.778" layer="95"/>
-<pinref part="U3" gate="G$1" pin="(INT5/AIN3)PD4"/>
-</segment>
-</net>
-<net name="TXLED" class="0">
-<segment>
-<wire x1="71.12" y1="-12.7" x2="55.88" y2="-12.7" width="0.1524" layer="91"/>
-<label x="58.42" y="-12.7" size="1.778" layer="95"/>
-<pinref part="U3" gate="G$1" pin="(XCK/AIN4/PCINT12)PD5"/>
-</segment>
-</net>
 <net name="XT1R" class="0">
 <segment>
 <wire x1="0" y1="12.7" x2="0" y2="15.24" width="0.1524" layer="91"/>
