@@ -8461,7 +8461,6 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <part name="STANDOFF3" library="QuadFCv1" deviceset="STAND-OFF" device=""/>
 <part name="STANDOFF4" library="QuadFCv1" deviceset="STAND-OFF" device=""/>
 <part name="GND7" library="QuadFCv1" deviceset="DGND" device=""/>
-<part name="R9" library="QuadFCv1" deviceset="RESISTOR" device="0603-RES" value="DNP"/>
 <part name="R18" library="QuadFCv1" deviceset="RESISTOR" device="0402-RES" value="220"/>
 <part name="R19" library="QuadFCv1" deviceset="RESISTOR" device="0402-RES" value="220"/>
 <part name="R20" library="QuadFCv1" deviceset="RESISTOR" device="0402-RES" value="220"/>
@@ -8471,8 +8470,6 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <part name="R24" library="QuadFCv1" deviceset="RESISTOR" device="0402-RES" value="220"/>
 <part name="R25" library="QuadFCv1" deviceset="RESISTOR" device="0402-RES" value="220"/>
 <part name="GND8" library="QuadFCv1" deviceset="DGND" device=""/>
-<part name="R8" library="QuadFCv1" deviceset="RESISTOR" device="0603-RES" value="DNP"/>
-<part name="SUPPLY6" library="QuadFCv1" deviceset="5V" device=""/>
 <part name="R10" library="QuadFCv1" deviceset="RESISTOR" device="0402-RES" value="220"/>
 <part name="R11" library="QuadFCv1" deviceset="RESISTOR" device="0402-RES" value="220"/>
 <part name="R12" library="QuadFCv1" deviceset="RESISTOR" device="0402-RES" value="220"/>
@@ -8493,7 +8490,7 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <part name="GND1" library="QuadFCv1" deviceset="DGND" device=""/>
 <part name="GND2" library="QuadFCv1" deviceset="DGND" device=""/>
 <part name="SUPPLY1" library="QuadFCv1" deviceset="3.3V" device=""/>
-<part name="C12" library="QuadFCv1" deviceset="CAP" device="0402-CAP" value="1uF"/>
+<part name="C12" library="QuadFCv1" deviceset="CAP" device="0402-CAP" value="1.8uF"/>
 <part name="GND4" library="QuadFCv1" deviceset="DGND" device=""/>
 <part name="SUPPLY3" library="QuadFCv1" deviceset="3.3V" device=""/>
 <part name="GND5" library="QuadFCv1" deviceset="DGND" device=""/>
@@ -8519,13 +8516,11 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <part name="Y2" library="QuadFCv1" deviceset="AWSCR-20.00CW-T" device=""/>
 <part name="Y1" library="QuadFCv1" deviceset="ECS-.327-12.5-34B" device="" value="32.768KHZ"/>
 <part name="GND11" library="QuadFCv1" deviceset="DGND" device=""/>
-<part name="C9" library="QuadFCv1" deviceset="CAP" device="0402-CAP" value="1uF"/>
+<part name="C9" library="QuadFCv1" deviceset="CAP" device="0402-CAP" value="1.8uF"/>
 <part name="GND12" library="QuadFCv1" deviceset="DGND" device=""/>
 <part name="GND15" library="QuadFCv1" deviceset="DGND" device=""/>
 <part name="R7" library="QuadFCv1" deviceset="RESISTOR" device="0402-RES" value="22"/>
 <part name="R4" library="QuadFCv1" deviceset="RESISTOR" device="0402-RES" value="22"/>
-<part name="R5" library="QuadFCv1" deviceset="RESISTOR" device="0402-RES" value="22-DNP"/>
-<part name="R3" library="QuadFCv1" deviceset="RESISTOR" device="0402-RES" value="22-DNP"/>
 <part name="R6" library="QuadFCv1" deviceset="RESISTOR" device="0402-RES" value="0"/>
 <part name="SPI_PPM" library="QuadFCv1" deviceset="M03X2" device="SMD_0.05" value="SPI_PPM"/>
 <part name="R31" library="QuadFCv1" deviceset="RESISTOR" device="0402-RES" value="1K"/>
@@ -8553,7 +8548,6 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <part name="SUPPLY14" library="QuadFCv1" deviceset="5V" device=""/>
 <part name="F1" library="QuadFCv1" deviceset="PTC" device="SMD" value="500mA"/>
 <part name="Y3" library="QuadFCv1" deviceset="PRQC16.00SR5010X000" device=""/>
-<part name="R36" library="QuadFCv1" deviceset="RESISTOR" device="0402-RES" value="1k"/>
 <part name="C18" library="QuadFCv1" deviceset="CAP" device="0402-CAP" value="0.1uF"/>
 <part name="U6" library="QuadFCv1" deviceset="HMC5883L" device="SMD"/>
 <part name="GND26" library="QuadFCv1" deviceset="DGND" device=""/>
@@ -8665,6 +8659,7 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <part name="SUPPLY36" library="QuadFCv1" deviceset="3.3V" device=""/>
 <part name="GND46" library="QuadFCv1" deviceset="DGND" device=""/>
 <part name="R60" library="QuadFCv1" deviceset="RESISTOR" device="0402-RES" value="100k"/>
+<part name="SUPPLY37" library="QuadFCv1" deviceset="5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9324,7 +9319,7 @@ Main flight processor with required circuitry and labeled IO</description>
 <label x="-12.7" y="5.08" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="FC_USB_STATUS" class="0">
+<net name="FC_PF4" class="0">
 <segment>
 <pinref part="U1" gate="PORTF" pin="PF4/IDX0/M0FAULT2/M1FAULT0/T2CCP0/TRD3/U1DTR/USB0EPEN"/>
 <wire x1="17.78" y1="2.54" x2="-12.7" y2="2.54" width="0.1524" layer="91"/>
@@ -9744,7 +9739,6 @@ All major connectors and edge pieces go here</description>
 </plain>
 <instances>
 <instance part="GND7" gate="G$1" x="38.1" y="12.7" rot="R180"/>
-<instance part="R9" gate="G$1" x="50.8" y="20.32" rot="R90"/>
 <instance part="R18" gate="G$1" x="45.72" y="7.62"/>
 <instance part="R19" gate="G$1" x="45.72" y="5.08"/>
 <instance part="R20" gate="G$1" x="45.72" y="2.54"/>
@@ -9754,8 +9748,6 @@ All major connectors and edge pieces go here</description>
 <instance part="R24" gate="G$1" x="45.72" y="-7.62"/>
 <instance part="R25" gate="G$1" x="45.72" y="-10.16"/>
 <instance part="GND8" gate="G$1" x="27.94" y="-33.02" rot="R180"/>
-<instance part="R8" gate="G$1" x="48.26" y="-30.48" rot="R90"/>
-<instance part="SUPPLY6" gate="G$1" x="48.26" y="-22.86"/>
 <instance part="R10" gate="G$1" x="43.18" y="-43.18"/>
 <instance part="R11" gate="G$1" x="43.18" y="-45.72"/>
 <instance part="R12" gate="G$1" x="43.18" y="-48.26"/>
@@ -9769,8 +9761,6 @@ All major connectors and edge pieces go here</description>
 <instance part="GND15" gate="G$1" x="-38.1" y="-2.54"/>
 <instance part="R7" gate="G$1" x="-48.26" y="10.16"/>
 <instance part="R4" gate="G$1" x="-55.88" y="7.62"/>
-<instance part="R5" gate="G$1" x="-55.88" y="0"/>
-<instance part="R3" gate="G$1" x="-58.42" y="15.24"/>
 <instance part="R6" gate="G$1" x="-55.88" y="-7.62"/>
 <instance part="ISENSE" gate="G$1" x="58.42" y="-91.44" rot="R180"/>
 <instance part="VBATTSENSE" gate="G$1" x="58.42" y="-114.3" rot="R180"/>
@@ -9805,11 +9795,6 @@ All major connectors and edge pieces go here</description>
 </busses>
 <nets>
 <net name="5V" class="0">
-<segment>
-<pinref part="R8" gate="G$1" pin="2"/>
-<pinref part="SUPPLY6" gate="G$1" pin="5V"/>
-<wire x1="48.26" y1="-22.86" x2="48.26" y2="-25.4" width="0.1524" layer="91"/>
-</segment>
 <segment>
 <pinref part="SUPPLY25" gate="G$1" pin="5V"/>
 <pinref part="R52" gate="G$1" pin="2"/>
@@ -10053,14 +10038,11 @@ All major connectors and edge pieces go here</description>
 </net>
 <net name="N$23" class="0">
 <segment>
-<pinref part="R9" gate="G$1" pin="1"/>
-<wire x1="50.8" y1="15.24" x2="50.8" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="R54" gate="G$1" pin="1"/>
 <wire x1="50.8" y1="12.7" x2="43.18" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="43.18" y1="12.7" x2="43.18" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="PWMIN" gate="G$1" pin="1"/>
 <wire x1="50.8" y1="12.7" x2="53.34" y2="12.7" width="0.1524" layer="91"/>
-<junction x="50.8" y="12.7"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -10108,37 +10090,18 @@ All major connectors and edge pieces go here</description>
 </net>
 <net name="N$26" class="0">
 <segment>
-<wire x1="48.26" y1="-38.1" x2="48.26" y2="-35.56" width="0.1524" layer="91"/>
-<pinref part="R8" gate="G$1" pin="1"/>
 <pinref part="R55" gate="G$1" pin="1"/>
 <wire x1="48.26" y1="-38.1" x2="35.56" y2="-38.1" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="-38.1" x2="35.56" y2="-35.56" width="0.1524" layer="91"/>
 <pinref part="PWMOUT" gate="G$1" pin="1"/>
 <wire x1="50.8" y1="-38.1" x2="48.26" y2="-38.1" width="0.1524" layer="91"/>
-<junction x="48.26" y="-38.1"/>
-</segment>
-</net>
-<net name="N$28" class="0">
-<segment>
-<pinref part="R7" gate="G$1" pin="2"/>
-<wire x1="-43.18" y1="10.16" x2="-40.64" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="-40.64" y1="10.16" x2="-33.02" y2="10.16" width="0.1524" layer="91"/>
-<wire x1="-40.64" y1="10.16" x2="-40.64" y2="15.24" width="0.1524" layer="91"/>
-<pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="-40.64" y1="15.24" x2="-53.34" y2="15.24" width="0.1524" layer="91"/>
-<junction x="-40.64" y="10.16"/>
-<pinref part="U12" gate="G$1" pin="D-"/>
 </segment>
 </net>
 <net name="N$29" class="0">
 <segment>
 <pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="-33.02" y1="7.62" x2="-45.72" y2="7.62" width="0.1524" layer="91"/>
-<pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="-45.72" y1="7.62" x2="-50.8" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="-50.8" y1="0" x2="-45.72" y2="0" width="0.1524" layer="91"/>
-<wire x1="-45.72" y1="0" x2="-45.72" y2="7.62" width="0.1524" layer="91"/>
-<junction x="-45.72" y="7.62"/>
 <pinref part="U12" gate="G$1" pin="D+"/>
 </segment>
 </net>
@@ -10164,20 +10127,6 @@ All major connectors and edge pieces go here</description>
 <wire x1="-35.56" y1="12.7" x2="-35.56" y2="22.86" width="0.1524" layer="91"/>
 <label x="-35.56" y="22.86" size="1.778" layer="95"/>
 <pinref part="U12" gate="G$1" pin="VBUS"/>
-</segment>
-</net>
-<net name="PPM_USBDM" class="0">
-<segment>
-<pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="-63.5" y1="15.24" x2="-81.28" y2="15.24" width="0.1524" layer="91"/>
-<label x="-81.28" y="15.24" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="PPM_USBDP" class="0">
-<segment>
-<pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="-60.96" y1="0" x2="-81.28" y2="0" width="0.1524" layer="91"/>
-<label x="-81.28" y="0" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$27" class="0">
@@ -10354,11 +10303,6 @@ All major connectors and edge pieces go here</description>
 </net>
 <net name="5VBATT" class="0">
 <segment>
-<pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="50.8" y1="27.94" x2="50.8" y2="25.4" width="0.1524" layer="91"/>
-<label x="50.8" y="27.94" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="R55" gate="G$1" pin="2"/>
 <wire x1="35.56" y1="-25.4" x2="35.56" y2="-20.32" width="0.1524" layer="91"/>
 <label x="35.56" y="-20.32" size="1.778" layer="95" rot="R180"/>
@@ -10376,6 +10320,14 @@ All major connectors and edge pieces go here</description>
 <pinref part="RADIO1" gate="G$1" pin="3"/>
 <wire x1="-71.12" y1="-129.54" x2="-91.44" y2="-129.54" width="0.1524" layer="91"/>
 <label x="-91.44" y="-129.54" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$49" class="0">
+<segment>
+<pinref part="R7" gate="G$1" pin="2"/>
+<wire x1="-43.18" y1="10.16" x2="-40.64" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="-40.64" y1="10.16" x2="-33.02" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="U12" gate="G$1" pin="D-"/>
 </segment>
 </net>
 </nets>
@@ -10637,7 +10589,6 @@ All major connectors and edge pieces go here</description>
 <attribute name="NAME" x="-7.62" y="21.336" size="1.778" layer="95"/>
 <attribute name="VALUE" x="-7.62" y="17.78" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="R36" gate="G$1" x="86.36" y="-2.54" rot="R180"/>
 <instance part="GND16" gate="G$1" x="-45.72" y="-27.94"/>
 <instance part="GND18" gate="G$1" x="127" y="-12.7"/>
 <instance part="GND19" gate="G$1" x="73.66" y="38.1"/>
@@ -10645,6 +10596,7 @@ All major connectors and edge pieces go here</description>
 <instance part="GND24" gate="G$1" x="-20.32" y="-35.56"/>
 <instance part="GND30" gate="G$1" x="-5.08" y="-5.08"/>
 <instance part="GND33" gate="G$1" x="-22.86" y="17.78" rot="R270"/>
+<instance part="SUPPLY37" gate="G$1" x="-5.08" y="-12.7" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -10977,34 +10929,10 @@ All major connectors and edge pieces go here</description>
 <pinref part="R29" gate="G$1" pin="2"/>
 <pinref part="SUPPLY14" gate="G$1" pin="5V"/>
 </segment>
-</net>
-<net name="PPM_USBDM" class="0">
 <segment>
-<pinref part="U3" gate="G$1" pin="D-"/>
-<wire x1="0" y1="-15.24" x2="-27.94" y2="-15.24" width="0.1524" layer="91"/>
-<label x="-27.94" y="-15.24" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="PPM_USBDP" class="0">
-<segment>
-<pinref part="U3" gate="G$1" pin="D+"/>
-<wire x1="-27.94" y1="-17.78" x2="0" y2="-17.78" width="0.1524" layer="91"/>
-<label x="-27.94" y="-17.78" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="VUSB_F" class="0">
-<segment>
+<pinref part="SUPPLY37" gate="G$1" pin="5V"/>
 <pinref part="U3" gate="G$1" pin="UVCC"/>
-<wire x1="0" y1="-12.7" x2="-27.94" y2="-12.7" width="0.1524" layer="91"/>
-<label x="-27.94" y="-12.7" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="PPM_USB_STATUS" class="0">
-<segment>
-<pinref part="U3" gate="G$1" pin="(AIN2/PCINT11)PC2"/>
-<wire x1="55.88" y1="-2.54" x2="81.28" y2="-2.54" width="0.1524" layer="91"/>
-<label x="58.42" y="-2.54" size="1.778" layer="95"/>
-<pinref part="R36" gate="G$1" pin="2"/>
+<wire x1="-5.08" y1="-12.7" x2="0" y2="-12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="FC_PPM_STATUS1" class="0">
@@ -11019,13 +10947,6 @@ All major connectors and edge pieces go here</description>
 <pinref part="R37" gate="G$1" pin="1"/>
 <wire x1="91.44" y1="-25.4" x2="93.98" y2="-25.4" width="0.1524" layer="91"/>
 <label x="93.98" y="-25.4" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="FC_USB_STATUS" class="0">
-<segment>
-<pinref part="R36" gate="G$1" pin="1"/>
-<wire x1="91.44" y1="-2.54" x2="99.06" y2="-2.54" width="0.1524" layer="91"/>
-<label x="93.98" y="-2.54" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="FC_PPM_IN" class="0">
@@ -11814,18 +11735,11 @@ All major connectors and edge pieces go here</description>
 <label x="43.18" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="FC_PD4" class="0">
+<net name="FC_PE4" class="0">
 <segment>
 <wire x1="38.1" y1="-15.24" x2="50.8" y2="-15.24" width="0.1524" layer="91"/>
 <label x="43.18" y="-15.24" size="1.778" layer="95"/>
 <pinref part="JP3" gate="G$1" pin="10"/>
-</segment>
-</net>
-<net name="FC_PE4" class="0">
-<segment>
-<wire x1="38.1" y1="-10.16" x2="50.8" y2="-10.16" width="0.1524" layer="91"/>
-<label x="43.18" y="-10.16" size="1.778" layer="95"/>
-<pinref part="JP3" gate="G$1" pin="12"/>
 </segment>
 </net>
 <net name="FC_PE5" class="0">
@@ -11927,9 +11841,23 @@ All major connectors and edge pieces go here</description>
 </net>
 <net name="FC_RESET_L" class="0">
 <segment>
+<pinref part="JP1" gate="G$1" pin="10"/>
+<wire x1="-35.56" y1="-7.62" x2="-22.86" y2="-7.62" width="0.1524" layer="91"/>
+<label x="-30.48" y="-7.62" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="FC_PF4" class="0">
+<segment>
 <pinref part="JP2" gate="G$1" pin="8"/>
 <wire x1="-35.56" y1="25.4" x2="-22.86" y2="25.4" width="0.1524" layer="91"/>
 <label x="-27.94" y="25.4" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="FC_PD4" class="0">
+<segment>
+<wire x1="38.1" y1="-10.16" x2="50.8" y2="-10.16" width="0.1524" layer="91"/>
+<label x="43.18" y="-10.16" size="1.778" layer="95"/>
+<pinref part="JP3" gate="G$1" pin="12"/>
 </segment>
 </net>
 </nets>
@@ -11945,7 +11873,7 @@ All major connectors and edge pieces go here</description>
 <approved hash="104,6,0,7.62,U3,AVCC,5V,,,"/>
 <approved hash="104,6,0,-25.4,U3,PAD,GND,,,"/>
 <approved hash="104,6,0,-20.32,U3,UGND,GND,,,"/>
-<approved hash="104,6,0,-12.7,U3,UVCC,VUSB_F,,,"/>
+<approved hash="104,6,0,-12.7,U3,UVCC,5V,,,"/>
 <approved hash="104,6,0,0,U3,VCC,5V,,,"/>
 <approved hash="104,11,-38.1,10.16,U4,V+,5V,,,"/>
 <approved hash="104,11,-38.1,-5.08,U4,V-,GND,,,"/>
