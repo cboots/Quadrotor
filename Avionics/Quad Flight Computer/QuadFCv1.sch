@@ -8523,7 +8523,7 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <part name="R4" library="QuadFCv1" deviceset="RESISTOR" device="0402-RES" value="22"/>
 <part name="R6" library="QuadFCv1" deviceset="RESISTOR" device="0402-RES" value="0"/>
 <part name="SPI_PPM" library="QuadFCv1" deviceset="M03X2" device="SMD_0.05" value="SPI_PPM"/>
-<part name="R31" library="QuadFCv1" deviceset="RESISTOR" device="0402-RES" value="1K"/>
+<part name="R31" library="QuadFCv1" deviceset="RESISTOR" device="0402-RES" value="10K"/>
 <part name="C17" library="QuadFCv1" deviceset="CAP" device="0402-CAP" value=".1uF"/>
 <part name="U3" library="QuadFCv1" deviceset="ATMEGA8U2-MU" device="" value="ATMEGA32U2-MU"/>
 <part name="R29" library="QuadFCv1" deviceset="RESISTOR" device="0402-RES" value="10K"/>
@@ -8533,8 +8533,8 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <part name="C16" library="QuadFCv1" deviceset="CAP" device="0402-CAP" value="1uF"/>
 <part name="HWB" library="QuadFCv1" deviceset="87758-0216" device="" value="HWB"/>
 <part name="PPM" library="QuadFCv1" deviceset="TESTPAD_TPSQ" device="TP10SQ"/>
-<part name="R32" library="QuadFCv1" deviceset="RESISTOR" device="0402-RES" value="1k"/>
-<part name="R37" library="QuadFCv1" deviceset="RESISTOR" device="0402-RES" value="1k"/>
+<part name="R32" library="QuadFCv1" deviceset="RESISTOR" device="0402-RES" value="10k"/>
+<part name="R37" library="QuadFCv1" deviceset="RESISTOR" device="0402-RES" value="10k"/>
 <part name="R35" library="QuadFCv1" deviceset="RESISTOR" device="0402-RES" value="1k"/>
 <part name="D2" library="QuadFCv1" deviceset="LED" device="0603" value="GREEN"/>
 <part name="SUPPLY10" library="QuadFCv1" deviceset="5V" device=""/>
@@ -8659,6 +8659,12 @@ Standard 12-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <part name="R3" library="QuadFCv1" deviceset="RESISTOR" device="0402-RES" value="1k"/>
 <part name="D1" library="QuadFCv1" deviceset="LED" device="0603" value="GREEN"/>
 <part name="GND47" library="QuadFCv1" deviceset="DGND" device=""/>
+<part name="R5" library="QuadFCv1" deviceset="RESISTOR" device="0402-RES" value="20K"/>
+<part name="GND48" library="QuadFCv1" deviceset="DGND" device=""/>
+<part name="R8" library="QuadFCv1" deviceset="RESISTOR" device="0402-RES" value="20k"/>
+<part name="GND49" library="QuadFCv1" deviceset="DGND" device=""/>
+<part name="R9" library="QuadFCv1" deviceset="RESISTOR" device="0402-RES" value="20k"/>
+<part name="GND50" library="QuadFCv1" deviceset="DGND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -10595,7 +10601,7 @@ All major connectors and edge pieces go here</description>
 <instance part="D2" gate="G$1" x="73.66" y="-63.5" rot="R270"/>
 <instance part="SUPPLY10" gate="G$1" x="73.66" y="50.8"/>
 <instance part="SUPPLY11" gate="G$1" x="127" y="2.54"/>
-<instance part="SUPPLY12" gate="G$1" x="93.98" y="-43.18"/>
+<instance part="SUPPLY12" gate="G$1" x="93.98" y="-60.96"/>
 <instance part="SUPPLY13" gate="G$1" x="-45.72" y="0"/>
 <instance part="SUPPLY14" gate="G$1" x="-10.16" y="48.26"/>
 <instance part="Y3" gate="G$1" x="-10.16" y="17.78" smashed="yes" rot="R270">
@@ -10610,6 +10616,12 @@ All major connectors and edge pieces go here</description>
 <instance part="GND30" gate="G$1" x="-5.08" y="-5.08"/>
 <instance part="GND33" gate="G$1" x="-22.86" y="17.78" rot="R270"/>
 <instance part="SUPPLY37" gate="G$1" x="-5.08" y="-12.7" rot="R90"/>
+<instance part="R5" gate="G$1" x="35.56" y="-53.34" rot="R270"/>
+<instance part="GND48" gate="G$1" x="35.56" y="-63.5"/>
+<instance part="R8" gate="G$1" x="91.44" y="-10.16" rot="R90"/>
+<instance part="GND49" gate="G$1" x="91.44" y="-2.54" rot="R180"/>
+<instance part="R9" gate="G$1" x="93.98" y="-33.02" rot="R90"/>
+<instance part="GND50" gate="G$1" x="93.98" y="-40.64"/>
 </instances>
 <busses>
 </busses>
@@ -10661,6 +10673,19 @@ All major connectors and edge pieces go here</description>
 <pinref part="Y3" gate="G$1" pin="2"/>
 <wire x1="-17.78" y1="17.78" x2="-20.32" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="GND33" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="35.56" y1="-58.42" x2="35.56" y2="-60.96" width="0.1524" layer="91"/>
+<pinref part="GND48" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R8" gate="G$1" pin="2"/>
+<pinref part="GND49" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R9" gate="G$1" pin="1"/>
+<pinref part="GND50" gate="G$1" pin="GND"/>
 </segment>
 </net>
 <net name="PPM_RST" class="0">
@@ -10875,10 +10900,9 @@ All major connectors and edge pieces go here</description>
 <wire x1="127" y1="2.54" x2="127" y2="0" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="93.98" y1="-53.34" x2="93.98" y2="-43.18" width="0.1524" layer="91"/>
 <pinref part="R35" gate="G$1" pin="1"/>
 <wire x1="86.36" y1="-63.5" x2="93.98" y2="-63.5" width="0.1524" layer="91"/>
-<wire x1="93.98" y1="-63.5" x2="93.98" y2="-53.34" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="-63.5" x2="93.98" y2="-60.96" width="0.1524" layer="91"/>
 <pinref part="SUPPLY12" gate="G$1" pin="5V"/>
 </segment>
 <segment>
@@ -10909,22 +10933,34 @@ All major connectors and edge pieces go here</description>
 <net name="FC_PPM_STATUS1" class="0">
 <segment>
 <pinref part="R32" gate="G$1" pin="1"/>
-<wire x1="86.36" y1="-17.78" x2="93.98" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="-17.78" x2="91.44" y2="-17.78" width="0.1524" layer="91"/>
 <label x="93.98" y="-17.78" size="1.778" layer="95"/>
+<pinref part="R8" gate="G$1" pin="1"/>
+<wire x1="91.44" y1="-17.78" x2="93.98" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="-15.24" x2="91.44" y2="-17.78" width="0.1524" layer="91"/>
+<junction x="91.44" y="-17.78"/>
 </segment>
 </net>
 <net name="FC_PPM_STATUS0" class="0">
 <segment>
 <pinref part="R37" gate="G$1" pin="1"/>
 <wire x1="91.44" y1="-25.4" x2="93.98" y2="-25.4" width="0.1524" layer="91"/>
-<label x="93.98" y="-25.4" size="1.778" layer="95"/>
+<label x="99.06" y="-25.4" size="1.778" layer="95"/>
+<pinref part="R9" gate="G$1" pin="2"/>
+<wire x1="93.98" y1="-25.4" x2="99.06" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="93.98" y1="-27.94" x2="93.98" y2="-25.4" width="0.1524" layer="91"/>
+<junction x="93.98" y="-25.4"/>
 </segment>
 </net>
 <net name="FC_PPM_IN" class="0">
 <segment>
 <pinref part="R31" gate="G$1" pin="1"/>
-<wire x1="30.48" y1="-45.72" x2="38.1" y2="-45.72" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="-45.72" x2="35.56" y2="-45.72" width="0.1524" layer="91"/>
 <label x="38.1" y="-45.72" size="1.778" layer="95"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="35.56" y1="-45.72" x2="38.1" y2="-45.72" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="-48.26" x2="35.56" y2="-45.72" width="0.1524" layer="91"/>
+<junction x="35.56" y="-45.72"/>
 </segment>
 </net>
 </nets>
