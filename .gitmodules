@@ -1,0 +1,3 @@
+[submodule "Avionics/Eagle-Library"]
+	path = Avionics/Eagle-Library
+	url = git@github.com:cboots/Eagle-Library.git
