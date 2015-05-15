@@ -1143,7 +1143,7 @@
 <smd name="22" x="-0.2575" y="2.0816" dx="1.016" dy="0.254" layer="1" roundness="100" rot="R90"/>
 <smd name="23" x="-0.7621" y="2.0816" dx="1.016" dy="0.254" layer="1" roundness="100" rot="R90"/>
 <smd name="24" x="-1.2667" y="2.0816" dx="1.016" dy="0.254" layer="1" roundness="100" rot="R90"/>
-<smd name="P$1" x="0.02" y="-0.01" dx="2.6162" dy="2.6162" layer="1" cream="no"/>
+<smd name="EP" x="0.02" y="-0.01" dx="2.6162" dy="2.6162" layer="1" cream="no"/>
 <text x="-0.6" y="1" size="0.254" layer="51">Y</text>
 <text x="1.1" y="0.4" size="0.254" layer="51">X</text>
 <text x="-0.1" y="-0.6" size="0.254" layer="51">Z</text>
@@ -1188,7 +1188,7 @@
 <connect gate="G$1" pin="AUX_DA" pad="21"/>
 <connect gate="G$1" pin="CS_L" pad="22"/>
 <connect gate="G$1" pin="FSYNC" pad="11"/>
-<connect gate="G$1" pin="GND" pad="18 P$1"/>
+<connect gate="G$1" pin="GND" pad="18 EP"/>
 <connect gate="G$1" pin="INT" pad="12"/>
 <connect gate="G$1" pin="REGOUT" pad="10"/>
 <connect gate="G$1" pin="RESV_GND" pad="20"/>
@@ -1198,6 +1198,68 @@
 <connect gate="G$1" pin="SDA/SDI" pad="24"/>
 <connect gate="G$1" pin="VDD" pad="13"/>
 <connect gate="G$1" pin="VDDIO" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="Sensors">
+<packages>
+<package name="MPL115A2">
+<smd name="1" x="-1.075" y="1.875" dx="0.95" dy="0.55" layer="1"/>
+<smd name="2" x="-1.075" y="0.625" dx="0.95" dy="0.55" layer="1"/>
+<smd name="3" x="-1.075" y="-0.625" dx="0.95" dy="0.55" layer="1"/>
+<smd name="4" x="-1.075" y="-1.875" dx="0.95" dy="0.55" layer="1"/>
+<smd name="8" x="1.075" y="1.875" dx="0.95" dy="0.55" layer="1"/>
+<smd name="7" x="1.075" y="0.625" dx="0.95" dy="0.55" layer="1"/>
+<smd name="6" x="1.075" y="-0.625" dx="0.95" dy="0.55" layer="1"/>
+<smd name="5" x="1.075" y="-1.875" dx="0.95" dy="0.55" layer="1"/>
+<wire x1="-1.5" y1="2.5" x2="1.5" y2="2.5" width="0.127" layer="51"/>
+<wire x1="1.5" y1="2.5" x2="1.5" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="1.5" y1="-2.5" x2="-1.5" y2="-2.5" width="0.127" layer="51"/>
+<wire x1="-1.5" y1="-2.5" x2="-1.5" y2="2.5" width="0.127" layer="51"/>
+<circle x="-1.5" y="2.5" radius="0.282840625" width="0.127" layer="51"/>
+<text x="-1.5" y="2.9" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<circle x="0" y="-1.3" radius="0.4472125" width="0.127" layer="25"/>
+</package>
+</packages>
+<symbols>
+<symbol name="MPL115A2">
+<wire x1="-10.16" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-5.08" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<text x="2.54" y="7.62" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-10.16" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-7.62" size="1.778" layer="97">MPL115A2</text>
+<pin name="VDD" x="-15.24" y="5.08" length="middle"/>
+<pin name="CAP" x="-15.24" y="2.54" length="middle"/>
+<pin name="GND" x="-15.24" y="-2.54" length="middle"/>
+<pin name="SHDN_L" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="SCL" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="SDA" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="RST_L" x="15.24" y="0" length="middle" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MPL115A2" prefix="U">
+<gates>
+<gate name="G$1" symbol="MPL115A2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MPL115A2">
+<connects>
+<connect gate="G$1" pin="CAP" pad="2"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="RST_L" pad="5"/>
+<connect gate="G$1" pin="SCL" pad="8"/>
+<connect gate="G$1" pin="SDA" pad="7"/>
+<connect gate="G$1" pin="SHDN_L" pad="4"/>
+<connect gate="G$1" pin="VDD" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1219,6 +1281,7 @@
 <parts>
 <part name="U1" library="XMC4500-F100K1024 AB" deviceset="INF-PG-LQFP-100-11-7000X7000E9" device="LQFP-100"/>
 <part name="U2" library="Invesense" deviceset="MPU-9250" device=""/>
+<part name="U3" library="Sensors" deviceset="MPL115A2" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1239,6 +1302,7 @@
 </plain>
 <instances>
 <instance part="U2" gate="G$1" x="0" y="0"/>
+<instance part="U3" gate="G$1" x="83.82" y="5.08"/>
 </instances>
 <busses>
 </busses>
