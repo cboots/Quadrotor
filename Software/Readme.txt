@@ -1,1 +1,0 @@
-This folder holds all of the software and firmware
