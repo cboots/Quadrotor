@@ -1269,6 +1269,81 @@
 </deviceset>
 </devicesets>
 </library>
+<library name="memory">
+<packages>
+<package name="SO8">
+<description>&lt;b&gt;SMALL OUTLINE INTEGRATED CIRCUIT&lt;/b&gt;</description>
+<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.4" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-1.4" x2="2.4" y2="-1.9" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="-1.4" x2="-2.4" y2="1.9" width="0.2032" layer="51"/>
+<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.2032" layer="51"/>
+<wire x1="2.4" y1="-1.4" x2="-2.4" y2="-1.4" width="0.2032" layer="51"/>
+<smd name="2" x="-0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="7" x="-0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="1" x="-1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="3" x="0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="4" x="1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="8" x="-1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="6" x="0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="5" x="1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<text x="-3.175" y="-1.905" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="4.445" y="-1.905" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-2.1501" y1="-3.1001" x2="-1.6599" y2="-2" layer="51"/>
+<rectangle x1="-0.8801" y1="-3.1001" x2="-0.3899" y2="-2" layer="51"/>
+<rectangle x1="0.3899" y1="-3.1001" x2="0.8801" y2="-2" layer="51"/>
+<rectangle x1="1.6599" y1="-3.1001" x2="2.1501" y2="-2" layer="51"/>
+<rectangle x1="1.6599" y1="2" x2="2.1501" y2="3.1001" layer="51"/>
+<rectangle x1="0.3899" y1="2" x2="0.8801" y2="3.1001" layer="51"/>
+<rectangle x1="-0.8801" y1="2" x2="-0.3899" y2="3.1001" layer="51"/>
+<rectangle x1="-2.1501" y1="2" x2="-1.6599" y2="3.1001" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="S25FL127S">
+<wire x1="-12.7" y1="7.62" x2="12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="7.62" x2="12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-7.62" x2="-12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-7.62" x2="-12.7" y2="7.62" width="0.254" layer="94"/>
+<pin name="CS_L" x="-17.78" y="5.08" length="middle"/>
+<pin name="SO/IO1" x="-17.78" y="2.54" length="middle"/>
+<pin name="WP_L/IO2" x="-17.78" y="-2.54" length="middle"/>
+<pin name="GND" x="-17.78" y="-5.08" length="middle"/>
+<pin name="SI/IO0" x="17.78" y="-5.08" length="middle" rot="R180"/>
+<pin name="CLK" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<pin name="HOLD_L/IO3" x="17.78" y="2.54" length="middle" rot="R180"/>
+<pin name="VCC" x="17.78" y="5.08" length="middle" rot="R180"/>
+<text x="-12.7" y="7.62" size="1.27" layer="95">&gt;NAME</text>
+<text x="-12.7" y="-10.16" size="1.27" layer="96">&gt;VALUE</text>
+<text x="2.54" y="7.62" size="1.27" layer="96">S25FL127S</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="S25FL127S" prefix="U">
+<gates>
+<gate name="G$1" symbol="S25FL127S" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SO8">
+<connects>
+<connect gate="G$1" pin="CLK" pad="6"/>
+<connect gate="G$1" pin="CS_L" pad="1"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="HOLD_L/IO3" pad="7"/>
+<connect gate="G$1" pin="SI/IO0" pad="5"/>
+<connect gate="G$1" pin="SO/IO1" pad="2"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
+<connect gate="G$1" pin="WP_L/IO2" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1282,6 +1357,7 @@
 <part name="U1" library="XMC4500-F100K1024 AB" deviceset="INF-PG-LQFP-100-11-7000X7000E9" device="LQFP-100"/>
 <part name="U2" library="Invesense" deviceset="MPU-9250" device=""/>
 <part name="U3" library="Sensors" deviceset="MPL115A2" device=""/>
+<part name="U4" library="memory" deviceset="S25FL127S" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1336,6 +1412,7 @@
 <plain>
 </plain>
 <instances>
+<instance part="U4" gate="G$1" x="0" y="0"/>
 </instances>
 <busses>
 </busses>
