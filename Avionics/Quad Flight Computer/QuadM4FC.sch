@@ -1742,6 +1742,28 @@ Source: http://focus.ti.com/lit/ds/symlink/tusb2046b.pdf</description>
 <pin name="DCPL_XOSC" x="30.48" y="-17.78" length="middle" rot="R180"/>
 <pin name="EXT_XOSC" x="30.48" y="-10.16" length="middle" rot="R180"/>
 </symbol>
+<symbol name="CC1190">
+<wire x1="-17.78" y1="12.7" x2="-17.78" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-17.78" y1="-12.7" x2="17.78" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="17.78" y1="-12.7" x2="17.78" y2="12.7" width="0.254" layer="94"/>
+<wire x1="17.78" y1="12.7" x2="-17.78" y2="12.7" width="0.254" layer="94"/>
+<text x="-17.78" y="12.7" size="1.778" layer="95">&gt;NAME</text>
+<text x="-17.78" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
+<text x="7.62" y="12.7" size="1.778" layer="97">CC1190</text>
+<pin name="PA_EN" x="-22.86" y="-7.62" length="middle"/>
+<pin name="LNA_EN" x="-22.86" y="-5.08" length="middle"/>
+<pin name="LNA_OUT" x="-22.86" y="7.62" length="middle"/>
+<pin name="VDD_PA2" x="2.54" y="17.78" length="middle" rot="R270"/>
+<pin name="GND" x="0" y="-17.78" length="middle" rot="R90"/>
+<pin name="VDD_LNA" x="-2.54" y="17.78" length="middle" rot="R270"/>
+<pin name="PA_OUT" x="22.86" y="-5.08" length="middle" rot="R180"/>
+<pin name="LNA_IN" x="22.86" y="5.08" length="middle" rot="R180"/>
+<pin name="VDD_PA1" x="0" y="17.78" length="middle" rot="R270"/>
+<pin name="HGM" x="-22.86" y="-2.54" length="middle"/>
+<pin name="TR_SW" x="22.86" y="0" length="middle" rot="R180"/>
+<pin name="PA_IN" x="-22.86" y="10.16" length="middle"/>
+<pin name="BIAS" x="2.54" y="-17.78" length="middle" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="CC2520" prefix="U">
@@ -1850,6 +1872,33 @@ Source: http://focus.ti.com/lit/ds/symlink/tusb2046b.pdf</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="CC1190" prefix="U">
+<gates>
+<gate name="G$1" symbol="CC1190" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RGV_S-PVGFN-N16">
+<connects>
+<connect gate="G$1" pin="BIAS" pad="14"/>
+<connect gate="G$1" pin="GND" pad="1 3 9 12 EP EP@1 EP@2 EP@3 EP@4 EP@5"/>
+<connect gate="G$1" pin="HGM" pad="6"/>
+<connect gate="G$1" pin="LNA_EN" pad="7"/>
+<connect gate="G$1" pin="LNA_IN" pad="5"/>
+<connect gate="G$1" pin="LNA_OUT" pad="10"/>
+<connect gate="G$1" pin="PA_EN" pad="8"/>
+<connect gate="G$1" pin="PA_IN" pad="11"/>
+<connect gate="G$1" pin="PA_OUT" pad="2"/>
+<connect gate="G$1" pin="TR_SW" pad="4"/>
+<connect gate="G$1" pin="VDD_LNA" pad="13"/>
+<connect gate="G$1" pin="VDD_PA1" pad="16"/>
+<connect gate="G$1" pin="VDD_PA2" pad="15"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -1869,6 +1918,7 @@ Source: http://focus.ti.com/lit/ds/symlink/tusb2046b.pdf</description>
 <part name="U5" library="ti_rf" deviceset="CC2520" device=""/>
 <part name="U6" library="ti_rf" deviceset="CC2592" device=""/>
 <part name="U7" library="ti_rf" deviceset="CC1120" device=""/>
+<part name="U8" library="ti_rf" deviceset="CC1190" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -1915,6 +1965,7 @@ Source: http://focus.ti.com/lit/ds/symlink/tusb2046b.pdf</description>
 </plain>
 <instances>
 <instance part="U7" gate="G$1" x="0" y="0"/>
+<instance part="U8" gate="G$1" x="93.98" y="-10.16"/>
 </instances>
 <busses>
 </busses>
