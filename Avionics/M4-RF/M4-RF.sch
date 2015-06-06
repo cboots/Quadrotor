@@ -2055,8 +2055,6 @@ Source: http://focus.ti.com/lit/ds/symlink/tusb2046b.pdf</description>
 <rectangle x1="-1.4" y1="-1.4" x2="-0.15" y2="-0.15" layer="31" rot="R90"/>
 <rectangle x1="0.15" y1="-1.4" x2="1.4" y2="-0.15" layer="31" rot="R180"/>
 <rectangle x1="0.15" y1="0.15" x2="1.4" y2="1.4" layer="31" rot="R270"/>
-<pad name="EXP@10" x="1" y="-1" drill="0.3" diameter="0.6" stop="no"/>
-<pad name="EXP@11" x="-1" y="1" drill="0.3" diameter="0.6" stop="no"/>
 </package>
 <package name="RHB_S-PVQFN-N32">
 <wire x1="-2.4734" y1="-2.4734" x2="2.4734" y2="-2.4734" width="0.2032" layer="51"/>
@@ -2081,8 +2079,6 @@ Source: http://focus.ti.com/lit/ds/symlink/tusb2046b.pdf</description>
 <rectangle x1="-1.6" y1="0.15" x2="-0.15" y2="1.6" layer="31"/>
 <circle x="-2.5" y="2.5" radius="0.5" width="0.127" layer="21"/>
 <wire x1="-2.75" y1="1.75" x2="-2.2" y2="1.75" width="0.23" layer="31"/>
-<pad name="EXP@10" x="1" y="-1" drill="0.3" diameter="0.6" stop="no"/>
-<pad name="EXP@11" x="-1" y="1" drill="0.3" diameter="0.6" stop="no"/>
 <wire x1="-2.75" y1="1.25" x2="-2.2" y2="1.25" width="0.35" layer="29"/>
 <smd name="2" x="-2.475" y="1.25" dx="0.85" dy="0.28" layer="1" roundness="100" stop="no" cream="no"/>
 <wire x1="-2.75" y1="1.25" x2="-2.2" y2="1.25" width="0.23" layer="31"/>
@@ -2359,7 +2355,7 @@ Source: http://focus.ti.com/lit/ds/symlink/tusb2046b.pdf</description>
 <devices>
 <device name="" package="RHD_S-PVQFN-N28">
 <connects>
-<connect gate="G$1" pin="AGND" pad="EP EXP@1 EXP@2 EXP@3 EXP@4 EXP@5 EXP@6 EXP@7 EXP@8 EXP@9 EXP@10 EXP@11"/>
+<connect gate="G$1" pin="AGND" pad="EP EXP@1 EXP@2 EXP@3 EXP@4 EXP@5 EXP@6 EXP@7 EXP@8 EXP@9"/>
 <connect gate="G$1" pin="AVDD" pad="11 14 16 20 22"/>
 <connect gate="G$1" pin="AVDD_GUARD" pad="24"/>
 <connect gate="G$1" pin="CS_L" pad="3"/>
@@ -2408,7 +2404,7 @@ Source: http://focus.ti.com/lit/ds/symlink/tusb2046b.pdf</description>
 <connect gate="G$1" pin="DCPL_XOSC" pad="29"/>
 <connect gate="G$1" pin="DVDD" pad="5 12"/>
 <connect gate="G$1" pin="EXT_XOSC" pad="32"/>
-<connect gate="G$1" pin="GND" pad="EP EXP@1 EXP@2 EXP@3 EXP@4 EXP@5 EXP@6 EXP@7 EXP@8 EXP@9 EXP@10 EXP@11"/>
+<connect gate="G$1" pin="GND" pad="EP EXP@1 EXP@2 EXP@3 EXP@4 EXP@5 EXP@6 EXP@7 EXP@8 EXP@9" route="any"/>
 <connect gate="G$1" pin="GPIO0" pad="10"/>
 <connect gate="G$1" pin="GPIO2" pad="4"/>
 <connect gate="G$1" pin="GPIO3" pad="3"/>
@@ -2522,7 +2518,7 @@ Source: http://focus.ti.com/lit/ds/symlink/tusb2046b.pdf</description>
 <part name="U6" library="rf" deviceset="LDB18" device="2G4520C-110"/>
 <part name="C4" library="SparkFun-Capacitors" deviceset="CAP" device="0402-CAP" value="6.8p"/>
 <part name="GND16" library="SparkFun-Aesthetics" deviceset="DGND" device=""/>
-<part name="J2" library="connectors" deviceset="132134RP" device=""/>
+<part name="R10" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="DNP"/>
 <part name="GND17" library="SparkFun-Aesthetics" deviceset="DGND" device=""/>
 <part name="GND18" library="SparkFun-Aesthetics" deviceset="DGND" device=""/>
 </parts>
@@ -2534,10 +2530,24 @@ Source: http://focus.ti.com/lit/ds/symlink/tusb2046b.pdf</description>
 <instances>
 <instance part="U1" gate="G$1" x="-38.1" y="0"/>
 <instance part="U2" gate="G$1" x="58.42" y="2.54"/>
+<instance part="GND17" gate="G$1" x="-38.1" y="-30.48"/>
+<instance part="GND18" gate="G$1" x="58.42" y="-25.4"/>
 </instances>
 <busses>
 </busses>
 <nets>
+<net name="GND" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="GND"/>
+<pinref part="GND17" gate="G$1" pin="GND"/>
+<wire x1="-38.1" y1="-27.94" x2="-38.1" y2="-25.4" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U2" gate="G$1" pin="GND"/>
+<pinref part="GND18" gate="G$1" pin="GND"/>
+<wire x1="58.42" y1="-22.86" x2="58.42" y2="-15.24" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -2593,9 +2603,7 @@ Source: http://focus.ti.com/lit/ds/symlink/tusb2046b.pdf</description>
 <instance part="U6" gate="G$1" x="93.98" y="-91.44"/>
 <instance part="C4" gate="G$1" x="116.84" y="-88.9" rot="R90"/>
 <instance part="GND16" gate="G$1" x="121.92" y="-91.44"/>
-<instance part="J2" gate="G$1" x="144.78" y="-68.58"/>
-<instance part="GND17" gate="G$1" x="129.54" y="-78.74"/>
-<instance part="GND18" gate="G$1" x="160.02" y="-78.74"/>
+<instance part="R10" gate="G$1" x="241.3" y="-20.32" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -2724,20 +2732,6 @@ Source: http://focus.ti.com/lit/ds/symlink/tusb2046b.pdf</description>
 <pinref part="GND16" gate="G$1" pin="GND"/>
 <wire x1="121.92" y1="-88.9" x2="119.38" y2="-88.9" width="0.1524" layer="91"/>
 </segment>
-<segment>
-<pinref part="J2" gate="G$1" pin="M@2"/>
-<pinref part="J2" gate="G$1" pin="M@1"/>
-<wire x1="129.54" y1="-63.5" x2="129.54" y2="-73.66" width="0.1524" layer="91"/>
-<wire x1="129.54" y1="-73.66" x2="129.54" y2="-76.2" width="0.1524" layer="91"/>
-<pinref part="GND17" gate="G$1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="J2" gate="G$1" pin="M@4"/>
-<pinref part="J2" gate="G$1" pin="M@3"/>
-<wire x1="160.02" y1="-63.5" x2="160.02" y2="-73.66" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="-73.66" x2="160.02" y2="-76.2" width="0.1524" layer="91"/>
-<pinref part="GND18" gate="G$1" pin="GND"/>
-</segment>
 </net>
 <net name="N$7" class="0">
 <segment>
@@ -2819,6 +2813,8 @@ Source: http://focus.ti.com/lit/ds/symlink/tusb2046b.pdf</description>
 <wire x1="215.9" y1="-15.24" x2="241.3" y2="-15.24" width="0.1524" layer="91"/>
 <pinref part="J1" gate="G$1" pin="ANT"/>
 <wire x1="241.3" y1="-15.24" x2="241.3" y2="-2.54" width="0.1524" layer="91"/>
+<pinref part="R10" gate="G$1" pin="2"/>
+<junction x="241.3" y="-15.24"/>
 </segment>
 </net>
 <net name="N$3" class="0">
@@ -2911,12 +2907,6 @@ Source: http://focus.ti.com/lit/ds/symlink/tusb2046b.pdf</description>
 <wire x1="33.02" y1="10.16" x2="40.64" y2="10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$21" class="0">
-<segment>
-<pinref part="U6" gate="G$1" pin="UNBAL"/>
-<wire x1="109.22" y1="-93.98" x2="144.78" y2="-93.98" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$22" class="0">
 <segment>
 <pinref part="U6" gate="G$1" pin="BIAS"/>
@@ -2926,8 +2916,10 @@ Source: http://focus.ti.com/lit/ds/symlink/tusb2046b.pdf</description>
 </net>
 <net name="2G4_LP" class="1">
 <segment>
-<pinref part="J2" gate="G$1" pin="ANT"/>
-<wire x1="144.78" y1="-93.98" x2="144.78" y2="-81.28" width="0.1524" layer="91"/>
+<pinref part="U6" gate="G$1" pin="UNBAL"/>
+<pinref part="R10" gate="G$1" pin="1"/>
+<wire x1="109.22" y1="-93.98" x2="241.3" y2="-93.98" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="-93.98" x2="241.3" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
