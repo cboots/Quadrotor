@@ -1584,6 +1584,50 @@ Yageo CFR series &lt;a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pd
 <text x="-7.62" y="3.175" size="0.8128" layer="25" font="vector" ratio="15">&gt;Name</text>
 <text x="-5.969" y="-0.381" size="0.8128" layer="21" font="vector" ratio="15">&gt;Value</text>
 </package>
+<package name="0402-RES-3PIN-LH">
+<wire x1="-0.245" y1="0.224" x2="0.245" y2="0.224" width="0.1524" layer="51"/>
+<wire x1="0.245" y1="-0.224" x2="-0.245" y2="-0.224" width="0.1524" layer="51"/>
+<rectangle x1="-0.554" y1="-0.3048" x2="-0.254" y2="0.2951" layer="51"/>
+<rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.2951" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+<rectangle x1="-0.2032" y1="-0.3556" x2="0.2032" y2="0.3556" layer="21"/>
+<smd name="1" x="-0.65" y="0" dx="0.7" dy="0.7" layer="1"/>
+<smd name="2" x="0.65" y="0" dx="0.7" dy="0.7" layer="1"/>
+<text x="-1.389" y="-0.9515" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-1.4295" y="0.557" size="0.4064" layer="27">&gt;VALUE</text>
+<smd name="3" x="0.65" y="1.3" dx="0.7" dy="0.7" layer="1"/>
+<rectangle x1="0.4468" y1="0.2944" x2="0.8532" y2="1.0056" layer="21" rot="R90"/>
+<wire x1="-1.45" y1="-0.5" x2="1.45" y2="-0.5" width="0.05" layer="39"/>
+<wire x1="1.15" y1="0.5" x2="1.15" y2="2.1" width="0.05" layer="39"/>
+<wire x1="1.15" y1="2.1" x2="0.15" y2="2.1" width="0.05" layer="39"/>
+<wire x1="0.15" y1="2.1" x2="0.15" y2="0.5" width="0.05" layer="39"/>
+<wire x1="0.15" y1="0.5" x2="-1.45" y2="0.5" width="0.05" layer="39"/>
+<wire x1="-1.45" y1="0.5" x2="-1.45" y2="-0.5" width="0.05" layer="39"/>
+<wire x1="1.45" y1="-0.5" x2="1.45" y2="0.5" width="0.05" layer="39"/>
+<wire x1="1.45" y1="0.5" x2="1.15" y2="0.5" width="0.05" layer="39"/>
+</package>
+<package name="0402-RES-3PIN-RH">
+<wire x1="-0.245" y1="0.224" x2="0.245" y2="0.224" width="0.1524" layer="51"/>
+<wire x1="0.245" y1="-0.224" x2="-0.245" y2="-0.224" width="0.1524" layer="51"/>
+<wire x1="-1.473" y1="0.483" x2="1.523" y2="0.483" width="0.0508" layer="39"/>
+<wire x1="1.523" y1="0.483" x2="1.523" y2="-0.483" width="0.0508" layer="39"/>
+<wire x1="-1.473" y1="-0.483" x2="-1.473" y2="0.483" width="0.0508" layer="39"/>
+<rectangle x1="-0.554" y1="-0.3048" x2="-0.254" y2="0.2951" layer="51"/>
+<rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.2951" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
+<rectangle x1="-0.2032" y1="-0.3556" x2="0.2032" y2="0.3556" layer="21"/>
+<smd name="1" x="-0.65" y="0" dx="0.7" dy="0.7" layer="1"/>
+<smd name="2" x="0.65" y="0" dx="0.7" dy="0.7" layer="1"/>
+<text x="-0.889" y="0.6985" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-0.8795" y="1.257" size="0.4064" layer="27">&gt;VALUE</text>
+<smd name="3" x="0.65" y="-1.3" dx="0.7" dy="0.7" layer="1"/>
+<rectangle x1="0.4468" y1="-1.0056" x2="0.8532" y2="-0.2944" layer="21" rot="R90"/>
+<wire x1="-1.45" y1="-0.5" x2="0.1" y2="-0.5" width="0.05" layer="39"/>
+<wire x1="0.1" y1="-0.5" x2="0.1" y2="-1.95" width="0.05" layer="39"/>
+<wire x1="0.1" y1="-1.95" x2="1.2" y2="-1.95" width="0.05" layer="39"/>
+<wire x1="1.2" y1="-1.95" x2="1.2" y2="-0.5" width="0.05" layer="39"/>
+<wire x1="1.2" y1="-0.5" x2="1.5" y2="-0.5" width="0.05" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="RESISTOR">
@@ -1600,6 +1644,62 @@ Yageo CFR series &lt;a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pd
 <pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <text x="-3.81" y="1.4986" size="1.778" layer="95">&gt;NAME</text>
 <text x="-3.81" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="3PIN-JUMPER-LH">
+<wire x1="-2.54" y1="0" x2="-2.159" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="-2.159" y1="1.016" x2="-1.524" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-1.524" y1="-1.016" x2="-0.889" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="-0.889" y1="1.016" x2="-0.254" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-0.254" y1="-1.016" x2="0.381" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="0.381" y1="1.016" x2="1.016" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="1.016" y1="-1.016" x2="1.651" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="1.651" y1="1.016" x2="2.286" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="2.286" y1="-1.016" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="2" x="7.62" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<text x="-6.35" y="1.4986" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="5.08" y1="7.62" x2="6.096" y2="7.239" width="0.1524" layer="94"/>
+<wire x1="6.096" y1="7.239" x2="4.064" y2="6.604" width="0.1524" layer="94"/>
+<wire x1="4.064" y1="6.604" x2="6.096" y2="5.969" width="0.1524" layer="94"/>
+<wire x1="6.096" y1="5.969" x2="4.064" y2="5.334" width="0.1524" layer="94"/>
+<wire x1="4.064" y1="5.334" x2="6.096" y2="4.699" width="0.1524" layer="94"/>
+<wire x1="6.096" y1="4.699" x2="4.064" y2="4.064" width="0.1524" layer="94"/>
+<wire x1="4.064" y1="4.064" x2="6.096" y2="3.429" width="0.1524" layer="94"/>
+<wire x1="6.096" y1="3.429" x2="4.064" y2="2.794" width="0.1524" layer="94"/>
+<wire x1="4.064" y1="2.794" x2="5.08" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
+<pin name="3" x="5.08" y="10.16" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<wire x1="7.62" y1="7.62" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+</symbol>
+<symbol name="3PIN-JUMPER-RH">
+<wire x1="-2.54" y1="0" x2="-2.159" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="-2.159" y1="1.016" x2="-1.524" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-1.524" y1="-1.016" x2="-0.889" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="-0.889" y1="1.016" x2="-0.254" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="-0.254" y1="-1.016" x2="0.381" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="0.381" y1="1.016" x2="1.016" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="1.016" y1="-1.016" x2="1.651" y2="1.016" width="0.1524" layer="94"/>
+<wire x1="1.651" y1="1.016" x2="2.286" y2="-1.016" width="0.1524" layer="94"/>
+<wire x1="2.286" y1="-1.016" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="2" x="7.62" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<text x="-3.81" y="1.4986" size="1.778" layer="95">&gt;NAME</text>
+<text x="-6.35" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="5.08" y1="-7.62" x2="4.064" y2="-7.239" width="0.1524" layer="94"/>
+<wire x1="4.064" y1="-7.239" x2="6.096" y2="-6.604" width="0.1524" layer="94"/>
+<wire x1="6.096" y1="-6.604" x2="4.064" y2="-5.969" width="0.1524" layer="94"/>
+<wire x1="4.064" y1="-5.969" x2="6.096" y2="-5.334" width="0.1524" layer="94"/>
+<wire x1="6.096" y1="-5.334" x2="4.064" y2="-4.699" width="0.1524" layer="94"/>
+<wire x1="4.064" y1="-4.699" x2="6.096" y2="-4.064" width="0.1524" layer="94"/>
+<wire x1="6.096" y1="-4.064" x2="4.064" y2="-3.429" width="0.1524" layer="94"/>
+<wire x1="4.064" y1="-3.429" x2="6.096" y2="-2.794" width="0.1524" layer="94"/>
+<wire x1="6.096" y1="-2.794" x2="5.08" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
+<pin name="3" x="5.08" y="-10.16" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+<wire x1="2.54" y1="-7.62" x2="7.62" y2="-2.54" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1738,6 +1838,40 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </device>
 </devices>
 </deviceset>
+<deviceset name="RESISTOR-3PIN-LH" prefix="R">
+<gates>
+<gate name="G$1" symbol="3PIN-JUMPER-LH" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-0402" package="0402-RES-3PIN-LH">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RESISTOR-3PIN-RH" prefix="R">
+<gates>
+<gate name="G$1" symbol="3PIN-JUMPER-RH" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-0402" package="0402-RES-3PIN-RH">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="connectors">
@@ -1800,28 +1934,29 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </library>
 <library name="oscillators">
 <packages>
-<package name="OSC-4-SMD-3.2MMX2.5MM">
-<smd name="1" x="-1.1" y="-0.8" dx="1.4" dy="1.2" layer="1"/>
-<smd name="2" x="1.1" y="-0.8" dx="1.4" dy="1.2" layer="1"/>
-<smd name="3" x="1.1" y="0.8" dx="1.4" dy="1.2" layer="1"/>
-<smd name="4" x="-1.1" y="0.8" dx="1.4" dy="1.2" layer="1"/>
-<wire x1="-1.9" y1="1.5" x2="-1.9" y2="-1.5" width="0.127" layer="21"/>
-<wire x1="-1.9" y1="-1.5" x2="1.9" y2="-1.5" width="0.127" layer="21"/>
-<wire x1="1.9" y1="-1.5" x2="1.9" y2="1.5" width="0.127" layer="21"/>
-<wire x1="1.9" y1="1.5" x2="-1.9" y2="1.5" width="0.127" layer="21"/>
-<wire x1="-0.3" y1="-0.9" x2="0" y2="-0.9" width="0.127" layer="21"/>
-<wire x1="0" y1="0.8" x2="0.3" y2="0.8" width="0.127" layer="21"/>
-<wire x1="-0.3" y1="0.1" x2="0.3" y2="0.1" width="0.127" layer="21"/>
-<wire x1="0.3" y1="0.1" x2="0.3" y2="-0.1" width="0.127" layer="21"/>
-<wire x1="0.3" y1="-0.1" x2="-0.3" y2="-0.1" width="0.127" layer="21"/>
-<wire x1="-0.3" y1="-0.1" x2="-0.3" y2="0.1" width="0.127" layer="21"/>
+<package name="FA-20H">
+<smd name="1" x="-0.85" y="-0.7" dx="1.2" dy="1.1" layer="1"/>
+<smd name="2" x="0.85" y="-0.7" dx="1.2" dy="1.1" layer="1"/>
+<smd name="3" x="0.85" y="0.7" dx="1.2" dy="1.1" layer="1"/>
+<smd name="4" x="-0.85" y="0.7" dx="1.2" dy="1.1" layer="1"/>
+<wire x1="-1.6" y1="1.4" x2="-1.6" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="-1.6" y1="-1.4" x2="-1.1" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="-1.1" y1="-1.4" x2="1.7" y2="-1.4" width="0.127" layer="21"/>
+<wire x1="1.7" y1="-1.4" x2="1.7" y2="1.4" width="0.127" layer="21"/>
+<wire x1="1.7" y1="1.4" x2="-1.6" y2="1.4" width="0.127" layer="21"/>
+<wire x1="-0.1" y1="-0.9" x2="0" y2="-0.9" width="0.127" layer="21"/>
+<wire x1="0" y1="0.8" x2="0.1" y2="0.8" width="0.127" layer="21"/>
+<wire x1="-0.1" y1="0.1" x2="0.1" y2="0.1" width="0.127" layer="21"/>
+<wire x1="0.1" y1="0.1" x2="0.1" y2="-0.1" width="0.127" layer="21"/>
+<wire x1="0.1" y1="-0.1" x2="-0.1" y2="-0.1" width="0.127" layer="21"/>
+<wire x1="-0.1" y1="-0.1" x2="-0.1" y2="0.1" width="0.127" layer="21"/>
 <wire x1="-0.1" y1="-0.3" x2="0.1" y2="-0.3" width="0.127" layer="21"/>
 <wire x1="-0.1" y1="0.3" x2="0.1" y2="0.3" width="0.127" layer="21"/>
 <wire x1="0" y1="-0.9" x2="0" y2="-0.4" width="0.127" layer="21"/>
 <wire x1="0" y1="0.4" x2="0" y2="0.8" width="0.127" layer="21"/>
-<wire x1="-1.1" y1="-1.6" x2="-0.8" y2="-1.9" width="0.127" layer="21"/>
-<wire x1="-0.8" y1="-1.9" x2="-1.4" y2="-1.9" width="0.127" layer="21"/>
-<wire x1="-1.4" y1="-1.9" x2="-1.1" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="-1.1" y1="-1.4" x2="-0.8" y2="-1.8" width="0.127" layer="21"/>
+<wire x1="-0.8" y1="-1.8" x2="-1.4" y2="-1.8" width="0.127" layer="21"/>
+<wire x1="-1.4" y1="-1.8" x2="-1.1" y2="-1.4" width="0.127" layer="21"/>
 <text x="-1.9" y="1.7" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2" y="-3.4" size="1.27" layer="27">&gt;VALUE</text>
 </package>
@@ -1842,12 +1977,12 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="NX3225SA-32MHZ-EXS00A-CS02368" prefix="X">
+<deviceset name="FA-20H">
 <gates>
 <gate name="G$1" symbol="XTAL" x="0" y="0"/>
 </gates>
 <devices>
-<device name="32MHZ" package="OSC-4-SMD-3.2MMX2.5MM">
+<device name="32.0000MF20X-K3" package="FA-20H">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="3"/>
@@ -2475,7 +2610,6 @@ Source: http://focus.ti.com/lit/ds/symlink/tusb2046b.pdf</description>
 <part name="U3" library="rf" deviceset="CC2520" device=""/>
 <part name="U4" library="rf" deviceset="CC2592" device=""/>
 <part name="U5" library="XMC4500-F100K1024 AB" deviceset="INF-PG-LQFP-100-11-7000X7000E9" device="LQFP-100"/>
-<part name="L1" library="SparkFun-Passives" deviceset="INDUCTOR" device="0402" value="DNP"/>
 <part name="L6" library="SparkFun-Passives" deviceset="INDUCTOR" device="0402" value="1n"/>
 <part name="L7" library="SparkFun-Passives" deviceset="INDUCTOR" device="0402" value="2n"/>
 <part name="C5" library="SparkFun-Capacitors" deviceset="CAP" device="0402-CAP" value="0.2p"/>
@@ -2492,10 +2626,6 @@ Source: http://focus.ti.com/lit/ds/symlink/tusb2046b.pdf</description>
 <part name="GND6" library="SparkFun-Aesthetics" deviceset="DGND" device=""/>
 <part name="GND5" library="SparkFun-Aesthetics" deviceset="DGND" device=""/>
 <part name="GND7" library="SparkFun-Aesthetics" deviceset="DGND" device=""/>
-<part name="R3" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="0"/>
-<part name="R2" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="0"/>
-<part name="R4" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="DNP"/>
-<part name="R5" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="DNP"/>
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="DGND" device=""/>
 <part name="R6" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="10k"/>
 <part name="R7" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="10k"/>
@@ -2508,7 +2638,7 @@ Source: http://focus.ti.com/lit/ds/symlink/tusb2046b.pdf</description>
 <part name="GND10" library="SparkFun-Aesthetics" deviceset="DGND" device=""/>
 <part name="C1" library="SparkFun-Capacitors" deviceset="CAP" device="0402-CAP" value="0.1u"/>
 <part name="GND11" library="SparkFun-Aesthetics" deviceset="DGND" device=""/>
-<part name="X1" library="oscillators" deviceset="NX3225SA-32MHZ-EXS00A-CS02368" device="32MHZ"/>
+<part name="X1" library="oscillators" deviceset="FA-20H" device="32.0000MF20X-K3"/>
 <part name="GND12" library="SparkFun-Aesthetics" deviceset="DGND" device=""/>
 <part name="C2" library="SparkFun-Capacitors" deviceset="CAP" device="0402-CAP" value="12p"/>
 <part name="C3" library="SparkFun-Capacitors" deviceset="CAP" device="0402-CAP" value="12p"/>
@@ -2521,6 +2651,8 @@ Source: http://focus.ti.com/lit/ds/symlink/tusb2046b.pdf</description>
 <part name="R10" library="SparkFun-Resistors" deviceset="RESISTOR" device="0402-RES" value="DNP"/>
 <part name="GND17" library="SparkFun-Aesthetics" deviceset="DGND" device=""/>
 <part name="GND18" library="SparkFun-Aesthetics" deviceset="DGND" device=""/>
+<part name="R2" library="SparkFun-Resistors" deviceset="RESISTOR-3PIN-LH" device="-0402"/>
+<part name="R3" library="SparkFun-Resistors" deviceset="RESISTOR-3PIN-RH" device="-0402"/>
 </parts>
 <sheets>
 <sheet>
@@ -2557,7 +2689,6 @@ Source: http://focus.ti.com/lit/ds/symlink/tusb2046b.pdf</description>
 <instances>
 <instance part="U3" gate="G$1" x="-71.12" y="0"/>
 <instance part="U4" gate="G$1" x="104.14" y="-22.86"/>
-<instance part="L1" gate="G$1" x="71.12" y="-12.7"/>
 <instance part="L6" gate="G$1" x="154.94" y="-15.24" rot="R90"/>
 <instance part="L7" gate="G$1" x="187.96" y="-15.24" rot="R90"/>
 <instance part="C5" gate="G$1" x="203.2" y="-20.32" rot="R180"/>
@@ -2574,10 +2705,6 @@ Source: http://focus.ti.com/lit/ds/symlink/tusb2046b.pdf</description>
 <instance part="GND6" gate="G$1" x="142.24" y="-27.94"/>
 <instance part="GND5" gate="G$1" x="127" y="-40.64"/>
 <instance part="GND7" gate="G$1" x="129.54" y="0"/>
-<instance part="R3" gate="G$1" x="45.72" y="-5.08"/>
-<instance part="R2" gate="G$1" x="45.72" y="-20.32"/>
-<instance part="R4" gate="G$1" x="40.64" y="-30.48" rot="R90"/>
-<instance part="R5" gate="G$1" x="40.64" y="5.08" rot="R90"/>
 <instance part="GND1" gate="G$1" x="104.14" y="-40.64"/>
 <instance part="R6" gate="G$1" x="60.96" y="-35.56" rot="R90"/>
 <instance part="R7" gate="G$1" x="68.58" y="-35.56" rot="R90"/>
@@ -2604,6 +2731,14 @@ Source: http://focus.ti.com/lit/ds/symlink/tusb2046b.pdf</description>
 <instance part="C4" gate="G$1" x="116.84" y="-88.9" rot="R90"/>
 <instance part="GND16" gate="G$1" x="121.92" y="-91.44"/>
 <instance part="R10" gate="G$1" x="241.3" y="-20.32" rot="R90"/>
+<instance part="R2" gate="G$1" x="48.26" y="-15.24" smashed="yes" rot="R180">
+<attribute name="NAME" x="46.99" y="-18.8214" size="1.778" layer="95"/>
+<attribute name="VALUE" x="46.99" y="-21.082" size="1.778" layer="96"/>
+</instance>
+<instance part="R3" gate="G$1" x="48.26" y="-12.7" smashed="yes" rot="R180">
+<attribute name="NAME" x="46.99" y="-11.2014" size="1.778" layer="95"/>
+<attribute name="VALUE" x="46.99" y="-8.382" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -2612,42 +2747,21 @@ Source: http://focus.ti.com/lit/ds/symlink/tusb2046b.pdf</description>
 <segment>
 <pinref part="U3" gate="G$1" pin="RF_N"/>
 <wire x1="-50.8" y1="-12.7" x2="40.64" y2="-12.7" width="0.1524" layer="91"/>
-<pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="40.64" y1="-12.7" x2="40.64" y2="-5.08" width="0.1524" layer="91"/>
-<pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="40.64" y1="-5.08" x2="40.64" y2="0" width="0.1524" layer="91"/>
+<pinref part="R3" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="RF_P"/>
 <wire x1="-50.8" y1="-15.24" x2="40.64" y2="-15.24" width="0.1524" layer="91"/>
-<pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="40.64" y1="-20.32" x2="40.64" y2="-15.24" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="40.64" y1="-20.32" x2="40.64" y2="-25.4" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$4" class="0">
-<segment>
-<pinref part="L1" gate="G$1" pin="1"/>
-<wire x1="71.12" y1="-5.08" x2="81.28" y2="-5.08" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="-5.08" x2="81.28" y2="-12.7" width="0.1524" layer="91"/>
-<pinref part="U4" gate="G$1" pin="RF_N"/>
-<wire x1="81.28" y1="-12.7" x2="83.82" y2="-12.7" width="0.1524" layer="91"/>
-<pinref part="R3" gate="G$1" pin="2"/>
-<wire x1="50.8" y1="-5.08" x2="71.12" y2="-5.08" width="0.1524" layer="91"/>
+<pinref part="R2" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="L1" gate="G$1" pin="2"/>
-<wire x1="71.12" y1="-20.32" x2="81.28" y2="-20.32" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="-20.32" x2="81.28" y2="-15.24" width="0.1524" layer="91"/>
 <pinref part="U4" gate="G$1" pin="RF_P"/>
-<wire x1="81.28" y1="-15.24" x2="83.82" y2="-15.24" width="0.1524" layer="91"/>
-<pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="71.12" y1="-20.32" x2="50.8" y2="-20.32" width="0.1524" layer="91"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="53.34" y1="-15.24" x2="83.82" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -2892,19 +3006,19 @@ Source: http://focus.ti.com/lit/ds/symlink/tusb2046b.pdf</description>
 </net>
 <net name="N$19" class="0">
 <segment>
-<pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="40.64" y1="-35.56" x2="40.64" y2="-88.9" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="-25.4" x2="43.18" y2="-88.9" width="0.1524" layer="91"/>
 <pinref part="U6" gate="G$1" pin="BALP"/>
-<wire x1="40.64" y1="-88.9" x2="78.74" y2="-88.9" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="-88.9" x2="78.74" y2="-88.9" width="0.1524" layer="91"/>
+<pinref part="R2" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="N$20" class="0">
 <segment>
 <pinref part="U6" gate="G$1" pin="BALN"/>
 <wire x1="78.74" y1="-93.98" x2="33.02" y2="-93.98" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="-93.98" x2="33.02" y2="10.16" width="0.1524" layer="91"/>
-<pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="33.02" y1="10.16" x2="40.64" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="-93.98" x2="33.02" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="-2.54" x2="43.18" y2="-2.54" width="0.1524" layer="91"/>
+<pinref part="R3" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="N$22" class="0">
@@ -2920,6 +3034,13 @@ Source: http://focus.ti.com/lit/ds/symlink/tusb2046b.pdf</description>
 <pinref part="R10" gate="G$1" pin="1"/>
 <wire x1="109.22" y1="-93.98" x2="241.3" y2="-93.98" width="0.1524" layer="91"/>
 <wire x1="241.3" y1="-93.98" x2="241.3" y2="-25.4" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="U4" gate="G$1" pin="RF_N"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="83.82" y1="-12.7" x2="53.34" y2="-12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
