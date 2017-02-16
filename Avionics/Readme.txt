@@ -1,1 +1,0 @@
-This folder holds all of the electronics designs for the quads
