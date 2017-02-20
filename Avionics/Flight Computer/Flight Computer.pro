@@ -1,4 +1,4 @@
-update=2/15/2017 11:45:58 PM
+update=2/19/2017 1:12:07 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -31,3 +31,13 @@ LibDir=D:/kicad-library/library
 [eeschema/libraries]
 LibName1=device
 LibName2=rfcom
+LibName3=atmel
+LibName4=texas
+LibName5=maxim
+LibName6=memory
+LibName7=microchip
+LibName8=mechanical
+LibName9=conn
+LibName10=sensors
+LibName11=graphic
+LibName12=power
