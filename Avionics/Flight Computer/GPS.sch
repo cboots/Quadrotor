@@ -11,12 +11,25 @@ LIBS:conn
 LIBS:sensors
 LIBS:graphic
 LIBS:power
+LIBS:interface
+LIBS:linear
+LIBS:74xgxx
+LIBS:74xx
+LIBS:ac-dc
+LIBS:actel
+LIBS:adc-dac
+LIBS:allegro
+LIBS:Altera
+LIBS:analog_devices
+LIBS:analog_switches
+LIBS:Power_Management
+LIBS:powerint
 LIBS:Flight Computer-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 7
+Sheet 5 7
 Title ""
 Date ""
 Rev ""

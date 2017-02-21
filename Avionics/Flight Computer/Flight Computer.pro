@@ -1,4 +1,4 @@
-update=2/19/2017 1:12:07 PM
+update=2/20/2017 1:34:45 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -41,3 +41,16 @@ LibName9=conn
 LibName10=sensors
 LibName11=graphic
 LibName12=power
+LibName13=interface
+LibName14=linear
+LibName15=74xgxx
+LibName16=74xx
+LibName17=ac-dc
+LibName18=actel
+LibName19=adc-dac
+LibName20=allegro
+LibName21=Altera
+LibName22=analog_devices
+LibName23=analog_switches
+LibName24=Power_Management
+LibName25=powerint

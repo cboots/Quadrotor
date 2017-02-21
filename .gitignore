@@ -5,3 +5,5 @@ Thumbs.db
 *.~vsdx
 *.b#*
 *.s#*
+/Avionics/Flight Computer/*.bak
+/Avionics/Flight Computer/*.kicad_pcb-bak
