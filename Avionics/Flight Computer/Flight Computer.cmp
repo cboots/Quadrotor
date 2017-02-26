@@ -1,4 +1,28 @@
-Cmp-Mod V01 Created by PcbNew   date = 2/20/2017 8:40:20 PM
+Cmp-Mod V01 Created by PcbNew   date = 2/20/2017 10:20:32 PM
+
+BeginCmp
+TimeStamp = 58AD60B3
+Path = /58AB5F89
+Reference = J5;
+ValeurCmp = 473460001;
+IdModule  = Connectors:USB_Micro-B_0473460001;
+EndCmp
+
+BeginCmp
+TimeStamp = 58C2DA34
+Path = /58AA09C2/58AA1973
+Reference = J1;
+ValeurCmp = CONN_COAXIAL;
+IdModule  = Connectors_Molex:Molex_Microcoaxial_RF;
+EndCmp
+
+BeginCmp
+TimeStamp = 58C2DA51
+Path = /58AA09C5/58AA6D9C
+Reference = J2;
+ValeurCmp = CONN_COAXIAL;
+IdModule  = Connectors_Molex:Molex_Microcoaxial_RF;
+EndCmp
 
 BeginCmp
 TimeStamp = 58C46D03
@@ -137,14 +161,6 @@ IdModule  = Resistors_SMD:R_0402;
 EndCmp
 
 BeginCmp
-TimeStamp = 58AC00A0
-Path = /58AB5F89
-Reference = J5;
-ValeurCmp = 10103594-0001LF;
-IdModule  = Connectors:USB_Micro-B_10103594-0001LF;
-EndCmp
-
-BeginCmp
 TimeStamp = 58ABC089
 Path = /58AA09D0/58B10937
 Reference = U6;
@@ -254,22 +270,6 @@ Path = /58AA09C5/58AA6944
 Reference = C12;
 ValeurCmp = 18p;
 IdModule  = Capacitors_SMD:C_0402;
-EndCmp
-
-BeginCmp
-TimeStamp = 58C2DA34
-Path = /58AA09C2/58AA1973
-Reference = J1;
-ValeurCmp = CONN_COAXIAL;
-IdModule  = Connectors_Molex:Molex_Microcoaxial_RF;
-EndCmp
-
-BeginCmp
-TimeStamp = 58C2DA51
-Path = /58AA09C5/58AA6D9C
-Reference = J2;
-ValeurCmp = CONN_COAXIAL;
-IdModule  = Connectors_Molex:Molex_Microcoaxial_RF;
 EndCmp
 
 BeginCmp
