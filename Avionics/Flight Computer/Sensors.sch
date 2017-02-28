@@ -41,17 +41,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Si7006-A20-IM1 U6
-U 1 1 58B10937
-P 8400 5400
-F 0 "U6" H 8550 5650 50  0000 C CNN
-F 1 "Si7006-A20-IM1" H 8700 5150 50  0000 C CNN
-F 2 "Housings_DFN_QFN:DFN-6-1EP_3x3mm_Pitch0.95mm" H 8400 5000 50  0001 C CNN
-F 3 "http://www.silabs.com/documents/public/data-sheets/Si7006-A20.pdf" H 8400 5800 50  0001 C CNN
-	1    8400 5400
-	-1   0    0    -1  
-$EndComp
-$Comp
 L MPU-9250 U5
 U 1 1 58AB562F
 P 2400 4300
@@ -63,10 +52,10 @@ F 3 "https://www.invensense.com/wp-content/uploads/2015/02/PS-MPU-9250A-01-v1.1.
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR071
+L GND #PWR097
 U 1 1 58B4AF5E
 P 2400 5300
-F 0 "#PWR071" H -1950 1500 50  0001 C CNN
+F 0 "#PWR097" H -1950 1500 50  0001 C CNN
 F 1 "GND" H 2405 5127 50  0000 C CNN
 F 2 "" H -1950 1750 50  0001 C CNN
 F 3 "" H -1950 1750 50  0001 C CNN
@@ -74,10 +63,10 @@ F 3 "" H -1950 1750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +3.3V #PWR072
+L +3.3V #PWR098
 U 1 1 58B4AFA2
 P 2300 2850
-F 0 "#PWR072" H -2200 -700 50  0001 C CNN
+F 0 "#PWR098" H -2200 -700 50  0001 C CNN
 F 1 "+3.3V" H 2315 3023 50  0000 C CNN
 F 2 "" H -2200 -550 50  0001 C CNN
 F 3 "" H -2200 -550 50  0001 C CNN
@@ -85,10 +74,10 @@ F 3 "" H -2200 -550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR073
+L GND #PWR099
 U 1 1 58B4B105
 P 8400 3550
-F 0 "#PWR073" H 4050 -250 50  0001 C CNN
+F 0 "#PWR099" H 4050 -250 50  0001 C CNN
 F 1 "GND" H 8405 3377 50  0000 C CNN
 F 2 "" H 4050 0   50  0001 C CNN
 F 3 "" H 4050 0   50  0001 C CNN
@@ -99,21 +88,10 @@ Wire Wire Line
 	8300 3550 8600 3550
 Connection ~ 8400 3550
 $Comp
-L GND #PWR074
-U 1 1 58B4B122
-P 8500 5750
-F 0 "#PWR074" H 4150 1950 50  0001 C CNN
-F 1 "GND" H 8505 5577 50  0000 C CNN
-F 2 "" H 4150 2200 50  0001 C CNN
-F 3 "" H 4150 2200 50  0001 C CNN
-	1    8500 5750
-	1    0    0    -1  
-$EndComp
-$Comp
-L +3.3V #PWR075
+L +3.3V #PWR0100
 U 1 1 58B4B14B
 P 8450 1900
-F 0 "#PWR075" H 3950 -1650 50  0001 C CNN
+F 0 "#PWR0100" H 3950 -1650 50  0001 C CNN
 F 1 "+3.3V" H 8465 2073 50  0000 C CNN
 F 2 "" H 3950 -1500 50  0001 C CNN
 F 3 "" H 3950 -1500 50  0001 C CNN
@@ -122,52 +100,6 @@ F 3 "" H 3950 -1500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8350 2350 9050 2350
-$Comp
-L +3.3V #PWR076
-U 1 1 58B4B1B7
-P 8500 5050
-F 0 "#PWR076" H 4000 1500 50  0001 C CNN
-F 1 "+3.3V" H 8515 5223 50  0000 C CNN
-F 2 "" H 4000 1650 50  0001 C CNN
-F 3 "" H 4000 1650 50  0001 C CNN
-	1    8500 5050
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C57
-U 1 1 58B4B2E1
-P 8800 5400
-F 0 "C57" H 8915 5446 50  0000 L CNN
-F 1 "0.1u" H 8915 5355 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0402" H 2038 1500 50  0001 C CNN
-F 3 "" H 2000 1650 50  0001 C CNN
-F 4 "50V" H 2100 1600 60  0001 L CNN "Voltage"
-F 5 "20%" H 2100 1700 60  0001 L CNN "Tolerance"
-F 6 "X7R" H 2050 1800 60  0001 L CNN "Type"
-F 7 "0402" H 2050 1500 60  0001 L CNN "Package"
-	1    8800 5400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8500 5700 8800 5700
-Wire Wire Line
-	8800 5700 8800 5550
-Wire Wire Line
-	8800 5250 8800 5100
-Wire Wire Line
-	8800 5100 8500 5100
-Wire Wire Line
-	8500 5100 8500 5050
-Wire Wire Line
-	8500 5750 8500 5700
-Wire Wire Line
-	8100 5500 7600 5500
-Wire Wire Line
-	7600 5300 8100 5300
-Text Label 7600 5500 0    60   ~ 0
-AUX_SCL
-Text Label 7600 5300 0    60   ~ 0
-AUX_SDA
 Wire Wire Line
 	7450 2800 8000 2800
 Wire Wire Line
@@ -195,10 +127,10 @@ Wire Wire Line
 	9050 2350 9050 2400
 Connection ~ 8450 2350
 $Comp
-L GND #PWR077
+L GND #PWR0101
 U 1 1 58B4B9E9
 P 9050 2700
-F 0 "#PWR077" H 4700 -1100 50  0001 C CNN
+F 0 "#PWR0101" H 4700 -1100 50  0001 C CNN
 F 1 "GND" H 9055 2527 50  0000 C CNN
 F 2 "" H 4700 -850 50  0001 C CNN
 F 3 "" H 4700 -850 50  0001 C CNN
@@ -229,10 +161,10 @@ Text Notes 8750 2150 0    60   ~ 0
 Input filter to reduce sensor reference noise. \n1.5kHz cutoff, 25uA bias current worst case
 Connection ~ 8500 3550
 $Comp
-L +3.3V #PWR078
+L +3.3V #PWR0102
 U 1 1 58B4C158
 P 7450 2100
-F 0 "#PWR078" H 2950 -1450 50  0001 C CNN
+F 0 "#PWR0102" H 2950 -1450 50  0001 C CNN
 F 1 "+3.3V" H 7465 2273 50  0000 C CNN
 F 2 "" H 2950 -1300 50  0001 C CNN
 F 3 "" H 2950 -1300 50  0001 C CNN
@@ -317,8 +249,6 @@ Wire Wire Line
 Connection ~ 7900 3100
 Text Notes 7900 3900 0    60   ~ 0
 High Precision Barometer
-Text Notes 8050 4750 0    60   ~ 0
-Humidity Sensor
 Text Notes 1800 5650 0    60   ~ 0
 9-DOF IMU, gyro/accel/mag
 Text HLabel 1250 4300 0    60   Input ~ 0
@@ -410,10 +340,10 @@ $EndComp
 Wire Wire Line
 	3100 4500 3850 4500
 $Comp
-L GND #PWR079
+L GND #PWR0103
 U 1 1 58B4FB3E
 P 3850 4800
-F 0 "#PWR079" H -500 1000 50  0001 C CNN
+F 0 "#PWR0103" H -500 1000 50  0001 C CNN
 F 1 "GND" H 3855 4627 50  0000 C CNN
 F 2 "" H -500 1250 50  0001 C CNN
 F 3 "" H -500 1250 50  0001 C CNN
@@ -435,10 +365,10 @@ Wire Wire Line
 Wire Wire Line
 	3500 4800 3500 4750
 $Comp
-L +3.3V #PWR080
+L +3.3V #PWR0104
 U 1 1 58B50137
 P 3500 4750
-F 0 "#PWR080" H -1000 1200 50  0001 C CNN
+F 0 "#PWR0104" H -1000 1200 50  0001 C CNN
 F 1 "+3.3V" H 3515 4923 50  0000 C CNN
 F 2 "" H -1000 1350 50  0001 C CNN
 F 3 "" H -1000 1350 50  0001 C CNN
@@ -450,10 +380,10 @@ Wire Wire Line
 Text HLabel 3350 4000 2    60   Output ~ 0
 IMU-INT
 $Comp
-L GND #PWR081
+L GND #PWR0105
 U 1 1 58B505FC
 P 3350 3600
-F 0 "#PWR081" H -1000 -200 50  0001 C CNN
+F 0 "#PWR0105" H -1000 -200 50  0001 C CNN
 F 1 "GND" H 3355 3427 50  0000 C CNN
 F 2 "" H -1000 50  50  0001 C CNN
 F 3 "" H -1000 50  50  0001 C CNN
@@ -466,10 +396,10 @@ Connection ~ 2500 3300
 Text Notes 2800 3150 0    60   ~ 0
 Input filter to reduce sensor reference noise. \n33kHz cutoff, 3.5mA bias current worst case
 $Comp
-L GND #PWR082
+L GND #PWR0106
 U 1 1 58B50B96
 P 1500 3600
-F 0 "#PWR082" H -2850 -200 50  0001 C CNN
+F 0 "#PWR0106" H -2850 -200 50  0001 C CNN
 F 1 "GND" H 1505 3427 50  0000 C CNN
 F 2 "" H -2850 50  50  0001 C CNN
 F 3 "" H -2850 50  50  0001 C CNN
@@ -489,7 +419,7 @@ Wire Wire Line
 	1500 4500 1500 5200
 Connection ~ 2400 5200
 Text Notes 750  4500 0    60   ~ 0
-Frame Synch Unused
+Frame Sync Unused
 Text Notes 750  2400 0    60   ~ 0
 Register map and descriptions: \nhttps://cdn.sparkfun.com/assets/learn_tutorials/5/5/0/MPU-9250-Register-Map.pdf
 Text HLabel 3850 4200 2    60   BiDi ~ 0
@@ -500,13 +430,17 @@ Text Notes 3900 4100 0    60   ~ 0
 AUX bus goes to connector for expansion sensors
 $Comp
 L LPS25HB U7
-U 1 1 58B2400D
+U 1 1 58B3E15F
 P 8400 2950
+AR Path="/58B3E15F" Ref="U7"  Part="1" 
+AR Path="/58AA09D0/58B3E15F" Ref="U7"  Part="1" 
 F 0 "U7" H 8071 2996 50  0000 R CNN
 F 1 "LPS25HB" H 8071 2905 50  0000 R CNN
-F 2 "Housings_LGA:HLGA-10L_2.5x2.5mm_Pitch0.6mm" H -950 800 50  0001 C CIN
-F 3 "http://www.st.com/resource/en/datasheet/lps25hb.pdf" H -950 900 50  0001 C CNN
+F 2 "Housings_LGA:HLGA-10L_2.5x2.5mm_Pitch0.6mm" H -1250 700 50  0001 C CIN
+F 3 "http://www.st.com/resource/en/datasheet/lps25hb.pdf" H -1250 800 50  0001 C CNN
 	1    8400 2950
 	-1   0    0    -1  
 $EndComp
+Text Notes 1000 5900 0    60   ~ 0
+Layout Note: Exposed pad is NC. Do not solder the exposed pad.
 $EndSCHEMATC
