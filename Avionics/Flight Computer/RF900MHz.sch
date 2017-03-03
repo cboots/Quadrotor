@@ -1317,9 +1317,9 @@ Text Label 4250 1750 0    60   ~ 0
 PA_EN
 Text Label 4050 5800 2    60   ~ 0
 PA_EN
-Text Label 4050 5700 2    60   ~ 0
-LNA_EN
 Text Label 4050 5900 2    60   ~ 0
+LNA_EN
+Text Label 4050 5700 2    60   ~ 0
 HGM
 Wire Wire Line
 	4050 5900 4200 5900
