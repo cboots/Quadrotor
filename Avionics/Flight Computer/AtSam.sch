@@ -30,7 +30,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 9
+Sheet 2 8
 Title ""
 Date ""
 Rev ""
@@ -407,48 +407,6 @@ Connection ~ 1600 6950
 Wire Wire Line
 	2500 6200 1100 6200
 Connection ~ 1100 6950
-Wire Wire Line
-	8700 4600 9000 4600
-Text Label 8800 4600 0    60   ~ 0
-QIO3
-Wire Wire Line
-	4200 3400 4500 3400
-Text Label 4300 3400 0    60   ~ 0
-QIO2
-Wire Wire Line
-	2200 4500 2500 4500
-Text Label 2200 4500 0    60   ~ 0
-QIO1
-Text Label 2200 4600 0    60   ~ 0
-QIO0
-Wire Wire Line
-	2200 4600 2500 4600
-Text Label 2200 4700 0    60   ~ 0
-QSCK
-Wire Wire Line
-	2200 4700 2500 4700
-Text Label 2200 4400 0    60   ~ 0
-QCS
-Wire Wire Line
-	2200 4400 2500 4400
-Text HLabel 10550 1100 2    60   BiDi ~ 0
-QIO[0..3]
-Text HLabel 10550 1200 2    60   Output ~ 0
-QSCK
-Wire Wire Line
-	10100 1200 10550 1200
-Wire Bus Line
-	10100 1100 10550 1100
-Text Label 10100 1100 0    60   ~ 0
-QIO[0..3]
-Text HLabel 10550 1300 2    60   Output ~ 0
-QCS
-Wire Wire Line
-	10550 1300 10100 1300
-Text Label 10100 1200 0    60   ~ 0
-QSCK
-Text Label 10100 1300 0    60   ~ 0
-QCS
 $Comp
 L C C60
 U 1 1 58B7775D
@@ -1108,14 +1066,8 @@ Wire Wire Line
 	2350 3400 2500 3400
 Wire Wire Line
 	2500 3300 2350 3300
-Text HLabel 2500 4800 0    60   BiDi ~ 0
-PA15
-Text HLabel 4500 3300 2    60   BiDi ~ 0
-PA16
-Wire Wire Line
-	4500 3300 4200 3300
 Text HLabel 5150 5050 2    60   BiDi ~ 0
-PA[18..31]
+PA[11..31]
 Text Label 4200 3500 0    60   ~ 0
 PA18
 Text Label 4200 3600 0    60   ~ 0
@@ -1145,7 +1097,7 @@ PA30
 Text Label 4200 4800 0    60   ~ 0
 PA31
 Wire Bus Line
-	4550 5050 5150 5050
+	2200 5050 5150 5050
 Entry Wire Line
 	4450 3500 4550 3600
 Entry Wire Line
@@ -1203,7 +1155,7 @@ Wire Wire Line
 Wire Wire Line
 	4200 3800 4450 3800
 Wire Bus Line
-	4550 3600 4550 5050
+	4550 3400 4550 5050
 Text HLabel 2050 3500 0    60   Input ~ 0
 IMU-INT
 Text HLabel 2050 3600 0    60   BiDi ~ 0
@@ -1235,68 +1187,68 @@ Wire Wire Line
 $Comp
 L C C87
 U 1 1 58B9B2A3
-P 1650 2050
-F 0 "C87" H 1600 1950 50  0000 R CNN
-F 1 "1u" H 1750 2150 50  0000 R CNN
-F 2 "Capacitors_SMD:C_0603" H -3062 600 50  0001 C CNN
-F 3 "" H -3100 750 50  0001 C CNN
-F 4 "50V" H 1535 2088 60  0001 R CNN "Voltage"
-F 5 "20%" H 1765 1906 60  0001 L CNN "Tolerance"
-F 6 "X7R" H 1535 2194 60  0001 R CNN "Type"
-F 7 "0603" H 1400 2150 60  0000 L CNN "Package"
-	1    1650 2050
+P 1600 2050
+F 0 "C87" H 1550 1950 50  0000 R CNN
+F 1 "1u" H 1700 2150 50  0000 R CNN
+F 2 "Capacitors_SMD:C_0603" H -3112 600 50  0001 C CNN
+F 3 "" H -3150 750 50  0001 C CNN
+F 4 "50V" H 1485 2088 60  0001 R CNN "Voltage"
+F 5 "20%" H 1715 1906 60  0001 L CNN "Tolerance"
+F 6 "X7R" H 1485 2194 60  0001 R CNN "Type"
+F 7 "0603" H 1350 2150 60  0000 L CNN "Package"
+	1    1600 2050
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	1650 1900 2500 1900
+	1600 1900 2500 1900
 Wire Wire Line
-	2500 2000 1800 2000
+	2500 2000 1750 2000
 Wire Wire Line
-	1800 2000 1800 2200
+	1750 2000 1750 2200
 Wire Wire Line
-	1800 2200 1650 2200
+	1750 2200 1600 2200
 $Comp
 L +3.3V #PWR027
 U 1 1 58B9C26A
-P 1650 1900
-F 0 "#PWR027" H -50 -600 50  0001 C CNN
-F 1 "+3.3V" H 1665 2073 50  0000 C CNN
-F 2 "" H -50 -450 50  0001 C CNN
-F 3 "" H -50 -450 50  0001 C CNN
-	1    1650 1900
+P 1600 1900
+F 0 "#PWR027" H -100 -600 50  0001 C CNN
+F 1 "+3.3V" H 1600 2050 50  0000 C CNN
+F 2 "" H -100 -450 50  0001 C CNN
+F 3 "" H -100 -450 50  0001 C CNN
+	1    1600 1900
 	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR028
 U 1 1 58B9C685
-P 1650 2200
-F 0 "#PWR028" H 350 150 50  0001 C CNN
-F 1 "GND" H 1655 2027 50  0000 C CNN
-F 2 "" H 350 400 50  0001 C CNN
-F 3 "" H 350 400 50  0001 C CNN
-	1    1650 2200
+P 1600 2200
+F 0 "#PWR028" H 300 150 50  0001 C CNN
+F 1 "GND" H 1605 2027 50  0000 C CNN
+F 2 "" H 300 400 50  0001 C CNN
+F 3 "" H 300 400 50  0001 C CNN
+	1    1600 2200
 	1    0    0    -1  
 $EndComp
 $Comp
 L TEST TP1
 U 1 1 58B9E01E
-P 2100 2200
-F 0 "TP1" V 1977 2294 50  0000 C CNN
-F 1 "TST" V 1886 2294 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 200 0   50  0001 C CNN
-F 3 "" H 200 0   50  0001 C CNN
-	1    2100 2200
+P 2050 2200
+F 0 "TP1" V 2100 2250 50  0000 C CNN
+F 1 "TST" V 2000 2250 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 150 0   50  0001 C CNN
+F 3 "" H 150 0   50  0001 C CNN
+	1    2050 2200
 	0    -1   -1   0   
 $EndComp
 $Comp
 L TEST TP3
 U 1 1 58B9E188
-P 2350 2100
-F 0 "TP3" V 2600 2194 50  0000 C CNN
-F 1 "JTAGSEL" V 2500 2194 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 100 0   50  0001 C CNN
-F 3 "" H 100 0   50  0001 C CNN
-	1    2350 2100
+P 2300 2100
+F 0 "TP3" V 2350 2100 50  0000 C CNN
+F 1 "JTAGSEL" V 2250 2100 50  0000 C CNN
+F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 50  0   50  0001 C CNN
+F 3 "" H 50  0   50  0001 C CNN
+	1    2300 2100
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -1313,12 +1265,10 @@ $EndComp
 Wire Wire Line
 	1950 6400 2500 6400
 Wire Wire Line
-	2350 2100 2500 2100
+	2300 2100 2500 2100
 Wire Wire Line
-	2500 2200 2100 2200
-Wire Wire Line
-	2500 2300 2450 2300
-Text HLabel 2450 2300 0    60   Input ~ 0
+	2500 2200 2050 2200
+Text HLabel 2050 2400 0    60   Input ~ 0
 ~RESET
 Text Label 2400 5400 2    60   ~ 0
 PB0
@@ -1460,7 +1410,7 @@ Wire Bus Line
 Text Label 1700 5300 0    60   ~ 0
 PB[0..7]
 Text Label 4600 5050 0    60   ~ 0
-PA[18..31]
+PA[11..31]
 Text HLabel 9150 3300 2    60   Input ~ 0
 UART4-Rx
 Text HLabel 9150 3400 2    60   Output ~ 0
@@ -1497,18 +1447,12 @@ Text Label 7000 4100 2    60   ~ 0
 PD10
 Text Label 7000 4200 2    60   ~ 0
 PD11
-Text Label 7000 4400 2    60   ~ 0
-PD13
-Text Label 7000 4500 2    60   ~ 0
-PD14
 Text Label 7000 4600 2    60   ~ 0
 PD15
 Text Label 8700 3100 0    60   ~ 0
 PD16
 Text Label 8700 3200 0    60   ~ 0
 PD17
-Text Label 8700 3800 0    60   ~ 0
-PD23
 Text Label 8700 3900 0    60   ~ 0
 PD24
 Text Label 8700 4000 0    60   ~ 0
@@ -1519,8 +1463,6 @@ Text Label 8700 4200 0    60   ~ 0
 PD27
 Text Label 8700 4300 0    60   ~ 0
 PD28
-Text Label 8700 4400 0    60   ~ 0
-PD29
 Text Label 8700 4500 0    60   ~ 0
 PD30
 Text HLabel 9150 3500 2    60   Input ~ 0
@@ -1538,21 +1480,21 @@ Wire Wire Line
 Text HLabel 10550 1700 2    60   BiDi ~ 0
 PD[0..11]
 Wire Bus Line
-	10550 1700 10100 1700
-Text Label 10100 1700 0    60   ~ 0
+	10550 1700 10050 1700
+Text Label 10050 1700 0    60   ~ 0
 PD[0..11]
 Text HLabel 10550 1800 2    60   BiDi ~ 0
-PD[13..17]
+PD[15..17]
 Wire Bus Line
-	10550 1800 10100 1800
-Text Label 10100 1800 0    60   ~ 0
-PD[13..17]
+	10550 1800 10050 1800
+Text Label 10050 1800 0    60   ~ 0
+PD[15..17]
 Text HLabel 10550 1900 2    60   BiDi ~ 0
-PD[23..30]
+PD[24..28]
 Wire Bus Line
-	10550 1900 10100 1900
-Text Label 10100 1900 0    60   ~ 0
-PD[23..30]
+	10550 1900 10050 1900
+Text Label 10050 1900 0    60   ~ 0
+PD[24..28]
 Text HLabel 10550 2150 2    60   BiDi ~ 0
 PE[0..5]
 Wire Bus Line
@@ -1571,4 +1513,105 @@ Text Label 7000 5600 2    60   ~ 0
 PE4
 Text Label 7000 5700 2    60   ~ 0
 PE5
+Text Label 2500 4400 2    60   ~ 0
+PA11
+Text Label 2500 4500 2    60   ~ 0
+PA12
+Text Label 2500 4600 2    60   ~ 0
+PA13
+Text Label 2500 4700 2    60   ~ 0
+PA14
+Text Label 2500 4800 2    60   ~ 0
+PA15
+Text Label 4200 3300 0    60   ~ 0
+PA16
+Text Label 4200 3400 0    60   ~ 0
+PA17
+Entry Wire Line
+	2200 4500 2300 4400
+Wire Bus Line
+	2200 4500 2200 5050
+Entry Wire Line
+	2200 4600 2300 4500
+Entry Wire Line
+	2200 4700 2300 4600
+Entry Wire Line
+	2200 4900 2300 4800
+Entry Wire Line
+	2200 4800 2300 4700
+Wire Wire Line
+	2300 4700 2500 4700
+Wire Wire Line
+	2500 4600 2300 4600
+Wire Wire Line
+	2300 4500 2500 4500
+Wire Wire Line
+	2500 4400 2300 4400
+Wire Wire Line
+	2300 4800 2500 4800
+Entry Wire Line
+	4450 3400 4550 3500
+Entry Wire Line
+	4450 3300 4550 3400
+Wire Wire Line
+	4200 3400 4450 3400
+Wire Wire Line
+	4450 3300 4200 3300
+Text Label 8700 4600 0    60   ~ 0
+PD31
+$Comp
+L C C?
+U 1 1 58C25D8A
+P 2150 2650
+F 0 "C?" H 2036 2802 50  0000 R CNN
+F 1 "0.01u" H 2036 2711 50  0000 R CNN
+F 2 "Capacitors_SMD:C_0402" H -3562 -200 50  0001 C CNN
+F 3 "" H -3600 -50 50  0001 C CNN
+F 4 "50V" H 2036 2612 60  0000 R CNN "Voltage"
+F 5 "20%" H 2265 2559 60  0001 L CNN "Tolerance"
+F 6 "X7R" H 2265 2506 60  0001 L CNN "Type"
+F 7 "0402" H 2036 2506 60  0000 R CNN "Package"
+	1    2150 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 58C25D91
+P 2150 2800
+F 0 "#PWR?" H 2200 2850 50  0001 C CNN
+F 1 "GND" H 2155 2627 50  0000 C CNN
+F 2 "" H -4650 -950 50  0001 C CNN
+F 3 "" H -4650 -950 50  0001 C CNN
+	1    2150 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 2400 2150 2400
+Wire Wire Line
+	2150 2300 2150 2500
+Wire Wire Line
+	2150 2300 2500 2300
+Connection ~ 2150 2400
+Text HLabel 6750 4400 0    60   Output ~ 0
+900_~RESET
+Text HLabel 6750 4500 0    60   Output ~ 0
+2.4_~RESET
+Wire Wire Line
+	6750 4500 7000 4500
+Wire Wire Line
+	7000 4400 6750 4400
+Text Label 9100 4400 0    60   ~ 0
+VBUS_DETECT
+Wire Wire Line
+	8700 4400 9100 4400
+Text Label 10050 2000 0    60   ~ 0
+PD[30..31]
+Text HLabel 10550 2000 2    60   BiDi ~ 0
+PD[30..31]
+Wire Bus Line
+	10050 2000 10550 2000
+Text HLabel 9150 3800 2    60   Output ~ 0
+GPS-~RESET
+Wire Wire Line
+	8700 3800 9150 3800
 $EndSCHEMATC

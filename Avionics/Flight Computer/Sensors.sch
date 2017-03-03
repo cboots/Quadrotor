@@ -30,7 +30,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 9
+Sheet 7 8
 Title ""
 Date ""
 Rev ""
@@ -407,10 +407,6 @@ Wire Wire Line
 	1500 3300 2300 3300
 Connection ~ 2300 3300
 Wire Wire Line
-	8000 3200 7450 3200
-Text HLabel 7450 3200 0    60   Output ~ 0
-BAROM-INT
-Wire Wire Line
 	1700 4500 1500 4500
 Wire Wire Line
 	1500 4500 1500 5200
@@ -421,7 +417,7 @@ Text Notes 750  2400 0    60   ~ 0
 Register map and descriptions: \nhttps://cdn.sparkfun.com/assets/learn_tutorials/5/5/0/MPU-9250-Register-Map.pdf
 Text HLabel 3850 4200 2    60   BiDi ~ 0
 AUX_SDA
-Text HLabel 3850 4300 2    60   Output ~ 0
+Text HLabel 3850 4300 2    60   BiDi ~ 0
 AUX_SCL
 Text Notes 3900 4100 0    60   ~ 0
 AUX bus goes to connector for expansion sensors
@@ -442,4 +438,5 @@ Text Notes 1000 5900 0    60   ~ 0
 Layout Note: Exposed pad is NC. Do not solder the exposed pad.
 Wire Wire Line
 	8300 3550 8500 3550
+NoConn ~ 8000 3200
 $EndSCHEMATC

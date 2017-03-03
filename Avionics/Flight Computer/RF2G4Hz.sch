@@ -30,7 +30,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 9
+Sheet 4 8
 Title ""
 Date ""
 Rev ""
@@ -892,8 +892,6 @@ Entry Bus Bus
 	1400 4450 1500 4550
 Text HLabel 1300 4450 0    60   BiDi ~ 0
 ADIO-[23..30]
-Text Label 3900 5050 0    60   ~ 0
-DIO-5
 Text Label 1550 4650 0    60   ~ 0
 ADIO-24
 Text Label 1550 4750 0    60   ~ 0
@@ -917,17 +915,25 @@ HGM
 Wire Wire Line
 	9250 2300 9600 2300
 Wire Wire Line
-	8300 2300 8950 2300
+	8300 2300 8400 2300
+Wire Wire Line
+	8400 2300 8950 2300
 Wire Wire Line
 	8400 2400 8400 2300
 Connection ~ 8400 2300
 Wire Wire Line
-	7800 2300 8000 2300
+	7800 2300 7900 2300
+Wire Wire Line
+	7900 2300 8000 2300
 Wire Wire Line
 	7900 2400 7900 2300
 Connection ~ 7900 2300
 Wire Wire Line
-	6700 2300 7500 2300
+	6700 2300 7100 2300
+Wire Wire Line
+	7100 2300 7400 2300
+Wire Wire Line
+	7400 2300 7500 2300
 Wire Wire Line
 	7400 2300 7400 2200
 Connection ~ 7400 2300
@@ -949,13 +955,19 @@ Wire Notes Line
 Wire Wire Line
 	7400 900  7400 1900
 Wire Wire Line
-	7900 4700 9100 4700
+	7900 4700 8250 4700
 Wire Wire Line
-	6000 900  6000 1450
+	8250 4700 9100 4700
+Wire Wire Line
+	6000 900  6000 1350
+Wire Wire Line
+	6000 1350 6000 1450
 Wire Wire Line
 	6100 1450 6100 1350
 Wire Wire Line
-	6000 1350 6200 1350
+	6000 1350 6100 1350
+Wire Wire Line
+	6100 1350 6200 1350
 Connection ~ 6000 1350
 Wire Wire Line
 	6200 1350 6200 1450
@@ -967,11 +979,33 @@ Connection ~ 8250 4700
 Wire Wire Line
 	7400 4700 7600 4700
 Wire Wire Line
-	7900 5600 10300 5600
+	7900 5600 8250 5600
+Wire Wire Line
+	8250 5600 9100 5600
+Wire Wire Line
+	9100 5600 9400 5600
+Wire Wire Line
+	9400 5600 9700 5600
+Wire Wire Line
+	9700 5600 10000 5600
+Wire Wire Line
+	10000 5600 10300 5600
 Wire Wire Line
 	7400 5600 7600 5600
 Wire Wire Line
-	5300 3250 6400 3250
+	5300 3250 5800 3250
+Wire Wire Line
+	5800 3250 5900 3250
+Wire Wire Line
+	5900 3250 6000 3250
+Wire Wire Line
+	6000 3250 6100 3250
+Wire Wire Line
+	6100 3250 6200 3250
+Wire Wire Line
+	6200 3250 6300 3250
+Wire Wire Line
+	6300 3250 6400 3250
 Wire Wire Line
 	5800 3250 5800 3150
 Wire Wire Line
@@ -994,7 +1028,15 @@ Connection ~ 6300 3250
 Wire Wire Line
 	2550 1100 2550 1600
 Wire Wire Line
-	1400 1100 2750 1100
+	1400 1100 1700 1100
+Wire Wire Line
+	1700 1100 2350 1100
+Wire Wire Line
+	2350 1100 2550 1100
+Wire Wire Line
+	2550 1100 2650 1100
+Wire Wire Line
+	2650 1100 2750 1100
 Wire Wire Line
 	2750 1100 2750 1150
 Wire Wire Line
@@ -1008,7 +1050,13 @@ Connection ~ 2550 1100
 Wire Wire Line
 	2950 1600 2950 1200
 Wire Wire Line
-	2950 1200 3450 1200
+	2950 1200 3050 1200
+Wire Wire Line
+	3050 1200 3150 1200
+Wire Wire Line
+	3150 1200 3250 1200
+Wire Wire Line
+	3250 1200 3450 1200
 Wire Wire Line
 	3250 1200 3250 1600
 Wire Wire Line
@@ -1065,25 +1113,39 @@ Wire Wire Line
 	8250 5700 8250 5600
 Connection ~ 8250 5600
 Wire Wire Line
-	4900 900  7400 900 
+	4900 900  6000 900 
+Wire Wire Line
+	6000 900  6400 900 
+Wire Wire Line
+	6400 900  6750 900 
+Wire Wire Line
+	6750 900  7150 900 
+Wire Wire Line
+	7150 900  7400 900 
 Connection ~ 6400 900 
 Connection ~ 6750 900 
 Connection ~ 7150 900 
 Wire Wire Line
 	1200 3450 1200 3550
 Wire Wire Line
-	1200 3550 1700 3550
+	1200 3550 1450 3550
+Wire Wire Line
+	1450 3550 1700 3550
 Wire Wire Line
 	1700 3550 1700 3450
 Connection ~ 1450 3550
 Wire Wire Line
 	1300 3050 1200 3050
 Wire Wire Line
-	1200 2700 1200 3150
+	1200 2700 1200 3050
+Wire Wire Line
+	1200 3050 1200 3150
 Wire Wire Line
 	1600 3050 1700 3050
 Wire Wire Line
-	1700 2800 1700 3150
+	1700 2800 1700 3050
+Wire Wire Line
+	1700 3050 1700 3150
 Wire Wire Line
 	1700 2800 2050 2800
 Connection ~ 1700 3050
@@ -1095,7 +1157,19 @@ Wire Wire Line
 Wire Wire Line
 	4000 4850 4450 4850
 Wire Bus Line
-	1400 4450 1400 5350
+	1400 4450 1400 4550
+Wire Bus Line
+	1400 4550 1400 4650
+Wire Bus Line
+	1400 4650 1400 4750
+Wire Bus Line
+	1400 4750 1400 5050
+Wire Bus Line
+	1400 5050 1400 5150
+Wire Bus Line
+	1400 5150 1400 5250
+Wire Bus Line
+	1400 5250 1400 5350
 Wire Bus Line
 	1400 4450 1300 4450
 Wire Wire Line
@@ -1120,8 +1194,6 @@ Wire Wire Line
 	4300 4550 4450 4550
 Wire Wire Line
 	3900 5050 4450 5050
-Text Label 3900 5150 0    60   ~ 0
-DIO-6
 Text Label 3900 5250 0    60   ~ 0
 DIO-7
 Wire Wire Line
@@ -1170,10 +1242,6 @@ Text Label 5600 4850 0    60   ~ 0
 DIO-19
 Text Label 5600 4950 0    60   ~ 0
 DIO-20
-Text Label 5600 5050 0    60   ~ 0
-DIO-21
-Text Label 5600 5150 0    60   ~ 0
-DIO-22
 Wire Wire Line
 	5450 5150 5600 5150
 Wire Wire Line
@@ -1189,25 +1257,93 @@ Wire Wire Line
 Wire Wire Line
 	5450 4550 5600 4550
 Text HLabel 1300 6000 0    60   BiDi ~ 0
-DIO-[5..22]
+DIO-[7..22]
 Wire Bus Line
 	1300 6000 1600 6000
 Text Label 1400 6000 0    60   ~ 0
-DIO-[5..22]
+DIO-[7..22]
 Wire Wire Line
 	1500 4550 2050 4550
 Text Label 1550 4550 0    60   ~ 0
 ADIO-23
-Text HLabel 1400 1800 0    60   Input ~ 0
+Text HLabel 850  1800 0    60   Input ~ 0
 ~RESET
 Wire Wire Line
-	1400 1800 2050 1800
+	850  1800 1000 1800
 Wire Wire Line
-	1400 2100 2050 2100
+	1000 1800 2050 1800
 Wire Wire Line
-	1400 2200 2050 2200
-Text HLabel 1400 2100 0    60   BiDi ~ 0
+	1950 2100 2050 2100
+Wire Wire Line
+	1950 2200 2050 2200
+Text HLabel 1950 2100 0    60   BiDi ~ 0
 JTAG-TMSC
-Text HLabel 1400 2200 0    60   BiDi ~ 0
+Text HLabel 1950 2200 0    60   BiDi ~ 0
 JTAG-TCKC
+Text HLabel 3900 5050 0    60   BiDi ~ 0
+SDA
+Text HLabel 3900 5150 0    60   BiDi ~ 0
+SCK
+Text HLabel 5600 5050 2    60   Output ~ 0
+RESET_CPU
+Text HLabel 5600 5150 2    60   Output ~ 0
+RESET_900M
+$Comp
+L C C?
+U 1 1 58C2804F
+P 1000 2000
+F 0 "C?" H 1115 2152 50  0000 L CNN
+F 1 "0.01u" H 1115 2061 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0402" H -4712 -850 50  0001 C CNN
+F 3 "" H -4750 -700 50  0001 C CNN
+F 4 "50V" H 1115 1962 60  0000 L CNN "Voltage"
+F 5 "20%" H 1115 1909 60  0001 L CNN "Tolerance"
+F 6 "X7R" H 1115 1856 60  0001 L CNN "Type"
+F 7 "0402" H 1115 1856 60  0000 L CNN "Package"
+	1    1000 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 58C28056
+P 1000 2150
+F 0 "#PWR?" H 1050 2200 50  0001 C CNN
+F 1 "GND" H 1005 1977 50  0000 C CNN
+F 2 "" H -5800 -1600 50  0001 C CNN
+F 3 "" H -5800 -1600 50  0001 C CNN
+	1    1000 2150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 1750 1000 1800
+Wire Wire Line
+	1000 1800 1000 1850
+Connection ~ 1000 1800
+$Comp
+L R R?
+U 1 1 58C2935E
+P 1000 1600
+F 0 "R?" H 930 1501 50  0000 R CNN
+F 1 "100k" H 930 1592 50  0000 R CNN
+F 2 "Resistors_SMD:R_0402" V -4000 300 50  0001 C CNN
+F 3 "" V -3720 300 50  0001 C CNN
+F 4 "1%" H 930 1691 60  0000 R CNN "Tolerance"
+F 5 "50V" V -3550 300 60  0001 C CNN "Voltage"
+F 6 "0.062W" V -3450 300 60  0001 C CNN "Power"
+F 7 "Thin Film" V -3350 300 60  0001 C CNN "Material"
+F 8 "0402" V -3900 300 60  0001 C CNN "Package"
+	1    1000 1600
+	-1   0    0    1   
+$EndComp
+$Comp
+L +3.3V #PWR?
+U 1 1 58C2A4C4
+P 1000 1450
+F 0 "#PWR?" H 1050 1500 50  0001 C CNN
+F 1 "+3.3V" H 1000 1600 50  0000 C CNN
+F 2 "" H -6350 -3350 50  0001 C CNN
+F 3 "" H -6350 -3350 50  0001 C CNN
+	1    1000 1450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
