@@ -1266,4 +1266,10 @@ F 3 "" H -6350 -3350 50  0001 C CNN
 	1    1000 1450
 	1    0    0    -1  
 $EndComp
+Text Label 3950 1850 2    60   ~ 0
+PA_EN
+Text Label 3950 1750 2    60   ~ 0
+LNA_EN
+Text Label 3950 1650 2    60   ~ 0
+HGM
 $EndSCHEMATC

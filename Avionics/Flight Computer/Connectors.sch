@@ -139,11 +139,11 @@ Wire Bus Line
 Text Label 9500 2400 0    60   ~ 0
 PD[15..17]
 Text HLabel 10000 2500 2    60   BiDi ~ 0
-PD[23..28]
+PD[24..28]
 Wire Bus Line
 	10000 2500 9500 2500
 Text Label 9500 2500 0    60   ~ 0
-PD[23..28]
+PD[24..28]
 Text HLabel 10000 2800 2    60   BiDi ~ 0
 PE[0..5]
 Wire Bus Line
@@ -215,7 +215,7 @@ Wire Bus Line
 Text Label 9100 3900 0    60   ~ 0
 900-ADIO-[23..30]
 Text Label 9100 3800 0    60   ~ 0
-900-DIO-[8..22]
+900-DIO-[10..22]
 Wire Bus Line
 	9100 4000 10000 4000
 Wire Bus Line
@@ -225,11 +225,25 @@ Text Label 9100 4100 0    60   ~ 0
 Text Label 9100 4000 0    60   ~ 0
 2.4-DIO-[7..22]
 Text HLabel 10000 3800 2    60   BiDi ~ 0
-900-DIO-[8..22]
+900-DIO-[10..22]
 Text HLabel 10000 3900 2    60   BiDi ~ 0
 900-ADIO-[23..30]
 Text HLabel 10000 4000 2    60   BiDi ~ 0
 2.4-DIO-[7..22]
 Text HLabel 10000 4100 2    60   BiDi ~ 0
 2.4-ADIO-[23..30]
+Wire Wire Line
+	9450 4550 10050 4550
+Text Label 9450 4550 0    60   ~ 0
+Power-Good
+Text HLabel 10050 4550 2    60   Input ~ 0
+Power-Good
+Text Label 9450 4650 0    60   ~ 0
+Power-~SHDN
+Text HLabel 10050 4650 2    60   Output ~ 0
+Power-~SHDN
+Wire Wire Line
+	9450 4650 10050 4650
+Text Notes 9450 4750 0    60   ~ 0
+Must be connected to open drain\n
 $EndSCHEMATC

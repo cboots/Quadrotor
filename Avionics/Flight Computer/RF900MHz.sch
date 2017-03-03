@@ -1390,11 +1390,11 @@ JTAG-TMSC
 Text HLabel 2250 2300 0    60   BiDi ~ 0
 JTAG-TCKC
 Text HLabel 1300 6800 0    60   BiDi ~ 0
-DIO-[8..22]
+DIO-[10..22]
 Wire Bus Line
 	1300 6800 1600 6800
 Text Label 1400 6800 0    60   ~ 0
-DIO-[8..22]
+DIO-[10..22]
 Text Label 3750 6600 0    60   ~ 0
 DIO-11
 Wire Wire Line
@@ -1449,14 +1449,6 @@ Wire Wire Line
 	3700 5300 4200 5300
 Wire Wire Line
 	3700 5600 4200 5600
-Text Label 3750 6000 0    60   ~ 0
-DIO-8
-Wire Wire Line
-	3750 6000 4200 6000
-Text Label 3750 6400 0    60   ~ 0
-DIO-9
-Text Label 3750 6500 0    60   ~ 0
-DIO-10
 Wire Wire Line
 	3750 6400 4200 6400
 Wire Wire Line
@@ -1465,9 +1457,9 @@ Text HLabel 3700 5600 0    60   Output ~ 0
 RESET_2.4G
 Text HLabel 3700 5300 0    60   Output ~ 0
 RESET_CPU
-Text HLabel 3600 6000 0    60   BiDi ~ 0
+Text HLabel 3750 6000 0    60   BiDi ~ 0
 SDA
-Text HLabel 3600 6100 0    60   BiDi ~ 0
+Text HLabel 3750 6400 0    60   BiDi ~ 0
 SCK
 Text HLabel 900  1900 0    60   Input ~ 0
 ~RESET
@@ -1529,4 +1521,8 @@ F 3 "" H -6300 -3250 50  0001 C CNN
 	1    1050 1550
 	1    0    0    -1  
 $EndComp
+Text Label 3750 6500 0    60   ~ 0
+DIO-10
+Wire Wire Line
+	3750 6000 4200 6000
 $EndSCHEMATC
