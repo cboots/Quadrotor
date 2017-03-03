@@ -76,10 +76,10 @@ F 3 "http://suddendocs.samtec.com/prints/erf8-xxx-xx.x-x-dv-xxxx-tr-mkt.pdf" H 2
 	1    0    0    -1  
 $EndComp
 $Comp
-L VUSB #PWR0107
+L VUSB #PWR0114
 U 1 1 58B8BBBA
 P 1600 1150
-F 0 "#PWR0107" H -400 -250 50  0001 C CNN
+F 0 "#PWR0114" H -400 -250 50  0001 C CNN
 F 1 "VUSB" H 1615 1323 50  0000 C CNN
 F 2 "" H -400 -100 50  0001 C CNN
 F 3 "" H -400 -100 50  0001 C CNN
@@ -91,10 +91,10 @@ Wire Wire Line
 Wire Wire Line
 	1600 1250 1600 1150
 $Comp
-L GND #PWR0108
+L GND #PWR0115
 U 1 1 58B8BD69
 P 1100 1900
-F 0 "#PWR0108" H -800 50  50  0001 C CNN
+F 0 "#PWR0115" H -800 50  50  0001 C CNN
 F 1 "GND" H 1105 1727 50  0000 C CNN
 F 2 "" H -800 300 50  0001 C CNN
 F 3 "" H -800 300 50  0001 C CNN
