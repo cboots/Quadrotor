@@ -87,12 +87,12 @@ $EndComp
 $Comp
 L CC1310F128RGZR U1
 U 2 1 58AA1C24
-P 2150 5550
-F 0 "U1" H 2150 5600 50  0000 C CNN
-F 1 "CC1310F128RGZR" H 2150 5500 50  0000 C CNN
-F 2 "Housings_DFN_QFN:QFN-48-1EP_7x7mm_Pitch0.5mm" H 2150 5700 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/cc1310.pdf" H 2150 5350 50  0001 C CNN
-	2    2150 5550
+P 2550 5550
+F 0 "U1" H 2550 5600 50  0000 C CNN
+F 1 "CC1310F128RGZR" H 2550 5500 50  0000 C CNN
+F 2 "Housings_DFN_QFN:QFN-48-1EP_7x7mm_Pitch0.5mm" H 2550 5700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/cc1310.pdf" H 2550 5350 50  0001 C CNN
+	2    2550 5550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1300,29 +1300,13 @@ NoConn ~ 1950 3000
 NoConn ~ 2300 2600
 NoConn ~ 2300 2500
 Wire Wire Line
-	4050 5400 4200 5400
-Text HLabel 4050 5400 0    60   Input ~ 0
+	3700 5400 4200 5400
+Text HLabel 3700 5400 0    60   Input ~ 0
 UART0-RX
 Wire Wire Line
-	4050 5500 4200 5500
-Text HLabel 4050 5500 0    60   Output ~ 0
+	3700 5500 4200 5500
+Text HLabel 3700 5500 0    60   Output ~ 0
 UART0-TX
-Wire Wire Line
-	4050 6500 4200 6500
-Text HLabel 4050 6500 0    60   Input ~ 0
-SSI0-FSS
-Wire Wire Line
-	4050 6600 4200 6600
-Text HLabel 4050 6600 0    60   Input ~ 0
-SSI0-CLK
-Wire Wire Line
-	4050 6000 4200 6000
-Text HLabel 4050 6000 0    60   Output ~ 0
-SSI0-TX
-Wire Wire Line
-	4050 6400 4200 6400
-Text HLabel 4050 6400 0    60   Input ~ 0
-SSI0-RX
 Text Label 2150 1150 0    60   ~ 0
 VDDR_CC1310
 Text Label 4250 1550 0    60   ~ 0
@@ -1331,16 +1315,162 @@ Text Label 4250 1650 0    60   ~ 0
 LNA_EN
 Text Label 4250 1750 0    60   ~ 0
 PA_EN
-Text Label 4050 6700 2    60   ~ 0
+Text Label 4050 5800 2    60   ~ 0
 PA_EN
-Text Label 4050 6800 2    60   ~ 0
+Text Label 4050 5700 2    60   ~ 0
 LNA_EN
-Text Label 4050 6900 2    60   ~ 0
+Text Label 4050 5900 2    60   ~ 0
 HGM
 Wire Wire Line
-	4050 6900 4200 6900
+	4050 5900 4200 5900
 Wire Wire Line
-	4200 6800 4050 6800
+	4200 5800 4050 5800
 Wire Wire Line
-	4050 6700 4200 6700
+	4050 5700 4200 5700
+Entry Bus Bus
+	1400 5900 1500 6000
+Entry Bus Bus
+	1400 5800 1500 5900
+Entry Bus Bus
+	1400 5700 1500 5800
+Entry Bus Bus
+	1400 5600 1500 5700
+Entry Bus Bus
+	1400 5300 1500 5400
+Entry Bus Bus
+	1400 5200 1500 5300
+Entry Bus Bus
+	1400 5100 1500 5200
+Entry Bus Bus
+	1400 5000 1500 5100
+Wire Bus Line
+	1400 5000 1400 5900
+Wire Bus Line
+	1400 5000 1300 5000
+Text HLabel 1300 5000 0    60   BiDi ~ 0
+ADIO-[23..30]
+Wire Wire Line
+	1500 5100 2050 5100
+Text Label 1550 5100 0    60   ~ 0
+ADIO-23
+Wire Wire Line
+	1500 5200 2050 5200
+Text Label 1550 5200 0    60   ~ 0
+ADIO-24
+Wire Wire Line
+	1500 5300 2050 5300
+Text Label 1550 5300 0    60   ~ 0
+ADIO-25
+Wire Wire Line
+	1500 5400 2050 5400
+Text Label 1550 5400 0    60   ~ 0
+ADIO-26
+Wire Wire Line
+	1500 5700 2050 5700
+Text Label 1550 5700 0    60   ~ 0
+ADIO-27
+Wire Wire Line
+	1500 5800 2050 5800
+Text Label 1550 5800 0    60   ~ 0
+ADIO-28
+Wire Wire Line
+	1500 5900 2050 5900
+Text Label 1550 5900 0    60   ~ 0
+ADIO-29
+Wire Wire Line
+	1500 6000 2050 6000
+Text Label 1550 6000 0    60   ~ 0
+ADIO-30
+Text HLabel 1650 1900 0    60   Input ~ 0
+~RESET
+Wire Wire Line
+	1650 1900 2300 1900
+Wire Wire Line
+	1650 2200 2300 2200
+Wire Wire Line
+	1650 2300 2300 2300
+Text HLabel 1650 2200 0    60   BiDi ~ 0
+JTAG-TMSC
+Text HLabel 1650 2300 0    60   BiDi ~ 0
+JTAG-TCKC
+Text HLabel 1300 6800 0    60   BiDi ~ 0
+DIO-[8..22]
+Wire Bus Line
+	1300 6800 1600 6800
+Text Label 1400 6800 0    60   ~ 0
+DIO-[8..22]
+Text Label 3750 6600 0    60   ~ 0
+DIO-11
+Wire Wire Line
+	3750 6600 4200 6600
+Wire Wire Line
+	3750 6700 4200 6700
+Wire Wire Line
+	3750 6800 4200 6800
+Text Label 3750 6700 0    60   ~ 0
+DIO-12
+Text Label 3750 6800 0    60   ~ 0
+DIO-13
+Text Label 3750 6900 0    60   ~ 0
+DIO-14
+Text Label 3750 7000 0    60   ~ 0
+DIO-15
+Text Label 3750 7100 0    60   ~ 0
+DIO-16
+Wire Wire Line
+	3750 6900 4200 6900
+Wire Wire Line
+	4200 7000 3750 7000
+Wire Wire Line
+	3750 7100 4200 7100
+Text Label 5350 5300 0    60   ~ 0
+DIO-17
+Text Label 5350 5400 0    60   ~ 0
+DIO-18
+Text Label 5350 5500 0    60   ~ 0
+DIO-19
+Text Label 5350 5600 0    60   ~ 0
+DIO-20
+Text Label 5350 5700 0    60   ~ 0
+DIO-21
+Text Label 5350 5800 0    60   ~ 0
+DIO-22
+Wire Wire Line
+	5200 5800 5350 5800
+Wire Wire Line
+	5350 5700 5200 5700
+Wire Wire Line
+	5200 5600 5350 5600
+Wire Wire Line
+	5350 5500 5200 5500
+Wire Wire Line
+	5200 5400 5350 5400
+Wire Wire Line
+	5350 5300 5200 5300
+NoConn ~ 3900 2400
+NoConn ~ 3900 2500
+Text Label 3750 5300 0    60   ~ 0
+DIO-1
+Wire Wire Line
+	3700 5300 4200 5300
+Text Label 3750 5600 0    60   ~ 0
+DIO-4
+Wire Wire Line
+	3700 5600 4200 5600
+Text Label 3750 6000 0    60   ~ 0
+DIO-8
+Wire Wire Line
+	3750 6000 4200 6000
+Text Label 3750 6400 0    60   ~ 0
+DIO-9
+Text Label 3750 6500 0    60   ~ 0
+DIO-10
+Wire Wire Line
+	3750 6400 4200 6400
+Wire Wire Line
+	4200 6500 3750 6500
+Text HLabel 3700 5600 0    60   BiDi ~ 0
+DIO-4
+Text HLabel 3700 5300 0    60   BiDi ~ 0
+DIO-1
 $EndSCHEMATC

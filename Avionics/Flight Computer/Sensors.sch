@@ -84,8 +84,6 @@ F 3 "" H 4050 0   50  0001 C CNN
 	1    8400 3550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8300 3550 8600 3550
 Connection ~ 8400 3550
 $Comp
 L +3.3V #PWR0100
@@ -159,7 +157,6 @@ Wire Wire Line
 	8450 2250 8450 2350
 Text Notes 8750 2150 0    60   ~ 0
 Input filter to reduce sensor reference noise. \n1.5kHz cutoff, 25uA bias current worst case
-Connection ~ 8500 3550
 $Comp
 L +3.3V #PWR0102
 U 1 1 58B4C158
@@ -429,7 +426,7 @@ AUX_SCL
 Text Notes 3900 4100 0    60   ~ 0
 AUX bus goes to connector for expansion sensors
 $Comp
-L LPS25HB U7
+L LPS25HB-RESCUE-Flight_Computer U7
 U 1 1 58B3E15F
 P 8400 2950
 AR Path="/58B3E15F" Ref="U7"  Part="1" 
@@ -443,4 +440,6 @@ F 3 "http://www.st.com/resource/en/datasheet/lps25hb.pdf" H -1250 800 50  0001 C
 $EndComp
 Text Notes 1000 5900 0    60   ~ 0
 Layout Note: Exposed pad is NC. Do not solder the exposed pad.
+Wire Wire Line
+	8300 3550 8500 3550
 $EndSCHEMATC

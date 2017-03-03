@@ -140,26 +140,6 @@ F 3 "" H 9750 2500 50  0001 C CNN
 	1    9750 2500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9250 2300 9600 2300
-Wire Wire Line
-	8300 2300 8950 2300
-Wire Wire Line
-	8400 2400 8400 2300
-Connection ~ 8400 2300
-Wire Wire Line
-	7800 2300 8000 2300
-Wire Wire Line
-	7900 2400 7900 2300
-Connection ~ 7900 2300
-Wire Wire Line
-	6700 2300 7500 2300
-Wire Wire Line
-	7400 2300 7400 2200
-Connection ~ 7400 2300
-Wire Wire Line
-	7100 2400 7100 2300
-Connection ~ 7100 2300
 $Comp
 L CC2592RGVR U4
 U 1 1 58AA7245
@@ -182,10 +162,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/cc1310.pdf" H 2850 2100 50  0001 C CNN
 	1    2850 2300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3650 2200 5500 2200
-Wire Wire Line
-	5500 2300 3650 2300
 $Comp
 L CC2650F128RGZR U3
 U 2 1 58AA7765
@@ -230,30 +206,8 @@ F 3 "" H 8400 1750 50  0001 C CNN
 	1    8400 1750
 	1    0    0    -1  
 $EndComp
-Wire Notes Line
-	4700 700  4700 3600
-Wire Notes Line
-	4700 3600 9400 3600
-Wire Notes Line
-	9400 3600 9400 700 
-Wire Notes Line
-	9400 700  4700 700 
 Text Notes 8900 850  0    60   ~ 0
 RF Shield
-Wire Wire Line
-	7400 900  7400 1900
-Wire Wire Line
-	7900 4700 9100 4700
-Wire Wire Line
-	6000 900  6000 1450
-Wire Wire Line
-	6100 1450 6100 1350
-Wire Wire Line
-	6000 1350 6200 1350
-Connection ~ 6000 1350
-Wire Wire Line
-	6200 1350 6200 1450
-Connection ~ 6100 1350
 $Comp
 L GND #PWR064
 U 1 1 58AB48CB
@@ -287,10 +241,6 @@ F 3 "" H 7750 4700 50  0001 C CNN
 	1    7750 4700
 	0    1    1    0   
 $EndComp
-Connection ~ 6000 900 
-Wire Wire Line
-	8250 4800 8250 4700
-Connection ~ 8250 4700
 $Comp
 L GND #PWR066
 U 1 1 58AB5954
@@ -316,16 +266,10 @@ Text Label 4900 900  0    60   ~ 0
 VDD_CC2592
 Text Label 8550 4700 0    60   ~ 0
 VDD_CC2592
-Wire Wire Line
-	7400 4700 7600 4700
-Wire Wire Line
-	7900 5600 10300 5600
 Text Notes 7550 5450 0    60   ~ 0
 Power Filtering.
 Text Label 8250 5600 0    60   ~ 0
 VDDS_CC2650
-Wire Wire Line
-	7400 5600 7600 5600
 $Comp
 L GND #PWR067
 U 1 1 58ABB30E
@@ -337,27 +281,6 @@ F 3 "" H 6100 3250 50  0001 C CNN
 	1    6100 3250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5300 3250 6400 3250
-Wire Wire Line
-	5800 3250 5800 3150
-Wire Wire Line
-	6400 3250 6400 3150
-Connection ~ 6100 3250
-Wire Wire Line
-	5900 3150 5900 3250
-Connection ~ 5900 3250
-Wire Wire Line
-	6000 3250 6000 3150
-Connection ~ 6000 3250
-Wire Wire Line
-	6100 3150 6100 3250
-Wire Wire Line
-	6200 3250 6200 3150
-Connection ~ 6200 3250
-Wire Wire Line
-	6300 3150 6300 3250
-Connection ~ 6300 3250
 $Comp
 L GND #PWR068
 U 1 1 58ABBA52
@@ -380,20 +303,6 @@ F 3 "" H 2750 1300 50  0001 C CNN
 	1    2750 1300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2550 1100 2550 1600
-Wire Wire Line
-	1400 1100 2750 1100
-Wire Wire Line
-	2750 1100 2750 1150
-Wire Wire Line
-	2650 1100 2650 1600
-Connection ~ 2650 1100
-Wire Wire Line
-	2750 1600 2750 1450
-Wire Wire Line
-	2350 1100 2350 1150
-Connection ~ 2550 1100
 $Comp
 L GND #PWR069
 U 1 1 58ABE732
@@ -407,37 +316,10 @@ F 3 "" H 2350 1450 50  0001 C CNN
 $EndComp
 Text Label 2100 1100 0    60   ~ 0
 VDDR_CC2650
-Wire Wire Line
-	2950 1600 2950 1200
-Wire Wire Line
-	2950 1200 3450 1200
-Wire Wire Line
-	3250 1200 3250 1600
-Wire Wire Line
-	3050 1600 3050 1200
-Connection ~ 3050 1200
-Wire Wire Line
-	3150 1200 3150 1600
-Connection ~ 3150 1200
 Text Label 3000 1200 0    60   ~ 0
 VDDS_CC2650
-Connection ~ 3250 1200
 Text Notes 9050 5400 0    60   ~ 0
 CC2650 VDDS Decoupling
-Wire Wire Line
-	10300 5600 10300 5700
-Wire Wire Line
-	9100 5700 9100 5600
-Connection ~ 9100 5600
-Wire Wire Line
-	9400 5700 9400 5600
-Connection ~ 9400 5600
-Wire Wire Line
-	9700 5600 9700 5700
-Connection ~ 9700 5600
-Wire Wire Line
-	10000 5600 10000 5700
-Connection ~ 10000 5600
 $Comp
 L GND #PWR070
 U 1 1 58AC3449
@@ -501,7 +383,6 @@ Text Notes 9550 5600 0    60   ~ 0
 Pin 44
 Text Notes 10000 5600 0    60   ~ 0
 Pin 34
-Connection ~ 2350 1100
 $Comp
 L GND #PWR075
 U 1 1 58AC8629
@@ -524,33 +405,12 @@ F 3 "" H 1700 1450 50  0001 C CNN
 	1    1700 1450
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1700 1150 1700 1100
-Connection ~ 1700 1100
-Wire Wire Line
-	1400 1100 1400 1150
 Text Notes 1150 1100 0    60   ~ 0
 Pin 45
 Text Notes 1550 1100 0    60   ~ 0
 Pin 48
 Text Notes 1200 800  0    60   ~ 0
 VDDR Decoupling
-Wire Wire Line
-	4600 1850 5500 1850
-Wire Wire Line
-	4600 1750 5500 1750
-Wire Wire Line
-	4600 1650 5500 1650
-Wire Wire Line
-	4300 1650 3950 1650
-Wire Wire Line
-	3950 1750 4300 1750
-Wire Wire Line
-	4300 1850 3950 1850
-Wire Wire Line
-	3650 2800 3750 2800
-Wire Wire Line
-	3750 2800 3750 2900
 $Comp
 L GND #PWR077
 U 1 1 58ACE800
@@ -562,13 +422,6 @@ F 3 "" H 3750 3200 50  0001 C CNN
 	1    3750 3200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5300 2850 5300 2750
-Wire Wire Line
-	5300 2750 5500 2750
-Wire Wire Line
-	5300 3150 5300 3250
-Connection ~ 5800 3250
 $Comp
 L L L11
 U 1 1 58AD58B6
@@ -580,9 +433,6 @@ F 3 "" H 7750 5600 50  0001 C CNN
 	1    7750 5600
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	8250 5700 8250 5600
-Connection ~ 8250 5600
 $Comp
 L GND #PWR078
 U 1 1 58AD6FCF
@@ -616,8 +466,6 @@ F 3 "" H 50  800 50  0001 C CNN
 	1    7400 5600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4900 900  7400 900 
 $Comp
 L C C35
 U 1 1 58B65E13
@@ -952,9 +800,6 @@ F 7 "0805" H 8365 5759 60  0000 L CNN "Package"
 	1    8250 5850
 	1    0    0    -1  
 $EndComp
-Connection ~ 6400 900 
-Connection ~ 6750 900 
-Connection ~ 7150 900 
 Text Label 6850 2300 1    60   ~ 0
 RF50_2.4_1
 Text Label 7900 2300 1    60   ~ 0
@@ -1008,6 +853,222 @@ F 3 "" H 1450 3550 50  0001 C CNN
 	1    1450 3550
 	1    0    0    -1  
 $EndComp
+$Comp
+L Crystal_GND24 Y5
+U 1 1 58BA5403
+P 1450 3050
+F 0 "Y5" H 1500 3250 50  0000 L CNN
+F 1 "XRCGB24M000F2P00R0" H 1550 3150 50  0000 L CNN
+F 2 "Crystals:Crystal_SMD_2016-4pin_2.0x1.6mm" H -200 700 50  0001 C CNN
+F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/timingdevice/crystalu/p79e.ashx" H -200 700 50  0001 C CNN
+	1    1450 3050
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1450 3250
+NoConn ~ 1450 2850
+NoConn ~ 2050 2400
+NoConn ~ 2050 2500
+Text Notes 1650 3750 0    60   ~ 0
+Using BLE without RTC Crystal requires calibration over temp:\nhttp://www.ti.com/lit/an/swra499a/swra499a.pdf
+Text HLabel 4000 4750 0    60   Input ~ 0
+UART0-RX
+Text HLabel 4000 4850 0    60   Output ~ 0
+UART0-TX
+Entry Bus Bus
+	1400 5350 1500 5450
+Entry Bus Bus
+	1400 5250 1500 5350
+Entry Bus Bus
+	1400 5150 1500 5250
+Entry Bus Bus
+	1400 5050 1500 5150
+Entry Bus Bus
+	1400 4750 1500 4850
+Entry Bus Bus
+	1400 4650 1500 4750
+Entry Bus Bus
+	1400 4550 1500 4650
+Entry Bus Bus
+	1400 4450 1500 4550
+Text HLabel 1300 4450 0    60   BiDi ~ 0
+ADIO-[23..30]
+Text Label 3900 5050 0    60   ~ 0
+DIO-5
+Text Label 1550 4650 0    60   ~ 0
+ADIO-24
+Text Label 1550 4750 0    60   ~ 0
+ADIO-25
+Text Label 1550 4850 0    60   ~ 0
+ADIO-26
+Text Label 1550 5150 0    60   ~ 0
+ADIO-27
+Text Label 1550 5250 0    60   ~ 0
+ADIO-28
+Text Label 1550 5350 0    60   ~ 0
+ADIO-29
+Text Label 1550 5450 0    60   ~ 0
+ADIO-30
+Text Label 4300 4550 2    60   ~ 0
+PA_EN
+Text Label 4300 4650 2    60   ~ 0
+LNA_EN
+Text Label 4300 4950 2    60   ~ 0
+HGM
+Wire Wire Line
+	9250 2300 9600 2300
+Wire Wire Line
+	8300 2300 8950 2300
+Wire Wire Line
+	8400 2400 8400 2300
+Connection ~ 8400 2300
+Wire Wire Line
+	7800 2300 8000 2300
+Wire Wire Line
+	7900 2400 7900 2300
+Connection ~ 7900 2300
+Wire Wire Line
+	6700 2300 7500 2300
+Wire Wire Line
+	7400 2300 7400 2200
+Connection ~ 7400 2300
+Wire Wire Line
+	7100 2400 7100 2300
+Connection ~ 7100 2300
+Wire Wire Line
+	3650 2200 5500 2200
+Wire Wire Line
+	5500 2300 3650 2300
+Wire Notes Line
+	4700 700  4700 3600
+Wire Notes Line
+	4700 3600 9400 3600
+Wire Notes Line
+	9400 3600 9400 700 
+Wire Notes Line
+	9400 700  4700 700 
+Wire Wire Line
+	7400 900  7400 1900
+Wire Wire Line
+	7900 4700 9100 4700
+Wire Wire Line
+	6000 900  6000 1450
+Wire Wire Line
+	6100 1450 6100 1350
+Wire Wire Line
+	6000 1350 6200 1350
+Connection ~ 6000 1350
+Wire Wire Line
+	6200 1350 6200 1450
+Connection ~ 6100 1350
+Connection ~ 6000 900 
+Wire Wire Line
+	8250 4800 8250 4700
+Connection ~ 8250 4700
+Wire Wire Line
+	7400 4700 7600 4700
+Wire Wire Line
+	7900 5600 10300 5600
+Wire Wire Line
+	7400 5600 7600 5600
+Wire Wire Line
+	5300 3250 6400 3250
+Wire Wire Line
+	5800 3250 5800 3150
+Wire Wire Line
+	6400 3250 6400 3150
+Connection ~ 6100 3250
+Wire Wire Line
+	5900 3150 5900 3250
+Connection ~ 5900 3250
+Wire Wire Line
+	6000 3250 6000 3150
+Connection ~ 6000 3250
+Wire Wire Line
+	6100 3150 6100 3250
+Wire Wire Line
+	6200 3250 6200 3150
+Connection ~ 6200 3250
+Wire Wire Line
+	6300 3150 6300 3250
+Connection ~ 6300 3250
+Wire Wire Line
+	2550 1100 2550 1600
+Wire Wire Line
+	1400 1100 2750 1100
+Wire Wire Line
+	2750 1100 2750 1150
+Wire Wire Line
+	2650 1100 2650 1600
+Connection ~ 2650 1100
+Wire Wire Line
+	2750 1600 2750 1450
+Wire Wire Line
+	2350 1100 2350 1150
+Connection ~ 2550 1100
+Wire Wire Line
+	2950 1600 2950 1200
+Wire Wire Line
+	2950 1200 3450 1200
+Wire Wire Line
+	3250 1200 3250 1600
+Wire Wire Line
+	3050 1600 3050 1200
+Connection ~ 3050 1200
+Wire Wire Line
+	3150 1200 3150 1600
+Connection ~ 3150 1200
+Connection ~ 3250 1200
+Wire Wire Line
+	10300 5600 10300 5700
+Wire Wire Line
+	9100 5700 9100 5600
+Connection ~ 9100 5600
+Wire Wire Line
+	9400 5700 9400 5600
+Connection ~ 9400 5600
+Wire Wire Line
+	9700 5600 9700 5700
+Connection ~ 9700 5600
+Wire Wire Line
+	10000 5600 10000 5700
+Connection ~ 10000 5600
+Connection ~ 2350 1100
+Wire Wire Line
+	1700 1150 1700 1100
+Connection ~ 1700 1100
+Wire Wire Line
+	1400 1100 1400 1150
+Wire Wire Line
+	4600 1850 5500 1850
+Wire Wire Line
+	4600 1750 5500 1750
+Wire Wire Line
+	4600 1650 5500 1650
+Wire Wire Line
+	4300 1650 3950 1650
+Wire Wire Line
+	3950 1750 4300 1750
+Wire Wire Line
+	4300 1850 3950 1850
+Wire Wire Line
+	3650 2800 3750 2800
+Wire Wire Line
+	3750 2800 3750 2900
+Wire Wire Line
+	5300 2850 5300 2750
+Wire Wire Line
+	5300 2750 5500 2750
+Wire Wire Line
+	5300 3150 5300 3250
+Connection ~ 5800 3250
+Wire Wire Line
+	8250 5700 8250 5600
+Connection ~ 8250 5600
+Wire Wire Line
+	4900 900  7400 900 
+Connection ~ 6400 900 
+Connection ~ 6750 900 
+Connection ~ 7150 900 
 Wire Wire Line
 	1200 3450 1200 3550
 Wire Wire Line
@@ -1029,99 +1090,124 @@ Connection ~ 1700 3050
 Wire Wire Line
 	2050 2700 1200 2700
 Connection ~ 1200 3050
-$Comp
-L Crystal_GND24 Y5
-U 1 1 58BA5403
-P 1450 3050
-F 0 "Y5" H 1500 3250 50  0000 L CNN
-F 1 "XRCGB24M000F2P00R0" H 1550 3150 50  0000 L CNN
-F 2 "Crystals:Crystal_SMD_2016-4pin_2.0x1.6mm" H -200 700 50  0001 C CNN
-F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/timingdevice/crystalu/p79e.ashx" H -200 700 50  0001 C CNN
-	1    1450 3050
-	1    0    0    -1  
-$EndComp
-NoConn ~ 1450 3250
-NoConn ~ 1450 2850
-NoConn ~ 2050 2400
-NoConn ~ 2050 2500
-Text Notes 1650 3750 0    60   ~ 0
-Using BLE without RTC Crystal requires calibration over temp:\nhttp://www.ti.com/lit/an/swra499a/swra499a.pdf
 Wire Wire Line
-	4300 4750 4450 4750
-Text HLabel 4300 4750 0    60   Input ~ 0
-UART0-RX
+	4000 4750 4450 4750
 Wire Wire Line
-	4300 4850 4450 4850
-Text HLabel 4300 4850 0    60   Output ~ 0
-UART0-TX
-Wire Wire Line
-	4300 5850 4450 5850
-Text HLabel 4300 5850 0    60   Input ~ 0
-SSI0-FSS
-Wire Wire Line
-	4300 5950 4450 5950
-Text HLabel 4300 5950 0    60   Input ~ 0
-SSI0-CLK
-Wire Wire Line
-	4300 5650 4450 5650
-Text HLabel 4300 5650 0    60   Output ~ 0
-SSI0-TX
-Wire Wire Line
-	4300 5750 4450 5750
-Text HLabel 4300 5750 0    60   Input ~ 0
-SSI0-RX
-Entry Bus Bus
-	1400 5350 1500 5450
-Entry Bus Bus
-	1400 5250 1500 5350
-Entry Bus Bus
-	1400 5150 1500 5250
-Entry Bus Bus
-	1400 5050 1500 5150
-Entry Bus Bus
-	1400 4750 1500 4850
-Entry Bus Bus
-	1400 4650 1500 4750
-Entry Bus Bus
-	1400 4550 1500 4650
-Entry Bus Bus
-	1400 4450 1500 4550
+	4000 4850 4450 4850
 Wire Bus Line
 	1400 4450 1400 5350
 Wire Bus Line
 	1400 4450 1300 4450
-Text HLabel 1300 4450 0    60   Input ~ 0
-ADIO-[23..30]
+Wire Wire Line
+	1500 4650 2050 4650
+Wire Wire Line
+	1500 4750 2050 4750
+Wire Wire Line
+	1500 4850 2050 4850
+Wire Wire Line
+	1500 5150 2050 5150
+Wire Wire Line
+	1500 5250 2050 5250
+Wire Wire Line
+	1500 5350 2050 5350
+Wire Wire Line
+	1500 5450 2050 5450
+Wire Wire Line
+	4300 4950 4450 4950
+Wire Wire Line
+	4450 4650 4300 4650
+Wire Wire Line
+	4300 4550 4450 4550
+Wire Wire Line
+	3900 5050 4450 5050
+Text Label 3900 5150 0    60   ~ 0
+DIO-6
+Text Label 3900 5250 0    60   ~ 0
+DIO-7
+Wire Wire Line
+	3900 5150 4450 5150
+Wire Wire Line
+	3900 5250 4450 5250
+Text Label 3900 5650 0    60   ~ 0
+DIO-8
+Text Label 3900 5750 0    60   ~ 0
+DIO-9
+Text Label 3900 5850 0    60   ~ 0
+DIO-10
+Text Label 3900 5950 0    60   ~ 0
+DIO-11
+Text Label 3900 6050 0    60   ~ 0
+DIO-12
+Text Label 3900 6150 0    60   ~ 0
+DIO-13
+Text Label 3900 6250 0    60   ~ 0
+DIO-14
+Text Label 3900 6350 0    60   ~ 0
+DIO-15
+Wire Wire Line
+	3900 5750 4450 5750
+Wire Wire Line
+	4450 5650 3900 5650
+Wire Wire Line
+	3900 5850 4450 5850
+Wire Wire Line
+	4450 5950 3900 5950
+Wire Wire Line
+	3900 6050 4450 6050
+Wire Wire Line
+	4450 6150 3900 6150
+Wire Wire Line
+	3900 6250 4450 6250
+Wire Wire Line
+	4450 6350 3900 6350
+Text Label 5600 4550 0    60   ~ 0
+DIO-16
+Text Label 5600 4650 0    60   ~ 0
+DIO-17
+Text Label 5600 4750 0    60   ~ 0
+DIO-18
+Text Label 5600 4850 0    60   ~ 0
+DIO-19
+Text Label 5600 4950 0    60   ~ 0
+DIO-20
+Text Label 5600 5050 0    60   ~ 0
+DIO-21
+Text Label 5600 5150 0    60   ~ 0
+DIO-22
+Wire Wire Line
+	5450 5150 5600 5150
+Wire Wire Line
+	5600 5050 5450 5050
+Wire Wire Line
+	5450 4950 5600 4950
+Wire Wire Line
+	5600 4850 5450 4850
+Wire Wire Line
+	5450 4750 5600 4750
+Wire Wire Line
+	5600 4650 5450 4650
+Wire Wire Line
+	5450 4550 5600 4550
+Text HLabel 1300 6000 0    60   BiDi ~ 0
+DIO-[5..22]
+Wire Bus Line
+	1300 6000 1600 6000
+Text Label 1400 6000 0    60   ~ 0
+DIO-[5..22]
 Wire Wire Line
 	1500 4550 2050 4550
 Text Label 1550 4550 0    60   ~ 0
 ADIO-23
+Text HLabel 1400 1800 0    60   Input ~ 0
+~RESET
 Wire Wire Line
-	1500 4650 2050 4650
-Text Label 1550 4650 0    60   ~ 0
-ADIO-24
+	1400 1800 2050 1800
 Wire Wire Line
-	1500 4750 2050 4750
-Text Label 1550 4750 0    60   ~ 0
-ADIO-25
+	1400 2100 2050 2100
 Wire Wire Line
-	1500 4850 2050 4850
-Text Label 1550 4850 0    60   ~ 0
-ADIO-26
-Wire Wire Line
-	1500 5150 2050 5150
-Text Label 1550 5150 0    60   ~ 0
-ADIO-27
-Wire Wire Line
-	1500 5250 2050 5250
-Text Label 1550 5250 0    60   ~ 0
-ADIO-28
-Wire Wire Line
-	1500 5350 2050 5350
-Text Label 1550 5350 0    60   ~ 0
-ADIO-29
-Wire Wire Line
-	1500 5450 2050 5450
-Text Label 1550 5450 0    60   ~ 0
-ADIO-30
+	1400 2200 2050 2200
+Text HLabel 1400 2100 0    60   BiDi ~ 0
+JTAG-TMSC
+Text HLabel 1400 2200 0    60   BiDi ~ 0
+JTAG-TCKC
 $EndSCHEMATC
