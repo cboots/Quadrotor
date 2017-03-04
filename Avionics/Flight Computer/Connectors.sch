@@ -76,10 +76,10 @@ F 3 "http://suddendocs.samtec.com/prints/erf8-xxx-xx.x-x-dv-xxxx-tr-mkt.pdf" H 2
 	1    0    0    -1  
 $EndComp
 $Comp
-L VUSB #PWR0114
+L VUSB #PWR117
 U 1 1 58B8BBBA
 P 1600 1150
-F 0 "#PWR0114" H -400 -250 50  0001 C CNN
+F 0 "#PWR117" H -400 -250 50  0001 C CNN
 F 1 "VUSB" H 1615 1323 50  0000 C CNN
 F 2 "" H -400 -100 50  0001 C CNN
 F 3 "" H -400 -100 50  0001 C CNN
@@ -91,10 +91,10 @@ Wire Wire Line
 Wire Wire Line
 	1600 1250 1600 1150
 $Comp
-L GND #PWR0115
+L GND #PWR116
 U 1 1 58B8BD69
 P 1100 1900
-F 0 "#PWR0115" H -800 50  50  0001 C CNN
+F 0 "#PWR116" H -800 50  50  0001 C CNN
 F 1 "GND" H 1105 1727 50  0000 C CNN
 F 2 "" H -800 300 50  0001 C CNN
 F 3 "" H -800 300 50  0001 C CNN
@@ -151,11 +151,9 @@ Wire Bus Line
 Text Label 9550 2800 0    60   ~ 0
 PE[0..5]
 Text Label 9500 2600 0    60   ~ 0
-PD[30..31]
+PD31
 Text HLabel 10000 2600 2    60   BiDi ~ 0
-PD[30..31]
-Wire Bus Line
-	9500 2600 10000 2600
+PD31
 Text HLabel 1250 4650 2    60   BiDi ~ 0
 AUX_SDA
 Text HLabel 1250 4750 2    60   BiDi ~ 0
@@ -246,4 +244,32 @@ Wire Wire Line
 	9450 4650 10050 4650
 Text Notes 9450 4750 0    60   ~ 0
 Must be connected to open drain\n
+Wire Wire Line
+	3100 1600 3650 1600
+$Comp
+L +BATT #PWR118
+U 1 1 58DB91A4
+P 3100 1600
+F 0 "#PWR118" H 2050 -1300 50  0001 C CNN
+F 1 "+BATT" H 3115 1773 50  0000 C CNN
+F 2 "" H 2050 -1150 50  0001 C CNN
+F 3 "" H 2050 -1150 50  0001 C CNN
+	1    3100 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 1600 3650 1700
+Wire Wire Line
+	9500 2600 10000 2600
+$Comp
+L GND #PWR?
+U 1 1 58DD26EA
+P 2800 2000
+F 0 "#PWR?" H -1150 -1700 50  0001 C CNN
+F 1 "GND" H 2805 1827 50  0000 C CNN
+F 2 "" H -1150 -1450 50  0001 C CNN
+F 3 "" H -1150 -1450 50  0001 C CNN
+	1    2800 2000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
