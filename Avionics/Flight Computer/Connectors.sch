@@ -118,7 +118,7 @@ Text HLabel 1550 3850 0    60   Output ~ 0
 CPU-~RESET
 Text HLabel 7350 5250 2    60   Output ~ 0
 900-~RESET
-Text HLabel 1550 4050 0    60   Output ~ 0
+Text HLabel 4250 5300 2    60   Output ~ 0
 2.4-~RESET
 Text HLabel 10000 2100 2    60   BiDi ~ 0
 PC[0..31]
@@ -158,9 +158,9 @@ Text HLabel 1250 4650 2    60   BiDi ~ 0
 AUX_SDA
 Text HLabel 1250 4750 2    60   BiDi ~ 0
 AUX_SCL
-Text HLabel 1250 5100 2    60   BiDi ~ 0
+Text HLabel 4500 3300 2    60   BiDi ~ 0
 CPU_SDA
-Text HLabel 1250 5200 2    60   BiDi ~ 0
+Text HLabel 4500 3900 2    60   BiDi ~ 0
 CPU_SCL
 Text HLabel 10000 1500 2    60   BiDi ~ 0
 PA[11..31]
@@ -288,4 +288,102 @@ Text Label 7350 5150 0    60   ~ 0
 900-ADIO-27
 Text Label 7350 5050 0    60   ~ 0
 900-ADIO-25
+Text Label 3750 4200 2    60   ~ 0
+2.4-DIO-8
+Text Label 3750 4300 2    60   ~ 0
+2.4-DIO-9
+Text Label 3750 4400 2    60   ~ 0
+2.4-DIO-10
+Text Label 3750 4500 2    60   ~ 0
+2.4-DIO-11
+Text Label 3750 4600 2    60   ~ 0
+2.4-DIO-12
+Text Label 3750 4700 2    60   ~ 0
+2.4-DIO-13
+Text Label 3750 4800 2    60   ~ 0
+2.4-DIO-14
+Text Label 3750 4900 2    60   ~ 0
+2.4-DIO-15
+Text Label 3750 5100 2    60   ~ 0
+2.4-TCKC
+Text Label 3750 5000 2    60   ~ 0
+2.4-TMSC
+Text Label 3750 5200 2    60   ~ 0
+2.4-DIO-16
+Text Label 3750 5300 2    60   ~ 0
+2.4-DIO-17
+Text Label 4250 5000 0    60   ~ 0
+2.4-DIO-18
+Text Label 4250 5100 0    60   ~ 0
+2.4-DIO-19
+Text Label 4250 5200 0    60   ~ 0
+2.4-DIO-20
+Text Label 4250 4900 0    60   ~ 0
+2.4-ADIO-23
+Text Label 4250 4800 0    60   ~ 0
+2.4-ADIO-24
+Text Label 4250 4700 0    60   ~ 0
+2.4-ADIO-25
+Text Label 4250 4600 0    60   ~ 0
+2.4-ADIO-26
+Text Label 4250 4500 0    60   ~ 0
+2.4-ADIO-27
+Text Label 4250 4400 0    60   ~ 0
+2.4-ADIO-28
+Text Label 4250 4300 0    60   ~ 0
+2.4-ADIO-29
+Text Label 4250 4200 0    60   ~ 0
+2.4-ADIO-30
+Text Label 4250 4100 0    60   ~ 0
+PD17
+Text Label 4250 4000 0    60   ~ 0
+PC28
+Wire Wire Line
+	4250 3900 4500 3900
+Text Label 4250 3800 0    60   ~ 0
+PD16
+Text Label 4250 3700 0    60   ~ 0
+PC8
+Text Label 4250 3600 0    60   ~ 0
+PC9
+Text Label 4250 3500 0    60   ~ 0
+PB7
+Text Label 4250 3400 0    60   ~ 0
+PC10
+Wire Wire Line
+	4500 3300 4250 3300
+Text Label 4250 3100 0    60   ~ 0
+PC14
+Text Label 4250 3000 0    60   ~ 0
+PD11
+Text Label 4250 2900 0    60   ~ 0
+PA1
+Text Label 4250 2800 0    60   ~ 0
+PC16
+Text Label 4250 2700 0    60   ~ 0
+PD10
+Text Label 4250 2600 0    60   ~ 0
+PA0
+Text Label 4250 2500 0    60   ~ 0
+PC17
+Text Label 4250 2400 0    60   ~ 0
+PB4
+Text Label 4250 2300 0    60   ~ 0
+PD15
+Text Label 3750 4100 2    60   ~ 0
+2.4-DIO-7
+Text Label 3750 4000 2    60   ~ 0
+PB6
+Text Label 4250 3200 0    60   ~ 0
+PC11
+Text Label 4250 2200 0    60   ~ 0
+PD8
+Text Label 4250 2100 0    60   ~ 0
+PA28
+Text Label 4250 2000 0    60   ~ 0
+PC18
+Text Label 4250 1900 0    60   ~ 0
+PD9
+Text Label 4250 1800 0    60   ~ 0
+PB5
 $EndSCHEMATC
