@@ -54,13 +54,13 @@ $EndComp
 $Comp
 L CONN_02X40 J1
 U 1 1 58B54687
-P 3900 3350
-F 0 "J1" H 3900 5515 50  0000 C CNN
-F 1 "ERF8-040-05.0-S-DV-K" H 3900 5424 50  0000 C CNN
-F 2 "Connectors_Samtec:ERF8-040-05.0-S-DV-K" H -650 200 50  0001 C CNN
-F 3 "http://suddendocs.samtec.com/prints/erf8-xxx-xx.x-x-dv-xxxx-tr-mkt.pdf" H -650 200 50  0001 C CNN
-	1    3900 3350
-	1    0    0    -1  
+P 4000 3350
+F 0 "J1" H 4000 5515 50  0000 C CNN
+F 1 "ERF8-040-05.0-S-DV-K" H 4000 5424 50  0000 C CNN
+F 2 "Connectors_Samtec:ERF8-040-05.0-S-DV-K" H -550 200 50  0001 C CNN
+F 3 "http://suddendocs.samtec.com/prints/erf8-xxx-xx.x-x-dv-xxxx-tr-mkt.pdf" H -550 200 50  0001 C CNN
+	1    4000 3350
+	-1   0    0    -1  
 $EndComp
 Text Notes 3100 1050 0    60   ~ 0
 Mating connector ERM8-XXX-XXX
@@ -73,13 +73,13 @@ F 1 "ERF8-040-05.0-S-DV-K" H 7100 5374 50  0000 C CNN
 F 2 "Connectors_Samtec:ERF8-040-05.0-S-DV-K" H 2550 150 50  0001 C CNN
 F 3 "http://suddendocs.samtec.com/prints/erf8-xxx-xx.x-x-dv-xxxx-tr-mkt.pdf" H 2550 150 50  0001 C CNN
 	1    7100 3300
-	1    0    0    -1  
+	-1   0    0    -1  
 $EndComp
 $Comp
-L VUSB #PWR117
+L VUSB #PWR0116
 U 1 1 58B8BBBA
 P 1600 1150
-F 0 "#PWR117" H -400 -250 50  0001 C CNN
+F 0 "#PWR0116" H -400 -250 50  0001 C CNN
 F 1 "VUSB" H 1615 1323 50  0000 C CNN
 F 2 "" H -400 -100 50  0001 C CNN
 F 3 "" H -400 -100 50  0001 C CNN
@@ -91,10 +91,10 @@ Wire Wire Line
 Wire Wire Line
 	1600 1250 1600 1150
 $Comp
-L GND #PWR116
+L GND #PWR0117
 U 1 1 58B8BD69
 P 1100 1900
-F 0 "#PWR116" H -800 50  50  0001 C CNN
+F 0 "#PWR0117" H -800 50  50  0001 C CNN
 F 1 "GND" H 1105 1727 50  0000 C CNN
 F 2 "" H -800 300 50  0001 C CNN
 F 3 "" H -800 300 50  0001 C CNN
@@ -116,7 +116,7 @@ Text HLabel 1800 1550 2    60   BiDi ~ 0
 USBD_N
 Text HLabel 1550 3850 0    60   Output ~ 0
 CPU-~RESET
-Text HLabel 1550 3950 0    60   Output ~ 0
+Text HLabel 7350 5250 2    60   Output ~ 0
 900-~RESET
 Text HLabel 1550 4050 0    60   Output ~ 0
 2.4-~RESET
@@ -245,31 +245,47 @@ Wire Wire Line
 Text Notes 9450 4750 0    60   ~ 0
 Must be connected to open drain\n
 Wire Wire Line
-	3100 1600 3650 1600
+	4800 1600 4250 1600
 $Comp
-L +BATT #PWR118
+L +BATT #PWR0118
 U 1 1 58DB91A4
-P 3100 1600
-F 0 "#PWR118" H 2050 -1300 50  0001 C CNN
-F 1 "+BATT" H 3115 1773 50  0000 C CNN
-F 2 "" H 2050 -1150 50  0001 C CNN
-F 3 "" H 2050 -1150 50  0001 C CNN
-	1    3100 1600
-	1    0    0    -1  
+P 4800 1600
+F 0 "#PWR0118" H 3750 -1300 50  0001 C CNN
+F 1 "+BATT" H 4815 1773 50  0000 C CNN
+F 2 "" H 3750 -1150 50  0001 C CNN
+F 3 "" H 3750 -1150 50  0001 C CNN
+	1    4800 1600
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	3650 1600 3650 1700
+	4250 1600 4250 1700
 Wire Wire Line
 	9500 2600 10000 2600
 $Comp
-L GND #PWR?
+L GND #PWR0119
 U 1 1 58DD26EA
 P 2800 2000
-F 0 "#PWR?" H -1150 -1700 50  0001 C CNN
+F 0 "#PWR0119" H -1150 -1700 50  0001 C CNN
 F 1 "GND" H 2805 1827 50  0000 C CNN
 F 2 "" H -1150 -1450 50  0001 C CNN
 F 3 "" H -1150 -1450 50  0001 C CNN
 	1    2800 2000
 	1    0    0    -1  
 $EndComp
+Text Label 7350 4550 0    60   ~ 0
+900-ADIO-29
+Text Label 7350 4450 0    60   ~ 0
+900-ADIO-30
+Text Label 7350 4650 0    60   ~ 0
+900-ADIO-28
+Text Label 7350 4750 0    60   ~ 0
+900-ADIO-26
+Text Label 7350 4950 0    60   ~ 0
+900-ADIO-24
+Text Label 7350 4850 0    60   ~ 0
+900-ADIO-23
+Text Label 7350 5150 0    60   ~ 0
+900-ADIO-27
+Text Label 7350 5050 0    60   ~ 0
+900-ADIO-25
 $EndSCHEMATC
