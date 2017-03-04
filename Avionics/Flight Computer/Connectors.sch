@@ -278,15 +278,15 @@ Text Label 7350 4450 0    60   ~ 0
 900-ADIO-30
 Text Label 7350 4650 0    60   ~ 0
 900-ADIO-28
-Text Label 7350 4750 0    60   ~ 0
-900-ADIO-26
-Text Label 7350 4950 0    60   ~ 0
-900-ADIO-24
 Text Label 7350 4850 0    60   ~ 0
-900-ADIO-23
-Text Label 7350 5150 0    60   ~ 0
-900-ADIO-27
+900-ADIO-26
 Text Label 7350 5050 0    60   ~ 0
+900-ADIO-24
+Text Label 7350 5150 0    60   ~ 0
+900-ADIO-23
+Text Label 7350 4750 0    60   ~ 0
+900-ADIO-27
+Text Label 7350 4950 0    60   ~ 0
 900-ADIO-25
 Text Label 3750 4200 2    60   ~ 0
 2.4-DIO-8
@@ -386,4 +386,18 @@ Text Label 4250 1900 0    60   ~ 0
 PD9
 Text Label 4250 1800 0    60   ~ 0
 PB5
+Text Label 4250 1500 0    60   ~ 0
+PA30
+Text Label 4250 1400 0    60   ~ 0
+PC19
+Text Label 3750 1800 2    60   ~ 0
+PA31
+Text Label 3750 1700 2    60   ~ 0
+PD7
+Text Label 3750 1600 2    60   ~ 0
+PC20
+Text Label 3750 1500 2    60   ~ 0
+PD6
+Text Label 3750 1400 2    60   ~ 0
+PC21
 $EndSCHEMATC
