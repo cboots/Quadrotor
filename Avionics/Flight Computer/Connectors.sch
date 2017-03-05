@@ -116,7 +116,7 @@ Text HLabel 1800 1550 2    60   BiDi ~ 0
 USBD_N
 Text HLabel 1550 3850 0    60   Output ~ 0
 CPU-~RESET
-Text HLabel 7350 5250 2    60   Output ~ 0
+Text HLabel 7950 5050 2    60   Output ~ 0
 900-~RESET
 Text HLabel 4250 5300 2    60   Output ~ 0
 2.4-~RESET
@@ -244,17 +244,15 @@ Wire Wire Line
 	9450 4650 10050 4650
 Text Notes 9450 4750 0    60   ~ 0
 Must be connected to open drain\n
-Wire Wire Line
-	4800 1600 4250 1600
 $Comp
 L +BATT #PWR0118
 U 1 1 58DB91A4
-P 4800 1600
-F 0 "#PWR0118" H 3750 -1300 50  0001 C CNN
-F 1 "+BATT" H 4815 1773 50  0000 C CNN
-F 2 "" H 3750 -1150 50  0001 C CNN
-F 3 "" H 3750 -1150 50  0001 C CNN
-	1    4800 1600
+P 4950 1600
+F 0 "#PWR0118" H 3900 -1300 50  0001 C CNN
+F 1 "+BATT" H 4965 1773 50  0000 C CNN
+F 2 "" H 3900 -1150 50  0001 C CNN
+F 3 "" H 3900 -1150 50  0001 C CNN
+	1    4950 1600
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
@@ -264,29 +262,29 @@ Wire Wire Line
 $Comp
 L GND #PWR0119
 U 1 1 58DD26EA
-P 2800 2000
-F 0 "#PWR0119" H -1150 -1700 50  0001 C CNN
-F 1 "GND" H 2805 1827 50  0000 C CNN
-F 2 "" H -1150 -1450 50  0001 C CNN
-F 3 "" H -1150 -1450 50  0001 C CNN
-	1    2800 2000
-	1    0    0    -1  
+P 4700 1400
+F 0 "#PWR0119" H 750 -2300 50  0001 C CNN
+F 1 "GND" H 4705 1227 50  0000 C CNN
+F 2 "" H 750 -2050 50  0001 C CNN
+F 3 "" H 750 -2050 50  0001 C CNN
+	1    4700 1400
+	-1   0    0    -1  
 $EndComp
-Text Label 7350 4550 0    60   ~ 0
+Text Label 7350 4150 0    60   ~ 0
 900-ADIO-29
-Text Label 7350 4450 0    60   ~ 0
+Text Label 7350 4050 0    60   ~ 0
 900-ADIO-30
-Text Label 7350 4650 0    60   ~ 0
+Text Label 7350 4250 0    60   ~ 0
 900-ADIO-28
-Text Label 7350 4850 0    60   ~ 0
+Text Label 6850 5050 2    60   ~ 0
 900-ADIO-26
-Text Label 7350 5050 0    60   ~ 0
+Text Label 7350 4550 0    60   ~ 0
 900-ADIO-24
-Text Label 7350 5150 0    60   ~ 0
+Text Label 7350 4650 0    60   ~ 0
 900-ADIO-23
-Text Label 7350 4750 0    60   ~ 0
+Text Label 7350 4350 0    60   ~ 0
 900-ADIO-27
-Text Label 7350 4950 0    60   ~ 0
+Text Label 7350 4450 0    60   ~ 0
 900-ADIO-25
 Text Label 3750 4200 2    60   ~ 0
 2.4-DIO-8
@@ -386,9 +384,9 @@ Text Label 4250 1900 0    60   ~ 0
 PD9
 Text Label 4250 1800 0    60   ~ 0
 PB5
-Text Label 4250 1500 0    60   ~ 0
+Text Label 3750 2100 2    60   ~ 0
 PA30
-Text Label 4250 1400 0    60   ~ 0
+Text Label 3750 2000 2    60   ~ 0
 PC19
 Text Label 3750 1800 2    60   ~ 0
 PA31
@@ -400,4 +398,129 @@ Text Label 3750 1500 2    60   ~ 0
 PD6
 Text Label 3750 1400 2    60   ~ 0
 PC21
+Text Label 6850 1350 2    60   ~ 0
+PE3
+Text Label 6850 1450 2    60   ~ 0
+PE2
+Text Label 6850 1550 2    60   ~ 0
+PE1
+Text Label 6850 1650 2    60   ~ 0
+PD0
+Text Label 6850 1750 2    60   ~ 0
+PD31
+Text Label 6850 1850 2    60   ~ 0
+PE0
+Text Label 7350 1350 0    60   ~ 0
+PB13
+Text Label 7350 1450 0    60   ~ 0
+PC0
+Text Label 6850 1950 2    60   ~ 0
+PC27
+Text Label 6850 2050 2    60   ~ 0
+PC26
+Text Label 6850 2150 2    60   ~ 0
+PC31
+Text Label 6850 2250 2    60   ~ 0
+PC30
+Text Label 6850 2350 2    60   ~ 0
+PC29
+Text Label 6850 2450 2    60   ~ 0
+PC12
+Text Label 6850 2550 2    60   ~ 0
+PC15
+Text Label 6850 2650 2    60   ~ 0
+PC13
+Text Label 6850 2750 2    60   ~ 0
+PB1
+Text Label 6850 2850 2    60   ~ 0
+PB0
+Text Label 6850 2950 2    60   ~ 0
+PA20
+Text Label 6850 3050 2    60   ~ 0
+PA19
+Text Label 6850 3150 2    60   ~ 0
+PA18
+Text Label 6850 3250 2    60   ~ 0
+PA17
+Text Label 6850 3350 2    60   ~ 0
+PB2
+Text Label 6850 3450 2    60   ~ 0
+PE4
+Text Label 6850 3550 2    60   ~ 0
+PE5
+Text Label 6850 3650 2    60   ~ 0
+PB3
+Text Label 6850 3750 2    60   ~ 0
+PA21
+Text Label 7350 5250 0    60   ~ 0
+900-DIO-16
+Text Label 7350 5150 0    60   ~ 0
+900-DIO-20
+Wire Wire Line
+	7350 5050 7950 5050
+Text Label 7350 4950 0    60   ~ 0
+900-DIO-21
+Text Label 7350 4850 0    60   ~ 0
+900-DIO-17
+Text Label 7350 4750 0    60   ~ 0
+900-DIO-18
+Text Label 6850 5150 2    60   ~ 0
+900-DIO-22
+Text Label 6850 5250 2    60   ~ 0
+900-DIO-19
+Text Label 7350 1850 0    60   ~ 0
+PC25
+Text Label 7350 1950 0    60   ~ 0
+PD1
+Text Label 7350 2050 0    60   ~ 0
+PD2
+Text Label 7350 1750 0    60   ~ 0
+PC24
+Text Label 7350 2150 0    60   ~ 0
+PD3
+Text Label 7350 1650 0    60   ~ 0
+PC23
+Text Label 7350 2250 0    60   ~ 0
+PD4
+Text Label 7350 2350 0    60   ~ 0
+PD5
+Text Label 7350 1550 0    60   ~ 0
+PC22
+Text Label 3750 1900 2    60   ~ 0
+PA29
+Text Label 6850 3850 2    60   ~ 0
+PA22
+Text Label 6850 4350 2    60   ~ 0
+PA13
+Text Label 6850 3950 2    60   ~ 0
+PC1
+Text Label 6850 4050 2    60   ~ 0
+PC2
+Text Label 6850 4150 2    60   ~ 0
+PC3
+Text Label 6850 4250 2    60   ~ 0
+PC4
+Text Label 6850 4650 2    60   ~ 0
+PA16
+Text Label 6850 4450 2    60   ~ 0
+900-TCKC
+Text Label 6850 4550 2    60   ~ 0
+900-TMSC
+Text Label 6850 4750 2    60   ~ 0
+PA23
+Text Label 6850 4850 2    60   ~ 0
+PD27
+Text Label 6850 4950 2    60   ~ 0
+PC7
+Wire Wire Line
+	4600 1500 4250 1500
+Wire Wire Line
+	4250 1400 4700 1400
+Wire Wire Line
+	4600 1400 4600 1500
+Wire Wire Line
+	4250 1700 4950 1700
+Wire Wire Line
+	4950 1700 4950 1600
+Connection ~ 4600 1400
 $EndSCHEMATC
