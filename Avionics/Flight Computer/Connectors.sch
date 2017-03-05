@@ -76,10 +76,10 @@ F 3 "http://suddendocs.samtec.com/prints/erf8-xxx-xx.x-x-dv-xxxx-tr-mkt.pdf" H 2
 	-1   0    0    -1  
 $EndComp
 $Comp
-L VUSB #PWR0116
+L VUSB #PWR0134
 U 1 1 58B8BBBA
 P 1600 1150
-F 0 "#PWR0116" H -400 -250 50  0001 C CNN
+F 0 "#PWR0134" H -400 -250 50  0001 C CNN
 F 1 "VUSB" H 1615 1323 50  0000 C CNN
 F 2 "" H -400 -100 50  0001 C CNN
 F 3 "" H -400 -100 50  0001 C CNN
@@ -87,14 +87,14 @@ F 3 "" H -400 -100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1500 1250 1600 1250
+	1500 1250 1900 1250
 Wire Wire Line
 	1600 1250 1600 1150
 $Comp
-L GND #PWR0117
+L GND #PWR0135
 U 1 1 58B8BD69
 P 1100 1900
-F 0 "#PWR0117" H -800 50  50  0001 C CNN
+F 0 "#PWR0135" H -800 50  50  0001 C CNN
 F 1 "GND" H 1105 1727 50  0000 C CNN
 F 2 "" H -800 300 50  0001 C CNN
 F 3 "" H -800 300 50  0001 C CNN
@@ -114,7 +114,7 @@ Text HLabel 1800 1450 2    60   BiDi ~ 0
 USBD_P
 Text HLabel 1800 1550 2    60   BiDi ~ 0
 USBD_N
-Text HLabel 1550 3850 0    60   Output ~ 0
+Text HLabel 3300 3900 0    60   Output ~ 0
 CPU-~RESET
 Text HLabel 7950 5050 2    60   Output ~ 0
 900-~RESET
@@ -154,9 +154,9 @@ Text Label 9500 2600 0    60   ~ 0
 PD31
 Text HLabel 10000 2600 2    60   BiDi ~ 0
 PD31
-Text HLabel 1250 4650 2    60   BiDi ~ 0
+Text HLabel 7950 3350 2    60   BiDi ~ 0
 AUX_SDA
-Text HLabel 1250 4750 2    60   BiDi ~ 0
+Text HLabel 7950 3250 2    60   BiDi ~ 0
 AUX_SCL
 Text HLabel 4500 3300 2    60   BiDi ~ 0
 CPU_SDA
@@ -245,10 +245,10 @@ Wire Wire Line
 Text Notes 9450 4750 0    60   ~ 0
 Must be connected to open drain\n
 $Comp
-L +BATT #PWR0118
+L +BATT #PWR0136
 U 1 1 58DB91A4
 P 4950 1600
-F 0 "#PWR0118" H 3900 -1300 50  0001 C CNN
+F 0 "#PWR0136" H 3900 -1300 50  0001 C CNN
 F 1 "+BATT" H 4965 1773 50  0000 C CNN
 F 2 "" H 3900 -1150 50  0001 C CNN
 F 3 "" H 3900 -1150 50  0001 C CNN
@@ -260,10 +260,10 @@ Wire Wire Line
 Wire Wire Line
 	9500 2600 10000 2600
 $Comp
-L GND #PWR0119
+L GND #PWR0137
 U 1 1 58DD26EA
 P 4700 1400
-F 0 "#PWR0119" H 750 -2300 50  0001 C CNN
+F 0 "#PWR0137" H 750 -2300 50  0001 C CNN
 F 1 "GND" H 4705 1227 50  0000 C CNN
 F 2 "" H 750 -2050 50  0001 C CNN
 F 3 "" H 750 -2050 50  0001 C CNN
@@ -523,4 +523,153 @@ Wire Wire Line
 Wire Wire Line
 	4950 1700 4950 1600
 Connection ~ 4600 1400
+Text Label 7350 3450 0    60   ~ 0
+900-DIO-10
+Text Label 7350 3550 0    60   ~ 0
+900-DIO-11
+Text Label 7350 3650 0    60   ~ 0
+900-DIO-12
+Text Label 7350 3750 0    60   ~ 0
+900-DIO-13
+Text Label 7350 3850 0    60   ~ 0
+900-DIO-14
+Text Label 7350 3950 0    60   ~ 0
+900-DIO-15
+Wire Wire Line
+	7950 3250 7350 3250
+Wire Wire Line
+	7950 3350 7350 3350
+Wire Wire Line
+	3750 3900 3300 3900
+Text Label 3750 3800 2    60   ~ 0
+PD28
+Text Label 3750 3700 2    60   ~ 0
+PA27
+Text Label 3750 3600 2    60   ~ 0
+PA12
+Text Label 3750 3500 2    60   ~ 0
+PA11
+Text Label 3750 3400 2    60   ~ 0
+PA26
+Text Label 3750 3300 2    60   ~ 0
+PA25
+Text Label 3750 3200 2    60   ~ 0
+PC5
+Text Label 3750 3100 2    60   ~ 0
+PA24
+Text Label 3750 3000 2    60   ~ 0
+PD24
+Text Label 3750 2900 2    60   ~ 0
+PC6
+Text Label 3750 2800 2    60   ~ 0
+PD26
+Text Label 3750 2700 2    60   ~ 0
+PD25
+Text Label 7350 3050 0    60   ~ 0
+PA14
+Text Label 7350 3150 0    60   ~ 0
+PA15
+Wire Wire Line
+	9650 1800 10000 1800
+Wire Wire Line
+	10000 1900 9650 1900
+Wire Wire Line
+	10000 1400 9650 1400
+Wire Wire Line
+	10000 1300 9650 1300
+Text Label 9650 1300 0    60   ~ 0
+PA0
+Text Label 9650 1400 0    60   ~ 0
+PA1
+Text Label 9650 1800 0    60   ~ 0
+PB12
+Text Label 9650 1900 0    60   ~ 0
+PB13
+Text Label 3750 2600 2    60   ~ 0
+PB12
+Text Label 7350 2450 0    60   ~ 0
+Power-Good
+Text Label 7350 2550 0    60   ~ 0
+Power-~SHDN
+Wire Wire Line
+	7350 2650 8000 2650
+Wire Wire Line
+	8000 2650 8000 2950
+Wire Wire Line
+	8000 2950 7350 2950
+Wire Wire Line
+	8000 2850 7350 2850
+Connection ~ 8000 2850
+Wire Wire Line
+	7350 2750 8000 2750
+Connection ~ 8000 2750
+$Comp
+L GND #PWR0138
+U 1 1 58BDD19A
+P 8000 2950
+F 0 "#PWR0138" H 4050 -750 50  0001 C CNN
+F 1 "GND" H 8005 2777 50  0000 C CNN
+F 2 "" H 4050 -500 50  0001 C CNN
+F 3 "" H 4050 -500 50  0001 C CNN
+	1    8000 2950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 2200 3100 2200
+Wire Wire Line
+	3100 2200 3100 2500
+Wire Wire Line
+	3100 2500 3750 2500
+Wire Wire Line
+	3100 2400 3750 2400
+Connection ~ 3100 2400
+Wire Wire Line
+	3750 2300 3100 2300
+Connection ~ 3100 2300
+$Comp
+L GND #PWR0139
+U 1 1 58BDD20C
+P 3100 2500
+F 0 "#PWR0139" H -850 -1200 50  0001 C CNN
+F 1 "GND" H 3105 2327 50  0000 C CNN
+F 2 "" H -850 -950 50  0001 C CNN
+F 3 "" H -850 -950 50  0001 C CNN
+	1    3100 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG0140
+U 1 1 58BE5320
+P 4850 1700
+F 0 "#FLG0140" H -800 275 50  0001 C CNN
+F 1 "PWR_FLAG" H 4850 1873 50  0000 C CNN
+F 2 "" H -800 200 50  0001 C CNN
+F 3 "" H -800 200 50  0001 C CNN
+	1    4850 1700
+	-1   0    0    1   
+$EndComp
+Connection ~ 4850 1700
+$Comp
+L PWR_FLAG #FLG0141
+U 1 1 58BE5430
+P 1900 1250
+F 0 "#FLG0141" H -3750 -175 50  0001 C CNN
+F 1 "PWR_FLAG" H 1900 1424 50  0000 C CNN
+F 2 "" H -3750 -250 50  0001 C CNN
+F 3 "" H -3750 -250 50  0001 C CNN
+	1    1900 1250
+	1    0    0    -1  
+$EndComp
+Connection ~ 1600 1250
+$Comp
+L PWR_FLAG #FLG0142
+U 1 1 58BEF4A7
+P 3100 2200
+F 0 "#FLG0142" H -2550 775 50  0001 C CNN
+F 1 "PWR_FLAG" H 3100 2374 50  0000 C CNN
+F 2 "" H -2550 700 50  0001 C CNN
+F 3 "" H -2550 700 50  0001 C CNN
+	1    3100 2200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
