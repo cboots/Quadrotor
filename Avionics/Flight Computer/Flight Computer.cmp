@@ -1,4 +1,188 @@
-Cmp-Mod V01 Created by PcbNew   date = 3/4/2017 3:57:24 PM
+Cmp-Mod V01 Created by PcbNew   date = 3/7/2017 9:35:03 PM
+
+BeginCmp
+TimeStamp = 58CBDA18
+Path = /58AA09BD/58CB5CB5
+Reference = C68;
+ValeurCmp = 1u;
+IdModule  = Capacitors_SMD:C_0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 58CBD80B
+Path = /58AA09BD/58CB6B92
+Reference = C61;
+ValeurCmp = 1u;
+IdModule  = Capacitors_SMD:C_0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 58CBD7B0
+Path = /58CBBFFD
+Reference = C94;
+ValeurCmp = 1u;
+IdModule  = Capacitors_SMD:C_0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 58CBD782
+Path = /58CBE629
+Reference = C92;
+ValeurCmp = 0.47u;
+IdModule  = Capacitors_SMD:C_0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 58CBD754
+Path = /58CB9DB2
+Reference = C91;
+ValeurCmp = 1u;
+IdModule  = Capacitors_SMD:C_0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 58CBD6BE
+Path = /58AA09BD/58CB52D7
+Reference = C87;
+ValeurCmp = 1u;
+IdModule  = Capacitors_SMD:C_0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 58CBD457
+Path = /58AA09C2/58CAEBAB
+Reference = C28;
+ValeurCmp = 1u;
+IdModule  = Capacitors_SMD:C_0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 58CBD286
+Path = /58AA09C2/58CAE0AA
+Reference = C4;
+ValeurCmp = 1u;
+IdModule  = Capacitors_SMD:C_0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 58CBD249
+Path = /58CBEC69
+Reference = C93;
+ValeurCmp = 0.47u;
+IdModule  = Capacitors_SMD:C_0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 58CBD177
+Path = /58AA09C5/58CAC7A4
+Reference = C35;
+ValeurCmp = 1u;
+IdModule  = Capacitors_SMD:C_0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 58CBD14A
+Path = /58AA09C5/58B6A2AB
+Reference = C34;
+ValeurCmp = 1u;
+IdModule  = Capacitors_SMD:C_0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 58CBC9A7
+Path = /58D0B021
+Reference = U6;
+ValeurCmp = LP5521YQ;
+IdModule  = Housings_DFN_QFN:QFN-24-1EP_4x5mm_Pitch0.5mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 58CBC358
+Path = /58C9F1F2
+Reference = D3;
+ValeurCmp = CLX6D-FKB;
+IdModule  = LEDs:LED_PLCC6_3.4x3.4mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 58C84058
+Path = /58C4B3ED
+Reference = D8;
+ValeurCmp = LED-0603-GREEN;
+IdModule  = LEDs:LED_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 58C83D75
+Path = /58C4B93C
+Reference = R49;
+ValeurCmp = 10k;
+IdModule  = Resistors_SMD:R_0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 58C716D1
+Path = /58AA09C5/58C832A0
+Reference = D5;
+ValeurCmp = LED-0603-GREEN;
+IdModule  = LEDs:LED_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 58C71694
+Path = /58C46FD1
+Reference = D4;
+ValeurCmp = LED-0603-GREEN;
+IdModule  = LEDs:LED_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 58C7161A
+Path = /58AA09C2/58C87CD0
+Reference = D6;
+ValeurCmp = LED-0603-RED;
+IdModule  = LEDs:LED_0603;
+EndCmp
+
+BeginCmp
+TimeStamp = 58C687AA
+Path = /58CCCAB3
+Reference = R39;
+ValeurCmp = 10k;
+IdModule  = Resistors_SMD:R_0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 58C6862E
+Path = /58AA09C2/58C87CC6
+Reference = R47;
+ValeurCmp = 1k;
+IdModule  = Resistors_SMD:R_0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 58C685D2
+Path = /58AA09C5/58C83298
+Reference = R46;
+ValeurCmp = 1k;
+IdModule  = Resistors_SMD:R_0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 58C685A4
+Path = /58C46FCA
+Reference = R45;
+ValeurCmp = 10k;
+IdModule  = Resistors_SMD:R_0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 58BF1237
+Path = /58C0DD41
+Reference = R26;
+ValeurCmp = 1k;
+IdModule  = Resistors_SMD:R_0402;
+EndCmp
 
 BeginCmp
 TimeStamp = 58AED92C
@@ -153,14 +337,6 @@ IdModule  = Resistors_SMD:R_0402;
 EndCmp
 
 BeginCmp
-TimeStamp = 58B989A7
-Path = /58C0DD41
-Reference = R26;
-ValeurCmp = 1k;
-IdModule  = Resistors_SMD:R_0402;
-EndCmp
-
-BeginCmp
 TimeStamp = 58B98979
 Path = /58BFD165
 Reference = R27;
@@ -214,14 +390,6 @@ Path = /58BDD655
 Reference = MK1;
 ValeurCmp = Mounting_Hole;
 IdModule  = Mounting_Holes:MountingHole_2.5mm;
-EndCmp
-
-BeginCmp
-TimeStamp = 58BC777F
-Path = /58AA09BD/58B9B2A3
-Reference = C87;
-ValeurCmp = 1u;
-IdModule  = Capacitors_SMD:C_0603;
 EndCmp
 
 BeginCmp
@@ -342,14 +510,6 @@ Path = /58AA09BD/58B7D0E1
 Reference = C79;
 ValeurCmp = 0.1u;
 IdModule  = Capacitors_SMD:C_0402;
-EndCmp
-
-BeginCmp
-TimeStamp = 58B97B88
-Path = /58AA09BD/58B864BD
-Reference = C68;
-ValeurCmp = 1u;
-IdModule  = Capacitors_SMD:C_0603;
 EndCmp
 
 BeginCmp
@@ -497,14 +657,6 @@ IdModule  = Capacitors_SMD:C_0402;
 EndCmp
 
 BeginCmp
-TimeStamp = 58BB1C24
-Path = /58AA09BD/58B77F6D
-Reference = C61;
-ValeurCmp = 1u;
-IdModule  = Capacitors_SMD:C_0603;
-EndCmp
-
-BeginCmp
 TimeStamp = 58BB0EB8
 Path = /58AA09BD/58B8958C
 Reference = R20;
@@ -601,14 +753,6 @@ IdModule  = Capacitors_SMD:C_0603;
 EndCmp
 
 BeginCmp
-TimeStamp = 58B67CC9
-Path = /58AA09C2/58B4D4AD
-Reference = C4;
-ValeurCmp = 1u;
-IdModule  = Capacitors_SMD:C_0603;
-EndCmp
-
-BeginCmp
 TimeStamp = 58B67C9C
 Path = /58AA09C5/58B6ED11
 Reference = C39;
@@ -621,22 +765,6 @@ TimeStamp = 58B67C6F
 Path = /58AA09C5/58B6E86F
 Reference = C38;
 ValeurCmp = 2.2u;
-IdModule  = Capacitors_SMD:C_0603;
-EndCmp
-
-BeginCmp
-TimeStamp = 58B67C42
-Path = /58AA09C5/58B6A2AB
-Reference = C34;
-ValeurCmp = 1u;
-IdModule  = Capacitors_SMD:C_0603;
-EndCmp
-
-BeginCmp
-TimeStamp = 58B67C15
-Path = /58AA09C2/58B3BF45
-Reference = C28;
-ValeurCmp = 1u;
 IdModule  = Capacitors_SMD:C_0603;
 EndCmp
 
@@ -802,7 +930,7 @@ EndCmp
 
 BeginCmp
 TimeStamp = 58B2DF9C
-Path = /58AA09D0/58B3E15F
+Path = /58AA09D0/58BE66D3
 Reference = U7;
 ValeurCmp = LPS25HB;
 IdModule  = Housings_LGA:HLGA-10L_2.5x2.5mm_Pitch0.6mm;
@@ -962,7 +1090,7 @@ EndCmp
 
 BeginCmp
 TimeStamp = 58AC87CF
-Path = /58AA09CD/58AB8A07
+Path = /58AA09CD/58BF5C45
 Reference = U8;
 ValeurCmp = MAX17243;
 IdModule  = Housings_DFN_QFN:QFN-20-1EP_5x5mm_Pitch0.65mm;
@@ -1316,16 +1444,8 @@ BeginCmp
 TimeStamp = 58C493CE
 Path = /58AA09C2/58B4BCEA
 Reference = R4;
-ValeurCmp = 3.35;
+ValeurCmp = 3.3k;
 IdModule  = Resistors_SMD:R_0402;
-EndCmp
-
-BeginCmp
-TimeStamp = 58C4E1A7
-Path = /58AA09C5/58B65E13
-Reference = C35;
-ValeurCmp = 1u;
-IdModule  = Capacitors_SMD:C_0603;
 EndCmp
 
 BeginCmp
