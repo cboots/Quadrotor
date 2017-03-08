@@ -833,6 +833,7 @@ F 0 "D3" V 4896 6570 50  0000 R CNN
 F 1 "CLX6D-FKB" V 4805 6570 50  0000 R CNN
 F 2 "LEDs:LED_PLCC6_3.4x3.4mm" H 200 150 50  0001 C CNN
 F 3 "http://www.cree.com/~/media/Files/Cree/LED-Components-and-Modules/HB/Data-Sheets/1278-CLX6D-FKB.pdf" H 200 150 50  0001 C CNN
+F 4 "CLX6D-FKB-CMPQSGKBB7A363" V 4850 6900 60  0001 C CNN "Manufacturer Part Number"
 	1    4850 6900
 	0    -1   -1   0   
 $EndComp
