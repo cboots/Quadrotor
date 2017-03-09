@@ -66,17 +66,6 @@ Wire Wire Line
 Text Label 5950 3450 0    60   ~ 0
 RF_GPS_ANT
 $Comp
-L MAX-M8W U9
-U 1 1 58AFAC85
-P 4550 3450
-F 0 "U9" H 4950 4100 50  0000 L CNN
-F 1 "MAX-M8W" H 4000 4100 50  0000 L CNN
-F 2 "RF_Modules:U-BLOX-MAX" H 400 -200 50  0001 C CNN
-F 3 "https://www.u-blox.com/sites/default/files/MAX-M8-FW3_DataSheet_%28UBX-15031506%29.pdf" H -300 -1350 50  0001 C CNN
-	1    4550 3450
-	1    0    0    -1  
-$EndComp
-$Comp
 L R R14
 U 1 1 58B486B6
 P 5150 2600
@@ -207,8 +196,6 @@ $EndComp
 Wire Wire Line
 	3700 2200 3700 2150
 Connection ~ 4150 2150
-NoConn ~ 3850 3250
-NoConn ~ 3850 3150
 NoConn ~ 3850 3750
 $Comp
 L GND #PWR0121
@@ -250,4 +237,23 @@ F 3 "" H -450 450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 4800 2600
+Text HLabel 3250 3250 0    60   Input ~ 0
+GPS-SCL
+Text HLabel 3250 3150 0    60   BiDi ~ 0
+GPS-SDA
+$Comp
+L MAX-M8W U9
+U 1 1 58AFAC85
+P 4550 3450
+F 0 "U9" H 4950 4100 50  0000 L CNN
+F 1 "MAX-M8W" H 4000 4100 50  0000 L CNN
+F 2 "RF_Modules:U-BLOX-MAX" H 400 -200 50  0001 C CNN
+F 3 "https://www.u-blox.com/sites/default/files/MAX-M8-FW3_DataSheet_%28UBX-15031506%29.pdf" H -300 -1350 50  0001 C CNN
+	1    4550 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 3150 3850 3150
+Wire Wire Line
+	3850 3250 3250 3250
 $EndSCHEMATC
