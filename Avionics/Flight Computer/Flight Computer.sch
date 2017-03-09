@@ -524,9 +524,13 @@ Wire Wire Line
 Wire Wire Line
 	5450 2300 6650 2300
 Wire Wire Line
-	2150 4500 3800 4500
+	2150 4500 2200 4500
 Wire Wire Line
-	3800 4600 2150 4600
+	2200 4500 3800 4500
+Wire Wire Line
+	3800 4600 3200 4600
+Wire Wire Line
+	3200 4600 2150 4600
 Wire Wire Line
 	2150 4700 3800 4700
 Wire Wire Line
@@ -542,11 +546,15 @@ Wire Wire Line
 Wire Wire Line
 	6650 2300 6650 2200
 Wire Wire Line
-	3550 4050 3800 4050
+	3550 4050 3700 4050
+Wire Wire Line
+	3700 4050 3800 4050
 Wire Wire Line
 	3550 3950 3700 3950
 Wire Wire Line
-	3700 3850 3700 4050
+	3700 3850 3700 3950
+Wire Wire Line
+	3700 3950 3700 4050
 Connection ~ 3700 4050
 Wire Wire Line
 	3700 3850 3550 3850
@@ -566,11 +574,15 @@ Wire Wire Line
 Wire Wire Line
 	10100 5200 10350 5200
 Wire Wire Line
-	8000 4900 8750 4900
+	8000 4900 8150 4900
+Wire Wire Line
+	8150 4900 8750 4900
 Wire Wire Line
 	8000 4800 8150 4800
 Wire Wire Line
-	8150 4700 8150 4900
+	8150 4700 8150 4800
+Wire Wire Line
+	8150 4800 8150 4900
 Connection ~ 8150 4900
 Wire Wire Line
 	8150 4700 8000 4700
@@ -614,11 +626,15 @@ Wire Bus Line
 Wire Bus Line
 	7850 3900 8750 3900
 Wire Wire Line
-	8000 3200 8750 3200
+	8000 3200 8150 3200
+Wire Wire Line
+	8150 3200 8750 3200
 Wire Wire Line
 	8000 3100 8150 3100
 Wire Wire Line
-	8150 3000 8150 3200
+	8150 3000 8150 3100
+Wire Wire Line
+	8150 3100 8150 3200
 Connection ~ 8150 3200
 Wire Wire Line
 	8150 3000 8000 3000
@@ -850,9 +866,13 @@ Wire Wire Line
 Wire Wire Line
 	4650 7100 4650 7200
 Wire Wire Line
-	4650 7200 5050 7200
+	4650 7200 4850 7200
 Wire Wire Line
-	4850 7100 4850 7250
+	4850 7200 5050 7200
+Wire Wire Line
+	4850 7100 4850 7200
+Wire Wire Line
+	4850 7200 4850 7250
 Connection ~ 4850 7200
 Wire Wire Line
 	5050 7200 5050 7100
@@ -883,7 +903,9 @@ F 7 "0402" H 1815 5559 60  0001 L CNN "Package"
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1200 5500 2150 5500
+	1200 5500 1700 5500
+Wire Wire Line
+	1700 5500 2150 5500
 $Comp
 L GND #PWR010
 U 1 1 58CBADE2
@@ -1006,7 +1028,13 @@ F 3 "" H -800 350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1800 6450 1800 7400
+	1800 6450 1800 6650
+Wire Wire Line
+	1800 6650 1800 6950
+Wire Wire Line
+	1800 6950 1800 7050
+Wire Wire Line
+	1800 7050 1800 7400
 Wire Wire Line
 	1800 6950 1850 6950
 Wire Wire Line
@@ -1043,4 +1071,60 @@ Wire Wire Line
 	7050 3950 7550 3950
 Wire Wire Line
 	7050 4050 7550 4050
+$Comp
+L R R?
+U 1 1 58D60CF9
+P 2400 4400
+F 0 "R?" V 2450 4250 50  0000 C CNN
+F 1 "DNP" V 2400 4400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V -5050 2750 50  0001 C CNN
+F 3 "" V -4770 2750 50  0001 C CNN
+F 4 "1%" V 2550 4700 60  0001 C CNN "Tolerance"
+F 5 "16V" V -4600 2750 60  0001 C CNN "Voltage"
+F 6 "0.062W" V -4500 2750 60  0001 C CNN "Power"
+F 7 "Thin Film" V -4400 2750 60  0001 C CNN "Material"
+F 8 "0402" V -4950 2750 60  0001 C CNN "Package"
+	1    2400 4400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 58D60FCF
+P 3450 4400
+F 0 "R?" V 3500 4600 50  0000 C CNN
+F 1 "DNP" V 3450 4400 50  0000 C CNN
+F 2 "Resistors_SMD:R_0402" V -4000 2750 50  0001 C CNN
+F 3 "" V -3720 2750 50  0001 C CNN
+F 4 "1%" V 3600 4700 60  0001 C CNN "Tolerance"
+F 5 "16V" V -3550 2750 60  0001 C CNN "Voltage"
+F 6 "0.062W" V -3450 2750 60  0001 C CNN "Power"
+F 7 "Thin Film" V -3350 2750 60  0001 C CNN "Material"
+F 8 "0402" V -3900 2750 60  0001 C CNN "Package"
+	1    3450 4400
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2200 4500 2200 4400
+Wire Wire Line
+	2200 4400 2250 4400
+Connection ~ 2200 4500
+Wire Wire Line
+	3200 4600 3200 4400
+Wire Wire Line
+	3200 4400 3300 4400
+Connection ~ 3200 4600
+Wire Wire Line
+	3600 4400 3600 4300
+Wire Wire Line
+	3600 4300 3250 4300
+Wire Wire Line
+	2550 4400 2650 4400
+Wire Wire Line
+	2650 4400 2650 4300
+Wire Wire Line
+	2650 4300 2300 4300
+Text Label 2300 4300 0    60   ~ 0
+CPU-SCK
+Text Label 3250 4300 0    60   ~ 0
+CPU-SDA
 $EndSCHEMATC
