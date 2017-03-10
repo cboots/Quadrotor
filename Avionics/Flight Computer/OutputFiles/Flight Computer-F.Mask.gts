@@ -1,11 +1,11 @@
 G04 #@! TF.GenerationSoftware,KiCad,Pcbnew,(2017-02-19 revision a416f3a4e)-master*
-G04 #@! TF.CreationDate,2017-03-09T22:42:25-08:00*
+G04 #@! TF.CreationDate,2017-03-09T22:49:21-08:00*
 G04 #@! TF.ProjectId,Flight Computer,466C6967687420436F6D70757465722E,rev?*
 G04 #@! TF.FileFunction,Soldermask,Top*
 G04 #@! TF.FilePolarity,Negative*
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW (2017-02-19 revision a416f3a4e)-master) date 03/09/17 22:42:25*
+G04 Created by KiCad (PCBNEW (2017-02-19 revision a416f3a4e)-master) date 03/09/17 22:49:21*
 %MOMM*%
 %LPD*%
 G01*
