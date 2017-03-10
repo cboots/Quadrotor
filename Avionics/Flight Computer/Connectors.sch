@@ -55,7 +55,7 @@ L CONN_02X40 J1
 U 1 1 58B54687
 P 4000 3350
 F 0 "J1" H 4000 5515 50  0000 C CNN
-F 1 "ERF8-040-05.0-S-DV-K" H 4000 5424 50  0000 C CNN
+F 1 "ERF8-040-05.0-S-DV-K-TR" H 4000 5424 50  0000 C CNN
 F 2 "Connectors_Samtec:ERF8-040-05.0-S-DV-K" H -550 200 50  0001 C CNN
 F 3 "http://suddendocs.samtec.com/prints/erf8-xxx-xx.x-x-dv-xxxx-tr-mkt.pdf" H -550 200 50  0001 C CNN
 	1    4000 3350
@@ -68,7 +68,7 @@ L CONN_02X40 J2
 U 1 1 58B24420
 P 7100 3300
 F 0 "J2" H 7100 5465 50  0000 C CNN
-F 1 "ERF8-040-05.0-S-DV-K" H 7100 5374 50  0000 C CNN
+F 1 "ERF8-040-05.0-S-DV-K-TR" H 7100 5374 50  0000 C CNN
 F 2 "Connectors_Samtec:ERF8-040-05.0-S-DV-K" H 2550 150 50  0001 C CNN
 F 3 "http://suddendocs.samtec.com/prints/erf8-xxx-xx.x-x-dv-xxxx-tr-mkt.pdf" H 2550 150 50  0001 C CNN
 	1    7100 3300
