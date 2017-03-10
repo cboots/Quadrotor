@@ -1,0 +1,4626 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>D:\KicadProjects\Quadrotor\Avionics\Flight Computer\Flight Computer.sch</source>
+    <date>3/4/2017 12:32:40 PM</date>
+    <tool>Eeschema (2017-02-19 revision a416f3a4e)-master</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Flight Computer.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="2" name="/GNC_Processor/" tstamps="/58AA09BD/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>AtSam.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="3" name="/900MHz Radio/" tstamps="/58AA09C2/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>RF900MHz.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="4" name="/2.4 GHz Radio/" tstamps="/58AA09C5/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>RF2G4Hz.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="5" name="/GPS/" tstamps="/58AA09C8/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>GPS.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="6" name="/Power/" tstamps="/58AA09CD/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Power.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="7" name="/Sensors/" tstamps="/58AA09D0/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Sensors.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+    <sheet number="8" name="/Connectors/" tstamps="/58B5360A/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>Connectors.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="MK1">
+      <value>Mounting_Hole</value>
+      <footprint>Mounting_Holes:MountingHole_2.5mm</footprint>
+      <libsource lib="mechanical" part="Mounting_Hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58BDD655</tstamp>
+    </comp>
+    <comp ref="MK2">
+      <value>Mounting_Hole</value>
+      <footprint>Mounting_Holes:MountingHole_2.5mm</footprint>
+      <libsource lib="mechanical" part="Mounting_Hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58BDE299</tstamp>
+    </comp>
+    <comp ref="R27">
+      <value>1k</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Voltage">50V</field>
+        <field name="Power">0.062W</field>
+        <field name="Material">Thin Film</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58BFD165</tstamp>
+    </comp>
+    <comp ref="R28">
+      <value>1k</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Voltage">50V</field>
+        <field name="Power">0.062W</field>
+        <field name="Material">Thin Film</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58BFD565</tstamp>
+    </comp>
+    <comp ref="R26">
+      <value>1k</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Voltage">50V</field>
+        <field name="Power">0.062W</field>
+        <field name="Material">Thin Film</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58C0DD41</tstamp>
+    </comp>
+    <comp ref="R25">
+      <value>1k</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Voltage">50V</field>
+        <field name="Power">0.062W</field>
+        <field name="Material">Thin Film</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58C11226</tstamp>
+    </comp>
+    <comp ref="R24">
+      <value>1k</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Voltage">50V</field>
+        <field name="Power">0.062W</field>
+        <field name="Material">Thin Film</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58C113C8</tstamp>
+    </comp>
+    <comp ref="R34">
+      <value>1k</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Voltage">50V</field>
+        <field name="Power">0.062W</field>
+        <field name="Material">Thin Film</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58C4A4F7</tstamp>
+    </comp>
+    <comp ref="R33">
+      <value>1k</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Voltage">50V</field>
+        <field name="Power">0.062W</field>
+        <field name="Material">Thin Film</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58C4A502</tstamp>
+    </comp>
+    <comp ref="R32">
+      <value>1k</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Voltage">50V</field>
+        <field name="Power">0.062W</field>
+        <field name="Material">Thin Film</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58C4A50D</tstamp>
+    </comp>
+    <comp ref="R31">
+      <value>1k</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Voltage">50V</field>
+        <field name="Power">0.062W</field>
+        <field name="Material">Thin Film</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58C89A2C</tstamp>
+    </comp>
+    <comp ref="R30">
+      <value>1k</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Voltage">50V</field>
+        <field name="Power">0.062W</field>
+        <field name="Material">Thin Film</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58C89A37</tstamp>
+    </comp>
+    <comp ref="R29">
+      <value>1k</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Voltage">50V</field>
+        <field name="Power">0.062W</field>
+        <field name="Material">Thin Film</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>58C89A42</tstamp>
+    </comp>
+    <comp ref="U12">
+      <value>ATSAME70Q21A-AN</value>
+      <footprint>Housings_QFP:LQFP-144_20x20mm_Pitch0.5mm</footprint>
+      <datasheet>http://www.atmel.com/Images/Atmel-11296-32-bit-Cortex-M7-Microcontroller-SAM-E70Q-SAM-E70N-SAM-E70J_Datasheet.pdf</datasheet>
+      <libsource lib="atmel" part="ATSAME70Q21A-AN"/>
+      <sheetpath names="/GNC_Processor/" tstamps="/58AA09BD/"/>
+      <tstamp>58B40577</tstamp>
+    </comp>
+    <comp ref="R20">
+      <value>5.62k</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Voltage">50V</field>
+        <field name="Power">0.062W</field>
+        <field name="Material">Thin Film</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/GNC_Processor/" tstamps="/58AA09BD/"/>
+      <tstamp>58B8958C</tstamp>
+    </comp>
+    <comp ref="R22">
+      <value>15k</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Voltage">50V</field>
+        <field name="Power">0.062W</field>
+        <field name="Material">Thin Film</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/GNC_Processor/" tstamps="/58AA09BD/"/>
+      <tstamp>58B89D3D</tstamp>
+    </comp>
+    <comp ref="R21">
+      <value>22k</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Voltage">50V</field>
+        <field name="Power">0.062W</field>
+        <field name="Material">Thin Film</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/GNC_Processor/" tstamps="/58AA09BD/"/>
+      <tstamp>58B89EE5</tstamp>
+    </comp>
+    <comp ref="Y1">
+      <value>9HT11-32.768KDZB-T</value>
+      <footprint>Crystals:Crystal_SMD_2012-2pin_2.0x1.2mm</footprint>
+      <datasheet>http://www.txccorp.com/download/products/quartz_crystals/2015TXC_9HT11_30.pdf</datasheet>
+      <libsource lib="device" part="Crystal"/>
+      <sheetpath names="/GNC_Processor/" tstamps="/58AA09BD/"/>
+      <tstamp>58B9AEA0</tstamp>
+    </comp>
+    <comp ref="C62">
+      <value>12p</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">C0G</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/GNC_Processor/" tstamps="/58AA09BD/"/>
+      <tstamp>58B9AEAB</tstamp>
+    </comp>
+    <comp ref="C63">
+      <value>12p</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">C0G</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/GNC_Processor/" tstamps="/58AA09BD/"/>
+      <tstamp>58B9AEB6</tstamp>
+    </comp>
+    <comp ref="Y2">
+      <value>7V-16.000MAHJ-T</value>
+      <footprint>Crystals:Crystal_SMD_3225-4pin_3.2x2.5mm</footprint>
+      <datasheet>http://www.txccorp.com/download/products/quartz_crystals/2015TXC_7V_27.pdf</datasheet>
+      <libsource lib="device" part="Crystal_GND24"/>
+      <sheetpath names="/GNC_Processor/" tstamps="/58AA09BD/"/>
+      <tstamp>58BA6743</tstamp>
+    </comp>
+    <comp ref="C64">
+      <value>12p</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">C0G</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/GNC_Processor/" tstamps="/58AA09BD/"/>
+      <tstamp>58BA68A6</tstamp>
+    </comp>
+    <comp ref="C65">
+      <value>12p</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">C0G</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/GNC_Processor/" tstamps="/58AA09BD/"/>
+      <tstamp>58BA68B0</tstamp>
+    </comp>
+    <comp ref="C60">
+      <value>12p</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">C0G</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/GNC_Processor/" tstamps="/58AA09BD/"/>
+      <tstamp>58B7775D</tstamp>
+    </comp>
+    <comp ref="C61">
+      <value>1u</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0603</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/GNC_Processor/" tstamps="/58AA09BD/"/>
+      <tstamp>58B77F6D</tstamp>
+    </comp>
+    <comp ref="C85">
+      <value>4.7u</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="Voltage">16V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X5R</field>
+        <field name="Package">0603</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/GNC_Processor/" tstamps="/58AA09BD/"/>
+      <tstamp>58B7B0E2</tstamp>
+    </comp>
+    <comp ref="C78">
+      <value>0.1u</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/GNC_Processor/" tstamps="/58AA09BD/"/>
+      <tstamp>58B7CB29</tstamp>
+    </comp>
+    <comp ref="C84">
+      <value>0.1u</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/GNC_Processor/" tstamps="/58AA09BD/"/>
+      <tstamp>58B7CE2B</tstamp>
+    </comp>
+    <comp ref="C79">
+      <value>0.1u</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/GNC_Processor/" tstamps="/58AA09BD/"/>
+      <tstamp>58B7D0E1</tstamp>
+    </comp>
+    <comp ref="C80">
+      <value>0.1u</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/GNC_Processor/" tstamps="/58AA09BD/"/>
+      <tstamp>58B7D321</tstamp>
+    </comp>
+    <comp ref="C81">
+      <value>0.1u</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/GNC_Processor/" tstamps="/58AA09BD/"/>
+      <tstamp>58B7D533</tstamp>
+    </comp>
+    <comp ref="C82">
+      <value>0.1u</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/GNC_Processor/" tstamps="/58AA09BD/"/>
+      <tstamp>58B7D57F</tstamp>
+    </comp>
+    <comp ref="L19">
+      <value>MMZ1005Y471CTD25</value>
+      <footprint>Inductors_SMD:L_0402</footprint>
+      <datasheet>https://product.tdk.com/info/en/catalog/datasheets/beads_automotive_signal_mmz1005_en.pdf</datasheet>
+      <libsource lib="device" part="L"/>
+      <sheetpath names="/GNC_Processor/" tstamps="/58AA09BD/"/>
+      <tstamp>58B7F677</tstamp>
+    </comp>
+    <comp ref="L20">
+      <value>MMZ1005Y471CTD25</value>
+      <footprint>Inductors_SMD:L_0402</footprint>
+      <datasheet>https://product.tdk.com/info/en/catalog/datasheets/beads_automotive_signal_mmz1005_en.pdf</datasheet>
+      <libsource lib="device" part="L"/>
+      <sheetpath names="/GNC_Processor/" tstamps="/58AA09BD/"/>
+      <tstamp>58B807E6</tstamp>
+    </comp>
+    <comp ref="C72">
+      <value>0.1u</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/GNC_Processor/" tstamps="/58AA09BD/"/>
+      <tstamp>58B82086</tstamp>
+    </comp>
+    <comp ref="C74">
+      <value>0.1u</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/GNC_Processor/" tstamps="/58AA09BD/"/>
+      <tstamp>58B823A4</tstamp>
+    </comp>
+    <comp ref="C69">
+      <value>0.1u</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/GNC_Processor/" tstamps="/58AA09BD/"/>
+      <tstamp>58B8355C</tstamp>
+    </comp>
+    <comp ref="C73">
+      <value>0.1u</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/GNC_Processor/" tstamps="/58AA09BD/"/>
+      <tstamp>58B83566</tstamp>
+    </comp>
+    <comp ref="C75">
+      <value>0.1u</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/GNC_Processor/" tstamps="/58AA09BD/"/>
+      <tstamp>58B83570</tstamp>
+    </comp>
+    <comp ref="C76">
+      <value>0.1u</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/GNC_Processor/" tstamps="/58AA09BD/"/>
+      <tstamp>58B8357A</tstamp>
+    </comp>
+    <comp ref="C77">
+      <value>0.1u</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/GNC_Processor/" tstamps="/58AA09BD/"/>
+      <tstamp>58B83584</tstamp>
+    </comp>
+    <comp ref="C68">
+      <value>1u</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0603</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/GNC_Processor/" tstamps="/58AA09BD/"/>
+      <tstamp>58B864BD</tstamp>
+    </comp>
+    <comp ref="C57">
+      <value>0.1u</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/GNC_Processor/" tstamps="/58AA09BD/"/>
+      <tstamp>58B86DE1</tstamp>
+    </comp>
+    <comp ref="C83">
+      <value>0.1u</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/GNC_Processor/" tstamps="/58AA09BD/"/>
+      <tstamp>58B89F6A</tstamp>
+    </comp>
+    <comp ref="C86">
+      <value>4.7u</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="Voltage">16V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X5R</field>
+        <field name="Package">0603</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/GNC_Processor/" tstamps="/58AA09BD/"/>
+      <tstamp>58B8D163</tstamp>
+    </comp>
+    <comp ref="R23">
+      <value>2.2</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Voltage">50V</field>
+        <field name="Power">0.062W</field>
+        <field name="Material">Thin Film</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/GNC_Processor/" tstamps="/58AA09BD/"/>
+      <tstamp>58B8EDF4</tstamp>
+    </comp>
+    <comp ref="L21">
+      <value>LQM21FN100M70L</value>
+      <footprint>Inductors_SMD:L_0805</footprint>
+      <datasheet>http://search.murata.co.jp/Ceramy/image/img/PDF/ENG/L0075S0097LQM21F_70.pdf</datasheet>
+      <libsource lib="device" part="L"/>
+      <sheetpath names="/GNC_Processor/" tstamps="/58AA09BD/"/>
+      <tstamp>58B8FB2B</tstamp>
+    </comp>
+    <comp ref="C87">
+      <value>1u</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0603</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/GNC_Processor/" tstamps="/58AA09BD/"/>
+      <tstamp>58B9B2A3</tstamp>
+    </comp>
+    <comp ref="TP1">
+      <value>TST</value>
+      <footprint>Measurement_Points:Measurement_Point_Round-SMD-Pad_Very_Small</footprint>
+      <libsource lib="device" part="TEST"/>
+      <sheetpath names="/GNC_Processor/" tstamps="/58AA09BD/"/>
+      <tstamp>58B9E01E</tstamp>
+    </comp>
+    <comp ref="TP3">
+      <value>JTAGSEL</value>
+      <footprint>Measurement_Points:Measurement_Point_Round-SMD-Pad_Very_Small</footprint>
+      <libsource lib="device" part="TEST"/>
+      <sheetpath names="/GNC_Processor/" tstamps="/58AA09BD/"/>
+      <tstamp>58B9E188</tstamp>
+    </comp>
+    <comp ref="TP2">
+      <value>ERASE</value>
+      <footprint>Measurement_Points:Measurement_Point_Round-SMD-Pad_Very_Small</footprint>
+      <libsource lib="device" part="TEST"/>
+      <sheetpath names="/GNC_Processor/" tstamps="/58AA09BD/"/>
+      <tstamp>58B9E28D</tstamp>
+    </comp>
+    <comp ref="C59">
+      <value>0.01u</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/GNC_Processor/" tstamps="/58AA09BD/"/>
+      <tstamp>58C25D8A</tstamp>
+    </comp>
+    <comp ref="R37">
+      <value>100k</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Voltage">50V</field>
+        <field name="Power">0.062W</field>
+        <field name="Material">Thin Film</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/GNC_Processor/" tstamps="/58AA09BD/"/>
+      <tstamp>58DCF8E7</tstamp>
+    </comp>
+    <comp ref="R38">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Voltage">50V</field>
+        <field name="Power">0.062W</field>
+        <field name="Material">Thin Film</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/GNC_Processor/" tstamps="/58AA09BD/"/>
+      <tstamp>58DCF9C2</tstamp>
+    </comp>
+    <comp ref="J4">
+      <value>734120110</value>
+      <footprint>Connectors_Molex:Molex_Microcoaxial_RF</footprint>
+      <datasheet>http://www.molex.com/pdm_docs/sd/734120110_sd.pdf</datasheet>
+      <libsource lib="conn" part="CONN_COAXIAL"/>
+      <sheetpath names="/900MHz Radio/" tstamps="/58AA09C2/"/>
+      <tstamp>58AA1973</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>CC1190RGVR</value>
+      <footprint>Housings_DFN_QFN:QFN-16-1EP_4x4mm_Pitch0.65mm</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/cc1190.pdf</datasheet>
+      <libsource lib="rfcom" part="CC1190RGVR"/>
+      <sheetpath names="/900MHz Radio/" tstamps="/58AA09C2/"/>
+      <tstamp>58AA1AC4</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>CC1310F128RGZR</value>
+      <footprint>Housings_DFN_QFN:QFN-48-1EP_7x7mm_Pitch0.5mm</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/cc1310.pdf</datasheet>
+      <libsource lib="rfcom" part="CC1310F128RGZR"/>
+      <sheetpath names="/900MHz Radio/" tstamps="/58AA09C2/"/>
+      <tstamp>58AA1B95</tstamp>
+    </comp>
+    <comp ref="L1">
+      <value>22n</value>
+      <footprint>Inductors_SMD:L_0603</footprint>
+      <libsource lib="device" part="L"/>
+      <sheetpath names="/900MHz Radio/" tstamps="/58AA09C2/"/>
+      <tstamp>58AA27A9</tstamp>
+    </comp>
+    <comp ref="L2">
+      <value>7.5n</value>
+      <footprint>Inductors_SMD:L_0402</footprint>
+      <libsource lib="device" part="L"/>
+      <sheetpath names="/900MHz Radio/" tstamps="/58AA09C2/"/>
+      <tstamp>58AA2B17</tstamp>
+    </comp>
+    <comp ref="L3">
+      <value>2.2n</value>
+      <footprint>Inductors_SMD:L_0402</footprint>
+      <libsource lib="device" part="L"/>
+      <sheetpath names="/900MHz Radio/" tstamps="/58AA09C2/"/>
+      <tstamp>58AA3388</tstamp>
+    </comp>
+    <comp ref="L4">
+      <value>9.1n</value>
+      <footprint>Inductors_SMD:L_0402</footprint>
+      <libsource lib="device" part="L"/>
+      <sheetpath names="/900MHz Radio/" tstamps="/58AA09C2/"/>
+      <tstamp>58AA3558</tstamp>
+    </comp>
+    <comp ref="L15">
+      <value>BLM18HE152SN1</value>
+      <footprint>Inductors_SMD:L_0603</footprint>
+      <libsource lib="device" part="L"/>
+      <sheetpath names="/900MHz Radio/" tstamps="/58AA09C2/"/>
+      <tstamp>58AAA5BC</tstamp>
+    </comp>
+    <comp ref="MP1">
+      <value>BMI-S-201-F</value>
+      <footprint>Shielding_Cabinets:Laird_Technologies_BMI-S-201-F_13.66x12.70mm</footprint>
+      <libsource lib="device" part="RF_Shield_Two_Pieces"/>
+      <sheetpath names="/900MHz Radio/" tstamps="/58AA09C2/"/>
+      <tstamp>58AB299F</tstamp>
+    </comp>
+    <comp ref="L8">
+      <value>6.8u</value>
+      <footprint>Inductors_SMD:L_0402</footprint>
+      <libsource lib="device" part="L"/>
+      <sheetpath names="/900MHz Radio/" tstamps="/58AA09C2/"/>
+      <tstamp>58AF0B28</tstamp>
+    </comp>
+    <comp ref="L14">
+      <value>22n</value>
+      <footprint>Inductors_SMD:L_0603</footprint>
+      <libsource lib="device" part="L"/>
+      <sheetpath names="/900MHz Radio/" tstamps="/58AA09C2/"/>
+      <tstamp>58AFE5F8</tstamp>
+    </comp>
+    <comp ref="FL1">
+      <value>SF2098H</value>
+      <footprint>SMD_Packages:SM2016-4</footprint>
+      <datasheet>http://wireless.murata.com/RFM/data/sf2098h.pdf</datasheet>
+      <libsource lib="rfcom" part="SF2098H"/>
+      <sheetpath names="/900MHz Radio/" tstamps="/58AA09C2/"/>
+      <tstamp>58B42A1D</tstamp>
+    </comp>
+    <comp ref="L12">
+      <value>10n</value>
+      <footprint>Inductors_SMD:L_0402</footprint>
+      <libsource lib="device" part="L"/>
+      <sheetpath names="/900MHz Radio/" tstamps="/58AA09C2/"/>
+      <tstamp>58B31E99</tstamp>
+    </comp>
+    <comp ref="L13">
+      <value>2.2n</value>
+      <footprint>Inductors_SMD:L_0402</footprint>
+      <libsource lib="device" part="L"/>
+      <sheetpath names="/900MHz Radio/" tstamps="/58AA09C2/"/>
+      <tstamp>58B32BBA</tstamp>
+    </comp>
+    <comp ref="L18">
+      <value>10n</value>
+      <footprint>Inductors_SMD:L_0402</footprint>
+      <libsource lib="device" part="L"/>
+      <sheetpath names="/900MHz Radio/" tstamps="/58AA09C2/"/>
+      <tstamp>58B32CDF</tstamp>
+    </comp>
+    <comp ref="C28">
+      <value>1u</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0603</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/900MHz Radio/" tstamps="/58AA09C2/"/>
+      <tstamp>58B3BF45</tstamp>
+    </comp>
+    <comp ref="C18">
+      <value>12p</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">C0G</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/900MHz Radio/" tstamps="/58AA09C2/"/>
+      <tstamp>58B3DB62</tstamp>
+    </comp>
+    <comp ref="C26">
+      <value>12p</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">C0G</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/900MHz Radio/" tstamps="/58AA09C2/"/>
+      <tstamp>58B3E395</tstamp>
+    </comp>
+    <comp ref="C15">
+      <value>12p</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">C0G</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/900MHz Radio/" tstamps="/58AA09C2/"/>
+      <tstamp>58B3E693</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Voltage">50V</field>
+        <field name="Power">0.062W</field>
+        <field name="Material">Thin Film</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/900MHz Radio/" tstamps="/58AA09C2/"/>
+      <tstamp>58B3F8EB</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Voltage">50V</field>
+        <field name="Power">0.062W</field>
+        <field name="Material">Thin Film</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/900MHz Radio/" tstamps="/58AA09C2/"/>
+      <tstamp>58B40A66</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Voltage">50V</field>
+        <field name="Power">0.062W</field>
+        <field name="Material">Thin Film</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/900MHz Radio/" tstamps="/58AA09C2/"/>
+      <tstamp>58B40ADC</tstamp>
+    </comp>
+    <comp ref="C14">
+      <value>1p</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">C0G</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/900MHz Radio/" tstamps="/58AA09C2/"/>
+      <tstamp>58B4147C</tstamp>
+    </comp>
+    <comp ref="C21">
+      <value>47p</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">C0G</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/900MHz Radio/" tstamps="/58AA09C2/"/>
+      <tstamp>58B41F4E</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>3.3p</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">C0G</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/900MHz Radio/" tstamps="/58AA09C2/"/>
+      <tstamp>58B42A49</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>7.5p</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">C0G</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/900MHz Radio/" tstamps="/58AA09C2/"/>
+      <tstamp>58B438D9</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>DNP</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">C0G</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/900MHz Radio/" tstamps="/58AA09C2/"/>
+      <tstamp>58B43BBD</tstamp>
+    </comp>
+    <comp ref="C13">
+      <value>47p</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">C0G</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/900MHz Radio/" tstamps="/58AA09C2/"/>
+      <tstamp>58B448A5</tstamp>
+    </comp>
+    <comp ref="C25">
+      <value>0.01u</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/900MHz Radio/" tstamps="/58AA09C2/"/>
+      <tstamp>58B48727</tstamp>
+    </comp>
+    <comp ref="C17">
+      <value>12p</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">C0G</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/900MHz Radio/" tstamps="/58AA09C2/"/>
+      <tstamp>58B49962</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value>47</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Voltage">50V</field>
+        <field name="Power">0.062W</field>
+        <field name="Material">Thin Film</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/900MHz Radio/" tstamps="/58AA09C2/"/>
+      <tstamp>58B4AB77</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>3.35</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Voltage">50V</field>
+        <field name="Power">0.062W</field>
+        <field name="Material">Thin Film</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/900MHz Radio/" tstamps="/58AA09C2/"/>
+      <tstamp>58B4BCEA</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>47p</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">C0G</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/900MHz Radio/" tstamps="/58AA09C2/"/>
+      <tstamp>58B4C991</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>1u</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0603</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/900MHz Radio/" tstamps="/58AA09C2/"/>
+      <tstamp>58B4D4AD</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>0.1</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/900MHz Radio/" tstamps="/58AA09C2/"/>
+      <tstamp>58B4E13F</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>22u</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <fields>
+        <field name="Voltage">16V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0805</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/900MHz Radio/" tstamps="/58AA09C2/"/>
+      <tstamp>58B4F142</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>0.1</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/900MHz Radio/" tstamps="/58AA09C2/"/>
+      <tstamp>58B5622C</tstamp>
+    </comp>
+    <comp ref="C20">
+      <value>0.1u</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/900MHz Radio/" tstamps="/58AA09C2/"/>
+      <tstamp>58B58156</tstamp>
+    </comp>
+    <comp ref="C24">
+      <value>0.1u</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/900MHz Radio/" tstamps="/58AA09C2/"/>
+      <tstamp>58B5B644</tstamp>
+    </comp>
+    <comp ref="C27">
+      <value>0.1u</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/900MHz Radio/" tstamps="/58AA09C2/"/>
+      <tstamp>58B5B6C0</tstamp>
+    </comp>
+    <comp ref="C29">
+      <value>0.1u</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/900MHz Radio/" tstamps="/58AA09C2/"/>
+      <tstamp>58B5B73E</tstamp>
+    </comp>
+    <comp ref="C30">
+      <value>22u</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <fields>
+        <field name="Voltage">16V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0805</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/900MHz Radio/" tstamps="/58AA09C2/"/>
+      <tstamp>58B5C4E8</tstamp>
+    </comp>
+    <comp ref="C19">
+      <value>22u</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <fields>
+        <field name="Voltage">16V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0805</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/900MHz Radio/" tstamps="/58AA09C2/"/>
+      <tstamp>58B5DDCF</tstamp>
+    </comp>
+    <comp ref="C16">
+      <value>2.2u</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="Voltage">16V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0603</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/900MHz Radio/" tstamps="/58AA09C2/"/>
+      <tstamp>58B5F7F1</tstamp>
+    </comp>
+    <comp ref="C66">
+      <value>12p</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">C0G</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/900MHz Radio/" tstamps="/58AA09C2/"/>
+      <tstamp>58B9BD11</tstamp>
+    </comp>
+    <comp ref="C67">
+      <value>12p</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">C0G</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/900MHz Radio/" tstamps="/58AA09C2/"/>
+      <tstamp>58B9C3AD</tstamp>
+    </comp>
+    <comp ref="Y3">
+      <value>XRCGB24M000F2P00R0</value>
+      <footprint>Crystals:Crystal_SMD_2016-4pin_2.0x1.6mm</footprint>
+      <datasheet>http://www.murata.com/~/media/webrenewal/support/library/catalog/products/timingdevice/crystalu/p79e.ashx</datasheet>
+      <libsource lib="device" part="Crystal_GND24"/>
+      <sheetpath names="/900MHz Radio/" tstamps="/58AA09C2/"/>
+      <tstamp>58BA3A19</tstamp>
+    </comp>
+    <comp ref="C88">
+      <value>0.01u</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/900MHz Radio/" tstamps="/58AA09C2/"/>
+      <tstamp>58C2B894</tstamp>
+    </comp>
+    <comp ref="R35">
+      <value>100k</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Voltage">50V</field>
+        <field name="Power">0.062W</field>
+        <field name="Material">Thin Film</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/900MHz Radio/" tstamps="/58AA09C2/"/>
+      <tstamp>58C2B8A9</tstamp>
+    </comp>
+    <comp ref="L6">
+      <value>1n</value>
+      <footprint>Inductors_SMD:L_0402</footprint>
+      <libsource lib="device" part="L"/>
+      <sheetpath names="/2.4 GHz Radio/" tstamps="/58AA09C5/"/>
+      <tstamp>58AA66EA</tstamp>
+    </comp>
+    <comp ref="L7">
+      <value>2n</value>
+      <footprint>Inductors_SMD:L_0402</footprint>
+      <libsource lib="device" part="L"/>
+      <sheetpath names="/2.4 GHz Radio/" tstamps="/58AA09C5/"/>
+      <tstamp>58AA68E1</tstamp>
+    </comp>
+    <comp ref="L5">
+      <value>4.7n</value>
+      <footprint>Inductors_SMD:L_0402</footprint>
+      <fields>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="L"/>
+      <sheetpath names="/2.4 GHz Radio/" tstamps="/58AA09C5/"/>
+      <tstamp>58AA6A28</tstamp>
+    </comp>
+    <comp ref="J5">
+      <value>0734120110</value>
+      <footprint>Connectors_Molex:Molex_Microcoaxial_RF</footprint>
+      <datasheet>http://www.molex.com/pdm_docs/sd/734120110_sd.pdf</datasheet>
+      <libsource lib="conn" part="CONN_COAXIAL"/>
+      <sheetpath names="/2.4 GHz Radio/" tstamps="/58AA09C5/"/>
+      <tstamp>58AA6D9C</tstamp>
+    </comp>
+    <comp ref="U4">
+      <value>CC2592RGVR</value>
+      <footprint>Housings_DFN_QFN:QFN-16-1EP_4x4mm_Pitch0.65mm</footprint>
+      <datasheet>http://www.ti.com/lit/ds/swrs159/swrs159.pdf</datasheet>
+      <libsource lib="rfcom" part="CC2592RGVR"/>
+      <sheetpath names="/2.4 GHz Radio/" tstamps="/58AA09C5/"/>
+      <tstamp>58AA7245</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>CC2650F128RGZR</value>
+      <footprint>Housings_DFN_QFN:QFN-48-1EP_7x7mm_Pitch0.5mm</footprint>
+      <datasheet>http://www.ti.com/lit/ds/symlink/cc1310.pdf</datasheet>
+      <libsource lib="rfcom" part="CC2650F128RGZR"/>
+      <sheetpath names="/2.4 GHz Radio/" tstamps="/58AA09C5/"/>
+      <tstamp>58AA733E</tstamp>
+    </comp>
+    <comp ref="MP2">
+      <value>BMI-S-201-F</value>
+      <footprint>Shielding_Cabinets:Laird_Technologies_BMI-S-201-F_13.66x12.70mm</footprint>
+      <libsource lib="device" part="RF_Shield_Two_Pieces"/>
+      <sheetpath names="/2.4 GHz Radio/" tstamps="/58AA09C5/"/>
+      <tstamp>58AB368B</tstamp>
+    </comp>
+    <comp ref="L10">
+      <value>BLM18HE152SN1</value>
+      <footprint>Inductors_SMD:L_0603</footprint>
+      <libsource lib="device" part="L"/>
+      <sheetpath names="/2.4 GHz Radio/" tstamps="/58AA09C5/"/>
+      <tstamp>58AB5324</tstamp>
+    </comp>
+    <comp ref="L9">
+      <value>10u</value>
+      <footprint>Inductors_SMD:L_0603</footprint>
+      <libsource lib="device" part="L"/>
+      <sheetpath names="/2.4 GHz Radio/" tstamps="/58AA09C5/"/>
+      <tstamp>58ABD9E0</tstamp>
+    </comp>
+    <comp ref="L11">
+      <value>BLM18HE152SN1</value>
+      <footprint>Inductors_SMD:L_0603</footprint>
+      <libsource lib="device" part="L"/>
+      <sheetpath names="/2.4 GHz Radio/" tstamps="/58AA09C5/"/>
+      <tstamp>58AD58B6</tstamp>
+    </comp>
+    <comp ref="C35">
+      <value>1u</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0603</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/2.4 GHz Radio/" tstamps="/58AA09C5/"/>
+      <tstamp>58B65E13</tstamp>
+    </comp>
+    <comp ref="C36">
+      <value>0.1u</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/2.4 GHz Radio/" tstamps="/58AA09C5/"/>
+      <tstamp>58B660CE</tstamp>
+    </comp>
+    <comp ref="C37">
+      <value>1n</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/2.4 GHz Radio/" tstamps="/58AA09C5/"/>
+      <tstamp>58B661C8</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value>2.2p</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">C0G</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/2.4 GHz Radio/" tstamps="/58AA09C5/"/>
+      <tstamp>58B6670A</tstamp>
+    </comp>
+    <comp ref="C10">
+      <value>2.2p</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">C0G</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/2.4 GHz Radio/" tstamps="/58AA09C5/"/>
+      <tstamp>58B66A1A</tstamp>
+    </comp>
+    <comp ref="C11">
+      <value>0.2p</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">C0G</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/2.4 GHz Radio/" tstamps="/58AA09C5/"/>
+      <tstamp>58B66D4F</tstamp>
+    </comp>
+    <comp ref="C12">
+      <value>18p</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">C0G</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/2.4 GHz Radio/" tstamps="/58AA09C5/"/>
+      <tstamp>58B67166</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Voltage">50V</field>
+        <field name="Power">0.062W</field>
+        <field name="Material">Thin Film</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/2.4 GHz Radio/" tstamps="/58AA09C5/"/>
+      <tstamp>58B68579</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Voltage">50V</field>
+        <field name="Power">0.062W</field>
+        <field name="Material">Thin Film</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/2.4 GHz Radio/" tstamps="/58AA09C5/"/>
+      <tstamp>58B68EBE</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Voltage">50V</field>
+        <field name="Power">0.062W</field>
+        <field name="Material">Thin Film</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/2.4 GHz Radio/" tstamps="/58AA09C5/"/>
+      <tstamp>58B68F1E</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>3.9k</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Voltage">50V</field>
+        <field name="Power">0.062W</field>
+        <field name="Material">Thin Film</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/2.4 GHz Radio/" tstamps="/58AA09C5/"/>
+      <tstamp>58B69224</tstamp>
+    </comp>
+    <comp ref="C34">
+      <value>1u</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0603</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/2.4 GHz Radio/" tstamps="/58AA09C5/"/>
+      <tstamp>58B6A2AB</tstamp>
+    </comp>
+    <comp ref="C33">
+      <value>22u</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <fields>
+        <field name="Voltage">16V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0805</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/2.4 GHz Radio/" tstamps="/58AA09C5/"/>
+      <tstamp>58B6ACAF</tstamp>
+    </comp>
+    <comp ref="C31">
+      <value>0.1u</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/2.4 GHz Radio/" tstamps="/58AA09C5/"/>
+      <tstamp>58B6C680</tstamp>
+    </comp>
+    <comp ref="C32">
+      <value>0.1u</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/2.4 GHz Radio/" tstamps="/58AA09C5/"/>
+      <tstamp>58B6CB4F</tstamp>
+    </comp>
+    <comp ref="C38">
+      <value>2.2u</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="Voltage">16V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0603</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/2.4 GHz Radio/" tstamps="/58AA09C5/"/>
+      <tstamp>58B6E86F</tstamp>
+    </comp>
+    <comp ref="C39">
+      <value>2.2u</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="Voltage">16V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0603</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/2.4 GHz Radio/" tstamps="/58AA09C5/"/>
+      <tstamp>58B6ED11</tstamp>
+    </comp>
+    <comp ref="C40">
+      <value>0.1u</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/2.4 GHz Radio/" tstamps="/58AA09C5/"/>
+      <tstamp>58B6F767</tstamp>
+    </comp>
+    <comp ref="C41">
+      <value>0.1u</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/2.4 GHz Radio/" tstamps="/58AA09C5/"/>
+      <tstamp>58B6F7E7</tstamp>
+    </comp>
+    <comp ref="C42">
+      <value>0.1u</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/2.4 GHz Radio/" tstamps="/58AA09C5/"/>
+      <tstamp>58B6F84D</tstamp>
+    </comp>
+    <comp ref="C43">
+      <value>0.1u</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/2.4 GHz Radio/" tstamps="/58AA09C5/"/>
+      <tstamp>58B6F8B1</tstamp>
+    </comp>
+    <comp ref="C44">
+      <value>22u</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <fields>
+        <field name="Voltage">16V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0805</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/2.4 GHz Radio/" tstamps="/58AA09C5/"/>
+      <tstamp>58B70CEF</tstamp>
+    </comp>
+    <comp ref="C70">
+      <value>12p</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">C0G</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/2.4 GHz Radio/" tstamps="/58AA09C5/"/>
+      <tstamp>58B9D484</tstamp>
+    </comp>
+    <comp ref="C71">
+      <value>12p</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">C0G</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/2.4 GHz Radio/" tstamps="/58AA09C5/"/>
+      <tstamp>58B9D48F</tstamp>
+    </comp>
+    <comp ref="Y5">
+      <value>XRCGB24M000F2P00R0</value>
+      <footprint>Crystals:Crystal_SMD_2016-4pin_2.0x1.6mm</footprint>
+      <datasheet>http://www.murata.com/~/media/webrenewal/support/library/catalog/products/timingdevice/crystalu/p79e.ashx</datasheet>
+      <libsource lib="device" part="Crystal_GND24"/>
+      <sheetpath names="/2.4 GHz Radio/" tstamps="/58AA09C5/"/>
+      <tstamp>58BA5403</tstamp>
+    </comp>
+    <comp ref="C89">
+      <value>0.01u</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/2.4 GHz Radio/" tstamps="/58AA09C5/"/>
+      <tstamp>58C2804F</tstamp>
+    </comp>
+    <comp ref="R36">
+      <value>100k</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Voltage">50V</field>
+        <field name="Power">0.062W</field>
+        <field name="Material">Thin Film</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/2.4 GHz Radio/" tstamps="/58AA09C5/"/>
+      <tstamp>58C2935E</tstamp>
+    </comp>
+    <comp ref="J6">
+      <value>734120110</value>
+      <footprint>Connectors_Molex:Molex_Microcoaxial_RF</footprint>
+      <datasheet>http://www.molex.com/pdm_docs/sd/734120110_sd.pdf</datasheet>
+      <libsource lib="conn" part="CONN_COAXIAL"/>
+      <sheetpath names="/GPS/" tstamps="/58AA09C8/"/>
+      <tstamp>58AF1B18</tstamp>
+    </comp>
+    <comp ref="U9">
+      <value>MAX-M8W</value>
+      <footprint>RF_Modules:U-BLOX-MAX</footprint>
+      <datasheet>https://www.u-blox.com/sites/default/files/MAX-M8-FW3_DataSheet_%28UBX-15031506%29.pdf</datasheet>
+      <libsource lib="rfcom" part="MAX-M8W"/>
+      <sheetpath names="/GPS/" tstamps="/58AA09C8/"/>
+      <tstamp>58AFAC85</tstamp>
+    </comp>
+    <comp ref="R14">
+      <value>10</value>
+      <footprint>Resistors_SMD:R_1210</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Voltage">50V</field>
+        <field name="Power">0.5W</field>
+        <field name="Material">Thin Film</field>
+        <field name="Package">1210</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/GPS/" tstamps="/58AA09C8/"/>
+      <tstamp>58B486B6</tstamp>
+    </comp>
+    <comp ref="C53">
+      <value>0.01u</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/GPS/" tstamps="/58AA09C8/"/>
+      <tstamp>58B48916</tstamp>
+    </comp>
+    <comp ref="C23">
+      <value>0.01u</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/GPS/" tstamps="/58AA09C8/"/>
+      <tstamp>58B4A12C</tstamp>
+    </comp>
+    <comp ref="C22">
+      <value>0.1u</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/GPS/" tstamps="/58AA09C8/"/>
+      <tstamp>58B4A1B4</tstamp>
+    </comp>
+    <comp ref="U8">
+      <value>MAX17243</value>
+      <footprint>Housings_DFN_QFN:QFN-20-1EP_5x5mm_Pitch0.65mm</footprint>
+      <datasheet>http://datasheets.maximintegrated.com/en/ds/MAX17242-MAX17243.pdf</datasheet>
+      <libsource lib="maxim" part="MAX17243"/>
+      <sheetpath names="/Power/" tstamps="/58AA09CD/"/>
+      <tstamp>58AB8A07</tstamp>
+    </comp>
+    <comp ref="L16">
+      <value>74438356022</value>
+      <footprint>Inductors_SMD:L_Wuerth_MAPI-4020</footprint>
+      <datasheet>http://katalog.we-online.de/pbs/datasheet/74438356022.pdf</datasheet>
+      <libsource lib="device" part="L"/>
+      <sheetpath names="/Power/" tstamps="/58AA09CD/"/>
+      <tstamp>58AC1391</tstamp>
+    </comp>
+    <comp ref="L17">
+      <value>74438356022</value>
+      <footprint>Inductors_SMD:L_Wuerth_MAPI-4020</footprint>
+      <datasheet>http://katalog.we-online.de/pbs/datasheet/74438356022.pdf</datasheet>
+      <libsource lib="device" part="L"/>
+      <sheetpath names="/Power/" tstamps="/58AA09CD/"/>
+      <tstamp>58AC585C</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>NTS245SFT1G</value>
+      <footprint>Diodes_SMD:D_SOD-123F</footprint>
+      <datasheet>http://www.onsemi.com/pub/Collateral/NTS245SF-D.PDF</datasheet>
+      <libsource lib="device" part="D"/>
+      <sheetpath names="/Power/" tstamps="/58AA09CD/"/>
+      <tstamp>58B2E19A</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>NTS245SFT1G</value>
+      <footprint>Diodes_SMD:D_SOD-123F</footprint>
+      <datasheet>http://www.onsemi.com/pub/Collateral/NTS245SF-D.PDF</datasheet>
+      <libsource lib="device" part="D"/>
+      <sheetpath names="/Power/" tstamps="/58AA09CD/"/>
+      <tstamp>58B2EA81</tstamp>
+    </comp>
+    <comp ref="C48">
+      <value>10u</value>
+      <footprint>Capacitors_SMD:C_1206</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">1206</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/Power/" tstamps="/58AA09CD/"/>
+      <tstamp>58B724AF</tstamp>
+    </comp>
+    <comp ref="C49">
+      <value>10u</value>
+      <footprint>Capacitors_SMD:C_1206</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">1206</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/Power/" tstamps="/58AA09CD/"/>
+      <tstamp>58B727EB</tstamp>
+    </comp>
+    <comp ref="C50">
+      <value>2.2u</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0805</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/Power/" tstamps="/58AA09CD/"/>
+      <tstamp>58B72ACD</tstamp>
+    </comp>
+    <comp ref="R12">
+      <value>100k</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Voltage">50V</field>
+        <field name="Power">0.062W</field>
+        <field name="Material">Thin Film</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/Power/" tstamps="/58AA09CD/"/>
+      <tstamp>58B72E1C</tstamp>
+    </comp>
+    <comp ref="R10">
+      <value>20k</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Voltage">50V</field>
+        <field name="Power">0.062W</field>
+        <field name="Material">Thin Film</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/Power/" tstamps="/58AA09CD/"/>
+      <tstamp>58B73150</tstamp>
+    </comp>
+    <comp ref="C45">
+      <value>1n</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/Power/" tstamps="/58AA09CD/"/>
+      <tstamp>58B73331</tstamp>
+    </comp>
+    <comp ref="R11">
+      <value>12k</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Voltage">50V</field>
+        <field name="Power">0.062W</field>
+        <field name="Material">Thin Film</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/Power/" tstamps="/58AA09CD/"/>
+      <tstamp>58B73687</tstamp>
+    </comp>
+    <comp ref="C46">
+      <value>2.2u</value>
+      <footprint>Capacitors_SMD:C_0603</footprint>
+      <fields>
+        <field name="Voltage">16V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0603</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/Power/" tstamps="/58AA09CD/"/>
+      <tstamp>58B73984</tstamp>
+    </comp>
+    <comp ref="C47">
+      <value>0.1u</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/Power/" tstamps="/58AA09CD/"/>
+      <tstamp>58B74095</tstamp>
+    </comp>
+    <comp ref="R13">
+      <value>10k</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Voltage">50V</field>
+        <field name="Power">0.062W</field>
+        <field name="Material">Thin Film</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/Power/" tstamps="/58AA09CD/"/>
+      <tstamp>58B74632</tstamp>
+    </comp>
+    <comp ref="C51">
+      <value>22u</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <fields>
+        <field name="Voltage">16V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0805</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/Power/" tstamps="/58AA09CD/"/>
+      <tstamp>58B74812</tstamp>
+    </comp>
+    <comp ref="C52">
+      <value>22u</value>
+      <footprint>Capacitors_SMD:C_0805</footprint>
+      <fields>
+        <field name="Voltage">16V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0805</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/Power/" tstamps="/58AA09CD/"/>
+      <tstamp>58B74BDA</tstamp>
+    </comp>
+    <comp ref="U5">
+      <value>MPU-9250</value>
+      <footprint>Housings_DFN_QFN:QFN-24-1EP_3x3mm_Pitch0.4mm_MPU-9250</footprint>
+      <datasheet>https://www.invensense.com/wp-content/uploads/2015/02/PS-MPU-9250A-01-v1.1.pdf</datasheet>
+      <libsource lib="sensors" part="MPU-9250"/>
+      <sheetpath names="/Sensors/" tstamps="/58AA09D0/"/>
+      <tstamp>58AB562F</tstamp>
+    </comp>
+    <comp ref="C58">
+      <value>0.1u</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/Sensors/" tstamps="/58AA09D0/"/>
+      <tstamp>58B4B88F</tstamp>
+    </comp>
+    <comp ref="R19">
+      <value>1k</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Voltage">50V</field>
+        <field name="Power">0.062W</field>
+        <field name="Material">Thin Film</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/Sensors/" tstamps="/58AA09D0/"/>
+      <tstamp>58B4BB21</tstamp>
+    </comp>
+    <comp ref="R18">
+      <value>1k</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Voltage">50V</field>
+        <field name="Power">0.062W</field>
+        <field name="Material">Thin Film</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/Sensors/" tstamps="/58AA09D0/"/>
+      <tstamp>58B4C210</tstamp>
+    </comp>
+    <comp ref="R17">
+      <value>1k</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Voltage">50V</field>
+        <field name="Power">0.062W</field>
+        <field name="Material">Thin Film</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/Sensors/" tstamps="/58AA09D0/"/>
+      <tstamp>58B4C26C</tstamp>
+    </comp>
+    <comp ref="R16">
+      <value>1k</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Voltage">50V</field>
+        <field name="Power">0.062W</field>
+        <field name="Material">Thin Film</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/Sensors/" tstamps="/58AA09D0/"/>
+      <tstamp>58B4CBDD</tstamp>
+    </comp>
+    <comp ref="R15">
+      <value>47</value>
+      <footprint>Resistors_SMD:R_0402</footprint>
+      <fields>
+        <field name="Tolerance">1%</field>
+        <field name="Voltage">50V</field>
+        <field name="Power">0.062W</field>
+        <field name="Material">Thin Film</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="R"/>
+      <sheetpath names="/Sensors/" tstamps="/58AA09D0/"/>
+      <tstamp>58B4F0B4</tstamp>
+    </comp>
+    <comp ref="C55">
+      <value>0.1u</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/Sensors/" tstamps="/58AA09D0/"/>
+      <tstamp>58B4F645</tstamp>
+    </comp>
+    <comp ref="C54">
+      <value>0.01u</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/Sensors/" tstamps="/58AA09D0/"/>
+      <tstamp>58B4F7C8</tstamp>
+    </comp>
+    <comp ref="C56">
+      <value>0.1u</value>
+      <footprint>Capacitors_SMD:C_0402</footprint>
+      <fields>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0402</field>
+      </fields>
+      <libsource lib="device" part="C"/>
+      <sheetpath names="/Sensors/" tstamps="/58AA09D0/"/>
+      <tstamp>58B4FA48</tstamp>
+    </comp>
+    <comp ref="U7">
+      <value>LPS25HB</value>
+      <footprint>Housings_LGA:HLGA-10L_2.5x2.5mm_Pitch0.6mm</footprint>
+      <datasheet>http://www.st.com/resource/en/datasheet/lps25hb.pdf</datasheet>
+      <libsource lib="Flight Computer-rescue" part="LPS25HB-RESCUE-Flight_Computer"/>
+      <sheetpath names="/Sensors/" tstamps="/58AA09D0/"/>
+      <tstamp>58B3E15F</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>473460001</value>
+      <footprint>Connectors:USB_Micro-B_0473460001</footprint>
+      <datasheet>http://www.molex.com/pdm_docs/sd/473460001_sd.pdf</datasheet>
+      <libsource lib="conn" part="USB_OTG"/>
+      <sheetpath names="/Connectors/" tstamps="/58B5360A/"/>
+      <tstamp>58B53909</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>ERF8-040-05.0-S-DV-K</value>
+      <footprint>Connectors_Samtec:ERF8-040-05.0-S-DV-K</footprint>
+      <datasheet>http://suddendocs.samtec.com/prints/erf8-xxx-xx.x-x-dv-xxxx-tr-mkt.pdf</datasheet>
+      <libsource lib="conn" part="CONN_02X40"/>
+      <sheetpath names="/Connectors/" tstamps="/58B5360A/"/>
+      <tstamp>58B54687</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>ERF8-040-05.0-S-DV-K</value>
+      <footprint>Connectors_Samtec:ERF8-040-05.0-S-DV-K</footprint>
+      <datasheet>http://suddendocs.samtec.com/prints/erf8-xxx-xx.x-x-dv-xxxx-tr-mkt.pdf</datasheet>
+      <libsource lib="conn" part="CONN_02X40"/>
+      <sheetpath names="/Connectors/" tstamps="/58B5360A/"/>
+      <tstamp>58B24420</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="atmel" part="ATSAME70Q21A-AN">
+      <aliases>
+        <alias>ATSAME70Q20A-AN</alias>
+        <alias>ATSAME70Q19A-AN</alias>
+      </aliases>
+      <description>High-performance ARM Cortex-M7 core-based MCUs running up to 300 MHz with up to 2MByte Flash and 384kB SRAM.</description>
+      <docs>http://www.atmel.com/Images/Atmel-11296-32-bit-Cortex-M7-Microcontroller-SAM-E70Q-SAM-E70N-SAM-E70J_Datasheet.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">ATSAME70Q21A-AN</field>
+        <field name="Footprint">Housings_QFP:LQFP-144_20x20mm_Pitch0.5mm</field>
+        <field name="Datasheet">http://www.atmel.com/Images/Atmel-11296-32-bit-Cortex-M7-Microcontroller-SAM-E70Q-SAM-E70N-SAM-E70J_Datasheet.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="PD0/DAC1" type="BiDi"/>
+        <pin num="2" name="PD31" type="BiDi"/>
+        <pin num="3" name="VDDOUT" type="power_out"/>
+        <pin num="4" name="PE0/AFE1_AD11" type="BiDi"/>
+        <pin num="5" name="VDDIN" type="power_in"/>
+        <pin num="6" name="PE1" type="BiDi"/>
+        <pin num="7" name="PE2" type="BiDi"/>
+        <pin num="8" name="VREFN" type="power_in"/>
+        <pin num="9" name="VREFP" type="power_in"/>
+        <pin num="10" name="PE3/AFE1_AD10" type="BiDi"/>
+        <pin num="11" name="PC0/AFE1_AD9" type="BiDi"/>
+        <pin num="12" name="PC27/AFE1_AD8" type="BiDi"/>
+        <pin num="13" name="PC26/AFE1_AD7" type="BiDi"/>
+        <pin num="14" name="PC31/AFE1_AD6" type="BiDi"/>
+        <pin num="15" name="PC30/AFE1_AD5" type="BiDi"/>
+        <pin num="16" name="PC29/AFE1_AD4" type="BiDi"/>
+        <pin num="17" name="PC12/ADE1_AD3" type="BiDi"/>
+        <pin num="18" name="PC15/AFE1_AD2" type="BiDi"/>
+        <pin num="19" name="PC13/AFE1_AD1" type="BiDi"/>
+        <pin num="20" name="PB1/AFE1_AD0" type="BiDi"/>
+        <pin num="21" name="PB0/AFE0_AD10" type="BiDi"/>
+        <pin num="22" name="PA20/AFE0_AD9" type="BiDi"/>
+        <pin num="23" name="PA19/AFE0_AD8" type="BiDi"/>
+        <pin num="24" name="PA18/AFE0_AD7" type="BiDi"/>
+        <pin num="25" name="PA17/AFE0_AD6" type="BiDi"/>
+        <pin num="26" name="PB2/AFE0_AD5" type="BiDi"/>
+        <pin num="27" name="PE4/AFE0_AD4" type="BiDi"/>
+        <pin num="28" name="PE5/AFE0AD3" type="BiDi"/>
+        <pin num="29" name="VDDCORE" type="power_in"/>
+        <pin num="30" name="VDDIO" type="power_in"/>
+        <pin num="31" name="PB3/AFE0_AD2" type="BiDi"/>
+        <pin num="32" name="PA21/AFE0_AD1" type="BiDi"/>
+        <pin num="33" name="VDDCORE" type="power_in"/>
+        <pin num="34" name="PD30/AFE0_AD0" type="BiDi"/>
+        <pin num="35" name="PA7/XIN32" type="BiDi"/>
+        <pin num="36" name="PA8/XOUT32" type="BiDi"/>
+        <pin num="37" name="PA22/PIODCCLK" type="BiDi"/>
+        <pin num="38" name="PC1" type="BiDi"/>
+        <pin num="39" name="PC2" type="BiDi"/>
+        <pin num="40" name="PC3" type="BiDi"/>
+        <pin num="41" name="PC4" type="BiDi"/>
+        <pin num="42" name="PA13/PIODC7" type="BiDi"/>
+        <pin num="43" name="VDDIO" type="power_in"/>
+        <pin num="44" name="GND" type="power_in"/>
+        <pin num="45" name="PA16" type="BiDi"/>
+        <pin num="46" name="PA23" type="BiDi"/>
+        <pin num="47" name="PD27" type="BiDi"/>
+        <pin num="48" name="PC7" type="BiDi"/>
+        <pin num="49" name="PA15" type="BiDi"/>
+        <pin num="50" name="VDDCORE" type="power_in"/>
+        <pin num="51" name="PA14/PIODCEN1" type="BiDi"/>
+        <pin num="52" name="PD25" type="BiDi"/>
+        <pin num="53" name="PD26" type="BiDi"/>
+        <pin num="54" name="PC6" type="BiDi"/>
+        <pin num="55" name="PD24" type="BiDi"/>
+        <pin num="56" name="PA24" type="BiDi"/>
+        <pin num="57" name="PD23" type="BiDi"/>
+        <pin num="58" name="PC5" type="BiDi"/>
+        <pin num="59" name="PA25" type="BiDi"/>
+        <pin num="60" name="PD22" type="BiDi"/>
+        <pin num="61" name="GND" type="power_in"/>
+        <pin num="62" name="PA26" type="BiDi"/>
+        <pin num="63" name="PD21" type="BiDi"/>
+        <pin num="64" name="PA11/PIODC5" type="BiDi"/>
+        <pin num="65" name="PD20" type="BiDi"/>
+        <pin num="66" name="PA10/PIODC4" type="BiDi"/>
+        <pin num="67" name="PD19" type="BiDi"/>
+        <pin num="68" name="PA12/PIODC6" type="BiDi"/>
+        <pin num="69" name="PD18" type="BiDi"/>
+        <pin num="70" name="PA27" type="BiDi"/>
+        <pin num="71" name="PD28/WKUP5" type="BiDi"/>
+        <pin num="72" name="VDDIO" type="power_in"/>
+        <pin num="73" name="PA5/PIODC2" type="BiDi"/>
+        <pin num="74" name="PD17" type="BiDi"/>
+        <pin num="75" name="PA9/PIODC3" type="BiDi"/>
+        <pin num="76" name="PC28" type="BiDi"/>
+        <pin num="77" name="PA4/PIODC1" type="BiDi"/>
+        <pin num="78" name="PD16" type="BiDi"/>
+        <pin num="79" name="PB6/SWDIO/TMS" type="BiDi"/>
+        <pin num="80" name="VDDIO" type="power_in"/>
+        <pin num="81" name="VDDCORE" type="power_in"/>
+        <pin num="82" name="PC8" type="BiDi"/>
+        <pin num="83" name="~RST" type="BiDi"/>
+        <pin num="84" name="PD14" type="BiDi"/>
+        <pin num="85" name="TST" type="input"/>
+        <pin num="86" name="PC9" type="BiDi"/>
+        <pin num="87" name="PB12/ERASE" type="BiDi"/>
+        <pin num="88" name="PD13" type="BiDi"/>
+        <pin num="89" name="PB7/SWCLK/TCK" type="BiDi"/>
+        <pin num="90" name="PC10" type="BiDi"/>
+        <pin num="91" name="PA3/PIODC0" type="BiDi"/>
+        <pin num="92" name="PD12" type="BiDi"/>
+        <pin num="93" name="PA2/WKUP2" type="BiDi"/>
+        <pin num="94" name="PC11" type="BiDi"/>
+        <pin num="95" name="GND" type="power_in"/>
+        <pin num="96" name="VDDIO" type="power_in"/>
+        <pin num="97" name="PC14" type="BiDi"/>
+        <pin num="98" name="PD11" type="BiDi"/>
+        <pin num="99" name="PA1/WKUP1" type="BiDi"/>
+        <pin num="100" name="PC16" type="BiDi"/>
+        <pin num="101" name="PD10" type="BiDi"/>
+        <pin num="102" name="PA0/WKUP0" type="BiDi"/>
+        <pin num="103" name="PC17" type="BiDi"/>
+        <pin num="104" name="JTAGSEL" type="input"/>
+        <pin num="105" name="PB4/TDI" type="BiDi"/>
+        <pin num="106" name="PD15" type="BiDi"/>
+        <pin num="107" name="VDDCORE" type="power_in"/>
+        <pin num="108" name="PD29" type="BiDi"/>
+        <pin num="109" name="PB5/TDO" type="BiDi"/>
+        <pin num="110" name="PD9" type="BiDi"/>
+        <pin num="111" name="PC18" type="BiDi"/>
+        <pin num="112" name="PA28" type="BiDi"/>
+        <pin num="113" name="PD8" type="BiDi"/>
+        <pin num="114" name="PA6" type="BiDi"/>
+        <pin num="115" name="GND" type="power_in"/>
+        <pin num="116" name="PA30" type="BiDi"/>
+        <pin num="117" name="PC19" type="BiDi"/>
+        <pin num="118" name="PA31" type="BiDi"/>
+        <pin num="119" name="PD7" type="BiDi"/>
+        <pin num="120" name="PC20" type="BiDi"/>
+        <pin num="121" name="PD6" type="BiDi"/>
+        <pin num="122" name="PC21" type="BiDi"/>
+        <pin num="123" name="VDDPLL" type="power_in"/>
+        <pin num="124" name="PC22" type="BiDi"/>
+        <pin num="125" name="PD5" type="BiDi"/>
+        <pin num="126" name="PD4" type="BiDi"/>
+        <pin num="127" name="PC23" type="BiDi"/>
+        <pin num="128" name="PD3" type="BiDi"/>
+        <pin num="129" name="PA29" type="BiDi"/>
+        <pin num="130" name="PC24" type="BiDi"/>
+        <pin num="131" name="PD2" type="BiDi"/>
+        <pin num="132" name="PD1" type="BiDi"/>
+        <pin num="133" name="PC25" type="BiDi"/>
+        <pin num="134" name="VDDUTMII" type="power_in"/>
+        <pin num="135" name="GND" type="power_in"/>
+        <pin num="136" name="HSDM" type="BiDi"/>
+        <pin num="137" name="HSDP" type="BiDi"/>
+        <pin num="138" name="GND" type="power_in"/>
+        <pin num="139" name="VDDUTMIC" type="power_in"/>
+        <pin num="140" name="VBG" type="power_in"/>
+        <pin num="141" name="PB8/XOUT" type="BiDi"/>
+        <pin num="142" name="PB9/XIN" type="BiDi"/>
+        <pin num="143" name="VDDPLLUSB" type="power_in"/>
+        <pin num="144" name="PB13/DAC0" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="C">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C</field>
+        <field name="Footprint">Capacitors_SMD:C_0402</field>
+        <field name="Voltage">50V</field>
+        <field name="Tolerance">20%</field>
+        <field name="Type">X7R</field>
+        <field name="Package">0402</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="rfcom" part="CC1190RGVR">
+      <aliases>
+        <alias>CC1190RGVT</alias>
+      </aliases>
+      <description>850 – 950 MHz RF Front End</description>
+      <docs>http://www.ti.com/lit/ds/symlink/cc1190.pdf</docs>
+      <footprints>
+        <fp>*QFN*16*1EP*4x4mm*Pitch0.65mm</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">CC1190RGVR</field>
+        <field name="Footprint">Housings_DFN_QFN:QFN-16-1EP_4x4mm_Pitch0.65mm</field>
+        <field name="Datasheet">http://www.ti.com/lit/ds/symlink/cc1190.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="PA_OUT" type="output"/>
+        <pin num="3" name="GND" type="power_in"/>
+        <pin num="4" name="TR_SW" type="output"/>
+        <pin num="5" name="LNA_IN" type="input"/>
+        <pin num="6" name="HGM" type="input"/>
+        <pin num="7" name="LNA_EN" type="input"/>
+        <pin num="8" name="PA_EN" type="input"/>
+        <pin num="9" name="GND" type="power_in"/>
+        <pin num="10" name="LNA_OUT" type="output"/>
+        <pin num="11" name="PA_IN" type="input"/>
+        <pin num="12" name="GND" type="power_in"/>
+        <pin num="13" name="VDD_LNA" type="power_in"/>
+        <pin num="14" name="BIAS" type="passive"/>
+        <pin num="15" name="VDD_PA2" type="power_in"/>
+        <pin num="16" name="VDD_PA1" type="power_in"/>
+        <pin num="17" name="GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="rfcom" part="CC1310F128RGZT">
+      <aliases>
+        <alias>CC1310F64RGZR</alias>
+        <alias>CC1310F128RGZR</alias>
+        <alias>CC1310F64RGZT</alias>
+        <alias>CC1310F32RGZT</alias>
+        <alias>CC1310F32RGZR</alias>
+      </aliases>
+      <description>Ultra-Low-Power Sub-1 GHz Wireless MCU (48-pin RGZ Package, 128kB FLASH)</description>
+      <docs>http://www.ti.com/lit/ds/symlink/cc1310.pdf</docs>
+      <footprints>
+        <fp>*QFN*48*1EP*7x7mm*Pitch0.5mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">CC1310F128RGZT</field>
+        <field name="Footprint">Housings_DFN_QFN:QFN-48-1EP_7x7mm_Pitch0.5mm</field>
+        <field name="Datasheet">http://www.ti.com/lit/ds/symlink/cc1310.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="RF_P" type="passive"/>
+        <pin num="2" name="RF_N" type="passive"/>
+        <pin num="3" name="RX_TX" type="BiDi"/>
+        <pin num="4" name="X32K_Q1" type="passive"/>
+        <pin num="5" name="X32K_Q2" type="passive"/>
+        <pin num="6" name="DIO_1" type="BiDi"/>
+        <pin num="7" name="DIO_2" type="BiDi"/>
+        <pin num="8" name="DIO_3" type="BiDi"/>
+        <pin num="9" name="DIO_4" type="BiDi"/>
+        <pin num="10" name="DIO_5" type="BiDi"/>
+        <pin num="11" name="DIO_6" type="BiDi"/>
+        <pin num="12" name="DIO_7" type="BiDi"/>
+        <pin num="13" name="VDDS2" type="power_in"/>
+        <pin num="14" name="DIO_8" type="BiDi"/>
+        <pin num="15" name="DIO_9" type="BiDi"/>
+        <pin num="16" name="DIO_10" type="BiDi"/>
+        <pin num="17" name="DIO_11" type="BiDi"/>
+        <pin num="18" name="DIO_12" type="BiDi"/>
+        <pin num="19" name="DIO_13" type="BiDi"/>
+        <pin num="20" name="DIO_14" type="BiDi"/>
+        <pin num="21" name="DIO_15" type="BiDi"/>
+        <pin num="22" name="VDDS3" type="power_in"/>
+        <pin num="23" name="DCOUPL" type="passive"/>
+        <pin num="24" name="JTAG_TMSC" type="BiDi"/>
+        <pin num="25" name="JTAG_TCKC" type="BiDi"/>
+        <pin num="26" name="DIO_16" type="BiDi"/>
+        <pin num="27" name="DIO_17" type="BiDi"/>
+        <pin num="28" name="DIO_18" type="BiDi"/>
+        <pin num="29" name="DIO_19" type="BiDi"/>
+        <pin num="30" name="DIO_20" type="BiDi"/>
+        <pin num="31" name="DIO_21" type="BiDi"/>
+        <pin num="32" name="DIO_22" type="BiDi"/>
+        <pin num="33" name="DCDC_SW" type="power_out"/>
+        <pin num="34" name="VDDS_DCDC" type="power_in"/>
+        <pin num="35" name="~RESET" type="input"/>
+        <pin num="36" name="DIO_23" type="BiDi"/>
+        <pin num="37" name="DIO_24" type="BiDi"/>
+        <pin num="38" name="DIO_25" type="BiDi"/>
+        <pin num="39" name="DIO_26" type="BiDi"/>
+        <pin num="40" name="DIO_27" type="BiDi"/>
+        <pin num="41" name="DIO_28" type="BiDi"/>
+        <pin num="42" name="DIO_29" type="BiDi"/>
+        <pin num="43" name="DIO_30" type="BiDi"/>
+        <pin num="44" name="VDDS" type="power_in"/>
+        <pin num="45" name="VDDR" type="power_in"/>
+        <pin num="46" name="X24M_N" type="passive"/>
+        <pin num="47" name="X24M_P" type="passive"/>
+        <pin num="48" name="VDDR_RF" type="power_in"/>
+        <pin num="49" name="GND_EP" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="rfcom" part="CC2592RGVR">
+      <aliases>
+        <alias>CC2592RGVT</alias>
+      </aliases>
+      <description>CC2592 2.4-GHz Range Extender</description>
+      <docs>http://www.ti.com/lit/ds/swrs159/swrs159.pdf</docs>
+      <footprints>
+        <fp>*QFN*16*1EP*4x4mm*Pitch0.65mm</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">CC2592RGVR</field>
+        <field name="Footprint">Housings_DFN_QFN:QFN-16-1EP_4x4mm_Pitch0.65mm</field>
+        <field name="Datasheet">http://www.ti.com/lit/ds/swrs159/swrs159.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="RF_N" type="passive"/>
+        <pin num="3" name="RF_P" type="passive"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="5" name="PA_EN" type="input"/>
+        <pin num="6" name="LNA_EN" type="input"/>
+        <pin num="7" name="HGM" type="input"/>
+        <pin num="8" name="BIAS" type="passive"/>
+        <pin num="9" name="GND" type="power_in"/>
+        <pin num="10" name="ANT" type="passive"/>
+        <pin num="11" name="GND" type="power_in"/>
+        <pin num="12" name="GND" type="power_in"/>
+        <pin num="13" name="VDD_LNA" type="power_in"/>
+        <pin num="14" name="VDD_BIAS" type="power_in"/>
+        <pin num="15" name="VDD_PA" type="power_in"/>
+        <pin num="16" name="GND" type="power_in"/>
+        <pin num="17" name="GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="rfcom" part="CC2650F128RGZT">
+      <aliases>
+        <alias>CC2650F128RGZR</alias>
+      </aliases>
+      <description>CC2650 SimpleLink™ Multistandard Wireless MCU (48-pin RGZ Package, 128kB FLASH)</description>
+      <docs>http://www.ti.com/lit/ds/symlink/cc2650.pdf</docs>
+      <footprints>
+        <fp>*QFN*48*1EP*7x7mm*Pitch0.5mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">CC2650F128RGZT</field>
+        <field name="Footprint">Housings_DFN_QFN:QFN-48-1EP_7x7mm_Pitch0.5mm</field>
+        <field name="Datasheet">http://www.ti.com/lit/ds/symlink/cc1310.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="RF_P" type="passive"/>
+        <pin num="2" name="RF_N" type="passive"/>
+        <pin num="3" name="X32K_Q1" type="passive"/>
+        <pin num="4" name="X32K_Q2" type="passive"/>
+        <pin num="5" name="DIO_0" type="BiDi"/>
+        <pin num="6" name="DIO_1" type="BiDi"/>
+        <pin num="7" name="DIO_2" type="BiDi"/>
+        <pin num="8" name="DIO_3" type="BiDi"/>
+        <pin num="9" name="DIO_4" type="BiDi"/>
+        <pin num="10" name="DIO_5" type="BiDi"/>
+        <pin num="11" name="DIO_6" type="BiDi"/>
+        <pin num="12" name="DIO_7" type="BiDi"/>
+        <pin num="13" name="VDDS2" type="power_in"/>
+        <pin num="14" name="DIO_8" type="BiDi"/>
+        <pin num="15" name="DIO_9" type="BiDi"/>
+        <pin num="16" name="DIO_10" type="BiDi"/>
+        <pin num="17" name="DIO_11" type="BiDi"/>
+        <pin num="18" name="DIO_12" type="BiDi"/>
+        <pin num="19" name="DIO_13" type="BiDi"/>
+        <pin num="20" name="DIO_14" type="BiDi"/>
+        <pin num="21" name="DIO_15" type="BiDi"/>
+        <pin num="22" name="VDDS3" type="power_in"/>
+        <pin num="23" name="DCOUPL" type="passive"/>
+        <pin num="24" name="JTAG_TMSC" type="BiDi"/>
+        <pin num="25" name="JTAG_TCKC" type="BiDi"/>
+        <pin num="26" name="DIO_16" type="BiDi"/>
+        <pin num="27" name="DIO_17" type="BiDi"/>
+        <pin num="28" name="DIO_18" type="BiDi"/>
+        <pin num="29" name="DIO_19" type="BiDi"/>
+        <pin num="30" name="DIO_20" type="BiDi"/>
+        <pin num="31" name="DIO_21" type="BiDi"/>
+        <pin num="32" name="DIO_22" type="BiDi"/>
+        <pin num="33" name="DCDC_SW" type="power_out"/>
+        <pin num="34" name="VDDS_DCDC" type="power_in"/>
+        <pin num="35" name="~RESET" type="input"/>
+        <pin num="36" name="DIO_23" type="BiDi"/>
+        <pin num="37" name="DIO_24" type="BiDi"/>
+        <pin num="38" name="DIO_25" type="BiDi"/>
+        <pin num="39" name="DIO_26" type="BiDi"/>
+        <pin num="40" name="DIO_27" type="BiDi"/>
+        <pin num="41" name="DIO_28" type="BiDi"/>
+        <pin num="42" name="DIO_29" type="BiDi"/>
+        <pin num="43" name="DIO_30" type="BiDi"/>
+        <pin num="44" name="VDDS" type="power_in"/>
+        <pin num="45" name="VDDR" type="power_in"/>
+        <pin num="46" name="X24M_N" type="passive"/>
+        <pin num="47" name="X24M_P" type="passive"/>
+        <pin num="48" name="VDDR_RF" type="power_in"/>
+        <pin num="49" name="GND_EP" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="CONN_02X40">
+      <description>Connector, double row, 02x40, pin header</description>
+      <footprints>
+        <fp>Pin_Header_Straight_2X*</fp>
+        <fp>Pin_Header_Angled_2X*</fp>
+        <fp>Socket_Strip_Straight_2X*</fp>
+        <fp>Socket_Strip_Angled_2X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">CONN_02X40</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+        <pin num="4" name="P4" type="passive"/>
+        <pin num="5" name="P5" type="passive"/>
+        <pin num="6" name="P6" type="passive"/>
+        <pin num="7" name="P7" type="passive"/>
+        <pin num="8" name="P8" type="passive"/>
+        <pin num="9" name="P9" type="passive"/>
+        <pin num="10" name="P10" type="passive"/>
+        <pin num="11" name="P11" type="passive"/>
+        <pin num="12" name="P12" type="passive"/>
+        <pin num="13" name="P13" type="passive"/>
+        <pin num="14" name="P14" type="passive"/>
+        <pin num="15" name="P15" type="passive"/>
+        <pin num="16" name="P16" type="passive"/>
+        <pin num="17" name="P17" type="passive"/>
+        <pin num="18" name="P18" type="passive"/>
+        <pin num="19" name="P19" type="passive"/>
+        <pin num="20" name="P20" type="passive"/>
+        <pin num="21" name="P21" type="passive"/>
+        <pin num="22" name="P22" type="passive"/>
+        <pin num="23" name="P23" type="passive"/>
+        <pin num="24" name="P24" type="passive"/>
+        <pin num="25" name="P25" type="passive"/>
+        <pin num="26" name="P26" type="passive"/>
+        <pin num="27" name="P27" type="passive"/>
+        <pin num="28" name="P28" type="passive"/>
+        <pin num="29" name="P29" type="passive"/>
+        <pin num="30" name="P30" type="passive"/>
+        <pin num="31" name="P31" type="passive"/>
+        <pin num="32" name="P32" type="passive"/>
+        <pin num="33" name="P33" type="passive"/>
+        <pin num="34" name="P34" type="passive"/>
+        <pin num="35" name="P35" type="passive"/>
+        <pin num="36" name="P36" type="passive"/>
+        <pin num="37" name="P37" type="passive"/>
+        <pin num="38" name="P38" type="passive"/>
+        <pin num="39" name="P39" type="passive"/>
+        <pin num="40" name="P40" type="passive"/>
+        <pin num="41" name="P41" type="passive"/>
+        <pin num="42" name="P42" type="passive"/>
+        <pin num="43" name="P43" type="passive"/>
+        <pin num="44" name="P44" type="passive"/>
+        <pin num="45" name="P45" type="passive"/>
+        <pin num="46" name="P46" type="passive"/>
+        <pin num="47" name="P47" type="passive"/>
+        <pin num="48" name="P48" type="passive"/>
+        <pin num="49" name="P49" type="passive"/>
+        <pin num="50" name="P50" type="passive"/>
+        <pin num="51" name="P51" type="passive"/>
+        <pin num="52" name="P52" type="passive"/>
+        <pin num="53" name="P53" type="passive"/>
+        <pin num="54" name="P54" type="passive"/>
+        <pin num="55" name="P55" type="passive"/>
+        <pin num="56" name="P56" type="passive"/>
+        <pin num="57" name="P57" type="passive"/>
+        <pin num="58" name="P58" type="passive"/>
+        <pin num="59" name="P59" type="passive"/>
+        <pin num="60" name="P60" type="passive"/>
+        <pin num="61" name="P61" type="passive"/>
+        <pin num="62" name="P62" type="passive"/>
+        <pin num="63" name="P63" type="passive"/>
+        <pin num="64" name="P64" type="passive"/>
+        <pin num="65" name="P65" type="passive"/>
+        <pin num="66" name="P66" type="passive"/>
+        <pin num="67" name="P67" type="passive"/>
+        <pin num="68" name="P68" type="passive"/>
+        <pin num="69" name="P69" type="passive"/>
+        <pin num="70" name="P70" type="passive"/>
+        <pin num="71" name="P71" type="passive"/>
+        <pin num="72" name="P72" type="passive"/>
+        <pin num="73" name="P73" type="passive"/>
+        <pin num="74" name="P74" type="passive"/>
+        <pin num="75" name="P75" type="passive"/>
+        <pin num="76" name="P76" type="passive"/>
+        <pin num="77" name="P77" type="passive"/>
+        <pin num="78" name="P78" type="passive"/>
+        <pin num="79" name="P79" type="passive"/>
+        <pin num="80" name="P80" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="CONN_COAXIAL">
+      <description>coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, ...)</description>
+      <footprints>
+        <fp>*BNC*</fp>
+        <fp>*SMA*</fp>
+        <fp>*SMB*</fp>
+        <fp>*SMC*</fp>
+        <fp>*Cinch*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">CONN_COAXIAL</field>
+      </fields>
+      <pins>
+        <pin num="1" name="In" type="passive"/>
+        <pin num="2" name="Ext" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="Crystal">
+      <description>Two pin crystal</description>
+      <footprints>
+        <fp>Crystal*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Y</field>
+        <field name="Value">Crystal</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="Crystal_GND24">
+      <description>Four pin crystal (GND on pins 2 and 4), e.g. in SMD package</description>
+      <footprints>
+        <fp>Crystal*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Y</field>
+        <field name="Value">Crystal_GND24</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="D">
+      <description>Diode</description>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*SingleDiode</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="L">
+      <description>Inductor</description>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Flight Computer-rescue" part="LPS25HB-RESCUE-Flight_Computer">
+      <footprints>
+        <fp>HLGA-10L</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LPS25HB-RESCUE-Flight_Computer</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VDD_IO" type="power_in"/>
+        <pin num="2" name="SCL/SPC" type="input"/>
+        <pin num="3" name="Reserved" type="input"/>
+        <pin num="4" name="SDA/SDI/SDO" type="BiDi"/>
+        <pin num="5" name="SDO/SA0" type="BiDi"/>
+        <pin num="6" name="~CS" type="input"/>
+        <pin num="7" name="INT_DRDY" type="output"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="9" name="GND" type="power_in"/>
+        <pin num="10" name="VDD" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="rfcom" part="MAX-M8W">
+      <description>u-blox M8 concurrent GNSS module (TXCO Oscillator, internal active antenna supply)</description>
+      <docs>https://www.u-blox.com/sites/default/files/MAX-M8-FW3_DataSheet_%28UBX-15031506%29.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MAX-M8W</field>
+        <field name="Footprint">RF_Modules:U-BLOX-MAX</field>
+        <field name="Datasheet">https://www.u-blox.com/sites/default/files/MAX-M8-FW3_DataSheet_%28UBX-15031506%29.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="TXD" type="output"/>
+        <pin num="3" name="RXD" type="input"/>
+        <pin num="4" name="TIMEPULSE" type="output"/>
+        <pin num="5" name="EXTINT" type="input"/>
+        <pin num="6" name="V_BCKP" type="power_in"/>
+        <pin num="7" name="VCC_IO" type="power_in"/>
+        <pin num="8" name="VCC" type="power_in"/>
+        <pin num="9" name="~RESET" type="input"/>
+        <pin num="10" name="GND" type="power_in"/>
+        <pin num="11" name="RF_IN" type="passive"/>
+        <pin num="12" name="GND" type="power_in"/>
+        <pin num="13" name="RESERVED" type="NotConnected"/>
+        <pin num="14" name="VCC_RF" type="power_out"/>
+        <pin num="15" name="V_ANT" type="power_in"/>
+        <pin num="16" name="SDA" type="BiDi"/>
+        <pin num="17" name="SCL" type="BiDi"/>
+        <pin num="18" name="~SAFEBOOT" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="maxim" part="MAX17243">
+      <aliases>
+        <alias>MAX17242</alias>
+      </aliases>
+      <description>3.5V–36V, 3A, Synchronous Buck Converter with 15µA Quiescent Current and Reduced EMI</description>
+      <docs>http://datasheets.maximintegrated.com/en/ds/MAX17242-MAX17243.pdf</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MAX17243</field>
+        <field name="Footprint">Housings_DFN_QFN:QFN-20-1EP_5x5mm_Pitch0.65mm</field>
+        <field name="Datasheet">http://datasheets.maximintegrated.com/en/ds/MAX17242-MAX17243.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="FOSC" type="passive"/>
+        <pin num="2" name="OUT" type="passive"/>
+        <pin num="3" name="FB" type="input"/>
+        <pin num="4" name="COMP" type="passive"/>
+        <pin num="5" name="BIAS" type="passive"/>
+        <pin num="6" name="AGND" type="power_in"/>
+        <pin num="7" name="EN" type="input"/>
+        <pin num="8" name="SUPSW" type="power_in"/>
+        <pin num="9" name="SUPSW" type="power_in"/>
+        <pin num="10" name="SUP" type="power_in"/>
+        <pin num="11" name="PGOOD" type="output"/>
+        <pin num="12" name="SPS" type="input"/>
+        <pin num="13" name="PGND" type="power_in"/>
+        <pin num="14" name="PGND" type="power_in"/>
+        <pin num="15" name="BST" type="passive"/>
+        <pin num="16" name="LX" type="power_out"/>
+        <pin num="17" name="LX" type="power_out"/>
+        <pin num="18" name="LX" type="power_out"/>
+        <pin num="19" name="NC" type="NotConnected"/>
+        <pin num="20" name="FSYNC" type="input"/>
+        <pin num="21" name="PGND_EP" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="sensors" part="MPU-9250">
+      <description>InvenSense 9-Axis Motion Sensor, Accelerometer, Gyroscope, Compass, I2C/SPI</description>
+      <docs>https://store.invensense.com/datasheets/invensense/MPU9250REV1.0.pdf</docs>
+      <footprints>
+        <fp>QFN-24*3x3mm_Pitch0.4mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MPU-9250</field>
+        <field name="Footprint">Housings_DFN_QFN:QFN-24-1EP_3x3mm_Pitch0.4mm</field>
+        <field name="Datasheet">https://www.invensense.com/wp-content/uploads/2015/02/PS-MPU-9250A-01-v1.1.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="RESV_VDDIO" type="input"/>
+        <pin num="6" name="AUX_SDA" type="BiDi"/>
+        <pin num="7" name="AUX_SCL" type="output"/>
+        <pin num="8" name="VDDIO" type="power_in"/>
+        <pin num="9" name="AD0/MISO" type="BiDi"/>
+        <pin num="10" name="REGOUT" type="passive"/>
+        <pin num="11" name="FSYNC" type="input"/>
+        <pin num="12" name="INT" type="output"/>
+        <pin num="13" name="VDD" type="power_in"/>
+        <pin num="18" name="GND" type="power_in"/>
+        <pin num="20" name="RESV_GND" type="power_in"/>
+        <pin num="22" name="~CS" type="input"/>
+        <pin num="23" name="SCL/SCLK" type="input"/>
+        <pin num="24" name="SDA/MOSI" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="mechanical" part="Mounting_Hole">
+      <description>Mounting Hole without connection</description>
+      <footprints>
+        <fp>Mounting?Hole*</fp>
+        <fp>Hole*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">MK</field>
+        <field name="Value">Mounting_Hole</field>
+      </fields>
+    </libpart>
+    <libpart lib="device" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+        <field name="Footprint">Resistors_SMD:R_0402</field>
+        <field name="Tolerance">1%</field>
+        <field name="Voltage">50V</field>
+        <field name="Power">0.062W</field>
+        <field name="Material">Thin Film</field>
+        <field name="Package">0402</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="RF_Shield_Two_Pieces">
+      <description>Two-Piece EMI RF Shielding Cabinet</description>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">RF_Shield_Two_Pieces</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Shield" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="rfcom" part="SF2098H">
+      <description>915MHz SAW filter</description>
+      <docs>http://wireless.murata.com/RFM/data/sf2098h.pdf</docs>
+      <fields>
+        <field name="Reference">FL</field>
+        <field name="Value">SF2098H</field>
+        <field name="Footprint">SMD_Packages:SM2016-4</field>
+        <field name="Datasheet">http://wireless.murata.com/RFM/data/sf2098h.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="IN" type="passive"/>
+        <pin num="2" name="GND" type="passive"/>
+        <pin num="3" name="OUT" type="passive"/>
+        <pin num="4" name="GND" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="TEST">
+      <description>Testpoint, connection for test equipment</description>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TEST</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="USB_OTG">
+      <description>USB mini/micro connector</description>
+      <footprints>
+        <fp>USB*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">USB_OTG</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VBUS" type="power_in"/>
+        <pin num="2" name="D-" type="passive"/>
+        <pin num="3" name="D+" type="passive"/>
+        <pin num="4" name="ID" type="passive"/>
+        <pin num="5" name="GND" type="power_in"/>
+        <pin num="6" name="Shield" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="atmel">
+      <uri>D:\kicad-library\library\atmel.lib</uri>
+    </library>
+    <library logical="rfcom">
+      <uri>D:\kicad-library\library\rfcom.lib</uri>
+    </library>
+    <library logical="conn">
+      <uri>D:\kicad-library\library\conn.lib</uri>
+    </library>
+    <library logical="sensors">
+      <uri>D:\kicad-library\library\sensors.lib</uri>
+    </library>
+    <library logical="maxim">
+      <uri>D:\kicad-library\library\maxim.lib</uri>
+    </library>
+    <library logical="Flight Computer-rescue">
+      <uri>D:\KicadProjects\Quadrotor\Avionics\Flight Computer\Flight Computer-rescue.lib</uri>
+    </library>
+    <library logical="device">
+      <uri>D:\kicad-library\library\device.lib</uri>
+    </library>
+    <library logical="mechanical">
+      <uri>D:\kicad-library\library\mechanical.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="/CPU-SDA">
+      <node ref="U3" pin="10"/>
+      <node ref="U1" pin="14"/>
+      <node ref="U12" pin="91"/>
+      <node ref="R27" pin="2"/>
+    </net>
+    <net code="2" name="/900_RESET_EXT">
+      <node ref="J2" pin="79"/>
+      <node ref="R29" pin="1"/>
+    </net>
+    <net code="3" name="/2.4_RESET_EXT">
+      <node ref="J1" pin="79"/>
+      <node ref="R32" pin="1"/>
+    </net>
+    <net code="4" name="/CPU-SCK">
+      <node ref="U3" pin="11"/>
+      <node ref="R28" pin="2"/>
+      <node ref="U1" pin="15"/>
+      <node ref="U12" pin="77"/>
+    </net>
+    <net code="5" name="/900-TCKC">
+      <node ref="U1" pin="25"/>
+    </net>
+    <net code="6" name="/900-TMSC">
+      <node ref="U1" pin="24"/>
+    </net>
+    <net code="7" name="/2.4-TCKC">
+      <node ref="U3" pin="25"/>
+      <node ref="J1" pin="76"/>
+    </net>
+    <net code="8" name="/2.4-TMSC">
+      <node ref="U3" pin="24"/>
+      <node ref="J1" pin="74"/>
+    </net>
+    <net code="9" name="/900MHz Radio/~RESET">
+      <node ref="R30" pin="2"/>
+      <node ref="C88" pin="1"/>
+      <node ref="U1" pin="35"/>
+      <node ref="R31" pin="2"/>
+      <node ref="R29" pin="2"/>
+      <node ref="R35" pin="1"/>
+    </net>
+    <net code="10" name="/900_RESET_2.4">
+      <node ref="U3" pin="32"/>
+      <node ref="R30" pin="1"/>
+    </net>
+    <net code="11" name="/900_RESET_CPU">
+      <node ref="R31" pin="1"/>
+      <node ref="U12" pin="88"/>
+    </net>
+    <net code="12" name="/2.4 GHz Radio/~RESET">
+      <node ref="C89" pin="1"/>
+      <node ref="R33" pin="2"/>
+      <node ref="R36" pin="1"/>
+      <node ref="R34" pin="2"/>
+      <node ref="U3" pin="35"/>
+      <node ref="R32" pin="2"/>
+    </net>
+    <net code="13" name="+3V3">
+      <node ref="C23" pin="1"/>
+      <node ref="C22" pin="1"/>
+      <node ref="C80" pin="1"/>
+      <node ref="U12" pin="134"/>
+      <node ref="C79" pin="1"/>
+      <node ref="U9" pin="6"/>
+      <node ref="U12" pin="96"/>
+      <node ref="R23" pin="1"/>
+      <node ref="U9" pin="7"/>
+      <node ref="U9" pin="8"/>
+      <node ref="C87" pin="2"/>
+      <node ref="C85" pin="2"/>
+      <node ref="U8" pin="2"/>
+      <node ref="L11" pin="2"/>
+      <node ref="C54" pin="1"/>
+      <node ref="L15" pin="1"/>
+      <node ref="C81" pin="1"/>
+      <node ref="R15" pin="1"/>
+      <node ref="R18" pin="1"/>
+      <node ref="L17" pin="1"/>
+      <node ref="L10" pin="2"/>
+      <node ref="R19" pin="1"/>
+      <node ref="R16" pin="1"/>
+      <node ref="U5" pin="1"/>
+      <node ref="R17" pin="1"/>
+      <node ref="C84" pin="2"/>
+      <node ref="R13" pin="1"/>
+      <node ref="C51" pin="1"/>
+      <node ref="U5" pin="8"/>
+      <node ref="C52" pin="1"/>
+      <node ref="C78" pin="1"/>
+      <node ref="C82" pin="1"/>
+      <node ref="R35" pin="2"/>
+      <node ref="R27" pin="1"/>
+      <node ref="R28" pin="1"/>
+      <node ref="C83" pin="1"/>
+      <node ref="U12" pin="5"/>
+      <node ref="U12" pin="72"/>
+      <node ref="U12" pin="43"/>
+      <node ref="U12" pin="80"/>
+      <node ref="U12" pin="9"/>
+      <node ref="R36" pin="2"/>
+      <node ref="U12" pin="30"/>
+    </net>
+    <net code="14" name="/CPU_RESET_900">
+      <node ref="R26" pin="1"/>
+      <node ref="U1" pin="6"/>
+    </net>
+    <net code="15" name="/GNC_Processor/~RESET">
+      <node ref="R24" pin="2"/>
+      <node ref="U12" pin="83"/>
+      <node ref="R25" pin="2"/>
+      <node ref="R26" pin="2"/>
+      <node ref="C59" pin="1"/>
+    </net>
+    <net code="16" name="/CPU_RESET_2.4">
+      <node ref="U3" pin="31"/>
+      <node ref="R25" pin="1"/>
+    </net>
+    <net code="17" name="/CPU_RESET_EXT">
+      <node ref="R24" pin="1"/>
+    </net>
+    <net code="18" name="/2.4_RESET_CPU">
+      <node ref="U12" pin="84"/>
+      <node ref="R34" pin="1"/>
+    </net>
+    <net code="19" name="/2.4_RESET_900">
+      <node ref="R33" pin="1"/>
+      <node ref="U1" pin="9"/>
+    </net>
+    <net code="20" name="/900M-Rx">
+      <node ref="U12" pin="67"/>
+      <node ref="U1" pin="7"/>
+    </net>
+    <net code="21" name="/2.4G-Rx">
+      <node ref="U12" pin="66"/>
+      <node ref="U3" pin="7"/>
+    </net>
+    <net code="22" name="/2.4G-Tx">
+      <node ref="U3" pin="8"/>
+      <node ref="U12" pin="75"/>
+    </net>
+    <net code="23" name="/900M-Tx">
+      <node ref="U12" pin="69"/>
+      <node ref="U1" pin="8"/>
+    </net>
+    <net code="24" name="/Power-~SHDN~">
+      <node ref="U8" pin="7"/>
+      <node ref="R12" pin="2"/>
+    </net>
+    <net code="25" name="/Connectors/PA0">
+      <node ref="U12" pin="102"/>
+    </net>
+    <net code="26" name="/Connectors/PA1">
+      <node ref="U12" pin="99"/>
+    </net>
+    <net code="27" name="/Connectors/PB12">
+      <node ref="U12" pin="87"/>
+      <node ref="TP2" pin="1"/>
+    </net>
+    <net code="28" name="/Connectors/PB13">
+      <node ref="U12" pin="144"/>
+    </net>
+    <net code="29" name="/Power-Good">
+      <node ref="U8" pin="11"/>
+      <node ref="R13" pin="2"/>
+    </net>
+    <net code="30" name="/Connectors/PD31">
+      <node ref="U12" pin="2"/>
+    </net>
+    <net code="31" name="/Connectors/USBD_N">
+      <node ref="J3" pin="2"/>
+      <node ref="U12" pin="136"/>
+    </net>
+    <net code="32" name="/Connectors/AUX_SDA">
+      <node ref="U7" pin="4"/>
+      <node ref="U5" pin="6"/>
+      <node ref="R17" pin="2"/>
+    </net>
+    <net code="33" name="/Connectors/AUX_SCL">
+      <node ref="U7" pin="2"/>
+      <node ref="U5" pin="7"/>
+      <node ref="R18" pin="2"/>
+    </net>
+    <net code="34" name="/GNC_Processor/GPS-~RESET">
+      <node ref="U12" pin="57"/>
+      <node ref="U9" pin="9"/>
+    </net>
+    <net code="35" name="/GNC_Processor/IMU-SPI-CLK">
+      <node ref="U5" pin="23"/>
+      <node ref="U12" pin="60"/>
+    </net>
+    <net code="36" name="/GNC_Processor/IMU-SPI-MOSI">
+      <node ref="U5" pin="24"/>
+      <node ref="U12" pin="63"/>
+    </net>
+    <net code="37" name="/GNC_Processor/IMU-SPI-MISO">
+      <node ref="U5" pin="9"/>
+      <node ref="U12" pin="65"/>
+    </net>
+    <net code="38" name="/GNC_Processor/IMU-SPI-~CS">
+      <node ref="U5" pin="22"/>
+      <node ref="U12" pin="92"/>
+    </net>
+    <net code="39" name="/GNC_Processor/IMU-INT">
+      <node ref="U5" pin="12"/>
+      <node ref="U12" pin="93"/>
+    </net>
+    <net code="40" name="/GPS/GPS-Rx">
+      <node ref="U12" pin="114"/>
+      <node ref="U9" pin="3"/>
+    </net>
+    <net code="41" name="/GPS/GPS-Tx">
+      <node ref="U9" pin="2"/>
+      <node ref="U12" pin="73"/>
+    </net>
+    <net code="42" name="/Connectors/USBD_P">
+      <node ref="J3" pin="3"/>
+      <node ref="U12" pin="137"/>
+    </net>
+    <net code="43" name="Net-(TP1-Pad1)">
+      <node ref="U12" pin="85"/>
+      <node ref="TP1" pin="1"/>
+    </net>
+    <net code="44" name="Net-(TP3-Pad1)">
+      <node ref="TP3" pin="1"/>
+      <node ref="U12" pin="104"/>
+    </net>
+    <net code="45" name="GND">
+      <node ref="C37" pin="2"/>
+      <node ref="C8" pin="2"/>
+      <node ref="C23" pin="2"/>
+      <node ref="U4" pin="4"/>
+      <node ref="J5" pin="2"/>
+      <node ref="U12" pin="115"/>
+      <node ref="C36" pin="2"/>
+      <node ref="C84" pin="1"/>
+      <node ref="U12" pin="138"/>
+      <node ref="U4" pin="1"/>
+      <node ref="C22" pin="2"/>
+      <node ref="U4" pin="9"/>
+      <node ref="R20" pin="1"/>
+      <node ref="U12" pin="8"/>
+      <node ref="C81" pin="2"/>
+      <node ref="R38" pin="1"/>
+      <node ref="C63" pin="1"/>
+      <node ref="U12" pin="135"/>
+      <node ref="C11" pin="2"/>
+      <node ref="C10" pin="2"/>
+      <node ref="C70" pin="1"/>
+      <node ref="U4" pin="17"/>
+      <node ref="U4" pin="16"/>
+      <node ref="U4" pin="12"/>
+      <node ref="U4" pin="11"/>
+      <node ref="C44" pin="2"/>
+      <node ref="C43" pin="2"/>
+      <node ref="C42" pin="2"/>
+      <node ref="C71" pin="1"/>
+      <node ref="C41" pin="2"/>
+      <node ref="C40" pin="2"/>
+      <node ref="C39" pin="2"/>
+      <node ref="C38" pin="2"/>
+      <node ref="R21" pin="1"/>
+      <node ref="U12" pin="44"/>
+      <node ref="U12" pin="95"/>
+      <node ref="MP2" pin="1"/>
+      <node ref="U12" pin="61"/>
+      <node ref="C35" pin="2"/>
+      <node ref="C33" pin="2"/>
+      <node ref="C34" pin="2"/>
+      <node ref="C82" pin="2"/>
+      <node ref="R8" pin="1"/>
+      <node ref="C78" pin="2"/>
+      <node ref="C59" pin="2"/>
+      <node ref="C32" pin="2"/>
+      <node ref="C31" pin="2"/>
+      <node ref="U3" pin="49"/>
+      <node ref="C77" pin="2"/>
+      <node ref="C76" pin="2"/>
+      <node ref="U5" pin="20"/>
+      <node ref="U5" pin="11"/>
+      <node ref="U5" pin="18"/>
+      <node ref="FL1" pin="2"/>
+      <node ref="U7" pin="8"/>
+      <node ref="U7" pin="9"/>
+      <node ref="C66" pin="1"/>
+      <node ref="U1" pin="49"/>
+      <node ref="U7" pin="3"/>
+      <node ref="C67" pin="1"/>
+      <node ref="C56" pin="2"/>
+      <node ref="C75" pin="2"/>
+      <node ref="C28" pin="2"/>
+      <node ref="C58" pin="2"/>
+      <node ref="C7" pin="2"/>
+      <node ref="C15" pin="1"/>
+      <node ref="C73" pin="2"/>
+      <node ref="C86" pin="1"/>
+      <node ref="C65" pin="1"/>
+      <node ref="C89" pin="2"/>
+      <node ref="C64" pin="1"/>
+      <node ref="C88" pin="2"/>
+      <node ref="C60" pin="1"/>
+      <node ref="C5" pin="2"/>
+      <node ref="C83" pin="2"/>
+      <node ref="C14" pin="1"/>
+      <node ref="C62" pin="1"/>
+      <node ref="C6" pin="2"/>
+      <node ref="C13" pin="2"/>
+      <node ref="C25" pin="2"/>
+      <node ref="C17" pin="1"/>
+      <node ref="R4" pin="1"/>
+      <node ref="J3" pin="5"/>
+      <node ref="J3" pin="6"/>
+      <node ref="C2" pin="2"/>
+      <node ref="C4" pin="2"/>
+      <node ref="C72" pin="2"/>
+      <node ref="MP1" pin="1"/>
+      <node ref="C46" pin="2"/>
+      <node ref="C45" pin="2"/>
+      <node ref="C54" pin="2"/>
+      <node ref="R11" pin="2"/>
+      <node ref="C85" pin="1"/>
+      <node ref="C51" pin="2"/>
+      <node ref="C52" pin="2"/>
+      <node ref="C48" pin="2"/>
+      <node ref="U2" pin="17"/>
+      <node ref="C49" pin="2"/>
+      <node ref="C80" pin="2"/>
+      <node ref="U9" pin="10"/>
+      <node ref="C79" pin="2"/>
+      <node ref="U9" pin="1"/>
+      <node ref="C87" pin="1"/>
+      <node ref="J6" pin="2"/>
+      <node ref="U9" pin="12"/>
+      <node ref="C29" pin="2"/>
+      <node ref="C53" pin="2"/>
+      <node ref="C30" pin="2"/>
+      <node ref="C19" pin="2"/>
+      <node ref="C16" pin="2"/>
+      <node ref="C27" pin="2"/>
+      <node ref="C24" pin="2"/>
+      <node ref="C20" pin="2"/>
+      <node ref="C1" pin="2"/>
+      <node ref="C3" pin="2"/>
+      <node ref="C69" pin="2"/>
+      <node ref="C68" pin="1"/>
+      <node ref="U2" pin="3"/>
+      <node ref="C57" pin="2"/>
+      <node ref="U8" pin="6"/>
+      <node ref="U8" pin="13"/>
+      <node ref="U2" pin="1"/>
+      <node ref="U8" pin="20"/>
+      <node ref="U8" pin="21"/>
+      <node ref="J4" pin="2"/>
+      <node ref="C50" pin="2"/>
+      <node ref="C55" pin="2"/>
+      <node ref="FL1" pin="4"/>
+      <node ref="C74" pin="2"/>
+      <node ref="C61" pin="1"/>
+      <node ref="U2" pin="12"/>
+      <node ref="U2" pin="9"/>
+      <node ref="U8" pin="14"/>
+    </net>
+    <net code="46" name="+BATT">
+      <node ref="J1" pin="5"/>
+      <node ref="J1" pin="7"/>
+      <node ref="R37" pin="2"/>
+      <node ref="D2" pin="2"/>
+    </net>
+    <net code="47" name="/GNC_Processor/VBUS_DETECT">
+      <node ref="U12" pin="108"/>
+      <node ref="R22" pin="2"/>
+      <node ref="R21" pin="2"/>
+    </net>
+    <net code="48" name="/GNC_Processor/VBATT">
+      <node ref="U12" pin="34"/>
+      <node ref="R38" pin="2"/>
+      <node ref="R37" pin="1"/>
+    </net>
+    <net code="49" name="Net-(C60-Pad2)">
+      <node ref="C60" pin="2"/>
+      <node ref="U12" pin="140"/>
+      <node ref="R20" pin="2"/>
+    </net>
+    <net code="50" name="VUSB">
+      <node ref="C61" pin="2"/>
+      <node ref="R22" pin="1"/>
+      <node ref="D1" pin="2"/>
+      <node ref="J3" pin="1"/>
+    </net>
+    <net code="51" name="Net-(C62-Pad2)">
+      <node ref="C62" pin="2"/>
+      <node ref="Y1" pin="1"/>
+      <node ref="U12" pin="35"/>
+    </net>
+    <net code="52" name="Net-(L21-Pad2)">
+      <node ref="R23" pin="2"/>
+      <node ref="L21" pin="2"/>
+    </net>
+    <net code="53" name="Net-(C57-Pad1)">
+      <node ref="U12" pin="3"/>
+      <node ref="U12" pin="107"/>
+      <node ref="C57" pin="1"/>
+      <node ref="C68" pin="2"/>
+      <node ref="U12" pin="29"/>
+      <node ref="U12" pin="50"/>
+      <node ref="U12" pin="33"/>
+      <node ref="U12" pin="81"/>
+      <node ref="L19" pin="1"/>
+      <node ref="C77" pin="1"/>
+      <node ref="L20" pin="1"/>
+      <node ref="C76" pin="1"/>
+      <node ref="C75" pin="1"/>
+      <node ref="C73" pin="1"/>
+      <node ref="C69" pin="1"/>
+    </net>
+    <net code="54" name="/GNC_Processor/VDDPLLUSB">
+      <node ref="C86" pin="2"/>
+      <node ref="U12" pin="143"/>
+      <node ref="L21" pin="1"/>
+    </net>
+    <net code="55" name="Net-(C64-Pad2)">
+      <node ref="C64" pin="2"/>
+      <node ref="U12" pin="141"/>
+      <node ref="Y2" pin="1"/>
+    </net>
+    <net code="56" name="Net-(Y2-Pad2)">
+      <node ref="Y2" pin="2"/>
+    </net>
+    <net code="57" name="Net-(C65-Pad2)">
+      <node ref="U12" pin="142"/>
+      <node ref="C65" pin="2"/>
+      <node ref="Y2" pin="3"/>
+    </net>
+    <net code="58" name="Net-(C63-Pad2)">
+      <node ref="U12" pin="36"/>
+      <node ref="C63" pin="2"/>
+      <node ref="Y1" pin="2"/>
+    </net>
+    <net code="59" name="Net-(Y2-Pad4)">
+      <node ref="Y2" pin="4"/>
+    </net>
+    <net code="60" name="Net-(C74-Pad1)">
+      <node ref="C74" pin="1"/>
+      <node ref="L19" pin="2"/>
+      <node ref="U12" pin="123"/>
+    </net>
+    <net code="61" name="Net-(C72-Pad1)">
+      <node ref="U12" pin="139"/>
+      <node ref="C72" pin="1"/>
+      <node ref="L20" pin="2"/>
+    </net>
+    <net code="62" name="/900MHz Radio/RF50_900_1">
+      <node ref="C9" pin="1"/>
+      <node ref="U1" pin="1"/>
+    </net>
+    <net code="63" name="Net-(C4-Pad1)">
+      <node ref="C4" pin="1"/>
+      <node ref="U1" pin="23"/>
+    </net>
+    <net code="64" name="/900MHz Radio/RF50_900_2">
+      <node ref="C9" pin="2"/>
+      <node ref="FL1" pin="1"/>
+    </net>
+    <net code="65" name="Net-(U1-Pad5)">
+      <node ref="U1" pin="5"/>
+    </net>
+    <net code="66" name="Net-(Y3-Pad2)">
+      <node ref="Y3" pin="2"/>
+    </net>
+    <net code="67" name="Net-(Y3-Pad4)">
+      <node ref="Y3" pin="4"/>
+    </net>
+    <net code="68" name="Net-(C66-Pad2)">
+      <node ref="Y3" pin="1"/>
+      <node ref="U1" pin="47"/>
+      <node ref="C66" pin="2"/>
+    </net>
+    <net code="69" name="Net-(C67-Pad2)">
+      <node ref="U1" pin="46"/>
+      <node ref="C67" pin="2"/>
+      <node ref="Y3" pin="3"/>
+    </net>
+    <net code="70" name="Net-(R1-Pad1)">
+      <node ref="R1" pin="1"/>
+      <node ref="U2" pin="6"/>
+    </net>
+    <net code="71" name="/900MHz Radio/RF50_900_3">
+      <node ref="FL1" pin="3"/>
+      <node ref="L12" pin="1"/>
+      <node ref="C14" pin="2"/>
+    </net>
+    <net code="72" name="/900MHz Radio/RF50_900_ANT">
+      <node ref="L4" pin="2"/>
+      <node ref="C7" pin="1"/>
+      <node ref="J4" pin="1"/>
+    </net>
+    <net code="73" name="Net-(R3-Pad1)">
+      <node ref="U2" pin="8"/>
+      <node ref="R3" pin="1"/>
+    </net>
+    <net code="74" name="Net-(R2-Pad1)">
+      <node ref="R2" pin="1"/>
+      <node ref="U2" pin="7"/>
+    </net>
+    <net code="75" name="Net-(U1-Pad3)">
+      <node ref="U1" pin="3"/>
+    </net>
+    <net code="76" name="Net-(U1-Pad2)">
+      <node ref="U1" pin="2"/>
+    </net>
+    <net code="77" name="/900MHz Radio/HGM">
+      <node ref="R1" pin="2"/>
+      <node ref="U1" pin="10"/>
+    </net>
+    <net code="78" name="/900MHz Radio/PA_EN">
+      <node ref="U1" pin="11"/>
+      <node ref="R3" pin="2"/>
+    </net>
+    <net code="79" name="/900MHz Radio/LNA_EN">
+      <node ref="R2" pin="2"/>
+      <node ref="U1" pin="12"/>
+    </net>
+    <net code="80" name="Net-(U1-Pad4)">
+      <node ref="U1" pin="4"/>
+    </net>
+    <net code="81" name="/900MHz Radio/RF50_900_6">
+      <node ref="C6" pin="1"/>
+      <node ref="L4" pin="1"/>
+      <node ref="L3" pin="2"/>
+    </net>
+    <net code="82" name="/900MHz Radio/RF50_900_7">
+      <node ref="L2" pin="1"/>
+      <node ref="C26" pin="2"/>
+    </net>
+    <net code="83" name="/900MHz Radio/RF50_900_LNA">
+      <node ref="U2" pin="5"/>
+      <node ref="C18" pin="2"/>
+    </net>
+    <net code="84" name="/900MHz Radio/RF50_900_TR">
+      <node ref="U2" pin="4"/>
+      <node ref="C26" pin="1"/>
+      <node ref="C18" pin="1"/>
+    </net>
+    <net code="85" name="/900MHz Radio/RF50_900_PA">
+      <node ref="U2" pin="2"/>
+      <node ref="C21" pin="1"/>
+      <node ref="L1" pin="1"/>
+    </net>
+    <net code="86" name="/900MHz Radio/RF50_900_4">
+      <node ref="U2" pin="10"/>
+      <node ref="L12" pin="2"/>
+      <node ref="U2" pin="11"/>
+    </net>
+    <net code="87" name="Net-(L18-Pad1)">
+      <node ref="L18" pin="1"/>
+      <node ref="U2" pin="16"/>
+    </net>
+    <net code="88" name="Net-(R9-Pad1)">
+      <node ref="U2" pin="15"/>
+      <node ref="R9" pin="1"/>
+    </net>
+    <net code="89" name="Net-(R4-Pad2)">
+      <node ref="R4" pin="2"/>
+      <node ref="U2" pin="14"/>
+    </net>
+    <net code="90" name="Net-(L8-Pad1)">
+      <node ref="L8" pin="1"/>
+      <node ref="U1" pin="33"/>
+    </net>
+    <net code="91" name="/900MHz Radio/VDDR_CC1310">
+      <node ref="C2" pin="1"/>
+      <node ref="L8" pin="2"/>
+      <node ref="C1" pin="1"/>
+      <node ref="U1" pin="45"/>
+      <node ref="C3" pin="1"/>
+      <node ref="U1" pin="48"/>
+    </net>
+    <net code="92" name="Net-(C15-Pad2)">
+      <node ref="U2" pin="13"/>
+      <node ref="C15" pin="2"/>
+      <node ref="L13" pin="1"/>
+    </net>
+    <net code="93" name="/900MHz Radio/VDD_CC1190">
+      <node ref="L18" pin="2"/>
+      <node ref="C13" pin="1"/>
+      <node ref="C19" pin="1"/>
+      <node ref="C25" pin="1"/>
+      <node ref="C17" pin="2"/>
+      <node ref="C28" pin="1"/>
+      <node ref="L13" pin="2"/>
+      <node ref="L1" pin="2"/>
+      <node ref="L14" pin="2"/>
+      <node ref="R9" pin="2"/>
+    </net>
+    <net code="94" name="/900MHz Radio/RF50_900_5">
+      <node ref="C21" pin="2"/>
+      <node ref="C5" pin="1"/>
+      <node ref="L2" pin="2"/>
+      <node ref="L3" pin="1"/>
+    </net>
+    <net code="95" name="/900MHz Radio/VDDS_CC1310">
+      <node ref="U1" pin="44"/>
+      <node ref="U1" pin="34"/>
+      <node ref="L14" pin="1"/>
+      <node ref="C30" pin="1"/>
+      <node ref="C29" pin="1"/>
+      <node ref="C16" pin="1"/>
+      <node ref="L15" pin="2"/>
+      <node ref="C27" pin="1"/>
+      <node ref="C24" pin="1"/>
+      <node ref="C20" pin="1"/>
+      <node ref="U1" pin="13"/>
+      <node ref="U1" pin="22"/>
+    </net>
+    <net code="96" name="Net-(R7-Pad1)">
+      <node ref="U4" pin="5"/>
+      <node ref="R7" pin="1"/>
+    </net>
+    <net code="97" name="Net-(R6-Pad1)">
+      <node ref="U4" pin="6"/>
+      <node ref="R6" pin="1"/>
+    </net>
+    <net code="98" name="Net-(R5-Pad1)">
+      <node ref="R5" pin="1"/>
+      <node ref="U4" pin="7"/>
+    </net>
+    <net code="99" name="Net-(C70-Pad2)">
+      <node ref="Y5" pin="1"/>
+      <node ref="C70" pin="2"/>
+      <node ref="U3" pin="47"/>
+    </net>
+    <net code="100" name="Net-(C71-Pad2)">
+      <node ref="Y5" pin="3"/>
+      <node ref="C71" pin="2"/>
+      <node ref="U3" pin="46"/>
+    </net>
+    <net code="101" name="/2.4 GHz Radio/VDDS_CC2650">
+      <node ref="L11" pin="1"/>
+      <node ref="U3" pin="34"/>
+      <node ref="U3" pin="13"/>
+      <node ref="U3" pin="44"/>
+      <node ref="C42" pin="1"/>
+      <node ref="C44" pin="1"/>
+      <node ref="C43" pin="1"/>
+      <node ref="C41" pin="1"/>
+      <node ref="C40" pin="1"/>
+      <node ref="U3" pin="22"/>
+      <node ref="C39" pin="1"/>
+    </net>
+    <net code="102" name="Net-(R8-Pad2)">
+      <node ref="R8" pin="2"/>
+      <node ref="U4" pin="8"/>
+    </net>
+    <net code="103" name="Net-(C34-Pad1)">
+      <node ref="C34" pin="1"/>
+      <node ref="U3" pin="23"/>
+    </net>
+    <net code="104" name="/2.4 GHz Radio/RF50_2.4_2">
+      <node ref="L7" pin="1"/>
+      <node ref="C10" pin="1"/>
+      <node ref="L6" pin="2"/>
+    </net>
+    <net code="105" name="/2.4 GHz Radio/HGM">
+      <node ref="U3" pin="9"/>
+      <node ref="R5" pin="2"/>
+    </net>
+    <net code="106" name="/2.4 GHz Radio/LNA_EN">
+      <node ref="R6" pin="2"/>
+      <node ref="U3" pin="5"/>
+    </net>
+    <net code="107" name="/2.4 GHz Radio/PA_EN">
+      <node ref="U3" pin="6"/>
+      <node ref="R7" pin="2"/>
+    </net>
+    <net code="108" name="Net-(L9-Pad2)">
+      <node ref="L9" pin="2"/>
+      <node ref="U3" pin="33"/>
+    </net>
+    <net code="109" name="/2.4 GHz Radio/VDD_CC2592">
+      <node ref="U4" pin="13"/>
+      <node ref="L5" pin="1"/>
+      <node ref="L10" pin="1"/>
+      <node ref="C37" pin="1"/>
+      <node ref="C36" pin="1"/>
+      <node ref="C35" pin="1"/>
+      <node ref="C38" pin="1"/>
+      <node ref="U4" pin="14"/>
+      <node ref="U4" pin="15"/>
+    </net>
+    <net code="110" name="Net-(U3-Pad4)">
+      <node ref="U3" pin="4"/>
+    </net>
+    <net code="111" name="Net-(U3-Pad3)">
+      <node ref="U3" pin="3"/>
+    </net>
+    <net code="112" name="/2.4 GHz Radio/RF50_2.4_N">
+      <node ref="U3" pin="2"/>
+      <node ref="U4" pin="2"/>
+    </net>
+    <net code="113" name="/2.4 GHz Radio/RF50_2.4_P">
+      <node ref="U4" pin="3"/>
+      <node ref="U3" pin="1"/>
+    </net>
+    <net code="114" name="/2.4 GHz Radio/RF50_2.4_ANT">
+      <node ref="C12" pin="1"/>
+      <node ref="J5" pin="1"/>
+    </net>
+    <net code="115" name="/2.4 GHz Radio/RF50_2.4_3">
+      <node ref="C12" pin="2"/>
+      <node ref="C11" pin="1"/>
+      <node ref="L7" pin="2"/>
+    </net>
+    <net code="116" name="/2.4 GHz Radio/RF50_2.4_1">
+      <node ref="U4" pin="10"/>
+      <node ref="C8" pin="1"/>
+      <node ref="L6" pin="1"/>
+      <node ref="L5" pin="2"/>
+    </net>
+    <net code="117" name="/2.4 GHz Radio/VDDR_CC2650">
+      <node ref="C33" pin="1"/>
+      <node ref="L9" pin="1"/>
+      <node ref="U3" pin="48"/>
+      <node ref="U3" pin="45"/>
+      <node ref="C32" pin="1"/>
+      <node ref="C31" pin="1"/>
+    </net>
+    <net code="118" name="Net-(Y5-Pad2)">
+      <node ref="Y5" pin="2"/>
+    </net>
+    <net code="119" name="Net-(Y5-Pad4)">
+      <node ref="Y5" pin="4"/>
+    </net>
+    <net code="120" name="Net-(U9-Pad13)">
+      <node ref="U9" pin="13"/>
+    </net>
+    <net code="121" name="Net-(U9-Pad4)">
+      <node ref="U9" pin="4"/>
+    </net>
+    <net code="122" name="Net-(U9-Pad5)">
+      <node ref="U9" pin="5"/>
+    </net>
+    <net code="123" name="Net-(U9-Pad18)">
+      <node ref="U9" pin="18"/>
+    </net>
+    <net code="124" name="Net-(U9-Pad16)">
+      <node ref="U9" pin="16"/>
+    </net>
+    <net code="125" name="Net-(U9-Pad17)">
+      <node ref="U9" pin="17"/>
+    </net>
+    <net code="126" name="/GPS/RF_GPS_ANT">
+      <node ref="U9" pin="11"/>
+      <node ref="J6" pin="1"/>
+    </net>
+    <net code="127" name="Net-(C53-Pad1)">
+      <node ref="C53" pin="1"/>
+      <node ref="R14" pin="1"/>
+      <node ref="U9" pin="14"/>
+    </net>
+    <net code="128" name="Net-(R14-Pad2)">
+      <node ref="R14" pin="2"/>
+      <node ref="U9" pin="15"/>
+    </net>
+    <net code="129" name="Net-(C45-Pad1)">
+      <node ref="C45" pin="1"/>
+      <node ref="R10" pin="2"/>
+    </net>
+    <net code="130" name="Net-(C48-Pad1)">
+      <node ref="C48" pin="1"/>
+      <node ref="L16" pin="1"/>
+      <node ref="D1" pin="1"/>
+      <node ref="D2" pin="1"/>
+    </net>
+    <net code="131" name="Net-(R11-Pad1)">
+      <node ref="R11" pin="1"/>
+      <node ref="U8" pin="1"/>
+    </net>
+    <net code="132" name="Net-(C47-Pad2)">
+      <node ref="C47" pin="2"/>
+      <node ref="U8" pin="15"/>
+    </net>
+    <net code="133" name="Net-(U8-Pad19)">
+      <node ref="U8" pin="19"/>
+    </net>
+    <net code="134" name="Net-(R10-Pad1)">
+      <node ref="R10" pin="1"/>
+      <node ref="U8" pin="4"/>
+    </net>
+    <net code="135" name="/Power/BIAS">
+      <node ref="U8" pin="3"/>
+      <node ref="U8" pin="5"/>
+      <node ref="U8" pin="12"/>
+      <node ref="C46" pin="1"/>
+    </net>
+    <net code="136" name="Net-(C49-Pad1)">
+      <node ref="U8" pin="10"/>
+      <node ref="U8" pin="9"/>
+      <node ref="U8" pin="8"/>
+      <node ref="C50" pin="1"/>
+      <node ref="C49" pin="1"/>
+      <node ref="L16" pin="2"/>
+      <node ref="R12" pin="1"/>
+    </net>
+    <net code="137" name="Net-(C47-Pad1)">
+      <node ref="L17" pin="2"/>
+      <node ref="C47" pin="1"/>
+      <node ref="U8" pin="16"/>
+      <node ref="U8" pin="17"/>
+      <node ref="U8" pin="18"/>
+    </net>
+    <net code="138" name="Net-(C56-Pad1)">
+      <node ref="C56" pin="1"/>
+      <node ref="U5" pin="10"/>
+    </net>
+    <net code="139" name="Net-(U7-Pad7)">
+      <node ref="U7" pin="7"/>
+    </net>
+    <net code="140" name="Net-(C55-Pad1)">
+      <node ref="R15" pin="2"/>
+      <node ref="C55" pin="1"/>
+      <node ref="U5" pin="13"/>
+    </net>
+    <net code="141" name="Net-(R16-Pad2)">
+      <node ref="U7" pin="5"/>
+      <node ref="U7" pin="6"/>
+      <node ref="R16" pin="2"/>
+    </net>
+    <net code="142" name="Net-(C58-Pad1)">
+      <node ref="U7" pin="1"/>
+      <node ref="U7" pin="10"/>
+      <node ref="C58" pin="1"/>
+      <node ref="R19" pin="2"/>
+    </net>
+    <net code="143" name="Net-(J2-Pad3)">
+      <node ref="J2" pin="3"/>
+    </net>
+    <net code="144" name="Net-(J1-Pad29)">
+      <node ref="J1" pin="29"/>
+    </net>
+    <net code="145" name="Net-(J1-Pad39)">
+      <node ref="J1" pin="39"/>
+    </net>
+    <net code="146" name="Net-(J1-Pad49)">
+      <node ref="J1" pin="49"/>
+    </net>
+    <net code="147" name="Net-(J1-Pad59)">
+      <node ref="J1" pin="59"/>
+    </net>
+    <net code="148" name="Net-(J1-Pad69)">
+      <node ref="J1" pin="69"/>
+    </net>
+    <net code="149" name="Net-(J2-Pad1)">
+      <node ref="J2" pin="1"/>
+    </net>
+    <net code="150" name="Net-(J2-Pad2)">
+      <node ref="J2" pin="2"/>
+    </net>
+    <net code="151" name="Net-(J1-Pad19)">
+      <node ref="J1" pin="19"/>
+    </net>
+    <net code="152" name="Net-(J2-Pad4)">
+      <node ref="J2" pin="4"/>
+    </net>
+    <net code="153" name="Net-(J2-Pad5)">
+      <node ref="J2" pin="5"/>
+    </net>
+    <net code="154" name="Net-(J2-Pad6)">
+      <node ref="J2" pin="6"/>
+    </net>
+    <net code="155" name="Net-(J2-Pad7)">
+      <node ref="J2" pin="7"/>
+    </net>
+    <net code="156" name="Net-(J2-Pad8)">
+      <node ref="J2" pin="8"/>
+    </net>
+    <net code="157" name="Net-(J2-Pad9)">
+      <node ref="J2" pin="9"/>
+    </net>
+    <net code="158" name="Net-(J2-Pad10)">
+      <node ref="J2" pin="10"/>
+    </net>
+    <net code="159" name="Net-(J2-Pad20)">
+      <node ref="J2" pin="20"/>
+    </net>
+    <net code="160" name="Net-(J1-Pad48)">
+      <node ref="J1" pin="48"/>
+    </net>
+    <net code="161" name="Net-(J1-Pad38)">
+      <node ref="J1" pin="38"/>
+    </net>
+    <net code="162" name="Net-(J1-Pad28)">
+      <node ref="J1" pin="28"/>
+    </net>
+    <net code="163" name="Net-(J1-Pad18)">
+      <node ref="J1" pin="18"/>
+    </net>
+    <net code="164" name="Net-(J1-Pad67)">
+      <node ref="J1" pin="67"/>
+    </net>
+    <net code="165" name="Net-(J1-Pad57)">
+      <node ref="J1" pin="57"/>
+    </net>
+    <net code="166" name="Net-(J1-Pad47)">
+      <node ref="J1" pin="47"/>
+    </net>
+    <net code="167" name="Net-(J1-Pad37)">
+      <node ref="J1" pin="37"/>
+    </net>
+    <net code="168" name="Net-(J1-Pad27)">
+      <node ref="J1" pin="27"/>
+    </net>
+    <net code="169" name="Net-(J1-Pad17)">
+      <node ref="J1" pin="17"/>
+    </net>
+    <net code="170" name="Net-(J2-Pad32)">
+      <node ref="J2" pin="32"/>
+    </net>
+    <net code="171" name="Net-(J2-Pad44)">
+      <node ref="J2" pin="44"/>
+    </net>
+    <net code="172" name="Net-(J2-Pad34)">
+      <node ref="J2" pin="34"/>
+    </net>
+    <net code="173" name="Net-(J2-Pad24)">
+      <node ref="J2" pin="24"/>
+    </net>
+    <net code="174" name="Net-(J2-Pad14)">
+      <node ref="J2" pin="14"/>
+    </net>
+    <net code="175" name="Net-(J2-Pad53)">
+      <node ref="J2" pin="53"/>
+    </net>
+    <net code="176" name="Net-(J2-Pad43)">
+      <node ref="J2" pin="43"/>
+    </net>
+    <net code="177" name="Net-(J2-Pad33)">
+      <node ref="J2" pin="33"/>
+    </net>
+    <net code="178" name="Net-(J2-Pad23)">
+      <node ref="J2" pin="23"/>
+    </net>
+    <net code="179" name="Net-(J2-Pad13)">
+      <node ref="J2" pin="13"/>
+    </net>
+    <net code="180" name="Net-(J2-Pad72)">
+      <node ref="J2" pin="72"/>
+    </net>
+    <net code="181" name="Net-(J2-Pad62)">
+      <node ref="J2" pin="62"/>
+    </net>
+    <net code="182" name="Net-(J2-Pad52)">
+      <node ref="J2" pin="52"/>
+    </net>
+    <net code="183" name="Net-(J2-Pad42)">
+      <node ref="J2" pin="42"/>
+    </net>
+    <net code="184" name="Net-(J2-Pad22)">
+      <node ref="J2" pin="22"/>
+    </net>
+    <net code="185" name="Net-(J2-Pad12)">
+      <node ref="J2" pin="12"/>
+    </net>
+    <net code="186" name="Net-(J2-Pad61)">
+      <node ref="J2" pin="61"/>
+    </net>
+    <net code="187" name="Net-(J2-Pad51)">
+      <node ref="J2" pin="51"/>
+    </net>
+    <net code="188" name="Net-(J2-Pad41)">
+      <node ref="J2" pin="41"/>
+    </net>
+    <net code="189" name="Net-(J2-Pad31)">
+      <node ref="J2" pin="31"/>
+    </net>
+    <net code="190" name="Net-(J2-Pad21)">
+      <node ref="J2" pin="21"/>
+    </net>
+    <net code="191" name="Net-(J2-Pad11)">
+      <node ref="J2" pin="11"/>
+    </net>
+    <net code="192" name="Net-(J2-Pad80)">
+      <node ref="J2" pin="80"/>
+    </net>
+    <net code="193" name="Net-(J2-Pad70)">
+      <node ref="J2" pin="70"/>
+    </net>
+    <net code="194" name="Net-(J2-Pad60)">
+      <node ref="J2" pin="60"/>
+    </net>
+    <net code="195" name="Net-(J2-Pad50)">
+      <node ref="J2" pin="50"/>
+    </net>
+    <net code="196" name="Net-(J2-Pad40)">
+      <node ref="J2" pin="40"/>
+    </net>
+    <net code="197" name="Net-(J2-Pad30)">
+      <node ref="J2" pin="30"/>
+    </net>
+    <net code="198" name="Net-(J1-Pad10)">
+      <node ref="J1" pin="10"/>
+    </net>
+    <net code="199" name="Net-(J1-Pad12)">
+      <node ref="J1" pin="12"/>
+    </net>
+    <net code="200" name="Net-(J1-Pad71)">
+      <node ref="J1" pin="71"/>
+    </net>
+    <net code="201" name="Net-(J1-Pad61)">
+      <node ref="J1" pin="61"/>
+    </net>
+    <net code="202" name="Net-(J1-Pad51)">
+      <node ref="J1" pin="51"/>
+    </net>
+    <net code="203" name="Net-(J1-Pad41)">
+      <node ref="J1" pin="41"/>
+    </net>
+    <net code="204" name="Net-(J1-Pad31)">
+      <node ref="J1" pin="31"/>
+    </net>
+    <net code="205" name="Net-(J1-Pad21)">
+      <node ref="J1" pin="21"/>
+    </net>
+    <net code="206" name="Net-(J1-Pad11)">
+      <node ref="J1" pin="11"/>
+    </net>
+    <net code="207" name="Net-(J1-Pad50)">
+      <node ref="J1" pin="50"/>
+    </net>
+    <net code="208" name="Net-(J1-Pad40)">
+      <node ref="J1" pin="40"/>
+    </net>
+    <net code="209" name="Net-(J1-Pad30)">
+      <node ref="J1" pin="30"/>
+    </net>
+    <net code="210" name="Net-(J1-Pad20)">
+      <node ref="J1" pin="20"/>
+    </net>
+    <net code="211" name="Net-(J1-Pad22)">
+      <node ref="J1" pin="22"/>
+    </net>
+    <net code="212" name="Net-(J1-Pad9)">
+      <node ref="J1" pin="9"/>
+    </net>
+    <net code="213" name="Net-(J1-Pad8)">
+      <node ref="J1" pin="8"/>
+    </net>
+    <net code="214" name="Net-(J1-Pad6)">
+      <node ref="J1" pin="6"/>
+    </net>
+    <net code="215" name="Net-(J1-Pad4)">
+      <node ref="J1" pin="4"/>
+    </net>
+    <net code="216" name="Net-(J1-Pad3)">
+      <node ref="J1" pin="3"/>
+    </net>
+    <net code="217" name="Net-(J1-Pad2)">
+      <node ref="J1" pin="2"/>
+    </net>
+    <net code="218" name="Net-(J1-Pad1)">
+      <node ref="J1" pin="1"/>
+    </net>
+    <net code="219" name="Net-(J3-Pad4)">
+      <node ref="J3" pin="4"/>
+    </net>
+    <net code="220" name="Net-(J1-Pad44)">
+      <node ref="J1" pin="44"/>
+    </net>
+    <net code="221" name="Net-(J1-Pad56)">
+      <node ref="J1" pin="56"/>
+    </net>
+    <net code="222" name="Net-(J1-Pad46)">
+      <node ref="J1" pin="46"/>
+    </net>
+    <net code="223" name="Net-(J1-Pad36)">
+      <node ref="J1" pin="36"/>
+    </net>
+    <net code="224" name="Net-(J1-Pad26)">
+      <node ref="J1" pin="26"/>
+    </net>
+    <net code="225" name="Net-(J1-Pad16)">
+      <node ref="J1" pin="16"/>
+    </net>
+    <net code="226" name="Net-(J1-Pad65)">
+      <node ref="J1" pin="65"/>
+    </net>
+    <net code="227" name="Net-(J1-Pad55)">
+      <node ref="J1" pin="55"/>
+    </net>
+    <net code="228" name="Net-(J1-Pad45)">
+      <node ref="J1" pin="45"/>
+    </net>
+    <net code="229" name="Net-(J1-Pad35)">
+      <node ref="J1" pin="35"/>
+    </net>
+    <net code="230" name="Net-(J1-Pad25)">
+      <node ref="J1" pin="25"/>
+    </net>
+    <net code="231" name="Net-(J1-Pad15)">
+      <node ref="J1" pin="15"/>
+    </net>
+    <net code="232" name="Net-(J1-Pad54)">
+      <node ref="J1" pin="54"/>
+    </net>
+    <net code="233" name="Net-(J2-Pad54)">
+      <node ref="J2" pin="54"/>
+    </net>
+    <net code="234" name="Net-(J1-Pad34)">
+      <node ref="J1" pin="34"/>
+    </net>
+    <net code="235" name="Net-(J1-Pad24)">
+      <node ref="J1" pin="24"/>
+    </net>
+    <net code="236" name="Net-(J1-Pad14)">
+      <node ref="J1" pin="14"/>
+    </net>
+    <net code="237" name="Net-(J1-Pad63)">
+      <node ref="J1" pin="63"/>
+    </net>
+    <net code="238" name="Net-(J1-Pad53)">
+      <node ref="J1" pin="53"/>
+    </net>
+    <net code="239" name="Net-(J1-Pad43)">
+      <node ref="J1" pin="43"/>
+    </net>
+    <net code="240" name="Net-(J1-Pad33)">
+      <node ref="J1" pin="33"/>
+    </net>
+    <net code="241" name="Net-(J1-Pad23)">
+      <node ref="J1" pin="23"/>
+    </net>
+    <net code="242" name="Net-(J1-Pad13)">
+      <node ref="J1" pin="13"/>
+    </net>
+    <net code="243" name="Net-(J1-Pad52)">
+      <node ref="J1" pin="52"/>
+    </net>
+    <net code="244" name="Net-(J1-Pad42)">
+      <node ref="J1" pin="42"/>
+    </net>
+    <net code="245" name="Net-(J1-Pad32)">
+      <node ref="J1" pin="32"/>
+    </net>
+    <net code="246" name="Net-(J2-Pad76)">
+      <node ref="J2" pin="76"/>
+    </net>
+    <net code="247" name="Net-(J2-Pad19)">
+      <node ref="J2" pin="19"/>
+    </net>
+    <net code="248" name="Net-(J2-Pad78)">
+      <node ref="J2" pin="78"/>
+    </net>
+    <net code="249" name="Net-(J2-Pad68)">
+      <node ref="J2" pin="68"/>
+    </net>
+    <net code="250" name="Net-(J2-Pad58)">
+      <node ref="J2" pin="58"/>
+    </net>
+    <net code="251" name="Net-(J2-Pad48)">
+      <node ref="J2" pin="48"/>
+    </net>
+    <net code="252" name="Net-(J2-Pad38)">
+      <node ref="J2" pin="38"/>
+    </net>
+    <net code="253" name="Net-(J2-Pad28)">
+      <node ref="J2" pin="28"/>
+    </net>
+    <net code="254" name="Net-(J2-Pad18)">
+      <node ref="J2" pin="18"/>
+    </net>
+    <net code="255" name="Net-(J2-Pad57)">
+      <node ref="J2" pin="57"/>
+    </net>
+    <net code="256" name="Net-(J2-Pad47)">
+      <node ref="J2" pin="47"/>
+    </net>
+    <net code="257" name="Net-(J2-Pad37)">
+      <node ref="J2" pin="37"/>
+    </net>
+    <net code="258" name="Net-(J2-Pad27)">
+      <node ref="J2" pin="27"/>
+    </net>
+    <net code="259" name="Net-(J2-Pad17)">
+      <node ref="J2" pin="17"/>
+    </net>
+    <net code="260" name="Net-(J2-Pad29)">
+      <node ref="J2" pin="29"/>
+    </net>
+    <net code="261" name="Net-(J2-Pad66)">
+      <node ref="J2" pin="66"/>
+    </net>
+    <net code="262" name="Net-(J2-Pad56)">
+      <node ref="J2" pin="56"/>
+    </net>
+    <net code="263" name="Net-(J2-Pad46)">
+      <node ref="J2" pin="46"/>
+    </net>
+    <net code="264" name="Net-(J2-Pad36)">
+      <node ref="J2" pin="36"/>
+    </net>
+    <net code="265" name="Net-(J2-Pad26)">
+      <node ref="J2" pin="26"/>
+    </net>
+    <net code="266" name="Net-(J2-Pad16)">
+      <node ref="J2" pin="16"/>
+    </net>
+    <net code="267" name="Net-(J2-Pad55)">
+      <node ref="J2" pin="55"/>
+    </net>
+    <net code="268" name="Net-(J2-Pad45)">
+      <node ref="J2" pin="45"/>
+    </net>
+    <net code="269" name="Net-(J2-Pad35)">
+      <node ref="J2" pin="35"/>
+    </net>
+    <net code="270" name="Net-(J2-Pad25)">
+      <node ref="J2" pin="25"/>
+    </net>
+    <net code="271" name="Net-(J2-Pad15)">
+      <node ref="J2" pin="15"/>
+    </net>
+    <net code="272" name="Net-(J2-Pad74)">
+      <node ref="J2" pin="74"/>
+    </net>
+    <net code="273" name="Net-(J2-Pad64)">
+      <node ref="J2" pin="64"/>
+    </net>
+    <net code="274" name="Net-(J2-Pad59)">
+      <node ref="J2" pin="59"/>
+    </net>
+    <net code="275" name="Net-(J2-Pad49)">
+      <node ref="J2" pin="49"/>
+    </net>
+    <net code="276" name="Net-(J2-Pad39)">
+      <node ref="J2" pin="39"/>
+    </net>
+    <net code="277" name="/Connectors/2.4-DIO-11">
+      <node ref="J1" pin="64"/>
+      <node ref="U3" pin="17"/>
+    </net>
+    <net code="278" name="/2.4 GHz Radio/ADIO-26">
+      <node ref="U3" pin="39"/>
+    </net>
+    <net code="279" name="/2.4 GHz Radio/ADIO-27">
+      <node ref="U3" pin="40"/>
+    </net>
+    <net code="280" name="/2.4 GHz Radio/ADIO-28">
+      <node ref="U3" pin="41"/>
+    </net>
+    <net code="281" name="/2.4 GHz Radio/ADIO-29">
+      <node ref="U3" pin="42"/>
+    </net>
+    <net code="282" name="/2.4 GHz Radio/ADIO-30">
+      <node ref="U3" pin="43"/>
+    </net>
+    <net code="283" name="/2.4 GHz Radio/DIO-7">
+      <node ref="U3" pin="12"/>
+    </net>
+    <net code="284" name="/Connectors/2.4-DIO-8">
+      <node ref="J1" pin="58"/>
+      <node ref="U3" pin="14"/>
+    </net>
+    <net code="285" name="/Connectors/2.4-DIO-9">
+      <node ref="U3" pin="15"/>
+      <node ref="J1" pin="60"/>
+    </net>
+    <net code="286" name="/Connectors/2.4-DIO-10">
+      <node ref="J1" pin="62"/>
+      <node ref="U3" pin="16"/>
+    </net>
+    <net code="287" name="/2.4 GHz Radio/ADIO-25">
+      <node ref="U3" pin="38"/>
+    </net>
+    <net code="288" name="/Connectors/2.4-DIO-12">
+      <node ref="J1" pin="66"/>
+      <node ref="U3" pin="18"/>
+    </net>
+    <net code="289" name="/Connectors/2.4-DIO-13">
+      <node ref="J1" pin="68"/>
+      <node ref="U3" pin="19"/>
+    </net>
+    <net code="290" name="/Connectors/2.4-DIO-14">
+      <node ref="U3" pin="20"/>
+      <node ref="J1" pin="70"/>
+    </net>
+    <net code="291" name="/Connectors/2.4-DIO-15">
+      <node ref="U3" pin="21"/>
+      <node ref="J1" pin="72"/>
+    </net>
+    <net code="292" name="/Connectors/2.4-DIO-16">
+      <node ref="J1" pin="78"/>
+      <node ref="U3" pin="26"/>
+    </net>
+    <net code="293" name="/Connectors/2.4-DIO-17">
+      <node ref="J1" pin="80"/>
+      <node ref="U3" pin="27"/>
+    </net>
+    <net code="294" name="/Connectors/2.4-DIO-18">
+      <node ref="J1" pin="73"/>
+      <node ref="U3" pin="28"/>
+    </net>
+    <net code="295" name="/Connectors/2.4-DIO-19">
+      <node ref="J1" pin="75"/>
+      <node ref="U3" pin="29"/>
+    </net>
+    <net code="296" name="/Connectors/2.4-DIO-20">
+      <node ref="J1" pin="77"/>
+      <node ref="U3" pin="30"/>
+    </net>
+    <net code="297" name="/2.4 GHz Radio/ADIO-23">
+      <node ref="U3" pin="36"/>
+    </net>
+    <net code="298" name="/2.4 GHz Radio/ADIO-24">
+      <node ref="U3" pin="37"/>
+    </net>
+    <net code="299" name="/900MHz Radio/DIO-18">
+      <node ref="U1" pin="28"/>
+    </net>
+    <net code="300" name="/900MHz Radio/DIO-19">
+      <node ref="U1" pin="29"/>
+    </net>
+    <net code="301" name="/900MHz Radio/DIO-20">
+      <node ref="U1" pin="30"/>
+    </net>
+    <net code="302" name="/900MHz Radio/DIO-21">
+      <node ref="U1" pin="31"/>
+    </net>
+    <net code="303" name="/900MHz Radio/DIO-22">
+      <node ref="U1" pin="32"/>
+    </net>
+    <net code="304" name="/900MHz Radio/DIO-17">
+      <node ref="U1" pin="27"/>
+    </net>
+    <net code="305" name="/Connectors/900-ADIO-23">
+      <node ref="U1" pin="36"/>
+      <node ref="J2" pin="71"/>
+    </net>
+    <net code="306" name="/Connectors/900-ADIO-29">
+      <node ref="U1" pin="42"/>
+      <node ref="J2" pin="65"/>
+    </net>
+    <net code="309" name="/Connectors/900-ADIO-24">
+      <node ref="J2" pin="73"/>
+      <node ref="U1" pin="37"/>
+    </net>
+    <net code="310" name="/Connectors/900-ADIO-25">
+      <node ref="U1" pin="38"/>
+      <node ref="J2" pin="75"/>
+    </net>
+    <net code="311" name="/Connectors/900-ADIO-26">
+      <node ref="U1" pin="39"/>
+      <node ref="J2" pin="69"/>
+    </net>
+    <net code="312" name="/Connectors/900-ADIO-27">
+      <node ref="J2" pin="77"/>
+      <node ref="U1" pin="40"/>
+    </net>
+    <net code="313" name="/Connectors/900-ADIO-28">
+      <node ref="U1" pin="41"/>
+      <node ref="J2" pin="67"/>
+    </net>
+    <net code="314" name="/Connectors/900-ADIO-30">
+      <node ref="J2" pin="63"/>
+      <node ref="U1" pin="43"/>
+    </net>
+    <net code="315" name="/900MHz Radio/DIO-10">
+      <node ref="U1" pin="16"/>
+    </net>
+    <net code="316" name="/900MHz Radio/DIO-11">
+      <node ref="U1" pin="17"/>
+    </net>
+    <net code="317" name="/900MHz Radio/DIO-12">
+      <node ref="U1" pin="18"/>
+    </net>
+    <net code="318" name="/900MHz Radio/DIO-13">
+      <node ref="U1" pin="19"/>
+    </net>
+    <net code="319" name="/900MHz Radio/DIO-14">
+      <node ref="U1" pin="20"/>
+    </net>
+    <net code="320" name="/900MHz Radio/DIO-15">
+      <node ref="U1" pin="21"/>
+    </net>
+    <net code="321" name="/900MHz Radio/DIO-16">
+      <node ref="U1" pin="26"/>
+    </net>
+    <net code="322" name="/GNC_Processor/PE1">
+      <node ref="U12" pin="6"/>
+    </net>
+    <net code="323" name="/GNC_Processor/PE2">
+      <node ref="U12" pin="7"/>
+    </net>
+    <net code="324" name="/GNC_Processor/PE3">
+      <node ref="U12" pin="10"/>
+    </net>
+    <net code="325" name="/GNC_Processor/PE4">
+      <node ref="U12" pin="27"/>
+    </net>
+    <net code="326" name="/GNC_Processor/PE5">
+      <node ref="U12" pin="28"/>
+    </net>
+    <net code="327" name="/GNC_Processor/PD15">
+      <node ref="U12" pin="106"/>
+    </net>
+    <net code="328" name="/GNC_Processor/PD16">
+      <node ref="U12" pin="78"/>
+    </net>
+    <net code="329" name="/GNC_Processor/PD17">
+      <node ref="U12" pin="74"/>
+    </net>
+    <net code="330" name="/GNC_Processor/PE0">
+      <node ref="U12" pin="4"/>
+    </net>
+    <net code="331" name="/GNC_Processor/PD24">
+      <node ref="U12" pin="55"/>
+    </net>
+    <net code="332" name="/GNC_Processor/PD25">
+      <node ref="U12" pin="52"/>
+    </net>
+    <net code="333" name="/GNC_Processor/PD26">
+      <node ref="U12" pin="53"/>
+    </net>
+    <net code="334" name="/GNC_Processor/PD27">
+      <node ref="U12" pin="47"/>
+    </net>
+    <net code="335" name="/GNC_Processor/PD28">
+      <node ref="U12" pin="71"/>
+    </net>
+    <net code="336" name="/GNC_Processor/PD3">
+      <node ref="U12" pin="128"/>
+    </net>
+    <net code="337" name="/GNC_Processor/PD0">
+      <node ref="U12" pin="1"/>
+    </net>
+    <net code="338" name="/GNC_Processor/PD1">
+      <node ref="U12" pin="132"/>
+    </net>
+    <net code="339" name="/GNC_Processor/PD2">
+      <node ref="U12" pin="131"/>
+    </net>
+    <net code="340" name="/GNC_Processor/PD4">
+      <node ref="U12" pin="126"/>
+    </net>
+    <net code="341" name="/GNC_Processor/PD5">
+      <node ref="U12" pin="125"/>
+    </net>
+    <net code="342" name="/GNC_Processor/PD6">
+      <node ref="U12" pin="121"/>
+    </net>
+    <net code="343" name="/GNC_Processor/PD7">
+      <node ref="U12" pin="119"/>
+    </net>
+    <net code="344" name="/GNC_Processor/PD8">
+      <node ref="U12" pin="113"/>
+    </net>
+    <net code="345" name="/GNC_Processor/PD9">
+      <node ref="U12" pin="110"/>
+    </net>
+    <net code="346" name="/GNC_Processor/PD10">
+      <node ref="U12" pin="101"/>
+    </net>
+    <net code="347" name="/GNC_Processor/PD11">
+      <node ref="U12" pin="98"/>
+    </net>
+    <net code="348" name="/GNC_Processor/PC31">
+      <node ref="U12" pin="14"/>
+    </net>
+    <net code="349" name="/GNC_Processor/PA26">
+      <node ref="U12" pin="62"/>
+    </net>
+    <net code="350" name="/GNC_Processor/PA27">
+      <node ref="U12" pin="70"/>
+    </net>
+    <net code="351" name="/GNC_Processor/PA28">
+      <node ref="U12" pin="112"/>
+    </net>
+    <net code="352" name="/GNC_Processor/PA29">
+      <node ref="U12" pin="129"/>
+    </net>
+    <net code="353" name="/GNC_Processor/PA30">
+      <node ref="U12" pin="116"/>
+    </net>
+    <net code="354" name="/GNC_Processor/PA31">
+      <node ref="U12" pin="118"/>
+    </net>
+    <net code="355" name="/GNC_Processor/PA25">
+      <node ref="U12" pin="59"/>
+    </net>
+    <net code="356" name="/GNC_Processor/PB0">
+      <node ref="U12" pin="21"/>
+    </net>
+    <net code="357" name="/GNC_Processor/PB1">
+      <node ref="U12" pin="20"/>
+    </net>
+    <net code="358" name="/GNC_Processor/PB2">
+      <node ref="U12" pin="26"/>
+    </net>
+    <net code="359" name="/GNC_Processor/PB3">
+      <node ref="U12" pin="31"/>
+    </net>
+    <net code="360" name="/GNC_Processor/PA16">
+      <node ref="U12" pin="45"/>
+    </net>
+    <net code="361" name="/GNC_Processor/PA11">
+      <node ref="U12" pin="64"/>
+    </net>
+    <net code="362" name="/GNC_Processor/PA12">
+      <node ref="U12" pin="68"/>
+    </net>
+    <net code="363" name="/GNC_Processor/PA13">
+      <node ref="U12" pin="42"/>
+    </net>
+    <net code="364" name="/GNC_Processor/PA14">
+      <node ref="U12" pin="51"/>
+    </net>
+    <net code="365" name="/GNC_Processor/PA15">
+      <node ref="U12" pin="49"/>
+    </net>
+    <net code="366" name="/GNC_Processor/PB4">
+      <node ref="U12" pin="105"/>
+    </net>
+    <net code="367" name="/GNC_Processor/PA17">
+      <node ref="U12" pin="25"/>
+    </net>
+    <net code="368" name="/GNC_Processor/PA18">
+      <node ref="U12" pin="24"/>
+    </net>
+    <net code="369" name="/GNC_Processor/PA19">
+      <node ref="U12" pin="23"/>
+    </net>
+    <net code="370" name="/GNC_Processor/PA20">
+      <node ref="U12" pin="22"/>
+    </net>
+    <net code="371" name="/GNC_Processor/PA21">
+      <node ref="U12" pin="32"/>
+    </net>
+    <net code="372" name="/GNC_Processor/PA22">
+      <node ref="U12" pin="37"/>
+    </net>
+    <net code="373" name="/GNC_Processor/PA23">
+      <node ref="U12" pin="46"/>
+    </net>
+    <net code="374" name="/GNC_Processor/PA24">
+      <node ref="U12" pin="56"/>
+    </net>
+    <net code="375" name="/GNC_Processor/PC22">
+      <node ref="U12" pin="124"/>
+    </net>
+    <net code="376" name="/GNC_Processor/PC13">
+      <node ref="U12" pin="19"/>
+    </net>
+    <net code="377" name="/GNC_Processor/PC14">
+      <node ref="U12" pin="97"/>
+    </net>
+    <net code="378" name="/GNC_Processor/PC15">
+      <node ref="U12" pin="18"/>
+    </net>
+    <net code="379" name="/GNC_Processor/PC16">
+      <node ref="U12" pin="100"/>
+    </net>
+    <net code="380" name="/GNC_Processor/PC17">
+      <node ref="U12" pin="103"/>
+    </net>
+    <net code="381" name="/GNC_Processor/PC18">
+      <node ref="U12" pin="111"/>
+    </net>
+    <net code="382" name="/GNC_Processor/PC19">
+      <node ref="U12" pin="117"/>
+    </net>
+    <net code="383" name="/GNC_Processor/PC20">
+      <node ref="U12" pin="120"/>
+    </net>
+    <net code="384" name="/GNC_Processor/PC21">
+      <node ref="U12" pin="122"/>
+    </net>
+    <net code="385" name="/GNC_Processor/PC12">
+      <node ref="U12" pin="17"/>
+    </net>
+    <net code="386" name="/GNC_Processor/PC23">
+      <node ref="U12" pin="127"/>
+    </net>
+    <net code="387" name="/GNC_Processor/PC24">
+      <node ref="U12" pin="130"/>
+    </net>
+    <net code="388" name="/GNC_Processor/PC25">
+      <node ref="U12" pin="133"/>
+    </net>
+    <net code="389" name="/GNC_Processor/PC26">
+      <node ref="U12" pin="13"/>
+    </net>
+    <net code="390" name="/GNC_Processor/PC27">
+      <node ref="U12" pin="12"/>
+    </net>
+    <net code="391" name="/GNC_Processor/PC28">
+      <node ref="U12" pin="76"/>
+    </net>
+    <net code="392" name="/GNC_Processor/PC29">
+      <node ref="U12" pin="16"/>
+    </net>
+    <net code="393" name="/GNC_Processor/PC30">
+      <node ref="U12" pin="15"/>
+    </net>
+    <net code="394" name="/GNC_Processor/PC3">
+      <node ref="U12" pin="40"/>
+    </net>
+    <net code="395" name="/GNC_Processor/PB5">
+      <node ref="U12" pin="109"/>
+    </net>
+    <net code="396" name="/GNC_Processor/PB6">
+      <node ref="U12" pin="79"/>
+    </net>
+    <net code="397" name="/GNC_Processor/PB7">
+      <node ref="U12" pin="89"/>
+    </net>
+    <net code="398" name="/GNC_Processor/PC0">
+      <node ref="U12" pin="11"/>
+    </net>
+    <net code="399" name="/GNC_Processor/PC1">
+      <node ref="U12" pin="38"/>
+    </net>
+    <net code="400" name="/GNC_Processor/PC2">
+      <node ref="U12" pin="39"/>
+    </net>
+    <net code="401" name="/GNC_Processor/PC4">
+      <node ref="U12" pin="41"/>
+    </net>
+    <net code="402" name="/GNC_Processor/PC5">
+      <node ref="U12" pin="58"/>
+    </net>
+    <net code="403" name="/GNC_Processor/PC6">
+      <node ref="U12" pin="54"/>
+    </net>
+    <net code="404" name="/GNC_Processor/PC7">
+      <node ref="U12" pin="48"/>
+    </net>
+    <net code="405" name="/GNC_Processor/PC8">
+      <node ref="U12" pin="82"/>
+    </net>
+    <net code="406" name="/GNC_Processor/PC9">
+      <node ref="U12" pin="86"/>
+    </net>
+    <net code="407" name="/GNC_Processor/PC10">
+      <node ref="U12" pin="90"/>
+    </net>
+    <net code="408" name="/GNC_Processor/PC11">
+      <node ref="U12" pin="94"/>
+    </net>
+  </nets>
+</export>
