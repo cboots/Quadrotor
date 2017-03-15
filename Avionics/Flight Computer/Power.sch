@@ -112,9 +112,9 @@ L L L16
 U 1 1 58AC1391
 P 3550 3750
 F 0 "L16" V 3600 3600 50  0000 C CNN
-F 1 "SRN6045-100M" V 3500 3750 50  0000 C CNN
-F 2 "Inductors_SMD:L_BOURNS-SRN6045" H -1600 450 50  0001 C CNN
-F 3 "http://www.bourns.com/docs/Product-Datasheets/SRN6045.pdf" H -1600 450 50  0001 C CNN
+F 1 "74404052100" V 3500 3750 50  0000 C CNN
+F 2 "Inductors:Inductor_Wurth_LQS-5020" H -1600 450 50  0001 C CNN
+F 3 "http://katalog.we-online.de/pbs/datasheet/74404052100.pdf" H -1600 450 50  0001 C CNN
 	1    3550 3750
 	0    -1   -1   0   
 $EndComp
@@ -333,17 +333,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/tps54232.pdf" H 50  2350 50  0001 C CNN
 	1    6850 3900
 	1    0    0    -1  
 $EndComp
-$Comp
-L L L17
-U 1 1 58E2BA02
-P 8000 3900
-F 0 "L17" V 8050 3750 50  0000 C CNN
-F 1 "SRN6045-100M" V 7950 3850 50  0000 C CNN
-F 2 "Inductors_SMD:L_BOURNS-SRN6045" H 2850 600 50  0001 C CNN
-F 3 "http://www.bourns.com/docs/Product-Datasheets/SRN6045.pdf" H 2850 600 50  0001 C CNN
-	1    8000 3900
-	0    1    -1   0   
-$EndComp
 Wire Wire Line
 	6050 3850 6350 3850
 $Comp
@@ -466,7 +455,7 @@ Wire Wire Line
 	7350 3900 7850 3900
 Wire Wire Line
 	8150 3900 9650 3900
-Text Notes 8050 3850 0    60   ~ 0
+Text Notes 8100 3800 0    60   ~ 0
 10uH
 Connection ~ 8350 3900
 Connection ~ 9150 3900
@@ -544,4 +533,15 @@ F 7 "0402" H 5815 4253 60  0001 L CNN "Package"
 	-1   0    0    1   
 $EndComp
 Connection ~ 5250 3750
+$Comp
+L L L17
+U 1 1 58E46EFA
+P 8000 3900
+F 0 "L17" V 8050 3750 50  0000 C CNN
+F 1 "74404052100" V 7950 3900 50  0000 C CNN
+F 2 "Inductors:Inductor_Wurth_LQS-5020" H 2850 600 50  0001 C CNN
+F 3 "http://katalog.we-online.de/pbs/datasheet/74404052100.pdf" H 2850 600 50  0001 C CNN
+	1    8000 3900
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC
