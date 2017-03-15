@@ -24,6 +24,7 @@ LIBS:analog_devices
 LIBS:analog_switches
 LIBS:Power_Management
 LIBS:powerint
+LIBS:onsemi
 LIBS:Flight Computer-cache
 EELAYER 26 0
 EELAYER END

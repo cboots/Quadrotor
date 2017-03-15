@@ -1,4 +1,4 @@
-update=3/6/2017 7:24:42 PM
+update=3/14/2017 8:23:03 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -55,3 +55,4 @@ LibName23=analog_devices
 LibName24=analog_switches
 LibName25=Power_Management
 LibName26=powerint
+LibName27=onsemi

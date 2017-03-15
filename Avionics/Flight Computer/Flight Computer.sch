@@ -24,6 +24,7 @@ LIBS:analog_devices
 LIBS:analog_switches
 LIBS:Power_Management
 LIBS:powerint
+LIBS:onsemi
 LIBS:Flight Computer-cache
 EELAYER 26 0
 EELAYER END
@@ -198,23 +199,23 @@ Text Label 5600 1400 0    60   ~ 0
 $Comp
 L Mounting_Hole MK1
 U 1 1 58BDD655
-P 700 7050
-F 0 "MK1" H 800 7096 50  0000 L CNN
-F 1 "Mounting_Hole" H 800 7005 50  0000 L CNN
-F 2 "Mounting_Holes:MountingHole_2.5mm" H -3500 0   50  0001 C CNN
-F 3 "" H -3500 0   50  0001 C CNN
-	1    700  7050
+P 700 6550
+F 0 "MK1" H 800 6596 50  0000 L CNN
+F 1 "Mounting_Hole" H 800 6505 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_2.5mm" H -3500 -500 50  0001 C CNN
+F 3 "" H -3500 -500 50  0001 C CNN
+	1    700  6550
 	1    0    0    -1  
 $EndComp
 $Comp
 L Mounting_Hole MK2
 U 1 1 58BDE299
-P 700 7600
-F 0 "MK2" H 800 7646 50  0000 L CNN
-F 1 "Mounting_Hole" H 800 7555 50  0000 L CNN
-F 2 "Mounting_Holes:MountingHole_2.5mm" H -3500 550 50  0001 C CNN
-F 3 "" H -3500 550 50  0001 C CNN
-	1    700  7600
+P 700 6850
+F 0 "MK2" H 800 6896 50  0000 L CNN
+F 1 "Mounting_Hole" H 800 6805 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_2.5mm" H -3500 -200 50  0001 C CNN
+F 3 "" H -3500 -200 50  0001 C CNN
+	1    700  6850
 	1    0    0    -1  
 $EndComp
 Text Label 5600 2300 0    60   ~ 0
@@ -1119,6 +1120,28 @@ F 1 "Logo" H 8028 6150 50  0000 L CNN
 F 2 "Symbols:NaviLOGO" H 1550 700 60  0001 C CNN
 F 3 "" H 1550 700 60  0001 C CNN
 	1    7900 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mounting_Hole MK3
+U 1 1 58E001FE
+P 700 7150
+F 0 "MK3" H 800 7196 50  0000 L CNN
+F 1 "Mounting_Hole" H 800 7105 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_2.5mm" H -3500 100 50  0001 C CNN
+F 3 "" H -3500 100 50  0001 C CNN
+	1    700  7150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mounting_Hole MK4
+U 1 1 58E00204
+P 700 7450
+F 0 "MK4" H 800 7496 50  0000 L CNN
+F 1 "Mounting_Hole" H 800 7405 50  0000 L CNN
+F 2 "Mounting_Holes:MountingHole_2.5mm" H -3500 400 50  0001 C CNN
+F 3 "" H -3500 400 50  0001 C CNN
+	1    700  7450
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
