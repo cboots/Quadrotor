@@ -267,8 +267,8 @@ L RF_Shield_Two_Pieces MP1
 U 1 1 58AB299F
 P 9950 1100
 F 0 "MP1" H 9950 1300 50  0000 C CNN
-F 1 "BMI-S-201-F" H 9950 1200 50  0000 C CNN
-F 2 "Shielding_Cabinets:Laird_Technologies_BMI-S-201-F_13.66x12.70mm" H 9950 1000 50  0001 C CNN
+F 1 "BMI-S-101" H 9950 1200 50  0000 C CNN
+F 2 "Shielding_Cabinets:Laird_Technologies_BMI-S-101_13.66x12.70mm" H 9950 1000 50  0001 C CNN
 F 3 "" H 9950 1000 50  0001 C CNN
 	1    9950 1100
 	1    0    0    -1  

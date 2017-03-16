@@ -189,8 +189,8 @@ L RF_Shield_Two_Pieces MP2
 U 1 1 58AB368B
 P 8400 1350
 F 0 "MP2" H 8400 1550 50  0000 C CNN
-F 1 "BMI-S-201-F" H 8400 1450 50  0000 C CNN
-F 2 "Shielding_Cabinets:Laird_Technologies_BMI-S-201-F_13.66x12.70mm" H 8400 1250 50  0001 C CNN
+F 1 "BMI-S-101" H 8400 1450 50  0000 C CNN
+F 2 "Shielding_Cabinets:Laird_Technologies_BMI-S-101_13.66x12.70mm" H 8400 1250 50  0001 C CNN
 F 3 "" H 8400 1250 50  0001 C CNN
 	1    8400 1350
 	1    0    0    -1  
